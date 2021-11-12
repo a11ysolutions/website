@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Home from './Components/Home/Home';
+import Accessibility from './Components/Accessibility/Accessibility';
+import Functional from './Components/Functional/Functional';
+import PrivacyPolicy from './Components/PrivacyPolicy/PrivacyPolicy';
+import StandardsAndRegulations from './Components/StandardsAndRegulations/StandardsAndRegulations';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/accessibility" element={<Accessibility />} />
+        <Route path="/functional" element={<Functional />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/standards-and-regulations" element={<StandardsAndRegulations />} />
+      </Routes>
     </div>
   );
 }
