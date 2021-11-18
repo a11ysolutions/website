@@ -10,7 +10,7 @@ function Layout({ children }) {
     return (
         <div className="layout-content">
             <Navbar
-                onClickMenu={() => { setShowSideDrawer(true); console.log("HEY") }}
+                onClickMenu={() => { setShowSideDrawer(true); }}
             />
             <SideDrawer
                 show={showSideDrawer}
