@@ -1,0 +1,17 @@
+.clients-img-row {
+  display: flex;
+  justify-content: space-between;
+}
+.clients-img-card {
+  height: 120px;
+  width: 165px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 40px #aaaaaa19;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+.clients-img {
+}

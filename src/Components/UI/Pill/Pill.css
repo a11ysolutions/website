@@ -1,0 +1,43 @@
+.a11y-pill-container {
+  position: absolute;
+  z-index: 2;
+}
+.a11y-pill {
+  width: 177px;
+  height: 48px;
+  border-radius: 36px;
+  background: rgba(255, 255, 255, 0.9);
+}
+.a11y-pill-text {
+  font-weight: bold;
+  font-size: 18px;
+  position: absolute;
+  top: 14px;
+  left: 32px;
+}
+
+.a11y-dot {
+  width: 16px;
+  height: 16px;
+  border: 4px solid white;
+  background-color: #21ce99;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  left: 162px;
+}
+
+.a11y-dot-top-left {
+  top: -2px;
+  left: -8px;
+}
+
+.a11y-dot-bottom-left {
+  top: 30px;
+  left: -5px;
+}
+
+.a11y-dot-top-right {
+  top: 0px;
+  left: 162px;
+}
