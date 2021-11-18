@@ -1,0 +1,13 @@
+.a11y-navbar {
+  top: 0px;
+  left: 0;
+  height: 68px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* padding: 16px; */
+}
+
+.a11y-navbar-toggle {
+  margin-left: auto;
+}

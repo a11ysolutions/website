@@ -9,7 +9,7 @@ import Services from "../UI/Services/Services"
 function Home() {
     return (
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-            <div style={{ marginTop: "247px" }}>
+            <div style={{ marginTop: "135px" }}>
                 <PresentationSign />
                 <div style={{ alignSelf: "center", marginTop: "90px" }}>
                     <HomeIlustration />
