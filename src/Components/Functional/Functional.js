@@ -16,8 +16,7 @@ function Functional() {
                 <p>
                 <span style={{fontWeight: "bold"}}>Shift your in-house testing
                  workload to our 24/7/365</span> on-demand crowd to help you
-                  scale and execute tests in
-                   real-time.
+                  scale and execute tests in <br></br> real-time.
                 </p>
             </AchievementCard>
 
