@@ -10,8 +10,8 @@
   
   .functional-ilustration-small-circle {
     position: absolute;
-    top: -20px;
-    left: 40px;
+    top: 125px;
+    left: 315px;
     width: 94px;
     height: 94px;
     border-radius: 50%;
@@ -20,8 +20,8 @@
   
   .functional-ilustration-large-circle {
     position: absolute;
-    top: 295px;
-    left: -35px;
+    top: -100px;
+    left: -185px;
     width: 260px;
     height: 270px;
     border-radius: 50%;
