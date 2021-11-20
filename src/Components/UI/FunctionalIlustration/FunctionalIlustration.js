@@ -7,9 +7,9 @@ function FunctionalIlustration() {
         <div className="functional-ilustration-container">
             <div style={{ position: "relative", marginTop: "50px" }}>
                 <img
-                    src="/coding-man.png"
+                    src="/desktop.png"
                     className="functional-ilustration"
-                    alt="man typing"
+                    alt="desktop"
                 />
 
                 <Pill position={{ top: "-40px", left: "170px" }}>
