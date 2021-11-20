@@ -1,7 +1,7 @@
 import React from "react"
 import AchievementCard from "../UI/AchievementCard/AchievementCard"
 import FunctionalPresentationSign from "../UI/FunctionalPresentationSign/FunctionalPresentationSign"
-import HomeIlustration from "../UI/HomeIlustration/HomeIlustration"
+import FunctionalIlustration from "../UI/FunctionalIlustration/FunctionalIlustration"
 
 function Functional() {
     return (
@@ -9,7 +9,7 @@ function Functional() {
             <div style={{ marginTop: "135px" }}>
                 <FunctionalPresentationSign />
                 <div style={{ alignSelf: "center", marginTop: "90px" }}>
-                    <HomeIlustration />
+                    <FunctionalIlustration />
                 </div>
             </div>
             {/* <AchievementCard>
