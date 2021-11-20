@@ -20,30 +20,39 @@ function Functional() {
                     Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco laboris nisi ut aliquip ex ea.
-                    </p>
+                </p>
                 <Button>Get in touch</Button>
             </div>
-            {/* <AchievementCard>
-                <p>
-                    <span style={{fontWeight: "bold"}}>Fully verified and reviewed
-                    results</span> within hours, with no
-                    extra triage required.
-                </p>
-            </AchievementCard>
+            <div style={{ marginTop: "135px" }}>
+                <div>
+                    <AchievementCard>
+                        <p>
+                            <span style={{ fontWeight: "bold" }}>Fully verified and reviewed
+                                results</span> within hours, with no
+                            extra triage required.
+                        </p>
+                    </AchievementCard>
+                </div>
+                <div style={{ marginTop: "18px" }}>
+                    <AchievementCard>
+                        <p>
+                            <span style={{ fontWeight: "bold" }}>Shift your in-house testing
+                                workload to our 24/7/365</span> on-demand crowd to help you
+                            scale and execute tests in <br></br> real-time.
+                        </p>
+                    </AchievementCard>
+                </div>
 
-            <AchievementCard>
-                <p>
-                <span style={{fontWeight: "bold"}}>Shift your in-house testing
-                 workload to our 24/7/365</span> on-demand crowd to help you
-                  scale and execute tests in <br></br> real-time.
-                </p>
-            </AchievementCard>
-
-            <AchievementCard>
-            <text>Fully verified and reviewed</text>
-            <text> results within hours, with no</text>
-            <text> extra triage required.</text>
-            </AchievementCard> */}
+                <div style={{ marginTop: "18px" }}>
+                    <AchievementCard>
+                        <p>
+                            <span style={{ fontWeight: "bold" }}>Remove any potential QA
+                                bottlenecks</span> by sppeding up
+                            your testing workflow.
+                        </p>
+                    </AchievementCard>
+                </div>
+            </div>
         </div>
     )
 }
