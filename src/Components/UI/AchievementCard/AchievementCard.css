@@ -26,3 +26,9 @@
     color: #000000;
     opacity: 1;
 }
+
+.achievement-card-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -6,7 +6,7 @@ function AchievementCard({ children, imgSrc }) {
         <div className="achievement-card">
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center", columnGap: "18px" }}>
                 <div className='achievement-card-ellipse'>
-                    <img src={imgSrc}></img>
+                    <img src={imgSrc} className='achievement-card-img'></img>
                 </div>
                 <div className='achievement-card-text-container'>
                     {children}

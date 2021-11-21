@@ -25,7 +25,7 @@ function Functional() {
             </div>
             <div style={{ marginTop: "135px" }}>
                 <div>
-                    <AchievementCard>
+                    <AchievementCard imgSrc='folder-data.svg'>
                         <p>
                             <span style={{ fontWeight: "bold" }}>Fully verified and reviewed
                                 results</span> within hours, with no
@@ -34,7 +34,7 @@ function Functional() {
                     </AchievementCard>
                 </div>
                 <div style={{ marginTop: "18px" }}>
-                    <AchievementCard>
+                    <AchievementCard imgSrc='data-user.svg'>
                         <p>
                             <span style={{ fontWeight: "bold" }}>Shift your in-house testing
                                 workload to our 24/7/365</span> on-demand crowd to help you
@@ -44,7 +44,7 @@ function Functional() {
                 </div>
 
                 <div style={{ marginTop: "18px" }}>
-                    <AchievementCard>
+                    <AchievementCard imgSrc='verification.svg'>
                         <p>
                             <span style={{ fontWeight: "bold" }}>Remove any potential QA
                                 bottlenecks</span> by sppeding up
