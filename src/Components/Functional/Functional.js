@@ -24,7 +24,9 @@ function Functional() {
                 <Button>Get in touch</Button>
             </div>
             <div style={{ marginTop: "135px" }}>
-                <div>
+                <div className="functional-titles">UNLIMITED SCALE, AT SPEED</div>
+
+                <div style={{ marginTop: "18px" }}>
                     <AchievementCard imgSrc='folder-data.svg'>
                         <p>
                             <span style={{ fontWeight: "bold" }}>Fully verified and reviewed
