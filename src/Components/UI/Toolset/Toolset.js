@@ -1,12 +1,9 @@
-import "../../Home/Home.css"
-import Button from "../Button/Button"
+import "../../Home/Home.css";
+import Button from "../Button/Button";
 
 function Toolset() {
   return (
-    <div
-      className="home-header-text-button"
-      style={{ marginTop: "139px" }}
-    >
+    <div className="home-header-text-button" style={{ marginTop: "139px" }}>
       <h1>
         Our <span style={{ color: "#0D9E71" }}>toolset</span>
       </h1>
