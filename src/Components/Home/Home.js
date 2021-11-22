@@ -5,6 +5,7 @@ import Button from "../UI/Button/Button"
 import "./Home.css"
 import Clients from "../UI/Clients/Clients"
 import Services from "../UI/Services/Services"
+import Toolset from "../UI/Toolset/Toolset"
 
 function Home() {
     return (
@@ -34,18 +35,7 @@ function Home() {
                     </p>
             </div>
             <Services />
-            <div
-                className="home-header-text-button"
-                style={{ marginTop: "139px" }}
-            >
-                <h1>Our <span style={{ color: "#0D9E71" }}>toolset</span></h1>
-                <p>
-                    Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea.
-                    </p>
-                <Button size="large">Get a free consultation</Button>
-            </div>
+            <Toolset/>
         </div>
     )
 }
