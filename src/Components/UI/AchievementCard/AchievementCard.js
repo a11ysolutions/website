@@ -16,7 +16,7 @@ function AchievementCard({ children, imgSrc }) {
           className="achievement-card-ellipse"
           style={{ justifyContent: "center", alignItems: "center" }}
         >
-          <img src={imgSrc} className="achievement-card-img"></img>
+          <img src={imgSrc} className="achievement-card-img" alt='achievement card'></img>
         </div>
         <div
           className="achievement-card-text-container"
