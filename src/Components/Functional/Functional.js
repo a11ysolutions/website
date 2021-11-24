@@ -4,6 +4,7 @@ import FunctionalPresentationSign from "../UI/FunctionalPresentationSign/Functio
 import FunctionalIlustration from "../UI/FunctionalIlustration/FunctionalIlustration";
 import Button from "../UI/Button/Button";
 import Toolset from "../UI/Toolset/Toolset";
+import CheckCard from "../UI/CheckCard/CheckCard";
 import "./Functional.css";
 
 function Functional() {
@@ -46,6 +47,51 @@ function Functional() {
         <div>
           <div className="functional-small-circle"></div>
         </div>
+      </div>
+      <div className="functional-header-text-button">
+        <h1>
+          What can <span style={{ color: "#0D9E71" }}>
+            we help <br></br>you achieve <br></br>
+          </span>today? <br></br>
+        </h1>
+
+        <div style={{ marginTop: "18px" }}>
+          <CheckCard>
+            <p>
+              Scale your device coverage testing using 
+              real-world different devices, screen 
+              resolutions, browsers, and platforms, with 
+              no emulators. 
+            </p>
+          </CheckCard>
+        </div>
+        <div style={{ marginTop: "18px" }}>
+          <CheckCard>
+            <p>
+              Every defect is manually reproduced, 
+              verified, and categorized by severity, to 
+              allow rapid fixes. 
+            </p>
+          </CheckCard>
+        </div>
+        <div style={{ marginTop: "18px" }}>
+          <CheckCard>
+            <p>
+              Bring your internal teams together and 
+              improve your working practices across the 
+              entire SDLC.
+            </p>
+          </CheckCard>
+        </div>
+        <div style={{ marginTop: "18px" }}>
+          <CheckCard>
+            <p>
+              Detailed issue reports integrate seamlessly 
+              into your own platform(s).
+            </p>
+          </CheckCard>
+        </div>
+        <Button>Get in touch</Button>
       </div>
       <div style={{ marginTop: "135px" }}>
         <div className="functional-titles">UNLIMITED SCALE, AT SPEED</div>
