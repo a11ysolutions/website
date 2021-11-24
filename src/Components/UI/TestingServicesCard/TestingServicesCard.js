@@ -16,9 +16,7 @@ function TestingServicesCard({ children, icon }) {
           className="testing-services-card-square"
           style={{ justifyContent: "center", alignItems: "center" }}
         >
-          <div>
-            {icon}
-          </div>
+          <div>{icon}</div>
         </div>
         <div
           className="testing-services-card-text-container"
