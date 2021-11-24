@@ -26,22 +26,18 @@ function Functional() {
           solve your QA <br></br>bottlenecks
         </h1>
         <p>
-        Without consistently delivering a quality experience, 
-        brands and enterprises can’t fully 
-        guarantee customer satisfaction.
-
-        We help development teams deliver 
-        exceptional products at speed with the best 
-        customer experience. Our functional testing 
-        process is built around your needs, and we 
-        integrate with the tools you already use.
+          Without consistently delivering a quality experience, brands and
+          enterprises can’t fully guarantee customer satisfaction. We help
+          development teams deliver exceptional products at speed with the best
+          customer experience. Our functional testing process is built around
+          your needs, and we integrate with the tools you already use.
         </p>
         <Button>Get in touch</Button>
       </div>
       <div>
         <div className="functional-large-circle">
-          <div style={{position: 'relative', marginTop: "25px"}}>
-            <img src='desktop-two-monitors.png' alt='desktop'></img>
+          <div style={{ position: "relative", marginTop: "25px" }}>
+            <img src="desktop-two-monitors.png" alt="desktop"></img>
           </div>
         </div>
         <div>
@@ -50,44 +46,43 @@ function Functional() {
       </div>
       <div className="functional-header-text-button">
         <h1>
-          What can <span style={{ color: "#0D9E71" }}>
+          What can{" "}
+          <span style={{ color: "#0D9E71" }}>
             we help <br></br>you achieve <br></br>
-          </span>today? <br></br>
+          </span>
+          today? <br></br>
         </h1>
 
         <div style={{ marginTop: "18px" }}>
           <CheckCard>
             <p>
-              Scale your device coverage testing using 
-              real-world different devices, screen 
-              resolutions, browsers, and platforms, with 
-              no emulators. 
+              Scale your device coverage testing using real-world different
+              devices, screen resolutions, browsers, and platforms, with no
+              emulators.
             </p>
           </CheckCard>
         </div>
         <div style={{ marginTop: "18px" }}>
           <CheckCard>
             <p>
-              Every defect is manually reproduced, 
-              verified, and categorized by severity, to 
-              allow rapid fixes. 
+              Every defect is manually reproduced, verified, and categorized by
+              severity, to allow rapid fixes.
             </p>
           </CheckCard>
         </div>
         <div style={{ marginTop: "18px" }}>
           <CheckCard>
             <p>
-              Bring your internal teams together and 
-              improve your working practices across the 
-              entire SDLC.
+              Bring your internal teams together and improve your working
+              practices across the entire SDLC.
             </p>
           </CheckCard>
         </div>
         <div style={{ marginTop: "18px" }}>
           <CheckCard>
             <p>
-              Detailed issue reports integrate seamlessly 
-              into your own platform(s).
+              Detailed issue reports integrate seamlessly into your own
+              platform(s).
             </p>
           </CheckCard>
         </div>
@@ -130,34 +125,29 @@ function Functional() {
         </div>
       </div>
       <div className="functional-header-text-button">
-
         <div style={{ marginTop: "18px" }}>
           <CheckCard>
             <p>
-              Improve customer satisfaction earning the 
-              trust and satisfaction of international users 
-              by ensuring bugs don’t affect their 
-              interactions with your brand and products. 
+              Improve customer satisfaction earning the trust and satisfaction
+              of international users by ensuring bugs don’t affect their
+              interactions with your brand and products.
             </p>
           </CheckCard>
         </div>
         <div style={{ marginTop: "18px" }}>
           <CheckCard>
             <p>
-              Understand bug impact on local users 
-              ensuring end-users feel as though the 
-              products you deliver were built for them.
+              Understand bug impact on local users ensuring end-users feel as
+              though the products you deliver were built for them.
             </p>
           </CheckCard>
         </div>
         <div style={{ marginTop: "18px" }}>
           <CheckCard>
             <p>
-              Test with real users on real devices for real 
-              results ensuring a consistent user 
-              experience for all end-users giving you a 
-              competitive edge in the oversaturated app 
-              market.
+              Test with real users on real devices for real results ensuring a
+              consistent user experience for all end-users giving you a
+              competitive edge in the oversaturated app market.
             </p>
           </CheckCard>
         </div>
@@ -167,10 +157,18 @@ function Functional() {
       </div>
       <div>
         <div className="functional-large-circle">
-          <div style={{position: 'relative', marginTop: "25px"}}>
-            <img src='man-typing.png' alt='desktop'></img>
+          <div style={{ position: "relative", marginTop: "25px" }}>
+            <img src="man-typing.png" alt="desktop"></img>
           </div>
         </div>
+      </div>
+      <div className="functional-header-text-button">
+        <h1>
+          <span style={{ color: "#0D9E71" }}>
+            Functional<br></br>Testing Services<br></br>
+          </span>
+          We Offer
+        </h1>
       </div>
       <Toolset />
     </div>
