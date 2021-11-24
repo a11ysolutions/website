@@ -4,6 +4,14 @@ import FunctionalPresentationSign from "../UI/FunctionalPresentationSign/Functio
 import FunctionalIlustration from "../UI/FunctionalIlustration/FunctionalIlustration";
 import Button from "../UI/Button/Button";
 import Toolset from "../UI/Toolset/Toolset";
+import CheckCard from "../UI/CheckCard/CheckCard";
+import TestingServicesCard from "../UI/TestingServicesCard/TestingServicesCard";
+import { MdBugReport } from "react-icons/md";
+import { IoExtensionPuzzle, IoPersonCircle } from "react-icons/io5";
+import { AiOutlineSync } from "react-icons/ai";
+import { GoGear } from "react-icons/go";
+import { FaClipboardList, FaSearchPlus } from "react-icons/fa";
+import { BsShieldFillCheck } from "react-icons/bs";
 import "./Functional.css";
 
 function Functional() {
@@ -25,11 +33,66 @@ function Functional() {
           solve your QA <br></br>bottlenecks
         </h1>
         <p>
-          Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea.
+          Without consistently delivering a quality experience, brands and
+          enterprises can’t fully guarantee customer satisfaction. We help
+          development teams deliver exceptional products at speed with the best
+          customer experience. Our functional testing process is built around
+          your needs, and we integrate with the tools you already use.
         </p>
+        <Button>Get in touch</Button>
+      </div>
+      <div>
+        <div className="functional-large-circle">
+          <div style={{ position: "relative", marginTop: "25px" }}>
+            <img src="desktop-two-monitors.png" alt="desktop"></img>
+          </div>
+        </div>
+        <div>
+          <div className="functional-small-circle"></div>
+        </div>
+      </div>
+      <div className="functional-header-text-button">
+        <h1>
+          What can{" "}
+          <span style={{ color: "#0D9E71" }}>
+            we help <br></br>you achieve <br></br>
+          </span>
+          today? <br></br>
+        </h1>
+
+        <div style={{ marginTop: "18px" }}>
+          <CheckCard>
+            <p>
+              Scale your device coverage testing using real-world different
+              devices, screen resolutions, browsers, and platforms, with no
+              emulators.
+            </p>
+          </CheckCard>
+        </div>
+        <div style={{ marginTop: "18px" }}>
+          <CheckCard>
+            <p>
+              Every defect is manually reproduced, verified, and categorized by
+              severity, to allow rapid fixes.
+            </p>
+          </CheckCard>
+        </div>
+        <div style={{ marginTop: "18px" }}>
+          <CheckCard>
+            <p>
+              Bring your internal teams together and improve your working
+              practices across the entire SDLC.
+            </p>
+          </CheckCard>
+        </div>
+        <div style={{ marginTop: "18px" }}>
+          <CheckCard>
+            <p>
+              Detailed issue reports integrate seamlessly into your own
+              platform(s).
+            </p>
+          </CheckCard>
+        </div>
         <Button>Get in touch</Button>
       </div>
       <div style={{ marginTop: "135px" }}>
@@ -66,6 +129,97 @@ function Functional() {
               by sppeding up your testing workflow.
             </p>
           </AchievementCard>
+        </div>
+      </div>
+      <div className="functional-header-text-button">
+        <div style={{ marginTop: "18px" }}>
+          <CheckCard>
+            <p>
+              Improve customer satisfaction earning the trust and satisfaction
+              of international users by ensuring bugs don’t affect their
+              interactions with your brand and products.
+            </p>
+          </CheckCard>
+        </div>
+        <div style={{ marginTop: "18px" }}>
+          <CheckCard>
+            <p>
+              Understand bug impact on local users ensuring end-users feel as
+              though the products you deliver were built for them.
+            </p>
+          </CheckCard>
+        </div>
+        <div style={{ marginTop: "18px" }}>
+          <CheckCard>
+            <p>
+              Test with real users on real devices for real results ensuring a
+              consistent user experience for all end-users giving you a
+              competitive edge in the oversaturated app market.
+            </p>
+          </CheckCard>
+        </div>
+        <div style={{ marginTop: "40px" }}>
+          <Button>Get in touch</Button>
+        </div>
+      </div>
+      <div>
+        <div className="functional-large-circle">
+          <div style={{ position: "relative", marginTop: "25px" }}>
+            <img src="man-typing.png" alt="desktop"></img>
+          </div>
+        </div>
+      </div>
+      <div className="functional-header-text-button">
+        <h1>
+          <span style={{ color: "#0D9E71" }}>
+            Functional<br></br>Testing Services<br></br>
+          </span>
+          We Offer
+        </h1>
+        <div style={{ marginTop: "18px" }}>
+          <TestingServicesCard icon={<MdBugReport />}>
+            <p>Smoke testing</p>
+          </TestingServicesCard>
+        </div>
+        <div style={{ marginTop: "18px" }}>
+          <TestingServicesCard icon={<IoExtensionPuzzle />}>
+            <p>Module / Component testing</p>
+          </TestingServicesCard>
+        </div>
+        <div style={{ marginTop: "18px" }}>
+          <TestingServicesCard icon={<AiOutlineSync />}>
+            <p>Regression testing</p>
+          </TestingServicesCard>
+        </div>
+        <div style={{ marginTop: "18px" }}>
+          <TestingServicesCard icon={<GoGear />}>
+            <p>Integration testing</p>
+          </TestingServicesCard>
+        </div>
+        <div style={{ marginTop: "18px" }}>
+          <TestingServicesCard icon={<FaClipboardList />}>
+            <p>Cross-platform testing</p>
+          </TestingServicesCard>
+        </div>
+        <div style={{ marginTop: "18px" }}>
+          <TestingServicesCard icon={<BsShieldFillCheck />}>
+            <p>Sanity testing</p>
+          </TestingServicesCard>
+        </div>
+        <div style={{ marginTop: "18px" }}>
+          <TestingServicesCard icon={<IoPersonCircle />}>
+            <p>UAT testing</p>
+          </TestingServicesCard>
+        </div>
+        <div style={{ marginTop: "18px" }}>
+          <TestingServicesCard icon={<FaSearchPlus />}>
+            <p>Explorary testing</p>
+          </TestingServicesCard>
+        </div>
+      </div>
+      <div>
+        <div style={{ position: "relative", marginTop: "25px" }}>
+          <img src="man-typing-and-diagram.png" alt="man typing"></img>
         </div>
       </div>
       <Toolset />
