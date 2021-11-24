@@ -6,7 +6,13 @@ import ToggleMenu from "../ToggleMenu/ToggleMenu"
 function Navbar({ onClickMenu }) {
     return (
         <div className="a11y-navbar">
-            <Logo />
+            <Logo
+                style={{
+                    width: "60px",
+                    height: "24px",
+                    marginLeft: "20px"
+                }}
+            />
             <div className="a11y-navbar-toggle">
                 <ToggleMenu onClick={onClickMenu} />
             </div>
