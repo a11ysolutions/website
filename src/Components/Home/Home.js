@@ -16,7 +16,7 @@ function Home() {
                     <HomeIlustration />
                 </div>
             </div>
-            <div className="home-header-text-button">
+            <div className="home-header-text-button" id="why-choose-us">
                 <h1>Why <span style={{ color: "#0D9E71" }}>choose us</span> ?</h1>
                 <p>
                     Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor
@@ -27,7 +27,7 @@ function Home() {
             </div>
 
             <Clients />
-            <div className="home-header-text-button">
+            <div className="home-header-text-button" id="our-services">
                 <h1>Our <span style={{ color: "#0D9E71" }}>services</span></h1>
                 <p>
                     Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor
@@ -35,7 +35,7 @@ function Home() {
                     </p>
             </div>
             <Services />
-            <Toolset/>
+            <Toolset />
         </div>
     )
 }

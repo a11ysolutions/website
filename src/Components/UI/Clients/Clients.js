@@ -2,7 +2,7 @@ import React from "react"
 import "./Clients.css"
 function Clients() {
     return (
-        <div>
+        <div id="clients">
             <h1>
                 <span style={{ color: "#0D9E71" }}>Trusted by many <br /> clients</span>, including:
             </h1>
