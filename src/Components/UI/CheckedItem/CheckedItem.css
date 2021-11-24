@@ -1,10 +1,10 @@
-.checked-item{
-    display: flex;
-    width: 100%;
-    margin: 10px;
-    align-items: start !important;
+.checked-item {
+  display: flex;
+  width: 100%;
+  margin: 10px;
+  align-items: flex-start !important;
 }
 
-.checked-item-text{
-    text-align: left;
+.checked-item-text {
+  text-align: left;
 }
