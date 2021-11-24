@@ -16,3 +16,17 @@
 .close {
   transform: translateX(+100%);
 }
+
+.side-drawer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 36px;
+}
+
+.side-drawer-links a {
+  text-decoration-line: underline;
+  text-decoration-color: black;
+  color: black;
+  margin-bottom: 24px;
+}
