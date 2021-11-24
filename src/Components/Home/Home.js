@@ -6,6 +6,7 @@ import "./Home.css"
 import Clients from "../UI/Clients/Clients"
 import Services from "../UI/Services/Services"
 import Toolset from "../UI/Toolset/Toolset"
+import Footer from "../UI/Footer/Footer"
 
 function Home() {
     return (
@@ -35,7 +36,8 @@ function Home() {
                     </p>
             </div>
             <Services />
-            <Toolset/>
+            <Toolset />
+            <Footer />
         </div>
     )
 }
