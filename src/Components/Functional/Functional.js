@@ -37,6 +37,16 @@ function Functional() {
         </p>
         <Button>Get in touch</Button>
       </div>
+      <div>
+        <div className="functional-large-circle">
+          <div style={{position: 'relative', marginTop: "25px"}}>
+            <img src='desktop-two-monitors.png' alt='desktop'></img>
+          </div>
+        </div>
+        <div>
+          <div className="functional-small-circle"></div>
+        </div>
+      </div>
       <div style={{ marginTop: "135px" }}>
         <div className="functional-titles">UNLIMITED SCALE, AT SPEED</div>
 
