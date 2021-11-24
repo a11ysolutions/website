@@ -5,6 +5,7 @@ import FunctionalIlustration from "../UI/FunctionalIlustration/FunctionalIlustra
 import Button from "../UI/Button/Button";
 import Toolset from "../UI/Toolset/Toolset";
 import CheckCard from "../UI/CheckCard/CheckCard";
+import TestingServicesCard from "../UI/TestingServicesCard/TestingServicesCard";
 import "./Functional.css";
 
 function Functional() {
@@ -169,6 +170,46 @@ function Functional() {
           </span>
           We Offer
         </h1>
+        <div style={{ marginTop: "18px" }}>
+          <TestingServicesCard>
+            <p>Smoke testing</p>
+          </TestingServicesCard>
+        </div>
+        <div style={{ marginTop: "18px" }}>
+          <TestingServicesCard>
+            <p>Module / Component testing</p>
+          </TestingServicesCard>
+        </div>
+        <div style={{ marginTop: "18px" }}>
+          <TestingServicesCard>
+            <p>Regression testing</p>
+          </TestingServicesCard>
+        </div>
+        <div style={{ marginTop: "18px" }}>
+          <TestingServicesCard>
+            <p>Integration testing</p>
+          </TestingServicesCard>
+        </div>
+        <div style={{ marginTop: "18px" }}>
+          <TestingServicesCard>
+            <p>Cross-platform testing</p>
+          </TestingServicesCard>
+        </div>
+        <div style={{ marginTop: "18px" }}>
+          <TestingServicesCard>
+            <p>Sanity testing</p>
+          </TestingServicesCard>
+        </div>
+        <div style={{ marginTop: "18px" }}>
+          <TestingServicesCard>
+            <p>UAT testing</p>
+          </TestingServicesCard>
+        </div>
+        <div style={{ marginTop: "18px" }}>
+          <TestingServicesCard>
+            <p>Explorary testing</p>
+          </TestingServicesCard>
+        </div>
       </div>
       <Toolset />
     </div>
