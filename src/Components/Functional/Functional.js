@@ -25,10 +25,15 @@ function Functional() {
           solve your QA <br></br>bottlenecks
         </h1>
         <p>
-          Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea.
+        Without consistently delivering a quality experience, 
+        brands and enterprises can’t fully 
+        guarantee customer satisfaction.
+
+        We help development teams deliver 
+        exceptional products at speed with the best 
+        customer experience. Our functional testing 
+        process is built around your needs, and we 
+        integrate with the tools you already use.
         </p>
         <Button>Get in touch</Button>
       </div>
