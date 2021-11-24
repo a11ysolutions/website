@@ -207,12 +207,12 @@ function Functional() {
           </TestingServicesCard>
         </div>
         <div style={{ marginTop: "18px" }}>
-          <TestingServicesCard icon={<IoPersonCircle/>}>
+          <TestingServicesCard icon={<IoPersonCircle />}>
             <p>UAT testing</p>
           </TestingServicesCard>
         </div>
         <div style={{ marginTop: "18px" }}>
-          <TestingServicesCard icon={<FaSearchPlus/>}>
+          <TestingServicesCard icon={<FaSearchPlus />}>
             <p>Explorary testing</p>
           </TestingServicesCard>
         </div>
