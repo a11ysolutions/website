@@ -129,6 +129,42 @@ function Functional() {
           </AchievementCard>
         </div>
       </div>
+      <div className="functional-header-text-button">
+
+        <div style={{ marginTop: "18px" }}>
+          <CheckCard>
+            <p>
+              Improve customer satisfaction earning the 
+              trust and satisfaction of international users 
+              by ensuring bugs don’t affect their 
+              interactions with your brand and products. 
+            </p>
+          </CheckCard>
+        </div>
+        <div style={{ marginTop: "18px" }}>
+          <CheckCard>
+            <p>
+              Understand bug impact on local users 
+              ensuring end-users feel as though the 
+              products you deliver were built for them.
+            </p>
+          </CheckCard>
+        </div>
+        <div style={{ marginTop: "18px" }}>
+          <CheckCard>
+            <p>
+              Test with real users on real devices for real 
+              results ensuring a consistent user 
+              experience for all end-users giving you a 
+              competitive edge in the oversaturated app 
+              market.
+            </p>
+          </CheckCard>
+        </div>
+        <div style={{ marginTop: "40px" }}>
+          <Button>Get in touch</Button>
+        </div>
+      </div>
       <Toolset />
     </div>
   );
