@@ -165,6 +165,13 @@ function Functional() {
           <Button>Get in touch</Button>
         </div>
       </div>
+      <div>
+        <div className="functional-large-circle">
+          <div style={{position: 'relative', marginTop: "25px"}}>
+            <img src='man-typing.png' alt='desktop'></img>
+          </div>
+        </div>
+      </div>
       <Toolset />
     </div>
   );
