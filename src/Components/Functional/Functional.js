@@ -211,6 +211,11 @@ function Functional() {
           </TestingServicesCard>
         </div>
       </div>
+      <div>
+        <div style={{ position: "relative", marginTop: "25px" }}>
+          <img src="man-typing-and-diagram.png" alt="man typing"></img>
+        </div>
+      </div>
       <Toolset />
     </div>
   );
