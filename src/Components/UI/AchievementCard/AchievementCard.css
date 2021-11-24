@@ -4,8 +4,11 @@
   background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 16px;
   align-items: left;
-  opacity: 1;
   box-shadow: 0px 3px 40px #aaaaaa19;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 18px;
 }
 
 .achievement-card-ellipse {
@@ -13,22 +16,18 @@
   height: 60px;
   background: #f5f5f5 0% 0% no-repeat padding-box;
   border-radius: 50%;
-  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .achievement-card-text-container {
-  width: 224px;
-  height: 68px;
   letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--unnamed-color-000000);
   text-align: left;
-  letter-spacing: 0px;
   color: #000000;
-  opacity: 1;
 }
-
 .achievement-card-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 32.34px;
+  width: 32.34px;
 }

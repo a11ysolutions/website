@@ -6,6 +6,7 @@ import "./Home.css"
 import Clients from "../UI/Clients/Clients"
 import Services from "../UI/Services/Services"
 import Toolset from "../UI/Toolset/Toolset"
+import Qualities from "../UI/Qualities/Qualities"
 
 function Home() {
     return (
@@ -25,7 +26,7 @@ function Home() {
                     </p>
                 <Button>Get in touch</Button>
             </div>
-
+            <Qualities />
             <Clients />
             <div className="home-header-text-button" id="our-services">
                 <h1>Our <span style={{ color: "#0D9E71" }}>services</span></h1>
