@@ -1,7 +1,7 @@
 import React from "react";
 import "./TestingServicesCard.css";
 
-function TestingServicesCard({ children, imgSrc }) {
+function TestingServicesCard({ children, icon }) {
   return (
     <div className="testing-services-card">
       <div
@@ -16,11 +16,9 @@ function TestingServicesCard({ children, imgSrc }) {
           className="testing-services-card-square"
           style={{ justifyContent: "center", alignItems: "center" }}
         >
-          <img
-            src={imgSrc}
-            className="testing-services-card-img"
-            alt="icon"
-          ></img>
+          <div>
+            {icon}
+          </div>
         </div>
         <div
           className="testing-services-card-text-container"

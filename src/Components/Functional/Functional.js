@@ -6,6 +6,12 @@ import Button from "../UI/Button/Button";
 import Toolset from "../UI/Toolset/Toolset";
 import CheckCard from "../UI/CheckCard/CheckCard";
 import TestingServicesCard from "../UI/TestingServicesCard/TestingServicesCard";
+import { MdBugReport } from "react-icons/md";
+import { IoExtensionPuzzle, IoPersonCircle } from "react-icons/io5";
+import { AiOutlineSync } from "react-icons/ai";
+import { GoGear } from "react-icons/go";
+import { FaClipboardList, FaSearchPlus } from "react-icons/fa";
+import { BsShieldFillCheck } from "react-icons/bs";
 import "./Functional.css";
 
 function Functional() {
@@ -171,42 +177,42 @@ function Functional() {
           We Offer
         </h1>
         <div style={{ marginTop: "18px" }}>
-          <TestingServicesCard>
+          <TestingServicesCard icon={<MdBugReport />}>
             <p>Smoke testing</p>
           </TestingServicesCard>
         </div>
         <div style={{ marginTop: "18px" }}>
-          <TestingServicesCard>
+          <TestingServicesCard icon={<IoExtensionPuzzle />}>
             <p>Module / Component testing</p>
           </TestingServicesCard>
         </div>
         <div style={{ marginTop: "18px" }}>
-          <TestingServicesCard>
+          <TestingServicesCard icon={<AiOutlineSync />}>
             <p>Regression testing</p>
           </TestingServicesCard>
         </div>
         <div style={{ marginTop: "18px" }}>
-          <TestingServicesCard>
+          <TestingServicesCard icon={<GoGear />}>
             <p>Integration testing</p>
           </TestingServicesCard>
         </div>
         <div style={{ marginTop: "18px" }}>
-          <TestingServicesCard>
+          <TestingServicesCard icon={<FaClipboardList />}>
             <p>Cross-platform testing</p>
           </TestingServicesCard>
         </div>
         <div style={{ marginTop: "18px" }}>
-          <TestingServicesCard>
+          <TestingServicesCard icon={<BsShieldFillCheck />}>
             <p>Sanity testing</p>
           </TestingServicesCard>
         </div>
         <div style={{ marginTop: "18px" }}>
-          <TestingServicesCard>
+          <TestingServicesCard icon={<IoPersonCircle/>}>
             <p>UAT testing</p>
           </TestingServicesCard>
         </div>
         <div style={{ marginTop: "18px" }}>
-          <TestingServicesCard>
+          <TestingServicesCard icon={<FaSearchPlus/>}>
             <p>Explorary testing</p>
           </TestingServicesCard>
         </div>
