@@ -1,7 +1,7 @@
 import React from "react";
 import "./CheckCard.css";
 
-function CheckCard({ children}) {
+function CheckCard({ children }) {
   return (
     <div className="check-card">
       <div
@@ -16,13 +16,17 @@ function CheckCard({ children}) {
           className="check-card-ellipse"
           style={{ justifyContent: "center", alignItems: "center" }}
         >
-          <img src="check-sign.png" className="check-card-img" alt="check sign"></img>
+          <img
+            src="check-sign.png"
+            className="check-card-img"
+            alt="check sign"
+          ></img>
         </div>
         <div
           className="check-card-text-container"
           style={{ justifyContent: "center", alignItems: "center" }}
         >
-            {children}
+          {children}
         </div>
       </div>
     </div>

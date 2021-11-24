@@ -20,26 +20,26 @@
   width: 256px;
   height: 20px;
 }
-.functional-large-circle{
+.functional-large-circle {
   width: 300px;
   height: 300px;
   border: 24px solid var(--unnamed-color-21ce99);
-  border: 24px solid #21CE99;
+  border: 24px solid #21ce99;
   border-radius: 287px;
   opacity: 1;
 }
-.functional-small-circle{
+.functional-small-circle {
   top: 1924px;
   left: 16px;
   width: 167px;
   height: 167px;
-  border: 40px solid #27DBA419;
+  border: 40px solid #27dba419;
   border-radius: 150px;
   opacity: 1;
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
 }
-.functional-large-image-container{
+.functional-large-image-container {
   width: 249px;
   height: 249px;
   /* background: transparent url('img/linus-mimietz-UzbvepPfb14-unsplash.png') 0% 0% no-repeat padding-box; */
