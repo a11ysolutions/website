@@ -7,6 +7,7 @@ import Clients from "../UI/Clients/Clients"
 import Services from "../UI/Services/Services"
 import Toolset from "../UI/Toolset/Toolset"
 import Qualities from "../UI/Qualities/Qualities"
+import Footer from "../UI/Footer/Footer"
 
 function Home() {
     return (
@@ -37,6 +38,7 @@ function Home() {
             </div>
             <Services />
             <Toolset />
+            <Footer />
         </div>
     )
 }

@@ -1,0 +1,11 @@
+.footer-links{
+    list-style-type: none;
+    padding-left: 0px
+ }
+.footer-nav ul li{
+    padding:1em 0;
+}
+.footer-link{
+    text-decoration: none;
+    color:#fff;
+}
