@@ -14,7 +14,11 @@ function Footer() {
             <SocialLinks />
             <ContactInfo />
             <Form />
-            <div>copyright</div>
+            <div style={{ marginTop: "4em", textAlign: "center" }}>
+                <div>Copyright 2021 <strong>a11ySolutions.</strong></div>
+                <div>All Rights Reserved</div>
+            </div>
+
         </footer>
     )
 }
