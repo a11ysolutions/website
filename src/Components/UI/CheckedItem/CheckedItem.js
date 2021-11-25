@@ -1,12 +1,15 @@
 import "./CheckedItem.css";
-import { FaRegCheckCircle } from "react-icons/fa";
 
 export default function CheckedItem({children, icon}) {
     return (
         <div className="checked-item">
-            {icon ? 
-                <div className='checked-item-icon-container'>{icon}</div> :
-                <FaRegCheckCircle className="checked-item-icon" />}
+            {
+                icon ? 
+                    <div className='checked-item-icon-container'>{icon}</div> :
+                    <div className="checked-sign-container">
+                        <img src="./check-sign.png" alt="Check sign" className="checked-item-icon" />
+                    </div>
+            }
             <div className="checked-item-text">{children}</div>
         </div>
     )

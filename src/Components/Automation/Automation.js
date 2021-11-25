@@ -23,7 +23,7 @@ const ALARM_ICON = <GiAlarmClock className="checked-item-icon"/>;
 
 function Automation() {
     return (
-        <div id='automation-main' className='page-container'>
+        <div id='automation-main' className='page-container' >
             <div className="page-top">
                 <Presentation
                     title="Accelerate Automation with us"
@@ -65,7 +65,12 @@ function Automation() {
                 }}
             >Get in touch</Button>
 
-            {/* !: Image left */}
+            <div className="intermediate-image">
+                <div className="automation-first-encircled-img">
+                    <img src="./tablet-unpash.png" alt="Using a tablet" className="automation-first-image"/>
+                </div>
+                <div className="automation-first-blurred-circle"></div>
+            </div>
 
             <BicolorTitledText
                 color1="#0D9E71"
@@ -91,7 +96,17 @@ function Automation() {
                 }}
             >Get in touch</Button>
 
-            {/* !: Image left */}
+            <div className="intermediate-image">
+                <img src="./women-with-mobile.png" alt="Woman using a mobile and smiling" className="automation-second-image"/>
+                <div className="automation-second-image-container">
+                    <img src="./laptop-and-tablet.png" alt="A laptop and a tablet" className="automation-third-image"/>
+                    <img src="./laptop-and-screen.png" alt="A laptop and a computer screen" className="automation-fourth-image"/>
+                </div>
+                <div className="automation-second-circle-container">
+                    <div className="automation-second-circle" ></div>
+                    <div className="automation-second-blurred-circle"></div>
+                </div>
+            </div>
 
             <BicolorTitledText
                 color1="#0D9E71"
@@ -119,9 +134,16 @@ function Automation() {
                 }}
             >Get in touch</Button>
 
-            {/* !: Image left*/}
-            {/* !: BG color of the section left */}
-            <section style={{width: "100%", padding: "20px", marginTop: "50px", background: "#AAAAAA19 0% 0% no-repeat padding-box"}}> 
+
+            <div className="intermediate-image">
+                <div className="automation-first-encircled-img">
+                    <img src="./laptop-with-code.png" alt="A laptop with programming code written" className="automation-first-image"/>
+                </div>
+                <div className="automation-first-blurred-circle"></div>
+            </div>
+            
+
+            <section style={{width: "100%", padding: "20px", marginTop: "50px", backgroundColor: "#AAAAAA19"}}> 
                 <BicolorTitledText
                     color1="#0D9E71"
                     color2="black"
@@ -135,7 +157,14 @@ function Automation() {
                 <CheckedItem icon={CLIPBOARD_ICON}>Multi-platform testing</CheckedItem>
                 <CheckedItem icon={ALARM_ICON}>Faster time to market</CheckedItem>
 
-                {/* Image left */}
+                <div className="last-image">
+                    <div className="automation-third-circle-container">
+                        <div className="automation-third-circle"></div>
+                        <div className="automation-third-blurred-circle"></div>
+                        <div className="automation-fourth-circle" ></div>
+                    </div>
+                    <img src="./programmer.png" alt="A programmer working in a computer" className="automation-fith-image"/>
+                </div>
             </section>
 
             <Toolset/>
