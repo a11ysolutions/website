@@ -8,23 +8,24 @@ function Form() {
             <form>
                 <h2 style={{ textTransform: "uppercase", fontSize: "1em" }}>Request a consultation from one of our experts</h2>
                 <div className="form-group">
-                    <label for="name" style={{ display: "block" }}>Name*</label>
-                    <input id="name" className="form-input" type="text" autoComplete="name" />
+                    <label for="name" style={{ marginTop: "0em" }}>Name <span className="required">(required)</span></label>
+                    <input id="name" className="form-input error" type="text" autoComplete="name" />
+                    <div id="name-error" className="error-message">Please enter a name</div>
                 </div>
                 <div className="form-group">
-                    <label for="company-name" style={{ display: "block" }}>Company name*</label>
+                    <label for="company-name" >Company name<span className="required"> (required)</span></label>
                     <input id="company-name" className="form-input" type="text" />
                 </div>
                 <div className="form-group">
-                    <label for="email" style={{ display: "block" }}>Email*</label>
+                    <label for="email" >Email<span className="required"> (required)</span></label>
                     <input id="email" className="form-input" type="email" autoComplete="email" />
                 </div>
                 <div className="form-group">
-                    <label for="phone-number" style={{ display: "block" }}>Phone number*</label>
+                    <label for="phone-number" >Phone number<span className="required"> (required)</span></label>
                     <input id="phone-number" className="form-input" type="text" autoComplete="phone" />
                 </div>
                 <div className="form-group">
-                    <label for="message" style={{ display: "block" }}>Message</label>
+                    <label for="message" >Message</label>
                     <textarea id="message" className="form-input" type="text" />
                 </div>
                 <div className="form-group" style={{ textAlign: "center" }}>
