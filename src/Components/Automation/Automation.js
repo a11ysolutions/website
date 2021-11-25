@@ -58,11 +58,7 @@ function Automation() {
             <CheckedItem>Build test automation environment rapidly</CheckedItem>
 
             <Button
-                style={{
-                    alignSelf: "start",
-                    marginTop: "30px",
-                    marginLeft: "20px"
-                }}
+                className="automation"
             >Get in touch</Button>
 
             <div className="intermediate-image">
@@ -89,11 +85,7 @@ function Automation() {
             <CheckedItem>With our help, you will become Proactive instead of Reactive</CheckedItem>
 
             <Button
-                style={{
-                    alignSelf: "start",
-                    marginTop: "30px",
-                    marginLeft: "20px"
-                }}
+                className="automation"
             >Get in touch</Button>
 
             <div className="intermediate-image">
@@ -127,11 +119,7 @@ function Automation() {
 
 
             <Button
-                style={{
-                    alignSelf: "start",
-                    marginTop: "30px",
-                    marginLeft: "20px"
-                }}
+                className="automation"
             >Get in touch</Button>
 
 
@@ -148,7 +136,7 @@ function Automation() {
                     color1="#0D9E71"
                     color2="black"
                     color1Text="Functional Testing Services"
-                    color2Text="We Offered"
+                    color2Text="We Offer"
                 ></BicolorTitledText>
 
                 <CheckedItem icon={TRENDING_ICON} >Reduce Regression Cost</CheckedItem>
