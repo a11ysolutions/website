@@ -6,7 +6,20 @@ import Illustration from "../UI/Illustration/Illustration"
 import Presentation from "../UI/Presentation/Presentation"
 import Toolset from "../UI/Toolset/Toolset"
 
+import {FiTrendingDown} from "react-icons/fi"
+import {AiFillCheckCircle, AiFillStar} from "react-icons/ai"
+import {FaClipboardList} from "react-icons/fa"
+import {GiAlarmClock} from "react-icons/gi"
+
+
 import "./Automation.css";
+
+
+const TRENDING_ICON = <FiTrendingDown className="checked-item-icon"/>;
+const CHECKED_ICON = <AiFillCheckCircle className="checked-item-icon"/>;
+const STAR_ICON = <AiFillStar className="checked-item-icon"/>;
+const CLIPBOARD_ICON = <FaClipboardList className="checked-item-icon"/>;
+const ALARM_ICON = <GiAlarmClock className="checked-item-icon"/>;
 
 function Automation() {
     return (
@@ -22,7 +35,12 @@ function Automation() {
                     buttonText="Get a free consultation" />
                 
             </div>
-            <Illustration pillText="Automation" />
+            <Illustration
+                pillText="Automation"
+                imgSrc="./working-code.png"
+                containerStyle={{ position: "relative", marginTop: "50px" }}
+                pillPosition={{ top: "-40px", left: "170px" }}
+            />
 
             <BicolorTitledText
                 color1="#0D9E71"
@@ -103,7 +121,7 @@ function Automation() {
 
             {/* !: Image left*/}
             {/* !: BG color of the section left */}
-            <section style={{width: "100%", marginTop: "50px", padding: "30px 20px", backgroundColor: "#ccccc"}}> 
+            <section style={{width: "100%", padding: "20px", marginTop: "50px", background: "#AAAAAA19 0% 0% no-repeat padding-box"}}> 
                 <BicolorTitledText
                     color1="#0D9E71"
                     color2="black"
@@ -111,11 +129,11 @@ function Automation() {
                     color2Text="We Offered"
                 ></BicolorTitledText>
 
-                <CheckedItem>Reduce Regression Cost</CheckedItem>
-                <CheckedItem>Better Testing Quality</CheckedItem>
-                <CheckedItem>Better Resource utilization</CheckedItem>
-                <CheckedItem>Multi-platform testing</CheckedItem>
-                <CheckedItem>Faster time to market</CheckedItem>
+                <CheckedItem icon={TRENDING_ICON} >Reduce Regression Cost</CheckedItem>
+                <CheckedItem icon={CHECKED_ICON}>Better Testing Quality</CheckedItem>
+                <CheckedItem icon={STAR_ICON}>Better Resource utilization</CheckedItem>
+                <CheckedItem icon={CLIPBOARD_ICON}>Multi-platform testing</CheckedItem>
+                <CheckedItem icon={ALARM_ICON}>Faster time to market</CheckedItem>
 
                 {/* Image left */}
             </section>

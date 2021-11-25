@@ -1,10 +1,35 @@
 .checked-item {
   display: flex;
+  flex-direction: row;
   width: 100%;
   margin: 10px;
-  align-items: flex-start !important;
+  align-items: center !important;
 }
 
 .checked-item-text {
   text-align: left;
+  margin-left: 30px;
+}
+
+.checked-item-icon {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  align-self: flex-start;
+}
+
+.checked-item-icon-container{
+  width: 51px;
+  height: 51px;
+  background: var(--unnamed-color-21ce99) 0% 0% no-repeat padding-box;
+  background: #21CE99 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.checked-item-icon-container .checked-item-icon{
+  align-self: center;
 }
