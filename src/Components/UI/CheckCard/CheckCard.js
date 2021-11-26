@@ -14,7 +14,6 @@ function CheckCard({ children }) {
       >
         <div
           className="check-card-ellipse"
-          style={{ justifyContent: "center", alignItems: "center" }}
         >
           <img
             src="check-sign.png"
@@ -24,7 +23,6 @@ function CheckCard({ children }) {
         </div>
         <div
           className="check-card-text-container"
-          style={{ justifyContent: "center", alignItems: "center" }}
         >
           {children}
         </div>

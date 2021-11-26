@@ -15,6 +15,9 @@
   background: #21ce99 0% 0% no-repeat padding-box;
   border-radius: 13px;
   opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .check-card-text-container {
