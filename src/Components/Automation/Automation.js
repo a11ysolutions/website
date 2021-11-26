@@ -6,11 +6,24 @@ import Illustration from "../UI/Illustration/Illustration"
 import Presentation from "../UI/Presentation/Presentation"
 import Toolset from "../UI/Toolset/Toolset"
 
+import {FiTrendingDown} from "react-icons/fi"
+import {AiFillCheckCircle, AiFillStar} from "react-icons/ai"
+import {FaClipboardList} from "react-icons/fa"
+import {GiAlarmClock} from "react-icons/gi"
+
+
 import "./Automation.css";
+
+
+const TRENDING_ICON = <FiTrendingDown className="checked-item-icon"/>;
+const CHECKED_ICON = <AiFillCheckCircle className="checked-item-icon"/>;
+const STAR_ICON = <AiFillStar className="checked-item-icon"/>;
+const CLIPBOARD_ICON = <FaClipboardList className="checked-item-icon"/>;
+const ALARM_ICON = <GiAlarmClock className="checked-item-icon"/>;
 
 function Automation() {
     return (
-        <div id='automation-main' className='page-container'>
+        <div id='automation-main' className='page-container' >
             <div className="page-top">
                 <Presentation
                     title="Accelerate Automation with us"
@@ -22,7 +35,12 @@ function Automation() {
                     buttonText="Get a free consultation" />
                 
             </div>
-            <Illustration pillText="Automation" />
+            <Illustration
+                pillText="Automation"
+                imgSrc="./working-code.png"
+                containerStyle={{ position: "relative", marginTop: "50px" }}
+                pillPosition={{ top: "-40px", left: "170px" }}
+            />
 
             <BicolorTitledText
                 color1="#0D9E71"
@@ -40,14 +58,15 @@ function Automation() {
             <CheckedItem>Build test automation environment rapidly</CheckedItem>
 
             <Button
-                style={{
-                    alignSelf: "start",
-                    marginTop: "30px",
-                    marginLeft: "20px"
-                }}
+                className="automation"
             >Get in touch</Button>
 
-            {/* !: Image left */}
+            <div className="intermediate-image">
+                <div className="automation-first-encircled-img">
+                    <img src="./tablet-unpash.png" alt="Using a tablet" className="automation-first-image"/>
+                </div>
+                <div className="automation-first-blurred-circle"></div>
+            </div>
 
             <BicolorTitledText
                 color1="#0D9E71"
@@ -66,14 +85,20 @@ function Automation() {
             <CheckedItem>With our help, you will become Proactive instead of Reactive</CheckedItem>
 
             <Button
-                style={{
-                    alignSelf: "start",
-                    marginTop: "30px",
-                    marginLeft: "20px"
-                }}
+                className="automation"
             >Get in touch</Button>
 
-            {/* !: Image left */}
+            <div className="intermediate-image">
+                <img src="./women-with-mobile.png" alt="Woman using a mobile and smiling" className="automation-second-image"/>
+                <div className="automation-second-image-container">
+                    <img src="./laptop-and-tablet.png" alt="A laptop and a tablet" className="automation-third-image"/>
+                    <img src="./laptop-and-screen.png" alt="A laptop and a computer screen" className="automation-fourth-image"/>
+                </div>
+                <div className="automation-second-circle-container">
+                    <div className="automation-second-circle" ></div>
+                    <div className="automation-second-blurred-circle"></div>
+                </div>
+            </div>
 
             <BicolorTitledText
                 color1="#0D9E71"
@@ -94,30 +119,40 @@ function Automation() {
 
 
             <Button
-                style={{
-                    alignSelf: "start",
-                    marginTop: "30px",
-                    marginLeft: "20px"
-                }}
+                className="automation"
             >Get in touch</Button>
 
-            {/* !: Image left*/}
-            {/* !: BG color of the section left */}
-            <section style={{width: "100%", marginTop: "50px", padding: "30px 20px", backgroundColor: "#ccccc"}}> 
+
+            <div className="intermediate-image">
+                <div className="automation-first-encircled-img">
+                    <img src="./laptop-with-code.png" alt="A laptop with programming code written" className="automation-first-image"/>
+                </div>
+                <div className="automation-first-blurred-circle"></div>
+            </div>
+            
+
+            <section style={{width: "100%", padding: "20px", marginTop: "50px", backgroundColor: "#AAAAAA19"}}> 
                 <BicolorTitledText
                     color1="#0D9E71"
                     color2="black"
                     color1Text="Functional Testing Services"
-                    color2Text="We Offered"
+                    color2Text="We Offer"
                 ></BicolorTitledText>
 
-                <CheckedItem>Reduce Regression Cost</CheckedItem>
-                <CheckedItem>Better Testing Quality</CheckedItem>
-                <CheckedItem>Better Resource utilization</CheckedItem>
-                <CheckedItem>Multi-platform testing</CheckedItem>
-                <CheckedItem>Faster time to market</CheckedItem>
+                <CheckedItem icon={TRENDING_ICON} >Reduce Regression Cost</CheckedItem>
+                <CheckedItem icon={CHECKED_ICON}>Better Testing Quality</CheckedItem>
+                <CheckedItem icon={STAR_ICON}>Better Resource utilization</CheckedItem>
+                <CheckedItem icon={CLIPBOARD_ICON}>Multi-platform testing</CheckedItem>
+                <CheckedItem icon={ALARM_ICON}>Faster time to market</CheckedItem>
 
-                {/* Image left */}
+                <div className="last-image">
+                    <div className="automation-third-circle-container">
+                        <div className="automation-third-circle"></div>
+                        <div className="automation-third-blurred-circle"></div>
+                        <div className="automation-fourth-circle" ></div>
+                    </div>
+                    <img src="./programmer.png" alt="A programmer working in a computer" className="automation-fith-image"/>
+                </div>
             </section>
 
             <Toolset/>

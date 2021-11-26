@@ -5,16 +5,7 @@ import "./Presentation.css";
 function Presentation({title, texts, buttonText}) {
   return (
     <div className="presentation-main">
-        <h1
-        style={{
-            width: "248px",
-            fontWeight: "bold",
-            fontSize: "48px",
-            marginBottom: "16px",
-        }}
-        >
-        {title}
-        </h1>
+        <h1>{title}</h1>
 
         {
             texts.map((text, index) => {

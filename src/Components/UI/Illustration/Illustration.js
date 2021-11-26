@@ -2,20 +2,20 @@ import React from "react";
 import Pill from "../Pill/Pill";
 import "./Illustration.css";
 
-function Illustration({pillText}) {
+function Illustration({pillText, imgSrc, containerStyle, pillPosition}) {
   return (
     <div className="illustration-container">  
-        <div className="ilustration-main">
-            <div style={{ position: "relative", marginTop: "50px" }}>
+        <div className="illustration-main">
+            <div style={containerStyle}>
                 <img
-                src="/desktop.png"
-                className="functional-ilustration"
+                src={imgSrc}
+                className="illustration"
                 alt="desktop"
                 />
 
-                <Pill position={{ top: "-40px", left: "170px" }}>{pillText}</Pill>
-                <div className="ilustration-small-circle"></div>
-                <div className="ilustration-large-circle"></div>
+                <Pill position={pillPosition}>{pillText}</Pill>
+                <div className="illustration-small-circle"></div>
+                <div className="illustration-large-circle"></div>
             </div>
         </div>
     </div>

@@ -1,5 +1,5 @@
 .layout-content {
-  padding: 16px;
+  padding: 16px 16px 0 16px;
   background: linear-gradient(#21ce99 1100px, white 25%);
   overflow-x: hidden !important;
 }
