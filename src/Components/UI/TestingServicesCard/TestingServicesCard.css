@@ -15,6 +15,9 @@
   background: #21ce99 0% 0% no-repeat padding-box;
   border-radius: 8px;
   opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .testing-services-card-text-container {
@@ -29,4 +32,7 @@
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

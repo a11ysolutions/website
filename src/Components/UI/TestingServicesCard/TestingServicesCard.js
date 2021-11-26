@@ -20,7 +20,6 @@ function TestingServicesCard({ children, icon }) {
         </div>
         <div
           className="testing-services-card-text-container"
-          style={{ justifyContent: "center", alignItems: "center" }}
         >
           {children}
         </div>
