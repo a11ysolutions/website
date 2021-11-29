@@ -6,6 +6,7 @@ import Button from "../UI/Button/Button";
 import Toolset from "../UI/Toolset/Toolset";
 import CheckCard from "../UI/CheckCard/CheckCard";
 import TestingServicesCard from "../UI/TestingServicesCard/TestingServicesCard";
+import Footer from "../UI/Footer/Footer"
 import { MdBugReport } from "react-icons/md";
 import { IoExtensionPuzzle, IoPersonCircle } from "react-icons/io5";
 import { AiOutlineSync } from "react-icons/ai";
@@ -235,6 +236,7 @@ function Functional() {
         </div>
       </div>
       <Toolset />
+      <Footer />
     </div>
   );
 }

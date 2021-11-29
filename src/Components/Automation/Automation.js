@@ -5,6 +5,7 @@ import CheckedItem from "../UI/CheckedItem/CheckedItem"
 import Illustration from "../UI/Illustration/Illustration"
 import Presentation from "../UI/Presentation/Presentation"
 import Toolset from "../UI/Toolset/Toolset"
+import Footer from "../UI/Footer/Footer"
 
 import {FiTrendingDown} from "react-icons/fi"
 import {AiFillCheckCircle, AiFillStar} from "react-icons/ai"
@@ -156,6 +157,7 @@ function Automation() {
             </section>
 
             <Toolset/>
+            <Footer/>
                 
         </div>
     )
