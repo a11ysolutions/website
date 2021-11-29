@@ -59,7 +59,13 @@ function Functional() {
           </span>
           today? <br></br>
         </h1>
-
+        <div className="functional-titles">
+          <p>
+            ELEVATE YOUR DIGITAL <br></br>
+            EXPERIENCE WITH UNBEATABLE <br></br>
+            QUALITY AND COVERAGE
+          </p>
+        </div>
         <div style={{ marginTop: "18px" }}>
           <CheckCard>
             <p>
@@ -132,6 +138,12 @@ function Functional() {
         </div>
       </div>
       <div className="functional-header-text-button">
+      <div className="functional-titles">
+          <p>
+            DELIVER GLOBAL RELEASES <br></br>
+            THAT DELIGHT USERS
+          </p>
+        </div>
         <div style={{ marginTop: "18px" }}>
           <CheckCard>
             <p>
