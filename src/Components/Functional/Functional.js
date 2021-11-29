@@ -26,6 +26,7 @@ function Functional() {
           <FunctionalIlustration />
         </div>
       </div>
+      
       <div className="functional-header-text-button">
         <h1>
           <span style={{ color: "#0D9E71" }}>
@@ -35,8 +36,8 @@ function Functional() {
         </h1>
         <p>
           Without consistently delivering a quality experience, brands and
-          enterprises can’t fully guarantee customer satisfaction. We help
-          development teams deliver exceptional products at speed with the best
+          enterprises can’t fully guarantee customer satisfaction. <br></br>
+          We help development teams deliver exceptional products at speed with the best
           customer experience. Our functional testing process is built around
           your needs, and we integrate with the tools you already use.
         </p>
@@ -175,11 +176,12 @@ function Functional() {
           <Button>Get in touch</Button>
         </div>
       </div>
-      <div>
+      <div className="intermediate-image">
         <div className="functional-large-circle">
-          <div style={{ position: "relative", marginTop: "25px" }}>
             <img src="man-typing.png" alt="desktop"></img>
-          </div>
+        </div>
+        <div>
+          <div className="functional-small-circle"></div>
         </div>
       </div>
       <div className="functional-header-text-button">
