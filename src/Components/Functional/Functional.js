@@ -6,7 +6,7 @@ import Button from "../UI/Button/Button";
 import Toolset from "../UI/Toolset/Toolset";
 import CheckCard from "../UI/CheckCard/CheckCard";
 import TestingServicesCard from "../UI/TestingServicesCard/TestingServicesCard";
-import Footer from "../UI/Footer/Footer"
+import Footer from "../UI/Footer/Footer";
 import { MdBugReport } from "react-icons/md";
 import { IoExtensionPuzzle, IoPersonCircle } from "react-icons/io5";
 import { AiOutlineSync } from "react-icons/ai";
@@ -42,16 +42,16 @@ function Functional() {
         </p>
         <Button>Get in touch</Button>
       </div>
-      <div>
+
+      <div className="intermediate-image">
         <div className="functional-large-circle">
-          <div style={{ position: "relative", marginTop: "25px" }}>
-            <img src="desktop-two-monitors.png" alt="desktop"></img>
-          </div>
+          <img src="desktop-two-monitors.png" alt="desktop"></img>
         </div>
         <div>
           <div className="functional-small-circle"></div>
         </div>
       </div>
+
       <div className="functional-header-text-button">
         <h1>
           What can{" "}
@@ -139,7 +139,7 @@ function Functional() {
         </div>
       </div>
       <div className="functional-header-text-button">
-      <div className="functional-titles">
+        <div className="functional-titles">
           <p>
             DELIVER GLOBAL RELEASES <br></br>
             THAT DELIGHT USERS
