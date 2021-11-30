@@ -33,7 +33,11 @@ function SideDrawer({ show, onClose }) {
                 <a onClick={onClose} href="/#why-choose-us">Services Politics</a>
                 <a onClick={onClose} href="/#why-choose-us">Terms and Conditions</a>
                 <div>
-                    <Button>Contact us</Button>
+                    <Button
+                        onClick={() => { window.location.href = "#contact-us"; onClose() }}
+                    >
+                        Contact us
+                        </Button>
                 </div>
             </div>
         </div>

@@ -8,7 +8,7 @@ import SocialLinks from "../SocialLinks/SocialLinks"
 
 function Footer() {
     return (
-        <footer className="footer" style={{}}>
+        <footer className="footer" id="footer">
             <Logo color="green" />
             <FooterLinks />
             <SocialLinks />

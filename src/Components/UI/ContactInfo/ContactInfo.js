@@ -4,7 +4,7 @@ import "./ContactInfo.css"
 
 function ContactInfo() {
     return (
-        <div style={{ marginTop: "4em" }}>
+        <div style={{ marginTop: "4em" }} id="contact-us">
             <h2 style={{ textTransform: "uppercase", fontSize: "1em" }}>Contact us</h2>
             <div className="contact-info-item">+1 (407) 535-1932</div>
             <div className="contact-info-item">a11ycontact.info@gmail.com</div>

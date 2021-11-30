@@ -1,10 +1,10 @@
-.footer{
-    width:100%;
-    margin:1.5em 1.5em 0 1.5em ;
-    padding-top:6em;
-    padding-left:3em;
-    padding-bottom: 4em;
-    background-color:#000;
-    color:#E6E6E6;
-    text-align:left;
+.footer {
+  /* width: 100%; */
+  /* margin: 1.5em 1.5em 0 1.5em; */
+  padding-top: 6em;
+  padding-left: 3em;
+  padding-bottom: 4em;
+  background-color: #000;
+  color: #e6e6e6;
+  text-align: left;
 }
