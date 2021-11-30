@@ -10,6 +10,7 @@
   text-align: left;
   margin-left: 30px;
   margin-top: 4px;
+  max-width: 400px;
 }
 
 .checked-item-icon {
@@ -52,6 +53,6 @@
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .checked-item {
-    margin-left: 230px;
+    margin-left: 112px;
   }
 }

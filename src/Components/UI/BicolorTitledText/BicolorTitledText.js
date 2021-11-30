@@ -11,9 +11,9 @@ function BicolorTitledText({color1, color2, color1Text, color2Text, children}) {
                 </span><br />
                 {color2Text}
             </h1>
-            <p>
+            <div>
             {children}
-            </p>
+            </div>
         </div>
     )
 }
