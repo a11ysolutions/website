@@ -13,6 +13,7 @@ import { GoGear } from "react-icons/go";
 import { FaClipboardList, FaSearchPlus } from "react-icons/fa";
 import { BsShieldFillCheck } from "react-icons/bs";
 import "./Functional.css";
+import { scrollToContactForm } from "../Utils/Utils";
 
 function Functional() {
   return (
@@ -40,7 +41,7 @@ function Functional() {
           customer experience. Our functional testing process is built around
           your needs, and we integrate with the tools you already use.
         </p>
-        <Button>Get in touch</Button>
+        <Button onClick={scrollToContactForm}>Get in touch</Button>
       </div>
 
       <div className="intermediate-image">
@@ -100,7 +101,7 @@ function Functional() {
             </p>
           </CheckCard>
         </div>
-        <Button>Get in touch</Button>
+        <Button onClick={scrollToContactForm}>Get in touch</Button>
       </div>
       <div style={{ marginTop: "135px" }}>
         <div className="functional-titles">UNLIMITED SCALE, AT SPEED</div>
@@ -172,7 +173,7 @@ function Functional() {
           </CheckCard>
         </div>
         <div style={{ marginTop: "40px" }}>
-          <Button>Get in touch</Button>
+          <Button onClick={scrollToContactForm}>Get in touch</Button>
         </div>
       </div>
       <div className="intermediate-image">

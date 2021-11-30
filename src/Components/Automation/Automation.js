@@ -5,22 +5,22 @@ import CheckedItem from "../UI/CheckedItem/CheckedItem"
 import Illustration from "../UI/Illustration/Illustration"
 import Presentation from "../UI/Presentation/Presentation"
 import Toolset from "../UI/Toolset/Toolset"
-import Footer from "../UI/Footer/Footer"
 
-import {FiTrendingDown} from "react-icons/fi"
-import {AiFillCheckCircle, AiFillStar} from "react-icons/ai"
-import {FaClipboardList} from "react-icons/fa"
-import {GiAlarmClock} from "react-icons/gi"
+import { FiTrendingDown } from "react-icons/fi"
+import { AiFillCheckCircle, AiFillStar } from "react-icons/ai"
+import { FaClipboardList } from "react-icons/fa"
+import { GiAlarmClock } from "react-icons/gi"
 
 
 import "./Automation.css";
+import { scrollToContactForm } from "../Utils/Utils"
 
 
-const TRENDING_ICON = <FiTrendingDown className="checked-item-icon"/>;
-const CHECKED_ICON = <AiFillCheckCircle className="checked-item-icon"/>;
-const STAR_ICON = <AiFillStar className="checked-item-icon"/>;
-const CLIPBOARD_ICON = <FaClipboardList className="checked-item-icon"/>;
-const ALARM_ICON = <GiAlarmClock className="checked-item-icon"/>;
+const TRENDING_ICON = <FiTrendingDown className="checked-item-icon" />;
+const CHECKED_ICON = <AiFillCheckCircle className="checked-item-icon" />;
+const STAR_ICON = <AiFillStar className="checked-item-icon" />;
+const CLIPBOARD_ICON = <FaClipboardList className="checked-item-icon" />;
+const ALARM_ICON = <GiAlarmClock className="checked-item-icon" />;
 
 function Automation() {
     return (
@@ -34,7 +34,7 @@ function Automation() {
                         "faster speed to market"
                     ]}
                     buttonText="Get a free consultation" />
-                
+
             </div>
             <Illustration
                 pillText="Automation"
@@ -60,11 +60,12 @@ function Automation() {
 
             <Button
                 className="automation"
+                onClick={scrollToContactForm}
             >Get in touch</Button>
 
             <div className="intermediate-image">
                 <div className="automation-first-encircled-img">
-                    <img src="./tablet-unpash.png" alt="Using a tablet" className="automation-first-image"/>
+                    <img src="./tablet-unpash.png" alt="Using a tablet" className="automation-first-image" />
                 </div>
                 <div className="automation-first-blurred-circle"></div>
             </div>
@@ -87,13 +88,14 @@ function Automation() {
 
             <Button
                 className="automation"
+                onClick={scrollToContactForm}
             >Get in touch</Button>
 
             <div className="intermediate-image">
-                <img src="./women-with-mobile.png" alt="Woman using a mobile and smiling" className="automation-second-image"/>
+                <img src="./women-with-mobile.png" alt="Woman using a mobile and smiling" className="automation-second-image" />
                 <div className="automation-second-image-container">
-                    <img src="./laptop-and-tablet.png" alt="A laptop and a tablet" className="automation-third-image"/>
-                    <img src="./laptop-and-screen.png" alt="A laptop and a computer screen" className="automation-fourth-image"/>
+                    <img src="./laptop-and-tablet.png" alt="A laptop and a tablet" className="automation-third-image" />
+                    <img src="./laptop-and-screen.png" alt="A laptop and a computer screen" className="automation-fourth-image" />
                 </div>
                 <div className="automation-second-circle-container">
                     <div className="automation-second-circle" ></div>
@@ -121,18 +123,19 @@ function Automation() {
 
             <Button
                 className="automation"
+                onClick={scrollToContactForm}
             >Get in touch</Button>
 
 
             <div className="intermediate-image">
                 <div className="automation-first-encircled-img">
-                    <img src="./laptop-with-code.png" alt="A laptop with programming code written" className="automation-first-image"/>
+                    <img src="./laptop-with-code.png" alt="A laptop with programming code written" className="automation-first-image" />
                 </div>
                 <div className="automation-first-blurred-circle"></div>
             </div>
-            
 
-            <section style={{width: "100%", padding: "20px", marginTop: "50px", backgroundColor: "#AAAAAA19"}}> 
+
+            <section style={{ width: "100%", padding: "20px", marginTop: "50px", backgroundColor: "#AAAAAA19" }}>
                 <BicolorTitledText
                     color1="#0D9E71"
                     color2="black"
@@ -152,13 +155,11 @@ function Automation() {
                         <div className="automation-third-blurred-circle"></div>
                         <div className="automation-fourth-circle" ></div>
                     </div>
-                    <img src="./programmer.png" alt="A programmer working in a computer" className="automation-fith-image"/>
+                    <img src="./programmer.png" alt="A programmer working in a computer" className="automation-fith-image" />
                 </div>
             </section>
 
-            <Toolset/>
-            <Footer/>
-                
+            <Toolset />
         </div>
     )
 }

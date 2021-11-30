@@ -1,6 +1,7 @@
 import React from "react"
 import Button from "../Button/Button"
 import "./PresentationSign.css"
+import { scrollToContactForm } from "../../Utils/Utils"
 
 function PresentationSign() {
     return <div className="presentation-sign">
@@ -9,7 +10,7 @@ function PresentationSign() {
         <text>We are committed to delivering </text>
         <text>your product with the best quality ever.</text>
 
-        <Button size="large" style={{ marginTop: "24px" }}>
+        <Button size="large" style={{ marginTop: "24px" }} onClick={scrollToContactForm}>
             Get a free consultation
         </Button>
     </div>
