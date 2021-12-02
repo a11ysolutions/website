@@ -32,7 +32,7 @@ function SideDrawer({ show, onClose }) {
                 <a onClick={onClose} href="/#clients">Clients</a>
                 <a onClick={onClose} href="/#why-choose-us">Services Politics</a>
                 <a onClick={onClose} href="/#why-choose-us">Terms and Conditions</a>
-                <div>
+                <div className="side-drawer-button">
                     <Button
                         onClick={() => { window.location.href = "#contact-us"; onClose() }}
                     >

@@ -1,4 +1,11 @@
 .toggle-menu-btn {
   background: none;
   border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  .toggle-menu-btn {
+    display: none;
+  }
 }
