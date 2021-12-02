@@ -6,20 +6,21 @@ import Illustration from "../UI/Illustration/Illustration"
 import Presentation from "../UI/Presentation/Presentation"
 import Toolset from "../UI/Toolset/Toolset"
 
-import {FiTrendingDown} from "react-icons/fi"
-import {AiFillCheckCircle, AiFillStar} from "react-icons/ai"
-import {FaClipboardList} from "react-icons/fa"
-import {GiAlarmClock} from "react-icons/gi"
+import { FiTrendingDown } from "react-icons/fi"
+import { AiFillCheckCircle, AiFillStar } from "react-icons/ai"
+import { FaClipboardList } from "react-icons/fa"
+import { GiAlarmClock } from "react-icons/gi"
 
 
 import "./Automation.css";
+import { scrollToContactForm } from "../Utils/Utils"
 
 
-const TRENDING_ICON = <FiTrendingDown className="checked-item-icon"/>;
-const CHECKED_ICON = <AiFillCheckCircle className="checked-item-icon"/>;
-const STAR_ICON = <AiFillStar className="checked-item-icon"/>;
-const CLIPBOARD_ICON = <FaClipboardList className="checked-item-icon"/>;
-const ALARM_ICON = <GiAlarmClock className="checked-item-icon"/>;
+const TRENDING_ICON = <FiTrendingDown className="checked-item-icon" />;
+const CHECKED_ICON = <AiFillCheckCircle className="checked-item-icon" />;
+const STAR_ICON = <AiFillStar className="checked-item-icon" />;
+const CLIPBOARD_ICON = <FaClipboardList className="checked-item-icon" />;
+const ALARM_ICON = <GiAlarmClock className="checked-item-icon" />;
 
 function Automation() {
     return (
@@ -33,7 +34,7 @@ function Automation() {
                         "faster speed to market"
                     ]}
                     buttonText="Get a free consultation" />
-                
+
             </div>
             <Illustration
                 pillText="Automation"
@@ -165,12 +166,11 @@ function Automation() {
                         <div className="automation-third-blurred-circle"></div>
                         <div className="automation-fourth-circle" ></div>
                     </div>
-                    <img src="./programmer.png" alt="A programmer working in a computer" className="automation-fith-image"/>
+                    <img src="./programmer.png" alt="A programmer working in a computer" className="automation-fith-image" />
                 </div>
             </section>
 
-            <Toolset/>
-                
+            <Toolset />
         </div>
     )
 }

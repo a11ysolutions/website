@@ -1,103 +1,124 @@
 import React from "react";
 import AchievementCard from "../UI/AchievementCard/AchievementCard";
-import FunctionalPresentationSign from "../UI/FunctionalPresentationSign/FunctionalPresentationSign";
-import FunctionalIlustration from "../UI/FunctionalIlustration/FunctionalIlustration";
+import BicolorTitledText from "../UI/BicolorTitledText/BicolorTitledText"
+import Presentation from "../UI/Presentation/Presentation"
+import Illustration from "../UI/Illustration/Illustration"
 import Button from "../UI/Button/Button";
 import Toolset from "../UI/Toolset/Toolset";
-import CheckCard from "../UI/CheckCard/CheckCard";
-import TestingServicesCard from "../UI/TestingServicesCard/TestingServicesCard";
+import CheckedItem from "../UI/CheckedItem/CheckedItem"
+
 import { MdBugReport } from "react-icons/md";
 import { IoExtensionPuzzle, IoPersonCircle } from "react-icons/io5";
 import { AiOutlineSync } from "react-icons/ai";
 import { GoGear } from "react-icons/go";
 import { FaClipboardList, FaSearchPlus } from "react-icons/fa";
 import { BsShieldFillCheck } from "react-icons/bs";
+
 import "./Functional.css";
+import { scrollToContactForm } from "../Utils/Utils";
+
+
+const BUG_ICON = <MdBugReport className="checked-item-icon" />;
+const PUZZLE_ICON = <IoExtensionPuzzle className="checked-item-icon" />;
+const PERSON_ICON = <IoPersonCircle className="checked-item-icon" />;
+const SYNC_ICON = <AiOutlineSync className="checked-item-icon" />;
+const GEAR_ICON = <GoGear className="checked-item-icon" />;
+const CLIPBOARD_ICON = <FaClipboardList className="checked-item-icon" />;
+const SEARCH_ICON = <FaSearchPlus className="checked-item-icon" />;
+const SHIELD_ICON = <BsShieldFillCheck className="checked-item-icon" />;
 
 function Functional() {
   return (
-    <div
-      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
-    >
-      <div style={{ marginTop: "135px" }}>
-        <FunctionalPresentationSign />
-        <div style={{ alignSelf: "center", marginTop: "90px" }}>
-          <FunctionalIlustration />
-        </div>
+    <div id='functional-main' className='page-container' >
+      <div className="page-top">
+        <Presentation
+            title="Scalable Functional Testing Services"
+            texts={[
+                "Discover how you can instantly and",
+                "effortlessly find the bugs impacting",
+                "your users enabling you to release",
+                "high-quality at speed."   
+            ]}
+            buttonText="Get a free consultation" />
       </div>
-      <div className="functional-header-text-button">
-        <h1>
-          <span style={{ color: "#0D9E71" }}>
-            Our expert advice <br></br>can help you <br></br>
-          </span>
-          solve your QA <br></br>bottlenecks
-        </h1>
-        <p>
-          Without consistently delivering a quality experience, brands and
-          enterprises can’t fully guarantee customer satisfaction. We help
-          development teams deliver exceptional products at speed with the best
-          customer experience. Our functional testing process is built around
-          your needs, and we integrate with the tools you already use.
-        </p>
-        <Button>Get in touch</Button>
-      </div>
-      <div>
-        <div className="functional-large-circle">
-          <div style={{ position: "relative", marginTop: "25px" }}>
-            <img src="desktop-two-monitors.png" alt="desktop"></img>
+
+      <Illustration
+          pillText="Functionality"
+          imgSrc="./desktop.png"
+          containerStyle={{ position: "relative", marginTop: "50px" }}
+          pillPosition={{ top: "-40px", left: "170px" }}
+      />
+
+      <BicolorTitledText
+          color1="#0D9E71"
+          color2="black"
+          color1Text="Our expert advice can help you"
+          color2Text="solve your QA bottlenecks"
+      >
+          Without consistently delivering a quality 
+          experience, brands and enterprises can’t fully 
+          guarantee customer satisfaction. 
+          
+          We help development teams deliver 
+          exceptional products at speed with the best 
+          customer experience. Our functional testing 
+          process is built around your needs, and we 
+          integrate with the tools you already use.
+      </BicolorTitledText>
+
+      <Button
+          className="automation"
+          onClick={scrollToContactForm}
+      >Get in touch</Button>
+
+      <div className="intermediate-image">
+          <div className="automation-first-encircled-img">
+              <img src="./desktop-two-monitors.png" alt="A desktop with two monitors" className="automation-first-image" />
           </div>
-        </div>
-        <div>
-          <div className="functional-small-circle"></div>
-        </div>
+          <div className="automation-first-blurred-circle"></div>
       </div>
-      <div className="functional-header-text-button">
-        <h1>
-          What can{" "}
-          <span style={{ color: "#0D9E71" }}>
-            we help <br></br>you achieve <br></br>
-          </span>
-          today? <br></br>
-        </h1>
 
-        <div style={{ marginTop: "18px" }}>
-          <CheckCard>
-            <p>
-              Scale your device coverage testing using real-world different
-              devices, screen resolutions, browsers, and platforms, with no
-              emulators.
-            </p>
-          </CheckCard>
-        </div>
-        <div style={{ marginTop: "18px" }}>
-          <CheckCard>
-            <p>
-              Every defect is manually reproduced, verified, and categorized by
-              severity, to allow rapid fixes.
-            </p>
-          </CheckCard>
-        </div>
-        <div style={{ marginTop: "18px" }}>
-          <CheckCard>
-            <p>
-              Bring your internal teams together and improve your working
-              practices across the entire SDLC.
-            </p>
-          </CheckCard>
-        </div>
-        <div style={{ marginTop: "18px" }}>
-          <CheckCard>
-            <p>
-              Detailed issue reports integrate seamlessly into your own
-              platform(s).
-            </p>
-          </CheckCard>
-        </div>
-        <Button>Get in touch</Button>
+      <BicolorTitledText
+          color1="#0D9E71"
+          color2="black"
+          color1Text="What can we help"
+          color2Text="you achieve today?"
+      >
+          ELEVATE YOUR DIGITAL EXPERIENCE WITH UNBEATABLE QUALITY AND COVERAGE
+      </BicolorTitledText>
+
+      <CheckedItem>Scale your device coverage testing using real-world different devices, screen resolutions, browsers, and platforms, with no emulators.</CheckedItem>
+      <CheckedItem>Every defect is manually reproduced, verified, and categorized by severity, to allow rapid fixes.</CheckedItem>
+      <CheckedItem>Bring your internal teams together and improve your working practices across the entire SDLC.</CheckedItem>
+      <CheckedItem>Detailed issue reports integrate seamlessly into your own platform(s).</CheckedItem>
+      
+      <Button
+          className="automation"
+          onClick={scrollToContactForm}
+      >Get in touch</Button>
+
+      <div className="intermediate-image">
+          <img src="./coding-man.png" alt="A man typing on a computer" className="automation-second-image" />
+          <div className="automation-second-image-container">
+              <img src="./computer-plant.png" alt="A computer and a plant" className="automation-third-image" />
+              <img src="./hand-bar.png" alt="A hand with an increasing digital bar on top" className="automation-fourth-image" />
+          </div>
+          <div className="automation-second-circle-container">
+              <div className="automation-second-circle" ></div>
+              <div className="automation-second-blurred-circle"></div>
+          </div>
       </div>
-      <div style={{ marginTop: "135px" }}>
-        <div className="functional-titles">UNLIMITED SCALE, AT SPEED</div>
 
+      <BicolorTitledText
+          color1="#0D9E71"
+          color2="black"
+          color1Text=""
+          color2Text=""
+      >
+          UNLIMITED SCALE, AT SPEED
+      </BicolorTitledText>
+      
+      <div>
         <div style={{ marginTop: "18px" }}>
           <AchievementCard imgSrc="folder-data.svg">
             <p>
@@ -131,97 +152,59 @@ function Functional() {
           </AchievementCard>
         </div>
       </div>
-      <div className="functional-header-text-button">
-        <div style={{ marginTop: "18px" }}>
-          <CheckCard>
-            <p>
-              Improve customer satisfaction earning the trust and satisfaction
-              of international users by ensuring bugs don’t affect their
-              interactions with your brand and products.
-            </p>
-          </CheckCard>
-        </div>
-        <div style={{ marginTop: "18px" }}>
-          <CheckCard>
-            <p>
-              Understand bug impact on local users ensuring end-users feel as
-              though the products you deliver were built for them.
-            </p>
-          </CheckCard>
-        </div>
-        <div style={{ marginTop: "18px" }}>
-          <CheckCard>
-            <p>
-              Test with real users on real devices for real results ensuring a
-              consistent user experience for all end-users giving you a
-              competitive edge in the oversaturated app market.
-            </p>
-          </CheckCard>
-        </div>
-        <div style={{ marginTop: "40px" }}>
-          <Button>Get in touch</Button>
-        </div>
-      </div>
-      <div>
-        <div className="functional-large-circle">
-          <div style={{ position: "relative", marginTop: "25px" }}>
-            <img src="man-typing.png" alt="desktop"></img>
+
+      <BicolorTitledText
+          color1="#0D9E71"
+          color2="black"
+          color1Text=""
+          color2Text=""
+      >
+          DELIVER GLOBAL RELEASES THAT DELIGHT USERS
+      </BicolorTitledText>
+
+      <CheckedItem>Improve customer satisfaction earning the trust and satisfaction of international users by ensuring bugs don’t affect their interactions with your brand and products.</CheckedItem>
+      <CheckedItem>Understand bug impact on local users ensuring end-users feel as though the products you deliver were built for them.</CheckedItem>
+      <CheckedItem>Test with real users on real devices for real results ensuring a consistent user experience for all end-users giving you a competitive edge in the oversaturated app market.</CheckedItem>
+
+      <Button
+          className="automation"
+          onClick={scrollToContactForm}
+      >Get in touch</Button>
+
+      <div className="intermediate-image">
+          <div className="automation-first-encircled-img">
+              <img src="./man-typing.png" alt="Typing on a laptop" className="automation-first-image" />
           </div>
-        </div>
+          <div className="automation-first-blurred-circle"></div>
       </div>
-      <div className="functional-header-text-button">
-        <h1>
-          <span style={{ color: "#0D9E71" }}>
-            Functional<br></br>Testing Services<br></br>
-          </span>
-          We Offer
-        </h1>
-        <div style={{ marginTop: "18px" }}>
-          <TestingServicesCard icon={<MdBugReport />}>
-            <p>Smoke testing</p>
-          </TestingServicesCard>
-        </div>
-        <div style={{ marginTop: "18px" }}>
-          <TestingServicesCard icon={<IoExtensionPuzzle />}>
-            <p>Module / Component testing</p>
-          </TestingServicesCard>
-        </div>
-        <div style={{ marginTop: "18px" }}>
-          <TestingServicesCard icon={<AiOutlineSync />}>
-            <p>Regression testing</p>
-          </TestingServicesCard>
-        </div>
-        <div style={{ marginTop: "18px" }}>
-          <TestingServicesCard icon={<GoGear />}>
-            <p>Integration testing</p>
-          </TestingServicesCard>
-        </div>
-        <div style={{ marginTop: "18px" }}>
-          <TestingServicesCard icon={<FaClipboardList />}>
-            <p>Cross-platform testing</p>
-          </TestingServicesCard>
-        </div>
-        <div style={{ marginTop: "18px" }}>
-          <TestingServicesCard icon={<BsShieldFillCheck />}>
-            <p>Sanity testing</p>
-          </TestingServicesCard>
-        </div>
-        <div style={{ marginTop: "18px" }}>
-          <TestingServicesCard icon={<IoPersonCircle />}>
-            <p>UAT testing</p>
-          </TestingServicesCard>
-        </div>
-        <div style={{ marginTop: "18px" }}>
-          <TestingServicesCard icon={<FaSearchPlus />}>
-            <p>Explorary testing</p>
-          </TestingServicesCard>
-        </div>
-      </div>
-      <div>
-        <div style={{ position: "relative", marginTop: "25px" }}>
-          <img src="man-typing-and-diagram.png" alt="man typing"></img>
-        </div>
-      </div>
+
+      <section style={{ width: "100%", padding: "20px", marginTop: "50px", backgroundColor: "#AAAAAA19" }}>
+          <BicolorTitledText
+              color1="#0D9E71"
+              color2="black"
+              color1Text="Functional Testing Services"
+              color2Text="We Offer"
+          ></BicolorTitledText>
+
+          <CheckedItem icon={BUG_ICON} >Smoke testing</CheckedItem>
+          <CheckedItem icon={PUZZLE_ICON}>Module / Component testing</CheckedItem>
+          <CheckedItem icon={SYNC_ICON}>Regression testing</CheckedItem>
+          <CheckedItem icon={GEAR_ICON}>Integration testing</CheckedItem>
+          <CheckedItem icon={CLIPBOARD_ICON}>Cross- platform testing</CheckedItem>
+          <CheckedItem icon={SHIELD_ICON}>Sanity testing</CheckedItem>
+          <CheckedItem icon={PERSON_ICON}>UAT testing</CheckedItem>
+          <CheckedItem icon={SEARCH_ICON}>Explorary testing</CheckedItem>
+
+          <div className="last-image">
+              <div className="automation-third-circle-container">
+                  <div className="automation-third-circle"></div>
+                  <div className="automation-third-blurred-circle"></div>
+                  <div className="automation-fourth-circle" ></div>
+              </div>
+              <img src="./man-typing-and-diagram.png" alt="A programmer working in a computer" className="automation-fith-image" />
+          </div>
+      </section>
+     
       <Toolset />
     </div>
   );

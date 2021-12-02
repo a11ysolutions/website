@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../Button/Button";
 import "./FunctionalPresentationSign.css";
+import { scrollToContactForm } from "../../Utils/Utils";
 
 function FunctionalPresentationSign() {
   return (
@@ -21,7 +22,7 @@ function FunctionalPresentationSign() {
       <text>your users enabling you to release </text>
       <text>high quality and speed.</text>
 
-      <Button size="large" style={{ marginTop: "24px" }}>
+      <Button size="large" style={{ marginTop: "24px" }} onClick={scrollToContactForm}>
         Get a free consultation
       </Button>
     </div>

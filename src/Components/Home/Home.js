@@ -7,7 +7,7 @@ import Clients from "../UI/Clients/Clients"
 import Services from "../UI/Services/Services"
 import Toolset from "../UI/Toolset/Toolset"
 import Qualities from "../UI/Qualities/Qualities"
-import Footer from "../UI/Footer/Footer"
+import { scrollToContactForm } from "../Utils/Utils"
 
 function Home() {
     return (
@@ -25,7 +25,7 @@ function Home() {
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco laboris nisi ut aliquip ex ea.
                     </p>
-                <Button>Get in touch</Button>
+                <Button onClick={scrollToContactForm}>Get in touch</Button>
             </div>
             <Qualities />
             <Clients />
@@ -38,7 +38,6 @@ function Home() {
             </div>
             <Services />
             <Toolset />
-            <Footer />
         </div>
     )
 }

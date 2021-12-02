@@ -1,6 +1,6 @@
 import "../../Home/Home.css";
 import Button from "../Button/Button";
-
+import { scrollToContactForm } from "../../Utils/Utils"
 function Toolset() {
   return (
     <div className="home-header-text-button" style={{ marginTop: "139px" }}>
@@ -12,7 +12,12 @@ function Toolset() {
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
       </p>
-      <Button size="large">Get a free consultation</Button>
+      <Button
+        size="large"
+        onClick={scrollToContactForm}
+      >
+        Get a free consultation
+        </Button>
     </div>
   );
 }
