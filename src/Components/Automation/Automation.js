@@ -13,7 +13,7 @@ import { GiAlarmClock } from "react-icons/gi"
 
 
 import "./Automation.css";
-import { scrollToContactForm } from "../Utils/Utils"
+// import { scrollToContactForm } from "../Utils/Utils"
 
 
 const TRENDING_ICON = <FiTrendingDown className="checked-item-icon" />;
