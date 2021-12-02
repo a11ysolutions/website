@@ -42,7 +42,7 @@ function Automation() {
                 pillPosition={{ top: "-40px", left: "170px" }}
             />
 
-            <section className="info-with-image">
+            <section className="info-with-image first-info">
                 <div className="checked-info">
                     <BicolorTitledText
                         color1="#0D9E71"
@@ -72,7 +72,7 @@ function Automation() {
                 </div>
             </section>
 
-            <section className="info-with-image">
+            <section className="info-with-image second-info">
                 <div className="checked-info">
                     <BicolorTitledText
                         color1="#0D9E71"

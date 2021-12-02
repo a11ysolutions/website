@@ -112,10 +112,12 @@
     height: 60px;
     border-top: 40px solid #21CE99;
     border-right: 40px solid #21CE99;
-    border-bottom: 40px solid #21CE99;
-    margin-left: -60px;
+    border-bottom: 40px solid #21CE99;    
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
+    
+    left: 30px;
+    margin-left: -50px;
     margin-top: 295px;
     position: absolute;
 }
@@ -144,6 +146,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    max-width: 900px;
 }
 
 .checked-info{
@@ -152,7 +155,8 @@
 }
 
 .shadowed-section{
-    width: 100%;
+    width: 100% !important;
+    max-width: unset !important;
     padding: 20px;
     margin-top: 50px;
     background-color: #AAAAAA19;
@@ -194,8 +198,9 @@
     }
 
     .automation-third-circle{
-        margin-left: -265px;
-        /* margin-top: 295px; */
+        left: 30px;
+        margin-left: -50px;
+        margin-top: 417px;
     }
 
     .info-with-image{
@@ -214,10 +219,78 @@
         padding: 0
     }
 
+    .second-info .intermediate-image{
+        margin-left: 270px;
+    }
+
 }
 
 @media screen and (min-width: 1200px){
     .info-with-image{
         flex-direction: row;
+    }
+
+    .automation-pill {
+        top: 250px !important;
+        left: 1350px !important;
+    }
+
+    .info-with-image{
+        align-self: center;
+    }
+
+    .first-info{
+        margin-top: 150px;
+    }
+
+    .second-info{
+        flex-direction: row-reverse;
+    }
+
+    .second-info .checked-info{
+        margin-left: 100px;
+    }
+
+    
+    .automation-fith-image{
+        width: 400px;
+        height: 400px;
+        align-self: center;
+        margin-top: 0;
+        margin-left: 140%;
+    }
+
+    .automation-third-circle{
+        left: 30px;
+        margin-left: -50px;
+        margin-top: 417px;
+    }
+
+    .automation-fourth-circle{
+        right: 10%;
+        margin-top: 230px;
+    }
+
+    .automation-third-blurred-circle{
+        width: 170px;
+        height: 170px;
+        position: absolute;
+        margin-left: 100px;
+        margin-top: 10px;
+
+    }
+
+    .shadowed-section{
+        padding: 20px;
+    }
+
+    .shadowed-section{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .shadowed-section .checked-info{
+        margin-left: -100px;
+        margin-right: 40px;
     }
 }
