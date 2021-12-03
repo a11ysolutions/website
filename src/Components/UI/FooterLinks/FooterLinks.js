@@ -7,10 +7,10 @@ function FooterLinks() {
         <div style={{ margin: "1em 0" }}>
             <nav className="footer-nav">
                 <ul className="footer-links">
-                    <li style={{}}><a href="#" className="footer-link">Web Accessibility Standards and Regulations </a></li>
-                    <li><a href="#" className="footer-link">Services </a></li>
-                    <li><a href="#" className="footer-link">Privacy Policy</a></li>
-                    <li><a href="#" className="footer-link">Sitemap </a></li>
+                    <li style={{}}><a href="http://google.com" className="footer-link">Web Accessibility Standards and Regulations </a></li>
+                    <li><a href="http://google.com" className="footer-link">Services </a></li>
+                    <li><a href="http://google.com" className="footer-link">Privacy Policy</a></li>
+                    <li><a href="http://google.com" className="footer-link">Sitemap </a></li>
                 </ul>
             </nav>
         </div>

@@ -3,10 +3,10 @@
 }
 .form-input{
     height:2em;
-    background-color: #000;
+    background-color: #000 !important;
     border:none;
     border-bottom: #595959 thin solid;
-    color:#7C7C7C;
+    color:#7C7C7C !important;
     font:inherit;
 }
 .form-group label{

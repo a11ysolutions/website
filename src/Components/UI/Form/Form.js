@@ -8,69 +8,87 @@ function Form() {
 
     const [formValues, setFormValues] = useState(initialValues)
     const [formErrors, setFormErrors] = useState({})
-    const [isSubmit, setIsSubmit] = useState(false)
+    let isSubmit = false
+    //const [isSubmit, setIsSubmit] = useState(false)
 
     const nameRef = useRef(null)
     const companyNameRef = useRef(null)
     const emailRef = useRef(null)
     const phoneNumberRef = useRef(null)
 
-
-    /*
-        const [name, setName] = useState("")
-        const [companyName, setCompanyName] = useState("")
-        const [email, setEmail] = useState("")
-        const [phoneNumber, setPhoneNumber] = useState("")
-        const [message, setMessage] = useState("")
-        const [errors, setErrors] = useState({ name: "", companyName: "", email: "", phoneNumber: "" })
-        const [errorMsgs, setErrorMsgs] = useState({ name: "", companyName: "", email: "", phoneNumber: "" })*/
+    let firstFieldWithError = null
 
     const changeHandler = (event) => {
-        //console.log(event.target)
+
         const { id, value } = event.target
-        console.log(id, " - ", value)
         setFormValues({ ...formValues, [id]: value })
-
-        console.log(formValues)
-
+        setFormErrors({...formErrors,[id]:""})
     }
 
     useEffect(() => {
-        console.log(formErrors)
 
         if (Object.keys(formErrors).length === 0 && isSubmit) { }
-        //console.log(formValues)
 
-    }, [formErrors])
+    }, [formErrors,isSubmit])
 
     const onSubmit = (event) => {
         event.preventDefault()
-        setFormErrors(validate(formValues))
-        setIsSubmit(true)
-        //console.log(formErrors)
+        const validationErrors = validate(formValues)
+        setFormErrors(validationErrors)
+
+        if(Object.keys(validationErrors).length === 0){
+
+            // Submit the form
+            console.log("Submiting form ....")
+            // Reset values
+            setFormValues(initialValues)
+        }      
+        
     }
     const validate = (values) => {
         const errors = {}
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i
+        const regexPhone = /^(?:(?:\(?(?:00|\+)([1-4]\d\d|[1-9]\d?)\)?)?[-. \\/]?)?((?:\(?\d{1,}\)?[-. \\/]?){0,})(?:[-. \\/]?(?:#|ext\.?|extension|x)[-. \\/]?(\d+))?$/i
 
         if (!values.name) {
             errors.name = "Please enter a name"
+           if(!firstFieldWithError) firstFieldWithError = nameRef
         }
         if (!values.companyName) {
             errors.companyName = "Please enter the name of your company"
+            if(!firstFieldWithError) firstFieldWithError = companyNameRef
         }
         if (!values.email) {
             errors.email = "Please enter an email address"
+            if(!firstFieldWithError) firstFieldWithError = emailRef
+            
         } else if (!regex.test(values.email)) {
             errors.email = "Please enter a valid email"
+            if(!firstFieldWithError) firstFieldWithError = emailRef         
         }
         if (!values.phoneNumber) {
             errors.phoneNumber = "Please enter your phone number"
+            if(!firstFieldWithError) firstFieldWithError = phoneNumberRef           
+        
+        } else if (!regexPhone.test(values.phoneNumber)) {
+            errors.phoneNumber = "Please enter a valid phone number"
+            if(!firstFieldWithError) firstFieldWithError = phoneNumberRef  
+        }else if (values.phoneNumber.length < 9 ) {
+            errors.phoneNumber = "Please enter a phone number with more than 8 digits"
+            if(!firstFieldWithError) firstFieldWithError = phoneNumberRef  
         }
-        console.log(formValues)
+        else if (values.phoneNumber.length >15 ) {
+            errors.phoneNumber = "Please enter a phone number with less than 15 digits"
+            if(!firstFieldWithError) firstFieldWithError = phoneNumberRef  
+        }
+        if(firstFieldWithError) firstFieldWithError.current.focus()
+    
         return errors
     }
 
+    let opts = {}
+    opts["aria-invalid"]="true"
+    
     return (
         <div style={{ marginTop: "4em" }}>
             <form onSubmit={(event) => onSubmit(event)} noValidate>
@@ -79,51 +97,60 @@ function Form() {
                     <label htmlFor="name" style={{ marginTop: "0em" }}>Name <span className="required">(required)</span></label>
                     <input
                         id="name"
-                        className="form-input"
+                        className={formErrors["name"] ? "form-input error" : "form-input"}
                         ref={nameRef}
                         type="text"
                         autoComplete="name"
                         value={formValues.name}
                         onChange={changeHandler}
-                        aria-describedby="name-error" />
+                        aria-describedby="name-error" 
+                        { ...(formErrors["name"]&& opts )}
+                        />
                     <div id="name-error" className="error-message">{formErrors.name}</div>
                 </div>
                 <div className="form-group">
                     <label htmlFor="companyName" >Company name<span className="required"> (required)</span></label>
                     <input
                         id="companyName"
-                        className="form-input"
+                        className={formErrors["companyName"] ? "form-input error" : "form-input"}
                         ref={companyNameRef}
                         type="text"
                         value={formValues.companyName}
                         onChange={changeHandler}
-                        aria-describedby="company-name-error" />
+                        aria-describedby="company-name-error" 
+                        { ...(formErrors["companyName"]&& opts )}
+                        />
                     <div id="company-name-error" className="error-message">{formErrors.companyName}</div>
                 </div>
                 <div className="form-group">
                     <label htmlFor="email" >Email<span className="required"> (required)</span></label>
                     <input
                         id="email"
-                        className="form-input"
+                        className={formErrors["email"] ? "form-input error" : "form-input"}
                         ref={emailRef}
                         type="email"
                         autoComplete="email"
                         value={formValues.email}
                         onChange={changeHandler}
-                        aria-describedby="email-error" />
+                        aria-describedby="email-error" 
+                        { ...(formErrors["email"]&& opts )}
+                        />
                     <div id="email-error" className="error-message">{formErrors.email}</div>
                 </div>
                 <div className="form-group">
                     <label htmlFor="phoneNumber" >Phone number<span className="required"> (required)</span></label>
                     <input
                         id="phoneNumber"
-                        className="form-input"
+                        className={formErrors["phoneNumber"] ? "form-input error" : "form-input"}
+                        
                         ref={phoneNumberRef}
                         type="text"
-                        autoComplete="phone"
+                        autoComplete="tel"
                         value={formValues.phoneNumber}
                         onChange={changeHandler}
-                        aria-describedby="phone-number-error" />
+                        aria-describedby="phone-number-error" 
+                        { ...(formErrors["phoneNumber"]&& opts )}
+                        />
                     <div id="phone-number-error" className="error-message">{formErrors.phoneNumber}</div>
                 </div>
                 <div className="form-group">
@@ -140,7 +167,6 @@ function Form() {
                 <div className="form-group" style={{ textAlign: "center" }}>
                     <Button variant="light" style={{ height: "3em" }}>Submit now</Button>
                 </div>
-
             </form>
 
         </div>
