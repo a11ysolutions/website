@@ -1,5 +1,6 @@
 .clients-container {
   margin-top: 128px;
+  font: normal normal 900 32px/40px Archivo;
 }
 .clients-img-row {
   display: flex;
@@ -17,4 +18,21 @@
   margin-top: 16px;
 }
 .clients-img {
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .clients-img-card {
+    width: 296px;
+    height: 120px;
+  }
+  .clients-img-card img {
+    width: 169px !important;
+    height: 65px !important;
+  }
+  .clients-container {
+    text-align: start;
+    font: normal normal 900 40px/44px Archivo;
+  }
+  .clients-img-row {
+    column-gap: 16px;
+  }
 }

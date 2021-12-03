@@ -5,10 +5,12 @@ import { scrollToContactForm } from "../../Utils/Utils"
 
 function PresentationSign() {
     return <div className="presentation-sign">
-        <h1 style={{ width: "248px", fontWeight: "bold", fontSize: "48px", marginBottom: "16px" }}>It's time to evolve!</h1>
+        <b>It's time <br />to evolve!</b>
 
-        <text>We are committed to delivering </text>
-        <text>your product with the best quality ever.</text>
+        <p>
+            We are committed to delivering <br />
+            your product with the best quality ever.
+        </p>
 
         <Button size="large" style={{ marginTop: "24px" }} onClick={scrollToContactForm}>
             Get a free consultation

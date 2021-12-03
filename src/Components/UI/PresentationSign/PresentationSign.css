@@ -3,3 +3,17 @@
   flex-direction: column;
   align-items: center;
 }
+.presentation-sign b {
+  font: normal normal 900 48px/50px Archivo;
+}
+.presentation-sign p {
+  font: normal normal 18px/24px Archivo;
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .presentation-sign b {
+    font: normal normal 900 64px/60px Archivo;
+  }
+  .presentation-sign p {
+    font: normal normal 24px/32px Archivo;
+  }
+}

@@ -13,6 +13,10 @@
   align-items: center;
   justify-content: center;
 }
+.service-card-content {
+  display: flex;
+  flex-direction: column;
+}
 .service-card-text {
   line-height: 24px;
 }
@@ -22,4 +26,22 @@
 .service-card-img {
   width: 45px;
   height: 45px;
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .service-card-container {
+    flex-direction: row;
+    column-gap: 38px;
+  }
+  .service-card {
+    height: 140px;
+    width: 140px;
+    margin-bottom: 15px;
+  }
+  .service-card-content {
+    text-align: start;
+  }
+  .service-card-img {
+    width: 65px;
+    height: 65px;
+  }
 }

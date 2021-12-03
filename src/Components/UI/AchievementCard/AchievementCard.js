@@ -4,7 +4,6 @@ import "./AchievementCard.css";
 function AchievementCard({ children, imgSrc }) {
   return (
     <div className="achievement-card">
-
       <div>
         <div className="achievement-card-ellipse">
           <img

@@ -4,3 +4,30 @@
   row-gap: 24px;
   margin-top: 37px;
 }
+.a11y-qualities p {
+  font: normal normal normal 16px/24px Archivo;
+}
+.a11y-qualities h3 {
+  font: normal normal bold 18px/32px Archivo;
+}
+.a11y-qualities-top-section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+.a11y-qualities-section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .a11y-qualities-section {
+    flex-direction: row;
+    column-gap: 32px;
+  }
+  .a11y-qualities-top-section {
+    flex-direction: row-reverse;
+    column-gap: 32px;
+  }
+}

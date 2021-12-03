@@ -11,16 +11,17 @@ function Services() {
                     document.location.href = "/functional"
                 }}
             >
-                <text>We ensure your digital Products, Software,</text>
-                <text> Mobile and Web Applications deliver the</text>
-                <text> performance and experience they were</text>
-                <text>designed for.</text>
+                <p>We ensure your digital Products, Software,<br />
+                    Mobile and Web Applications deliver the<br />
+                    performance and experience they were<br />
+                    designed for.</p>
             </ServiceCard>
             <ServiceCard
                 header="Accessibility testing"
                 imgSrc="/accessibility-testing.png"
                 imgColor="#21ce99"
                 style={{ marginTop: "53px" }}
+                imgStyle={{ boxShadow: "0px 3px 40px #17D1984D" }}
                 onClickButton={() => {
                     document.location.href = "/accessibility"
                 }}

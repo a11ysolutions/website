@@ -36,13 +36,17 @@ function Home() {
             </div>
             <Qualities />
             <Clients />
-            <div className="home-header-text-button" id="our-services">
-                <h1>Our <span style={{ color: "#0D9E71" }}>services</span></h1>
+            <BicolorTitledText
+                color1="black"
+                color2="#0D9E71"
+                color1Text="Our"
+                color2Text="services">
                 <p>
                     Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna.
                     </p>
-            </div>
+            </BicolorTitledText>
+
             <Services />
             <Toolset />
         </div>

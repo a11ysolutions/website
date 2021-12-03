@@ -31,3 +31,23 @@
   height: 32.34px;
   width: 32.34px;
 }
+@media (min-width: 768px) and (max-width: 1200px) {
+  .achievement-card {
+    height: 282px;
+    width: 234px;
+    display: flex;
+    flex-direction: column;
+  }
+  .achievement-card-ellipse {
+    height: 93px;
+    width: 95px;
+  }
+  .achievement-card-img {
+    height: 52px;
+    width: 52px;
+  }
+  .achievement-card-text-container {
+    text-align: center;
+    color: #000000;
+  }
+}

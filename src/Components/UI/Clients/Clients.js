@@ -3,9 +3,9 @@ import "./Clients.css"
 function Clients() {
     return (
         <div className="clients-container" id="clients">
-            <h1>
+            <p>
                 <span style={{ color: "#0D9E71" }}>Trusted by many <br /> clients</span>, including:
-            </h1>
+            </p>
             <div className="clients-img-row">
                 <div className="clients-img-card">
                     <img
