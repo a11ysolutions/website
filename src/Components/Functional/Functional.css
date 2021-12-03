@@ -143,3 +143,153 @@
   height: 122px;
   margin-bottom: 10px;
 }
+
+.info-with-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+}
+
+.checked-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.shadowed-section {
+  width: 100% !important;
+  max-width: unset !important;
+  padding: 20px;
+  margin-top: 50px;
+  background-color: #aaaaaa19;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .a11y-button.automation {
+    align-self: start;
+    margin-top: 30px;
+  }
+
+  .intermediate-image {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .automation-fith-image {
+    width: 400px;
+    height: 400px;
+    align-self: center;
+    margin-top: 30px;
+    margin-left: 150px;
+  }
+
+  .automation-fourth-circle {
+    right: 200px;
+    margin-top: 230px;
+  }
+
+  .automation-third-blurred-circle {
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    /* margin-left: 100px; */
+    margin-top: 10px;
+  }
+
+  .automation-third-circle {
+    left: 30px;
+    margin-left: -50px;
+    margin-top: 417px;
+  }
+
+  .info-with-image {
+    align-self: flex-start;
+  }
+
+  .checked-info,
+  button.automation {
+    align-self: flex-start;
+  }
+
+  button.automation {
+    margin-left: 110px !important;
+  }
+
+  .shadowed-section {
+    padding: 0;
+  }
+
+  .second-info .intermediate-image {
+    margin-left: 270px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .info-with-image {
+    flex-direction: row;
+  }
+
+  .automation-pill {
+    top: 250px !important;
+    left: 1350px !important;
+  }
+
+  .info-with-image {
+    align-self: center;
+  }
+
+  .first-info {
+    margin-top: 150px;
+  }
+
+  .second-info {
+    flex-direction: row-reverse;
+  }
+
+  .second-info .checked-info {
+    margin-left: 100px;
+  }
+
+  .automation-fith-image {
+    width: 400px;
+    height: 400px;
+    align-self: center;
+    margin-top: 0;
+    margin-left: 140%;
+  }
+
+  .automation-third-circle {
+    left: 30px;
+    margin-left: -50px;
+    margin-top: 417px;
+  }
+
+  .automation-fourth-circle {
+    right: 10%;
+    margin-top: 230px;
+  }
+
+  .automation-third-blurred-circle {
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+
+  .shadowed-section {
+    padding: 20px;
+  }
+
+  .shadowed-section {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .shadowed-section .checked-info {
+    margin-left: -100px;
+    margin-right: 40px;
+  }
+}

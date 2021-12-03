@@ -49,136 +49,153 @@ function Functional() {
           pillPosition={{ top: "-40px", left: "170px" }}
       />
 
-      <BicolorTitledText
-          color1="#0D9E71"
-          color2="black"
-          color1Text="Our expert advice can help you"
-          color2Text="solve your QA bottlenecks"
-      >
-          Without consistently delivering a quality 
-          experience, brands and enterprises can’t fully 
-          guarantee customer satisfaction. 
+      <section className="info-with-image first-info">
+        <div className="checked-info">
+          <BicolorTitledText
+              color1="#0D9E71"
+              color2="black"
+              color1Text="Our expert advice can help you"
+              color2Text="solve your QA bottlenecks"
+          >
+              Without consistently delivering a quality 
+              experience, brands and enterprises can’t fully 
+              guarantee customer satisfaction. 
+              
+              We help development teams deliver 
+              exceptional products at speed with the best 
+              customer experience. Our functional testing 
+              process is built around your needs, and we 
+              integrate with the tools you already use.
+          </BicolorTitledText>
+
+          <Button
+              className="automation"
+              onClick={scrollToContactForm}
+          >Get in touch</Button>
+        </div>
+
+        <div className="intermediate-image">
+            <div className="automation-first-encircled-img">
+                <img src="./desktop-two-monitors.png" alt="A desktop with two monitors" className="automation-first-image" />
+            </div>
+            <div className="automation-first-blurred-circle"></div>
+        </div>
+      </section>
+
+      <section className="info-with-image second-info">
+        <div className="checked-info">
+          <BicolorTitledText
+              color1="#0D9E71"
+              color2="black"
+              color1Text="What can we help"
+              color2Text="you achieve today?"
+          >
+              ELEVATE YOUR DIGITAL EXPERIENCE WITH UNBEATABLE QUALITY AND COVERAGE
+          </BicolorTitledText>
+
+          <CheckedItem>Scale your device coverage testing using real-world different devices, screen resolutions, browsers, and platforms, with no emulators.</CheckedItem>
+          <CheckedItem>Every defect is manually reproduced, verified, and categorized by severity, to allow rapid fixes.</CheckedItem>
+          <CheckedItem>Bring your internal teams together and improve your working practices across the entire SDLC.</CheckedItem>
+          <CheckedItem>Detailed issue reports integrate seamlessly into your own platform(s).</CheckedItem>
           
-          We help development teams deliver 
-          exceptional products at speed with the best 
-          customer experience. Our functional testing 
-          process is built around your needs, and we 
-          integrate with the tools you already use.
-      </BicolorTitledText>
+          <Button
+              className="automation"
+              onClick={scrollToContactForm}
+          >Get in touch</Button>
+        </div>
 
-      <Button
-          className="automation"
-          onClick={scrollToContactForm}
-      >Get in touch</Button>
-
-      <div className="intermediate-image">
-          <div className="automation-first-encircled-img">
-              <img src="./desktop-two-monitors.png" alt="A desktop with two monitors" className="automation-first-image" />
-          </div>
-          <div className="automation-first-blurred-circle"></div>
-      </div>
-
-      <BicolorTitledText
-          color1="#0D9E71"
-          color2="black"
-          color1Text="What can we help"
-          color2Text="you achieve today?"
-      >
-          ELEVATE YOUR DIGITAL EXPERIENCE WITH UNBEATABLE QUALITY AND COVERAGE
-      </BicolorTitledText>
-
-      <CheckedItem>Scale your device coverage testing using real-world different devices, screen resolutions, browsers, and platforms, with no emulators.</CheckedItem>
-      <CheckedItem>Every defect is manually reproduced, verified, and categorized by severity, to allow rapid fixes.</CheckedItem>
-      <CheckedItem>Bring your internal teams together and improve your working practices across the entire SDLC.</CheckedItem>
-      <CheckedItem>Detailed issue reports integrate seamlessly into your own platform(s).</CheckedItem>
+        <div className="intermediate-image">
+            <img src="./coding-man.png" alt="A man typing on a computer" className="automation-second-image" />
+            <div className="automation-second-image-container">
+                <img src="./computer-plant.png" alt="A computer and a plant" className="automation-third-image" />
+                <img src="./hand-bar.png" alt="A hand with an increasing digital bar on top" className="automation-fourth-image" />
+            </div>
+            <div className="automation-second-circle-container">
+                <div className="automation-second-circle" ></div>
+                <div className="automation-second-blurred-circle"></div>
+            </div>
+        </div>
+      </section>
       
-      <Button
-          className="automation"
-          onClick={scrollToContactForm}
-      >Get in touch</Button>
+      <section className="info-with-image first-info">
+        <div className="checked-info">
+          <BicolorTitledText
+              color1="#0D9E71"
+              color2="black"
+              color1Text=""
+              color2Text=""
+          >
+              UNLIMITED SCALE, AT SPEED
+          </BicolorTitledText>
+          
+          <div>
+            <div style={{ marginTop: "18px" }}>
+              <AchievementCard imgSrc="folder-data.svg">
+                <p>
+                  <span style={{ fontWeight: "bold" }}>
+                    Fully verified and reviewed results
+                  </span>{" "}
+                  within hours, with no extra triage required.
+                </p>
+              </AchievementCard>
+            </div>
+            <div style={{ marginTop: "18px" }}>
+              <AchievementCard imgSrc="data-user.svg">
+                <p>
+                  <span style={{ fontWeight: "bold" }}>
+                    Shift your in-house testing workload to our 24/7/365
+                  </span>{" "}
+                  on-demand crowd to help you scale and execute tests in <br></br>{" "}
+                  real-time.
+                </p>
+              </AchievementCard>
+            </div>
 
-      <div className="intermediate-image">
-          <img src="./coding-man.png" alt="A man typing on a computer" className="automation-second-image" />
-          <div className="automation-second-image-container">
-              <img src="./computer-plant.png" alt="A computer and a plant" className="automation-third-image" />
-              <img src="./hand-bar.png" alt="A hand with an increasing digital bar on top" className="automation-fourth-image" />
+            <div style={{ marginTop: "18px" }}>
+              <AchievementCard imgSrc="verification.svg">
+                <p>
+                  <span style={{ fontWeight: "bold" }}>
+                    Remove any potential QA bottlenecks
+                  </span>{" "}
+                  by sppeding up your testing workflow.
+                </p>
+              </AchievementCard>
+            </div>
           </div>
-          <div className="automation-second-circle-container">
-              <div className="automation-second-circle" ></div>
-              <div className="automation-second-blurred-circle"></div>
-          </div>
-      </div>
-
-      <BicolorTitledText
-          color1="#0D9E71"
-          color2="black"
-          color1Text=""
-          color2Text=""
-      >
-          UNLIMITED SCALE, AT SPEED
-      </BicolorTitledText>
+        </div>
+      </section>
       
-      <div>
-        <div style={{ marginTop: "18px" }}>
-          <AchievementCard imgSrc="folder-data.svg">
-            <p>
-              <span style={{ fontWeight: "bold" }}>
-                Fully verified and reviewed results
-              </span>{" "}
-              within hours, with no extra triage required.
-            </p>
-          </AchievementCard>
-        </div>
-        <div style={{ marginTop: "18px" }}>
-          <AchievementCard imgSrc="data-user.svg">
-            <p>
-              <span style={{ fontWeight: "bold" }}>
-                Shift your in-house testing workload to our 24/7/365
-              </span>{" "}
-              on-demand crowd to help you scale and execute tests in <br></br>{" "}
-              real-time.
-            </p>
-          </AchievementCard>
-        </div>
+      <section className="info-with-image second-info">
+        <div className="checked-info">
+          <BicolorTitledText
+              color1="#0D9E71"
+              color2="black"
+              color1Text=""
+              color2Text=""
+          >
+              DELIVER GLOBAL RELEASES THAT DELIGHT USERS
+          </BicolorTitledText>
 
-        <div style={{ marginTop: "18px" }}>
-          <AchievementCard imgSrc="verification.svg">
-            <p>
-              <span style={{ fontWeight: "bold" }}>
-                Remove any potential QA bottlenecks
-              </span>{" "}
-              by sppeding up your testing workflow.
-            </p>
-          </AchievementCard>
-        </div>
-      </div>
+          <CheckedItem>Improve customer satisfaction earning the trust and satisfaction of international users by ensuring bugs don’t affect their interactions with your brand and products.</CheckedItem>
+          <CheckedItem>Understand bug impact on local users ensuring end-users feel as though the products you deliver were built for them.</CheckedItem>
+          <CheckedItem>Test with real users on real devices for real results ensuring a consistent user experience for all end-users giving you a competitive edge in the oversaturated app market.</CheckedItem>
 
-      <BicolorTitledText
-          color1="#0D9E71"
-          color2="black"
-          color1Text=""
-          color2Text=""
-      >
-          DELIVER GLOBAL RELEASES THAT DELIGHT USERS
-      </BicolorTitledText>
+          <Button
+              className="automation"
+              onClick={scrollToContactForm}
+          >Get in touch</Button>
 
-      <CheckedItem>Improve customer satisfaction earning the trust and satisfaction of international users by ensuring bugs don’t affect their interactions with your brand and products.</CheckedItem>
-      <CheckedItem>Understand bug impact on local users ensuring end-users feel as though the products you deliver were built for them.</CheckedItem>
-      <CheckedItem>Test with real users on real devices for real results ensuring a consistent user experience for all end-users giving you a competitive edge in the oversaturated app market.</CheckedItem>
-
-      <Button
-          className="automation"
-          onClick={scrollToContactForm}
-      >Get in touch</Button>
-
-      <div className="intermediate-image">
-          <div className="automation-first-encircled-img">
-              <img src="./man-typing.png" alt="Typing on a laptop" className="automation-first-image" />
+          <div className="intermediate-image">
+              <div className="automation-first-encircled-img">
+                  <img src="./man-typing.png" alt="Typing on a laptop" className="automation-first-image" />
+              </div>
+              <div className="automation-first-blurred-circle"></div>
           </div>
-          <div className="automation-first-blurred-circle"></div>
-      </div>
+        </div>
+      </section>
 
-      <section style={{ width: "100%", padding: "20px", marginTop: "50px", backgroundColor: "#AAAAAA19" }}>
+      <section className="info-with-image shadowed-section">
+        <div className="checked-info">
           <BicolorTitledText
               color1="#0D9E71"
               color2="black"
@@ -194,15 +211,16 @@ function Functional() {
           <CheckedItem icon={SHIELD_ICON}>Sanity testing</CheckedItem>
           <CheckedItem icon={PERSON_ICON}>UAT testing</CheckedItem>
           <CheckedItem icon={SEARCH_ICON}>Explorary testing</CheckedItem>
+        </div>
 
-          <div className="last-image">
-              <div className="automation-third-circle-container">
-                  <div className="automation-third-circle"></div>
-                  <div className="automation-third-blurred-circle"></div>
-                  <div className="automation-fourth-circle" ></div>
-              </div>
-              <img src="./man-typing-and-diagram.png" alt="A programmer working in a computer" className="automation-fith-image" />
-          </div>
+        <div className="last-image">
+            <div className="automation-third-circle-container">
+                <div className="automation-third-circle"></div>
+                <div className="automation-third-blurred-circle"></div>
+                <div className="automation-fourth-circle" ></div>
+            </div>
+            <img src="./man-typing-and-diagram.png" alt="A programmer working in a computer" className="automation-fith-image" />
+        </div>
       </section>
      
       <Toolset />
