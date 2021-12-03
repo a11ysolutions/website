@@ -28,3 +28,27 @@
   z-index: 1;
   background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='150' ry='150' stroke='%23FFFFFF' stroke-width='20' stroke-dasharray='4.5' stroke-dashoffset='10' stroke-linecap='butt'/%3e%3c/svg%3e");
 }
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .home-ilustration-container {
+    width: 110%;
+    height: 650px;
+    overflow-y: hidden;
+    margin-left: 50px;
+    overflow-x: hidden;
+  }
+  .home-ilustration {
+    height: 509px;
+    width: 509px;
+    z-index: 2;
+  }
+  .home-ilustration-small-circle {
+    top: 40px;
+    left: 60px;
+  }
+  .home-ilustration-large-circle {
+    top: 370px;
+    left: 410px;
+    z-index: 1;
+  }
+}
