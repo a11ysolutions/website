@@ -1,12 +1,13 @@
 import React from "react"
 import ServiceCard from "../ServiceCard/ServiceCard"
-
+import "./Services.css"
 function Services() {
     return (
-        <div>
+        <div className="a11y-services">
             <ServiceCard
                 header="Functional testing"
                 imgSrc="/functional-testing.png"
+                style={{ marginTop: "53px" }}
                 onClickButton={() => {
                     document.location.href = "/functional"
                 }}

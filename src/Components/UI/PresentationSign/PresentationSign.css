@@ -17,3 +17,11 @@
     font: normal normal 24px/32px Archivo;
   }
 }
+@media (min-width: 1200px) {
+  .presentation-sign p {
+    font: normal normal 24px/32px Archivo;
+  }
+  .presentation-sign b {
+    font: normal normal 900 100px/100px Archivo;
+  }
+}
