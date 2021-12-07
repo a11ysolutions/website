@@ -52,3 +52,15 @@
     z-index: 1;
   }
 }
+
+@media (min-width: 1200px) {
+  .home-ilustration-container {
+    width: auto;
+    height: auto;
+    overflow-x: hidden;
+  }
+  .home-ilustration {
+    height: 790px;
+    width: 790px;
+  }
+}

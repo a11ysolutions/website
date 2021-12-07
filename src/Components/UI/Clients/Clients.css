@@ -19,6 +19,8 @@
 }
 .clients-img {
 }
+.clients-img-container {
+}
 @media (min-width: 768px) and (max-width: 1200px) {
   .clients-img-card {
     width: 296px;
@@ -34,5 +36,26 @@
   }
   .clients-img-row {
     column-gap: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .clients-img-card {
+    width: 310px;
+    height: 120px;
+  }
+  .clients-img-card img {
+    width: 169px !important;
+    height: 65px !important;
+  }
+  .clients-container {
+    text-align: start;
+    font: normal normal 900 40px/44px Archivo;
+  }
+  .clients-img-container {
+    display: flex;
+  }
+  .clients-img-row {
+    column-gap: 20px;
   }
 }

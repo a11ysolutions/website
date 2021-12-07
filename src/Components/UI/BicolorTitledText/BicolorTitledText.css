@@ -3,26 +3,40 @@
   padding: 20px;
 }
 
-.bicolor-titled-container h1{
+.bicolor-titled-container h1 {
   font: normal normal 900 32px/40px Archivo;
 }
 
-.bicolor-titled-container p{
+.bicolor-titled-container p {
   font: normal normal normal 16px/24px Archivo;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  .bicolor-titled-container{
+  .bicolor-titled-container {
     max-width: 400px;
     align-self: flex-start;
-    margin-left: 95px
+    margin-left: 95px;
   }
-  .bicolor-titled-container h1{
+  .bicolor-titled-container h1 {
     font: normal normal 900 40px/44px Archivo;
   }
 
-  .bicolor-titled-container p{
+  .bicolor-titled-container p {
     max-width: 400px;
     font: normal normal normal 16px/24px Archivo;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .bicolor-titled-container {
+    max-width: 500px;
+    align-self: flex-start;
+  }
+  .bicolor-titled-container h1 {
+    font: normal normal 900 56px/100px Archivo;
+  }
+
+  .bicolor-titled-container p {
+    max-width: 500px;
+    font: normal normal normal 18px/24px Archivo;
   }
 }

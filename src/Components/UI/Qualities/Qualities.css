@@ -20,6 +20,10 @@
   flex-direction: column;
   row-gap: 24px;
 }
+.why-choose-us-qualities {
+  display: flex;
+  flex-direction: column;
+}
 
 @media (min-width: 768px) and (max-width: 1200px) {
   .a11y-qualities-section {
@@ -29,5 +33,25 @@
   .a11y-qualities-top-section {
     flex-direction: row-reverse;
     column-gap: 32px;
+  }
+}
+@media (min-width: 1200px) {
+  .a11y-qualities {
+    row-gap: 0px;
+  }
+  .a11y-qualities-section {
+    flex-direction: row;
+    column-gap: 32px;
+    justify-content: center;
+  }
+  .a11y-qualities-top-section {
+    flex-direction: row;
+    column-gap: 32px;
+  }
+  .why-choose-us-qualities {
+    display: flex;
+    flex-direction: row;
+    margin-top: 170px;
+    column-gap: 140px;
   }
 }

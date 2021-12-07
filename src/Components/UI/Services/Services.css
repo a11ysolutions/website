@@ -1,0 +1,9 @@
+.a11y-services {
+}
+
+@media (min-width: 1200px) {
+  .a11y-services {
+    display: flex;
+    column-gap: 70px;
+  }
+}
