@@ -128,39 +128,44 @@ function Functional() {
               UNLIMITED SCALE, AT SPEED
           </BicolorTitledText>
           
-          <div>
-            <div style={{ marginTop: "18px" }}>
-              <AchievementCard imgSrc="folder-data.svg">
-                <p>
-                  <span style={{ fontWeight: "bold" }}>
-                    Fully verified and reviewed results
-                  </span>{" "}
-                  within hours, with no extra triage required.
-                </p>
-              </AchievementCard>
-            </div>
-            <div style={{ marginTop: "18px" }}>
-              <AchievementCard imgSrc="data-user.svg">
-                <p>
-                  <span style={{ fontWeight: "bold" }}>
-                    Shift your in-house testing workload to our 24/7/365
-                  </span>{" "}
-                  on-demand crowd to help you scale and execute tests in <br></br>{" "}
-                  real-time.
-                </p>
-              </AchievementCard>
-            </div>
+          <div className='a11y-qualities-section'>
+            
+            <AchievementCard imgSrc="folder-data.svg">
+              <p>
+                <span style={{ fontWeight: "bold" }}>
+                  Fully verified and reviewed results
+                </span>{" "}
+                within hours, with no extra triage required.
+              </p>
+            </AchievementCard>
+          
+            <AchievementCard imgSrc="data-user.svg">
+              <p>
+                <span style={{ fontWeight: "bold" }}>
+                  Shift your in-house testing workload to our 24/7/365
+                </span>{" "}
+                on-demand crowd to help you scale and execute tests in <br></br>{" "}
+                real-time.
+              </p>
+            </AchievementCard>
 
-            <div style={{ marginTop: "18px" }}>
-              <AchievementCard imgSrc="verification.svg">
-                <p>
-                  <span style={{ fontWeight: "bold" }}>
-                    Remove any potential QA bottlenecks
-                  </span>{" "}
-                  by sppeding up your testing workflow.
-                </p>
-              </AchievementCard>
-            </div>
+            <AchievementCard imgSrc="searching.svg">
+              <p>
+                <span style={{ fontWeight: "bold" }}>
+                  Test overnight, weekends included,
+                </span>{" "}
+                thanks to our vetted global community of professional testers.
+              </p>
+            </AchievementCard>
+
+            <AchievementCard imgSrc="verification.svg">
+              <p>
+                <span style={{ fontWeight: "bold" }}>
+                  Remove any potential QA bottlenecks
+                </span>{" "}
+                by speeding up your testing workflow.
+              </p>
+            </AchievementCard>
           </div>
         </div>
       </section>

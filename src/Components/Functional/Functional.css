@@ -165,6 +165,12 @@
   background-color: #aaaaaa19;
 }
 
+.a11y-qualities-section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .a11y-button.automation {
     align-self: start;
