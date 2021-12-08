@@ -57,15 +57,15 @@ function Functional() {
               color1Text="Our expert advice can help you"
               color2Text="solve your QA bottlenecks"
           >
-              Without consistently delivering a quality 
+              <p>Without consistently delivering a quality 
               experience, brands and enterprises can’t fully 
-              guarantee customer satisfaction. 
+              guarantee customer satisfaction.<br></br><br></br>
               
               We help development teams deliver 
               exceptional products at speed with the best 
               customer experience. Our functional testing 
               process is built around your needs, and we 
-              integrate with the tools you already use.
+              integrate with the tools you already use.</p>
           </BicolorTitledText>
 
           <Button
