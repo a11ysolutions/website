@@ -251,8 +251,13 @@
 @media screen and (min-width: 1200px) {
 
   .a11y-qualities-section {
+    display: block;
     flex-direction: row;
+    flex-flow: row wrap;
     column-gap: 32px;
+    justify-content: center;
+    align-items: center;
+    column-count: 4;
   }
 
   .info-with-image {
