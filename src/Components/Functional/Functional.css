@@ -260,6 +260,11 @@
     column-count: 4;
   }
 
+  .checked-with-icons {
+    flex-direction: column;
+    column-count: 2;
+  }
+
   .info-with-image {
     flex-direction: row;
   }
