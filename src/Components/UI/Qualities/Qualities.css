@@ -43,8 +43,10 @@
     row-gap: 0px;
   }
   .a11y-qualities-section {
+    display: flex !important;
     flex-direction: row;
     column-gap: 32px;
+    margin-top: 29px;
     justify-content: center;
   }
   .a11y-qualities-top-section {
