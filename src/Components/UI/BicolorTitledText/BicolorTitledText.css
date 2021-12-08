@@ -26,10 +26,11 @@
 }
 @media screen and (min-width: 1200px) {
   .bicolor-titled-container {
-    max-width: 500px;
+    max-width: 532px;
   }
   .bicolor-titled-container h1 {
     font: normal normal 900 56px/100px Archivo;
+    line-height: 80px;
   }
 
   .bicolor-titled-container p {
