@@ -14,8 +14,6 @@
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .bicolor-titled-container {
     max-width: 400px;
-    align-self: flex-start;
-    margin-left: 95px;
   }
   .bicolor-titled-container h1 {
     font: normal normal 900 40px/44px Archivo;
@@ -28,11 +26,11 @@
 }
 @media screen and (min-width: 1200px) {
   .bicolor-titled-container {
-    max-width: 500px;
-    align-self: flex-start;
+    max-width: 532px;
   }
   .bicolor-titled-container h1 {
     font: normal normal 900 56px/100px Archivo;
+    line-height: 80px;
   }
 
   .bicolor-titled-container p {

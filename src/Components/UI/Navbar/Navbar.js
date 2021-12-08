@@ -9,12 +9,18 @@ function Navbar({ onClickMenu }) {
     return (
         <div className="a11y-navbar">
             <div className="a11y-navbar-logo">
-                <Logo
-                    style={{
-                        width: "60px",
-                        height: "24px",
-                    }}
-                />
+                <button
+                    style={{ background: "none", border: "none" }}
+                    title="Home"
+                    onClick={() => window.location.href = "/"}>
+                    <Logo
+                        className="a11y-navbar-logo-img"
+                        style={{
+                            width: "60px",
+                            height: "24px",
+                        }}
+                    />
+                </button>
             </div>
 
             <div className="a11y-navbar-toggle">

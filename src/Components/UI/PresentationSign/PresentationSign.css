@@ -18,10 +18,16 @@
   }
 }
 @media (min-width: 1200px) {
+  .presentation-sign {
+    align-items: flex-start;
+  }
+
   .presentation-sign p {
+    text-align: start;
     font: normal normal 24px/32px Archivo;
   }
   .presentation-sign b {
+    text-align: start;
     font: normal normal 900 100px/100px Archivo;
   }
 }

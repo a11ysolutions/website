@@ -1,11 +1,15 @@
 import React from "react"
 import "./Clients.css"
+import BicolorTitledText from "../BicolorTitledText/BicolorTitledText"
 function Clients() {
     return (
         <div className="clients-container" id="clients">
-            <p>
-                <span style={{ color: "#0D9E71" }}>Trusted by many <br /> clients</span>, including:
-            </p>
+            <BicolorTitledText
+                color2="black"
+                color1="#0D9E71"
+                color1Text="Trusted by many clients,"
+                color2Text="including:"
+            />
             <div className="clients-img-container">
                 <div className="clients-img-row">
                     <div className="clients-img-card">
