@@ -10,8 +10,24 @@
 }
 
 .a11y-home-why-choose-us-clients {
+  display: flex;
+  justify-content: center;
 }
-@media (min-width: 1920px) {
+
+.home-our-services-section {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .a11y-home-why-choose-us-clients {
+    margin-top: 170px;
+    display: flex;
+  }
+  .home-our-services-section {
+    margin-left: 64px;
+  }
+}
+@media (min-width: 1200px) {
   .a11y-home-presentation-container {
     display: flex;
     justify-content: center;
@@ -22,5 +38,9 @@
   .a11y-home-why-choose-us-clients {
     margin-top: 170px;
     display: flex;
+  }
+  .home-our-services-section {
+    margin: auto;
+    align-items: center !important;
   }
 }

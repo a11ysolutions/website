@@ -10,28 +10,34 @@ import BicolorTitledText from "../UI/BicolorTitledText/BicolorTitledText"
 
 function Home() {
     return (
-        <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-            <div className="a11y-home-presentation-container">
-                <PresentationSign />
-                <div style={{ alignSelf: "center", marginTop: "90px" }}>
-                    <HomeIlustration />
+        <div>
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                <div className="a11y-home-presentation-container">
+                    <PresentationSign />
+                    <div style={{ alignSelf: "center", marginTop: "90px" }}>
+                        <HomeIlustration />
+                    </div>
                 </div>
+
+                <Qualities />
+                <Clients />
+
             </div>
+            <div className="home-our-services-section">
 
-            <Qualities />
-            <Clients />
-            <BicolorTitledText
-                color1="black"
-                color2="#0D9E71"
-                color1Text="Our"
-                color2Text="services">
-                <p>
-                    Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna.
+                <BicolorTitledText
+                    color1="black"
+                    color2="#0D9E71"
+                    color1Text="Our"
+                    color2Text="services"
+                >
+                    <p>
+                        Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna.
                     </p>
-            </BicolorTitledText>
-
-            <Services />
+                </BicolorTitledText>
+                <Services />
+            </div>
             <Toolset />
         </div>
     )
