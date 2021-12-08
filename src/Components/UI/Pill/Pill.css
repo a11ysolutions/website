@@ -41,3 +41,77 @@
   top: 0px;
   left: 162px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1920px) {
+  .a11y-pill {
+    width: 218px;
+    height: 59px;
+  }
+  .a11y-pill-text {
+    font: normal normal bold 20px/44px Archivo;
+    position: absolute;
+    top: 9px;
+    left: 40px;
+  }
+
+  .a11y-dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 162px;
+  }
+
+  .a11y-dot-top-left {
+    top: -2px;
+    left: -8px;
+  }
+
+  .a11y-dot-bottom-left {
+    top: 30px;
+    left: -5px;
+  }
+
+  .a11y-dot-top-right {
+    top: 0px;
+    left: 200px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .a11y-pill {
+    width: 240px;
+    height: 71px;
+  }
+  .a11y-pill-text {
+    font: normal normal bold 24px/32px Archivo;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+  }
+
+  .a11y-dot {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 162px;
+  }
+
+  .a11y-dot-top-left {
+    top: -2px;
+    left: -8px;
+  }
+
+  .a11y-dot-bottom-left {
+    top: 45px;
+    left: -5px;
+  }
+
+  .a11y-dot-top-right {
+    top: 0px;
+    left: 220px;
+  }
+}

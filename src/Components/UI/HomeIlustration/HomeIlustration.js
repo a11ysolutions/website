@@ -12,16 +12,16 @@ function HomeIlustration() {
                     alt="man typing"
                 />
 
-                <Pill position={{ top: "-40px", left: "170px" }}>
+                <Pill className="home-ilustration-functionality-pill">
                     Functionality
                 </Pill>
                 <Pill
-                    position={{ top: "220px", right: "170px" }}
+                    className="home-ilustration-accessibility-pill"
                     dotPosition="top-right">
                     Accessibility
                 </Pill>
                 <Pill
-                    position={{ top: "320px", left: "170px" }}
+                    className="home-ilustration-automation-pill"
                     dotPosition="top-left">
                     Automation
                 </Pill>
