@@ -213,14 +213,16 @@ function Functional() {
               color2Text="We Offer"
           ></BicolorTitledText>
 
-          <CheckedItem icon={BUG_ICON} >Smoke testing</CheckedItem>
-          <CheckedItem icon={PUZZLE_ICON}>Module / Component testing</CheckedItem>
-          <CheckedItem icon={SYNC_ICON}>Regression testing</CheckedItem>
-          <CheckedItem icon={GEAR_ICON}>Integration testing</CheckedItem>
-          <CheckedItem icon={CLIPBOARD_ICON}>Cross- platform testing</CheckedItem>
-          <CheckedItem icon={SHIELD_ICON}>Sanity testing</CheckedItem>
-          <CheckedItem icon={PERSON_ICON}>UAT testing</CheckedItem>
-          <CheckedItem icon={SEARCH_ICON}>Explorary testing</CheckedItem>
+          <div className='checked-with-icons'>
+            <CheckedItem icon={BUG_ICON} >Smoke testing</CheckedItem>
+            <CheckedItem icon={PUZZLE_ICON}>Module / Component testing</CheckedItem>
+            <CheckedItem icon={SYNC_ICON}>Regression testing</CheckedItem>
+            <CheckedItem icon={GEAR_ICON}>Integration testing</CheckedItem>
+            <CheckedItem icon={CLIPBOARD_ICON}>Cross- platform testing</CheckedItem>
+            <CheckedItem icon={SHIELD_ICON}>Sanity testing</CheckedItem>
+            <CheckedItem icon={PERSON_ICON}>UAT testing</CheckedItem>
+            <CheckedItem icon={SEARCH_ICON}>Explorary testing</CheckedItem>
+          </div>
         </div>
 
         <div className="last-image">

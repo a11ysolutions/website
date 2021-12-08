@@ -173,6 +173,11 @@
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
 
+  .checked-with-icons {
+    flex-direction: column;
+    column-count: 2;
+  }
+
   .a11y-qualities-section {
     flex-direction: row-reverse;
     column-gap: 32px;
