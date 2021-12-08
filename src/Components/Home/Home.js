@@ -23,7 +23,7 @@ function Home() {
                 <Clients />
 
             </div>
-            <div className="home-our-services-section">
+            <div className="home-our-services-section" id="our-services">
 
                 <BicolorTitledText
                     color1="black"

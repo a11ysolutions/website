@@ -7,7 +7,7 @@ import Button from "../Button/Button"
 
 function Qualities() {
     return (
-        <div className="a11y-qualities">
+        <div className="a11y-qualities" id="why-choose-us">
             <div className="why-choose-us-qualities">
                 <BicolorTitledText
                     color1="black"

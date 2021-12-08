@@ -14,6 +14,7 @@ function Navbar({ onClickMenu }) {
                     title="Home"
                     onClick={() => window.location.href = "/"}>
                     <Logo
+                        className="a11y-navbar-logo-img"
                         style={{
                             width: "60px",
                             height: "24px",
