@@ -53,6 +53,6 @@
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .checked-item {
-    margin-left: 112px;
+    margin-left: 20px;
   }
 }
