@@ -1,0 +1,22 @@
+.page-top {
+  margin-top: 135px;
+}
+.privacy-policy {
+  text-align: left;
+  padding: 36px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 300px;
+  max-width: 1020px;
+}
+
+.privacy-policy span {
+  color: #595959;
+}
+.privacy-policy a {
+  color: blue !important;
+}
+.privacy-policy p {
+  color: #595959;
+}

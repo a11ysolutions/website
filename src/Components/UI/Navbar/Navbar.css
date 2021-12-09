@@ -10,6 +10,9 @@
 .a11y-navbar-logo {
   margin-left: 20px;
 }
+.a11y-navbar-logo button {
+  cursor: pointer;
+}
 .a11y-navbar-logo-img {
 }
 .a11y-navbar-toggle {
