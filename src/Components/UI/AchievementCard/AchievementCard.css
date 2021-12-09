@@ -1,5 +1,5 @@
 .achievement-card {
-  height: 123px;
+  min-height: 123px;
   width: 343px;
   background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 16px;

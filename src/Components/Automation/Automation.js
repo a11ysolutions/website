@@ -13,6 +13,7 @@ import { GiAlarmClock } from "react-icons/gi"
 
 
 import "./Automation.css";
+import { scrollToContactForm } from "../Utils/Utils"
 // import { scrollToContactForm } from "../Utils/Utils"
 
 
@@ -60,7 +61,7 @@ function Automation() {
                     <CheckedItem>Produce better software and faster</CheckedItem>
                     <CheckedItem>Build test automation environment rapidly</CheckedItem>
 
-                    <Button
+                    <Button onClick={scrollToContactForm}
                         className="automation"
                     >Get in touch</Button>
                 </div>
@@ -91,7 +92,7 @@ function Automation() {
                     <CheckedItem>We help you to get away from slow releases and defects found in production.</CheckedItem>
                     <CheckedItem>With our help, you will become Proactive instead of Reactive</CheckedItem>
 
-                    <Button
+                    <Button onClick={scrollToContactForm}
                         className="automation"
                     >Get in touch</Button>
                 </div>
@@ -129,7 +130,7 @@ function Automation() {
                     <CheckedItem>Scalability</CheckedItem>
 
 
-                    <Button
+                    <Button onClick={scrollToContactForm}
                         className="automation"
                     >Get in touch</Button>
                 </div>
