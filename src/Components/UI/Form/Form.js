@@ -17,6 +17,8 @@ function Form() {
     const phoneNumberRef = useRef(null)
 
     let firstFieldWithError = null
+    let attribute= {"aria-invalid":"true"}
+    
 
     const changeHandler = (event) => {
 
@@ -86,9 +88,7 @@ function Form() {
         return errors
     }
 
-    let opts = {}
-    opts["aria-invalid"]="true"
-    
+        
     return (
         <div style={{ marginTop: "4em" }}>
             <form onSubmit={(event) => onSubmit(event)} noValidate>
@@ -104,7 +104,7 @@ function Form() {
                         value={formValues.name}
                         onChange={changeHandler}
                         aria-describedby="name-error" 
-                        { ...(formErrors["name"]&& opts )}
+                        { ...(formErrors["name"]&& attribute)}
                         />
                     <div id="name-error" className="error-message">{formErrors.name}</div>
                 </div>
@@ -118,7 +118,7 @@ function Form() {
                         value={formValues.companyName}
                         onChange={changeHandler}
                         aria-describedby="company-name-error" 
-                        { ...(formErrors["companyName"]&& opts )}
+                        { ...(formErrors["companyName"]&& attribute)}
                         />
                     <div id="company-name-error" className="error-message">{formErrors.companyName}</div>
                 </div>
@@ -133,7 +133,7 @@ function Form() {
                         value={formValues.email}
                         onChange={changeHandler}
                         aria-describedby="email-error" 
-                        { ...(formErrors["email"]&& opts )}
+                        { ...(formErrors["email"]&& attribute)}
                         />
                     <div id="email-error" className="error-message">{formErrors.email}</div>
                 </div>
@@ -149,7 +149,7 @@ function Form() {
                         value={formValues.phoneNumber}
                         onChange={changeHandler}
                         aria-describedby="phone-number-error" 
-                        { ...(formErrors["phoneNumber"]&& opts )}
+                        { ...(formErrors["phoneNumber"]&& attribute)}
                         />
                     <div id="phone-number-error" className="error-message">{formErrors.phoneNumber}</div>
                 </div>
