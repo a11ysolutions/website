@@ -9,16 +9,25 @@ import SocialLinks from "../SocialLinks/SocialLinks"
 function Footer() {
     return (
         <footer className="footer" id="footer">
-            <Logo color="green" />
-            <FooterLinks />
-            <SocialLinks />
-            <ContactInfo />
-            <Form />
-            <div style={{ marginTop: "4em", textAlign: "center" }}>
-                <div>Copyright 2021 <strong>a11ySolutions.</strong></div>
+            <div className="footer-section">
+                <div className="footer-top-section">
+                    <div>
+                        <Logo color="green" />
+                        <FooterLinks />
+                        <SocialLinks />
+                    </div>
+                    <div>
+                        <ContactInfo />
+                    </div>
+                </div>
+                <div className="footer-form">
+                    <Form />
+                </div>
+            </div>
+            <div className="footer-copyright">
+                <div>Copyright 2021 <strong>a11ySolutions.{" "}</strong></div>
                 <div>All Rights Reserved</div>
             </div>
-
         </footer>
     )
 }

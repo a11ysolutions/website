@@ -14,12 +14,13 @@ function Qualities() {
                     color2="#0D9E71"
                     color1Text="Why"
                     color2Text="choose us?"
+                    className="home-why-choose-us"
                 >
                     <p>
                         Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut aliquip ex ea.
-                        </p>
+                    </p>
                     <Button onClick={scrollToContactForm}>Get in touch</Button>
                 </BicolorTitledText>
                 <div className="a11y-qualities-top-section">

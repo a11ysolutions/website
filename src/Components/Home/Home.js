@@ -30,6 +30,7 @@ function Home() {
                     color2="#0D9E71"
                     color1Text="Our"
                     color2Text="services"
+                    className="home-our-services"
                 >
                     <p>
                         Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor

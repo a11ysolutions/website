@@ -26,6 +26,9 @@
   .home-our-services-section {
     margin-left: 64px;
   }
+  .home-our-services {
+    text-align: left !important;
+  }
 }
 @media (min-width: 1200px) {
   .a11y-home-presentation-container {
@@ -43,5 +46,8 @@
     margin: auto;
     margin-top: 186px;
     align-items: center !important;
+  }
+  .home-our-services {
+    text-align: center !important;
   }
 }

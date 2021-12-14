@@ -1,5 +1,5 @@
 import "./BicolorTitledText.css";
-
+import "../../Home/Home.css"
 
 function BicolorTitledText({ color1, color2, color1Text, color2Text, children, className, breakLine }) {
 
@@ -12,9 +12,7 @@ function BicolorTitledText({ color1, color2, color1Text, color2Text, children, c
                 {breakLine ? <br /> : " "}
                 {color2Text}
             </h1>
-            <div>
-                {children}
-            </div>
+            {children}
         </div>
     )
 }
