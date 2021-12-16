@@ -30,7 +30,7 @@
   flex-direction: column;
   margin: 120px 0;
 }
-.automation-first-encircled-img {
+.functional-first-encircled-img {
   display: flex;
   align-self: center;
   justify-content: center;
@@ -41,7 +41,7 @@
   border-radius: 287px;
   z-index: 10;
 }
-.automation-first-blurred-circle {
+.functional-first-blurred-circle {
   width: 100px;
   height: 100px;
   border: 40px solid #27dba419;
@@ -62,7 +62,7 @@
   flex-direction: column;
   margin: 120px 0 -90px 0;
 }
-.automation-third-circle {
+.functional-third-circle {
   width: 60px;
   height: 60px;
   border-top: 40px solid #21ce99;
@@ -75,14 +75,14 @@
   position: absolute;
 }
 
-.automation-third-blurred-circle {
+.functional-third-blurred-circle {
   width: 114px;
   height: 114px;
   border: 56px solid #27dba419;
   border-radius: 50%;
   margin-top: -100px;
 }
-.automation-fourth-circle {
+.functional-fourth-circle {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -92,7 +92,7 @@
   right: 10px;
   margin-top: 70px;
 }
-.automation-fith-image {
+.functional-fith-image {
   width: 300px;
   height: 300px;
   align-self: flex-end;
@@ -100,12 +100,12 @@
   margin-top: -150px;
   z-index: 10;
 }
-.automation-second-circle-container {
+.functional-second-circle-container {
   display: flex;
   margin-top: -300px;
 }
 
-.automation-second-circle {
+.functional-second-circle {
   width: 45px;
   height: 45px;
   border: 32px solid #21ce99;
@@ -114,7 +114,7 @@
   z-index: 5;
 }
 
-.automation-second-blurred-circle {
+.functional-second-blurred-circle {
   width: 95px;
   height: 95px;
   border: 40px solid #27dba419;
@@ -124,21 +124,21 @@
   margin-left: -30px;
 }
 
-.automation-second-image {
+.functional-second-image {
   width: 171.5px;
   height: 171.5px;
   align-self: flex-end;
   z-index: 10;
 }
 
-.automation-second-image-container {
+.functional-second-image-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   z-index: 10;
 }
 
-.automation-fourth-image {
+.functional-fourth-image {
   width: 122px;
   height: 122px;
   margin-bottom: 10px;
@@ -165,7 +165,7 @@
   background-color: #aaaaaa19;
 }
 
-.a11y-qualities-section {
+.functional-qualities-section {
   display: flex;
   flex-direction: column;
   row-gap: 24px;
@@ -178,7 +178,7 @@
     column-count: 2;
   }
 
-  .a11y-qualities-section {
+  .functional-qualities-section {
     display: block;
     flex-direction: row;
     flex-flow: row wrap;
@@ -188,7 +188,7 @@
     column-count: 2;
   }
 
-  .a11y-button.automation {
+  .functional-button.functional {
     align-self: start;
     margin-top: 30px;
   }
@@ -199,7 +199,7 @@
     margin: 0;
   }
 
-  .automation-fith-image {
+  .functional-fith-image {
     width: 400px;
     height: 400px;
     align-self: center;
@@ -207,12 +207,12 @@
     margin-left: 150px;
   }
 
-  .automation-fourth-circle {
+  .functional-fourth-circle {
     right: 200px;
     margin-top: 230px;
   }
 
-  .automation-third-blurred-circle {
+  .functional-third-blurred-circle {
     width: 170px;
     height: 170px;
     position: absolute;
@@ -220,7 +220,7 @@
     margin-top: 10px;
   }
 
-  .automation-third-circle {
+  .functional-third-circle {
     left: 30px;
     margin-left: -50px;
     margin-top: 417px;
@@ -231,11 +231,11 @@
   }
 
   .checked-info,
-  button.automation {
+  button.functional {
     align-self: flex-start;
   }
 
-  button.automation {
+  button.functional {
     margin-left: 110px !important;
   }
 
@@ -250,7 +250,7 @@
 
 @media screen and (min-width: 1200px) {
 
-  .a11y-qualities-section {
+  .functional-qualities-section {
     display: block;
     flex-direction: row;
     flex-flow: row wrap;
@@ -269,7 +269,7 @@
     flex-direction: row;
   }
 
-  .automation-pill {
+  .functional-pill {
     top: 250px !important;
     left: 1350px !important;
   }
@@ -290,7 +290,7 @@
     margin-left: 100px;
   }
 
-  .automation-fith-image {
+  .functional-fith-image {
     width: 400px;
     height: 400px;
     align-self: center;
@@ -298,18 +298,18 @@
     margin-left: 140%;
   }
 
-  .automation-third-circle {
+  .functional-third-circle {
     left: 30px;
     margin-left: -50px;
     margin-top: 417px;
   }
 
-  .automation-fourth-circle {
+  .functional-fourth-circle {
     right: 10%;
     margin-top: 230px;
   }
 
-  .automation-third-blurred-circle {
+  .functional-third-blurred-circle {
     width: 170px;
     height: 170px;
     position: absolute;
