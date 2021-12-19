@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .form-group {
   margin-top: 1.5em;
 }
@@ -35,3 +36,33 @@
     text-align: left;
   }
 }
+=======
+.form-group{
+    margin-top: 1.5em;
+}
+.form-input{
+    height:2em;
+    background-color: #000 !important;
+    border:none;
+    border-bottom: #595959 thin solid;
+    color:#7C7C7C !important;
+    font:inherit;
+}
+.form-group label{
+    width:fit-content;
+    margin-top:3em;
+    display:block;
+}
+.required{
+    font-weight: 300;
+    font-style: italic;
+}
+.error-message{
+    width:fit-content;
+    color:#de4330;
+    margin-bottom:2em;
+}
+.error{
+    border-bottom: #de4330 thin solid;
+}
+>>>>>>> ernesto/feat/Footer
