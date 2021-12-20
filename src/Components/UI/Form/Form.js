@@ -92,109 +92,81 @@ function Form() {
     return (
         <div style={{ marginTop: "4em" }}>
             <form onSubmit={(event) => onSubmit(event)} noValidate>
-                <h2 style={{ textTransform: "uppercase", fontSize: "1em" }}>Request a consultation from one of our experts</h2>
+            <h2 style={{ textTransform: "uppercase", fontSize: "1em" }}>Request a consultation from one of our experts</h2>
                 <div className="form-inputs">
                     <div className="form-left-section">
                         <div className="form-group">
-                            <label for="name" style={{ display: "block" }}>Name*</label>
-                            <input id="name" className="form-input" type="text" autoComplete="name" />
+                            <label htmlFor="name" style={{ display: "block" }}>Name<span className="required">(required)</span></label>
+                            <input id="name" 
+                                className={formErrors["name"] ? "form-input error" : "form-input"}
+                                ref={nameRef}
+                                type="text"
+                                autoComplete="name"
+                                value={formValues.name}
+                                onChange={changeHandler}
+                                aria-describedby="name-error" 
+                                { ...(formErrors["name"]&& attribute)}
+                            />
+                            <div id="name-error" className="error-message">{formErrors.name}</div>
                         </div>
                         <div className="form-group">
-                            <label for="company-name" style={{ display: "block" }}>Company name*</label>
-                            <input id="company-name" className="form-input" type="text" />
+                            <label htmlFor="companyName" style={{ display: "block" }}>Company name<span className="required"> (required)</span></label>
+                            <input id="companyName"                             
+                                className={formErrors["companyName"] ? "form-input error" : "form-input"}
+                                ref={companyNameRef}
+                                type="text"
+                                value={formValues.companyName}
+                                onChange={changeHandler}
+                                aria-describedby="company-name-error" 
+                                { ...(formErrors["companyName"]&& attribute)}
+                             />
+                             <div id="company-name-error" className="error-message">{formErrors.companyName}</div>
                         </div>
                         <div className="form-group">
-                            <label for="email" style={{ display: "block" }}>Email*</label>
-                            <input id="email" className="form-input" type="email" autoComplete="email" />
+                            <label htmlFor="email" style={{ display: "block" }}>Email<span className="required"> (required)</span></label>
+                            <input id="email" 
+                                className={formErrors["email"] ? "form-input error" : "form-input"}
+                                ref={emailRef}
+                                type="email"
+                                autoComplete="email"
+                                value={formValues.email}
+                                onChange={changeHandler}
+                                aria-describedby="email-error" 
+                                { ...(formErrors["email"]&& attribute)}
+                            />
+                            <div id="name-email" className="error-message">{formErrors.email}</div>
                         </div>
                     </div>
                     <div>
                         <div className="form-group">
-                            <label for="phone-number" style={{ display: "block" }}>Phone number*</label>
-                            <input id="phone-number" className="form-input" type="text" autoComplete="phone" />
+                            <label htmlFor="phoneNumber" style={{ display: "block" }}>Phone number<span className="required"> (required)</span></label>
+                            <input id="phoneNumber" 
+                                className={formErrors["phoneNumber"] ? "form-input error" : "form-input"}
+                                ref={phoneNumberRef}
+                                type="text"
+                                autoComplete="tel"
+                                value={formValues.phoneNumber}
+                                onChange={changeHandler}
+                                aria-describedby="phone-number-error" 
+                                { ...(formErrors["phoneNumber"]&& attribute)}
+                            />
+                            <div id="phone-number-error" className="error-message">{formErrors.phoneNumber}</div>
                         </div>
                         <div className="form-group">
-                            <label for="message" style={{ display: "block" }}>Message</label>
-                            <textarea id="message" className="form-input" type="text" />
+                            <label htmlFor="message" style={{ display: "block" }}>Message</label>
+                            <textarea id="message" 
+                                className="form-input" 
+                                type="text" 
+                                value={formValues.message}
+                                onChange={changeHandler} 
+                            />
                         </div>
                     </div>
                 </div>
                 <div className="form-group form-button" >
-                <div className="form-group">
-                    <label htmlFor="name" style={{ marginTop: "0em" }}>Name <span className="required">(required)</span></label>
-                    <input
-                        id="name"
-                        className={formErrors["name"] ? "form-input error" : "form-input"}
-                        ref={nameRef}
-                        type="text"
-                        autoComplete="name"
-                        value={formValues.name}
-                        onChange={changeHandler}
-                        aria-describedby="name-error" 
-                        { ...(formErrors["name"]&& attribute)}
-                        />
-                    <div id="name-error" className="error-message">{formErrors.name}</div>
+                    <Button variant="light" style={{ marginTop:"1em" ,height: "3em" }}>Submit now</Button>
                 </div>
-                <div className="form-group">
-                    <label htmlFor="companyName" >Company name<span className="required"> (required)</span></label>
-                    <input
-                        id="companyName"
-                        className={formErrors["companyName"] ? "form-input error" : "form-input"}
-                        ref={companyNameRef}
-                        type="text"
-                        value={formValues.companyName}
-                        onChange={changeHandler}
-                        aria-describedby="company-name-error" 
-                        { ...(formErrors["companyName"]&& attribute)}
-                        />
-                    <div id="company-name-error" className="error-message">{formErrors.companyName}</div>
-                </div>
-                <div className="form-group">
-                    <label htmlFor="email" >Email<span className="required"> (required)</span></label>
-                    <input
-                        id="email"
-                        className={formErrors["email"] ? "form-input error" : "form-input"}
-                        ref={emailRef}
-                        type="email"
-                        autoComplete="email"
-                        value={formValues.email}
-                        onChange={changeHandler}
-                        aria-describedby="email-error" 
-                        { ...(formErrors["email"]&& attribute)}
-                        />
-                    <div id="email-error" className="error-message">{formErrors.email}</div>
-                </div>
-                <div className="form-group">
-                    <label htmlFor="phoneNumber" >Phone number<span className="required"> (required)</span></label>
-                    <input
-                        id="phoneNumber"
-                        className={formErrors["phoneNumber"] ? "form-input error" : "form-input"}
-                        
-                        ref={phoneNumberRef}
-                        type="text"
-                        autoComplete="tel"
-                        value={formValues.phoneNumber}
-                        onChange={changeHandler}
-                        aria-describedby="phone-number-error" 
-                        { ...(formErrors["phoneNumber"]&& attribute)}
-                        />
-                    <div id="phone-number-error" className="error-message">{formErrors.phoneNumber}</div>
-                </div>
-                <div className="form-group">
-                    <label htmlFor="message" >Message</label>
-                    <textarea
-                        id="message"
-                        className="form-input"
-                        type="text"
-                        value={formValues.message}
-                        onChange={changeHandler}>
-                    </textarea>
-
-                </div>
-                <div className="form-group" style={{ textAlign: "center" }}>
-                    <Button variant="light" style={{ height: "3em" }}>Submit now</Button>
-                </div>
-                </div>
+                
             </form>
 
 
