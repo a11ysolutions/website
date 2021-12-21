@@ -29,7 +29,7 @@ function Accessibility() {
                 pillText="Accessibility"
                 imgSrc="./explain-hand-with-laptop.png"
                 containerStyle={{ position: "relative", marginTop: "50px" }}
-                pillPosition={{ top: "-40px", left: "170px" }}
+                pillPositionClass="pill-position"
             />
 
             <section className="a11y-qualities">
