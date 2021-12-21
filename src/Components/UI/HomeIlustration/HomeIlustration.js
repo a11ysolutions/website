@@ -7,7 +7,7 @@ function HomeIlustration() {
         <div className="home-ilustration-container">
             <div style={{ position: "relative", marginTop: "50px" }}>
                 <img
-                    src="/coding-man.png"
+                    src="/coding-man@2x.png"
                     className="home-ilustration"
                     alt="man typing"
                 />

@@ -32,104 +32,104 @@ function Functional() {
     <div id='functional-main' className='page-container' >
       <div className="page-top">
         <Presentation
-            title="Scalable Functional Testing Services"
-            texts={[
-                "Discover how you can instantly and",
-                "effortlessly find the bugs impacting",
-                "your users enabling you to release",
-                "high-quality at speed."   
-            ]}
-            buttonText="Get a free consultation" />
+          title="Scalable Functional Testing Services"
+          texts={[
+            "Discover how you can instantly and",
+            "effortlessly find the bugs impacting",
+            "your users enabling you to release",
+            "high-quality at speed."
+          ]}
+          buttonText="Get a free consultation" />
       </div>
 
       <Illustration
-          pillText="Functionality"
-          imgSrc="./desktop.png"
-          containerStyle={{ position: "relative", marginTop: "50px" }}
-          pillPosition={{ top: "-40px", left: "170px" }}
+        pillText="Functionality"
+        imgSrc="./desktop@2x.png"
+        containerStyle={{ position: "relative", marginTop: "50px" }}
+        pillPosition={{ top: "-40px", left: "170px" }}
       />
 
       <section className="info-with-image first-info">
         <div className="checked-info">
           <BicolorTitledText
-              color1="#0D9E71"
-              color2="black"
-              color1Text="Our expert advice can help you"
-              color2Text="solve your QA bottlenecks"
+            color1="#0D9E71"
+            color2="black"
+            color1Text="Our expert advice can help you"
+            color2Text="solve your QA bottlenecks"
           >
-              <p>Without consistently delivering a quality 
-              experience, brands and enterprises can’t fully 
+            <p>Without consistently delivering a quality
+            experience, brands and enterprises can’t fully
               guarantee customer satisfaction.<br></br><br></br>
-              
-              We help development teams deliver 
-              exceptional products at speed with the best 
-              customer experience. Our functional testing 
-              process is built around your needs, and we 
+
+              We help development teams deliver
+              exceptional products at speed with the best
+              customer experience. Our functional testing
+              process is built around your needs, and we
               integrate with the tools you already use.</p>
           </BicolorTitledText>
 
           <Button
-              className="automation"
-              onClick={scrollToContactForm}
+            className="automation"
+            onClick={scrollToContactForm}
           >Get in touch</Button>
         </div>
 
         <div className="intermediate-image">
-            <div className="automation-first-encircled-img">
-                <img src="./desktop-two-monitors.png" alt="A desktop with two monitors" className="automation-first-image" />
-            </div>
-            <div className="automation-first-blurred-circle"></div>
+          <div className="automation-first-encircled-img">
+            <img src="./desktop-two-monitors.png" alt="A desktop with two monitors" className="automation-first-image" />
+          </div>
+          <div className="automation-first-blurred-circle"></div>
         </div>
       </section>
 
       <section className="info-with-image second-info">
         <div className="checked-info">
           <BicolorTitledText
-              color1="#0D9E71"
-              color2="black"
-              color1Text="What can we help"
-              color2Text="you achieve today?"
+            color1="#0D9E71"
+            color2="black"
+            color1Text="What can we help"
+            color2Text="you achieve today?"
           >
-              ELEVATE YOUR DIGITAL EXPERIENCE WITH UNBEATABLE QUALITY AND COVERAGE
+            ELEVATE YOUR DIGITAL EXPERIENCE WITH UNBEATABLE QUALITY AND COVERAGE
           </BicolorTitledText>
 
           <CheckedItem>Scale your device coverage testing using real-world different devices, screen resolutions, browsers, and platforms, with no emulators.</CheckedItem>
           <CheckedItem>Every defect is manually reproduced, verified, and categorized by severity, to allow rapid fixes.</CheckedItem>
           <CheckedItem>Bring your internal teams together and improve your working practices across the entire SDLC.</CheckedItem>
           <CheckedItem>Detailed issue reports integrate seamlessly into your own platform(s).</CheckedItem>
-          
+
           <Button
-              className="automation"
-              onClick={scrollToContactForm}
+            className="automation"
+            onClick={scrollToContactForm}
           >Get in touch</Button>
         </div>
 
         <div className="intermediate-image">
-            <img src="./coding-man.png" alt="A man typing on a computer" className="automation-second-image" />
-            <div className="automation-second-image-container">
-                <img src="./computer-plant.png" alt="A computer and a plant" className="automation-third-image" />
-                <img src="./hand-bar.png" alt="A hand with an increasing digital bar on top" className="automation-fourth-image" />
-            </div>
-            <div className="automation-second-circle-container">
-                <div className="automation-second-circle" ></div>
-                <div className="automation-second-blurred-circle"></div>
-            </div>
+          <img src="./coding-man.png" alt="A man typing on a computer" className="automation-second-image" />
+          <div className="automation-second-image-container">
+            <img src="./computer-plant.png" alt="A computer and a plant" className="automation-third-image" />
+            <img src="./hand-bar.png" alt="A hand with an increasing digital bar on top" className="automation-fourth-image" />
+          </div>
+          <div className="automation-second-circle-container">
+            <div className="automation-second-circle" ></div>
+            <div className="automation-second-blurred-circle"></div>
+          </div>
         </div>
       </section>
-      
+
       <section className="info-with-image first-info">
         <div className="checked-info">
           <BicolorTitledText
-              color1="#0D9E71"
-              color2="black"
-              color1Text=""
-              color2Text=""
+            color1="#0D9E71"
+            color2="black"
+            color1Text=""
+            color2Text=""
           >
-              UNLIMITED SCALE, AT SPEED
+            UNLIMITED SCALE, AT SPEED
           </BicolorTitledText>
-          
+
           <div className='a11y-qualities-section'>
-            
+
             <AchievementCard imgSrc="folder-data.svg">
               <p>
                 <span style={{ fontWeight: "bold" }}>
@@ -138,7 +138,7 @@ function Functional() {
                 within hours, with no extra triage required.
               </p>
             </AchievementCard>
-          
+
             <AchievementCard imgSrc="data-user.svg">
               <p>
                 <span style={{ fontWeight: "bold" }}>
@@ -148,7 +148,7 @@ function Functional() {
                 real-time.
               </p>
             </AchievementCard>
-          
+
             <AchievementCard imgSrc="searching.svg">
               <p>
                 <span style={{ fontWeight: "bold" }}>
@@ -166,20 +166,20 @@ function Functional() {
                 by speeding up your testing workflow.
               </p>
             </AchievementCard>
-            
+
           </div>
         </div>
       </section>
-      
+
       <section className="info-with-image second-info">
         <div className="checked-info">
           <BicolorTitledText
-              color1="#0D9E71"
-              color2="black"
-              color1Text=""
-              color2Text=""
+            color1="#0D9E71"
+            color2="black"
+            color1Text=""
+            color2Text=""
           >
-              DELIVER GLOBAL RELEASES THAT DELIGHT USERS
+            DELIVER GLOBAL RELEASES THAT DELIGHT USERS
           </BicolorTitledText>
 
           <CheckedItem>Improve customer satisfaction earning the trust and satisfaction of international users by ensuring bugs don’t affect their interactions with your brand and products.</CheckedItem>
@@ -187,15 +187,15 @@ function Functional() {
           <CheckedItem>Test with real users on real devices for real results ensuring a consistent user experience for all end-users giving you a competitive edge in the oversaturated app market.</CheckedItem>
 
           <Button
-              className="automation"
-              onClick={scrollToContactForm}
+            className="automation"
+            onClick={scrollToContactForm}
           >Get in touch</Button>
 
           <div className="intermediate-image">
-              <div className="automation-first-encircled-img">
-                  <img src="./man-typing.png" alt="Typing on a laptop" className="automation-first-image" />
-              </div>
-              <div className="automation-first-blurred-circle"></div>
+            <div className="automation-first-encircled-img">
+              <img src="./man-typing.png" alt="Typing on a laptop" className="automation-first-image" />
+            </div>
+            <div className="automation-first-blurred-circle"></div>
           </div>
         </div>
       </section>
@@ -203,10 +203,10 @@ function Functional() {
       <section className="info-with-image shadowed-section">
         <div className="checked-info">
           <BicolorTitledText
-              color1="#0D9E71"
-              color2="black"
-              color1Text="Functional Testing Services"
-              color2Text="We Offer"
+            color1="#0D9E71"
+            color2="black"
+            color1Text="Functional Testing Services"
+            color2Text="We Offer"
           ></BicolorTitledText>
 
           <div className='checked-with-icons'>
@@ -222,15 +222,15 @@ function Functional() {
         </div>
 
         <div className="last-image">
-            <div className="automation-third-circle-container">
-                <div className="automation-third-circle"></div>
-                <div className="automation-third-blurred-circle"></div>
-                <div className="automation-fourth-circle" ></div>
-            </div>
-            <img src="./man-typing-and-diagram.png" alt="A programmer working in a computer" className="automation-fith-image" />
+          <div className="automation-third-circle-container">
+            <div className="automation-third-circle"></div>
+            <div className="automation-third-blurred-circle"></div>
+            <div className="automation-fourth-circle" ></div>
+          </div>
+          <img src="./man-typing-and-diagram.png" alt="A programmer working in a computer" className="automation-fith-image" />
         </div>
       </section>
-     
+
       <Toolset />
     </div>
   );
