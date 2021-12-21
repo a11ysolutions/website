@@ -41,7 +41,7 @@ function Automation() {
                 pillText="Automation"
                 imgSrc="./working-code@2x.png"
                 containerStyle={{ position: "relative", marginTop: "50px" }}
-                pillPosition={{ top: "-40px", left: "170px" }}
+                pillPositionClass="pill-position"
             />
 
             <section className="info-with-image first-info">
