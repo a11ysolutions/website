@@ -132,7 +132,7 @@ function Functional() {
             </div>
           </BicolorTitledText>
           
-          <div className='functional-qualities-section'>
+          <div className='a11y-qualities-top-section'>
             
             <AchievementCard imgSrc="folder-data.svg">
               <p>
