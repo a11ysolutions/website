@@ -42,7 +42,7 @@
   left: 162px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1920px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .a11y-pill {
     width: 218px;
     height: 59px;
@@ -79,7 +79,7 @@
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1200px) {
   .a11y-pill {
     width: 240px;
     height: 71px;
