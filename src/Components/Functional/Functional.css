@@ -171,8 +171,12 @@
   row-gap: 24px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+/* .pill-position {
+  top: -40px;
+  left: 170px;
+} */
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .checked-with-icons {
     flex-direction: column;
     column-count: 2;
@@ -246,10 +250,14 @@
   .second-info .intermediate-image {
     margin-left: 270px;
   }
+
+  /* .pill-position {
+    top: -40px;
+    left: 470px;
+  } */
 }
 
 @media screen and (min-width: 1200px) {
-
   .functional-qualities-section {
     display: block;
     flex-direction: row;
@@ -330,4 +338,9 @@
     margin-left: -100px;
     margin-right: 40px;
   }
+
+  /* .pill-position {
+    top: 240px;
+    left: 1300px;
+  } */
 }
