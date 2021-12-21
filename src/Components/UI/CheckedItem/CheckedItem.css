@@ -19,11 +19,11 @@
   width: 20px;
 }
 
-.checked-item-icon-container{
+.checked-item-icon-container {
   width: 51px;
   height: 51px;
   background: var(--unnamed-color-21ce99) 0% 0% no-repeat padding-box;
-  background: #21CE99 0% 0% no-repeat padding-box;
+  background: #21ce99 0% 0% no-repeat padding-box;
   border-radius: 8px;
   display: flex;
   align-self: flex-start;
@@ -32,10 +32,10 @@
   align-items: center;
 }
 
-.checked-sign-container{
+.checked-sign-container {
   width: 25px;
   height: 25px;
-  background: #21CE99 0% 0% no-repeat padding-box;
+  background: #21ce99 0% 0% no-repeat padding-box;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
@@ -43,11 +43,12 @@
   align-items: center;
   position: absolute;
   align-self: flex-start;
-  filter: blur(1px);
-  -webkit-filter: blur(1px);
+  opacity: 10;
+  /* filter: blur(1px);
+  -webkit-filter: blur(1px); */
 }
 
-.checked-item-icon-container .checked-item-icon{
+.checked-item-icon-container .checked-item-icon {
   align-self: center;
 }
 
