@@ -12,7 +12,7 @@ function BicolorTitledText({ color1, color2, color1Text, color2Text, children, c
                 {breakLine ? <br /> : " "}
                 {color2Text}
             </h1>
-            {children}
+            <div>{children}</div>
         </div>
     )
 }

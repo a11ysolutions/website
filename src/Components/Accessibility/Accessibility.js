@@ -29,7 +29,7 @@ function Accessibility() {
                 pillText="Accessibility"
                 imgSrc="./explain-hand-with-laptop.png"
                 containerStyle={{ position: "relative", marginTop: "50px" }}
-                pillPosition={{ top: "-40px", left: "170px" }}
+                pillPositionClass="pill-position"
             />
 
             <section className="a11y-qualities">
@@ -39,6 +39,7 @@ function Accessibility() {
                         color2="#0D9E71"
                         color1Text="We offer the following"
                         color2Text="accessibility audits for you:"
+                        className="a11y-first-bicolored"
                     >
                         Our test automation engineers will put your testing on the automation footing
                         to find more defects in less time. We do this in order to:

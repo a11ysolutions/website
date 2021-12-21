@@ -162,6 +162,10 @@
     background-color: #AAAAAA19;
 }
 
+.pill-position{
+    top: -40px;
+    left: 170px;
+}
 
 @media screen and (min-width: 768px) and (max-width: 1200px){
     .a11y-button.automation{
@@ -222,6 +226,12 @@
     .second-info .intermediate-image{
         margin-left: 270px;
     }
+
+    .pill-position{
+        top: -40px;
+        left: 470px;
+    }
+    
 
 }
 
@@ -293,4 +303,10 @@
         margin-left: -100px;
         margin-right: 40px;
     }
+
+    .pill-position{
+        top: 240px;
+        left: 1300px;
+    }
+    
 }
