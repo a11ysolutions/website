@@ -165,10 +165,11 @@
   background-color: #aaaaaa19;
 }
 
-.functional-qualities-section {
+.functional-qualities-top-section {
   display: flex;
   flex-direction: column;
   row-gap: 24px;
+  align-items: center;
 }
 
 /* .pill-position {
@@ -198,11 +199,11 @@
     column-count: 2;
   }
 
-  .functional-qualities-section {
-    display: block;
+  .functional-qualities-top-section {
+    display: flex;
     flex-direction: row;
     flex-flow: row wrap;
-    column-gap: 32px;
+    column-gap: 100px;
     justify-content: center;
     align-items: center;
     column-count: 2;
@@ -274,7 +275,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .functional-qualities-section {
+  .functional-qualities-top-section {
     display: block;
     flex-direction: row;
     flex-flow: row wrap;
