@@ -3,7 +3,30 @@
   background: linear-gradient(#21ce99 1080px, white 20px);
   overflow-x: hidden !important;
 }
-
+.circles-container {
+  position: relative;
+}
+.right-circle {
+  top: -135px;
+  left: 192px;
+  right: 0px;
+  width: 202px;
+  height: 202px;
+  border: 80px solid #ffffff61;
+  opacity: 1;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+.bottom-circle {
+  top: 955px;
+  left: 280px;
+  width: 191px;
+  height: 191px;
+  border: 32px solid #ffffff61;
+  border-radius: 50%;
+  position: absolute;
+}
 @media (min-width: 768px) and (max-width: 1200px) {
   .layout-content {
     background: linear-gradient(#21ce99 1204px, white 20px);

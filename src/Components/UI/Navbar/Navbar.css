@@ -18,6 +18,7 @@
 .a11y-navbar-toggle {
   margin-left: auto;
   display: flex;
+  z-index: 2;
 }
 
 .a11y-navbar-items {
