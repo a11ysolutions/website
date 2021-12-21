@@ -43,17 +43,10 @@ function Functional() {
       </div>
 
       <Illustration
-<<<<<<< HEAD
           pillText="Functionality"
           imgSrc="./desktop.png"
           containerStyle={{ position: "relative", marginTop: "50px" }}
           pillPositionClass="pill-position"
-=======
-        pillText="Functionality"
-        imgSrc="./desktop@2x.png"
-        containerStyle={{ position: "relative", marginTop: "50px" }}
-        pillPosition={{ top: "-40px", left: "170px" }}
->>>>>>> dev
       />
 
       <section className="info-with-image first-info">
@@ -76,28 +69,16 @@ function Functional() {
           </BicolorTitledText>
 
           <Button
-<<<<<<< HEAD
               className="functional"
               onClick={scrollToContactForm}
-=======
-            className="automation"
-            onClick={scrollToContactForm}
->>>>>>> dev
           >Get in touch</Button>
         </div>
 
         <div className="intermediate-image">
-<<<<<<< HEAD
             <div className="functional-first-encircled-img">
                 <img src="./desktop-two-monitors.png" alt="A desktop with two monitors" className="functional-first-image" />
             </div>
             <div className="functional-first-blurred-circle"></div>
-=======
-          <div className="automation-first-encircled-img">
-            <img src="./desktop-two-monitors.png" alt="A desktop with two monitors" className="automation-first-image" />
-          </div>
-          <div className="automation-first-blurred-circle"></div>
->>>>>>> dev
         </div>
       </section>
 
@@ -118,18 +99,12 @@ function Functional() {
           <CheckedItem>Detailed issue reports integrate seamlessly into your own platform(s).</CheckedItem>
 
           <Button
-<<<<<<< HEAD
               className="functional"
               onClick={scrollToContactForm}
-=======
-            className="automation"
-            onClick={scrollToContactForm}
->>>>>>> dev
           >Get in touch</Button>
         </div>
 
         <div className="intermediate-image">
-<<<<<<< HEAD
             <img src="./coding-man.png" alt="A man typing on a computer" className="functional-second-image" />
             <div className="functional-second-image-container">
                 <img src="./computer-plant.png" alt="A computer and a plant" className="functional-third-image" />
@@ -139,17 +114,6 @@ function Functional() {
                 <div className="functional-second-circle" ></div>
                 <div className="functional-second-blurred-circle"></div>
             </div>
-=======
-          <img src="./coding-man.png" alt="A man typing on a computer" className="automation-second-image" />
-          <div className="automation-second-image-container">
-            <img src="./computer-plant.png" alt="A computer and a plant" className="automation-third-image" />
-            <img src="./hand-bar.png" alt="A hand with an increasing digital bar on top" className="automation-fourth-image" />
-          </div>
-          <div className="automation-second-circle-container">
-            <div className="automation-second-circle" ></div>
-            <div className="automation-second-blurred-circle"></div>
-          </div>
->>>>>>> dev
         </div>
       </section>
 
@@ -163,15 +127,9 @@ function Functional() {
           >
             UNLIMITED SCALE, AT SPEED
           </BicolorTitledText>
-<<<<<<< HEAD
           
           <div className='functional-qualities-section'>
             
-=======
-
-          <div className='a11y-qualities-section'>
-
->>>>>>> dev
             <AchievementCard imgSrc="folder-data.svg">
               <p>
                 <span style={{ fontWeight: "bold" }}>
@@ -229,7 +187,6 @@ function Functional() {
           <CheckedItem>Test with real users on real devices for real results ensuring a consistent user experience for all end-users giving you a competitive edge in the oversaturated app market.</CheckedItem>
 
           <Button
-<<<<<<< HEAD
               className="functional"
               onClick={scrollToContactForm}
           >Get in touch</Button>
@@ -239,17 +196,6 @@ function Functional() {
                   <img src="./man-typing.png" alt="Typing on a laptop" className="functional-first-image" />
               </div>
               <div className="functional-first-blurred-circle"></div>
-=======
-            className="automation"
-            onClick={scrollToContactForm}
-          >Get in touch</Button>
-
-          <div className="intermediate-image">
-            <div className="automation-first-encircled-img">
-              <img src="./man-typing.png" alt="Typing on a laptop" className="automation-first-image" />
-            </div>
-            <div className="automation-first-blurred-circle"></div>
->>>>>>> dev
           </div>
         </div>
       </section>
@@ -276,21 +222,12 @@ function Functional() {
         </div>
 
         <div className="last-image">
-<<<<<<< HEAD
             <div className="functional-third-circle-container">
                 <div className="functional-third-circle"></div>
                 <div className="functional-third-blurred-circle"></div>
                 <div className="functional-fourth-circle" ></div>
             </div>
             <img src="./man-typing-and-diagram.png" alt="A programmer working in a computer" className="functional-fith-image" />
-=======
-          <div className="automation-third-circle-container">
-            <div className="automation-third-circle"></div>
-            <div className="automation-third-blurred-circle"></div>
-            <div className="automation-fourth-circle" ></div>
-          </div>
-          <img src="./man-typing-and-diagram.png" alt="A programmer working in a computer" className="automation-fith-image" />
->>>>>>> dev
         </div>
       </section>
 
