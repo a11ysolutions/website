@@ -199,6 +199,11 @@
     column-count: 2;
   }
 
+  .functional-cursive-text{
+    width: 452px;
+    height: 60px;
+  }
+
   .functional-qualities-top-section {
     display: flex;
     flex-direction: row;
@@ -275,6 +280,12 @@
 }
 
 @media screen and (min-width: 1200px) {
+
+  .functional-cursive-text{
+    width: 573px;
+    height: 60px;
+  }
+
   .functional-qualities-top-section {
     display: block;
     flex-direction: row;
