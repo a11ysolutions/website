@@ -176,6 +176,22 @@
   left: 170px;
 } */
 
+.functional-cursive-text {
+  width: 323px;
+  height: 71px;
+  font: var(--unnamed-font-style-italic) normal
+    var(--unnamed-font-weight-normal) 18px/24px
+    var(--unnamed-font-family-archivo);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-000000);
+  text-align: left;
+  font: italic normal normal 18px/24px Archivo;
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .checked-with-icons {
     flex-direction: column;

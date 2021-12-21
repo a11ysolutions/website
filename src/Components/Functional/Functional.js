@@ -90,7 +90,9 @@ function Functional() {
             color1Text="What can we help"
             color2Text="you achieve today?"
           >
-            ELEVATE YOUR DIGITAL EXPERIENCE WITH UNBEATABLE QUALITY AND COVERAGE
+            <div className='functional-cursive-text'>
+              ELEVATE YOUR DIGITAL EXPERIENCE WITH UNBEATABLE QUALITY AND COVERAGE
+            </div>
           </BicolorTitledText>
 
           <CheckedItem>Scale your device coverage testing using real-world different devices, screen resolutions, browsers, and platforms, with no emulators.</CheckedItem>
@@ -125,7 +127,9 @@ function Functional() {
             color1Text=""
             color2Text=""
           >
-            UNLIMITED SCALE, AT SPEED
+            <div className='functional-cursive-text'>
+              UNLIMITED SCALE, AT SPEED
+            </div>
           </BicolorTitledText>
           
           <div className='functional-qualities-section'>
@@ -179,7 +183,9 @@ function Functional() {
             color1Text=""
             color2Text=""
           >
-            DELIVER GLOBAL RELEASES THAT DELIGHT USERS
+            <div className="functional-cursive-text">
+              DELIVER GLOBAL RELEASES THAT DELIGHT USERS
+            </div>
           </BicolorTitledText>
 
           <CheckedItem>Improve customer satisfaction earning the trust and satisfaction of international users by ensuring bugs don’t affect their interactions with your brand and products.</CheckedItem>
