@@ -74,7 +74,7 @@ function Functional() {
           >Get in touch</Button>
         </div>
 
-        <div className="intermediate-image">
+        <div className="functional-intermediate-image">
             <div className="functional-first-encircled-img">
                 <img src="./desktop-two-monitors.png" alt="A desktop with two monitors" className="functional-first-image" />
             </div>
@@ -109,7 +109,7 @@ function Functional() {
 
         </div>
 
-        <div className="intermediate-image">
+        <div className="functional-intermediate-image">
             <img src="./coding-man.png" alt="A man typing on a computer" className="functional-second-image" />
             <div className="functional-second-image-container">
                 <img src="./computer-plant.png" alt="A computer and a plant" className="functional-third-image" />
@@ -202,7 +202,7 @@ function Functional() {
             >Get in touch</Button>
           </div>
 
-          <div className="intermediate-image">
+          <div className="functional-intermediate-image">
               <div className="functional-first-encircled-img">
                   <img src="./man-typing.png" alt="Typing on a laptop" className="functional-first-image" />
               </div>
