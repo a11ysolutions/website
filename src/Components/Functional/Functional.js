@@ -90,20 +90,23 @@ function Functional() {
             color1Text="What can we help"
             color2Text="you achieve today?"
           >
-            <div className='functional-cursive-text'>
+            <div className='vpat-explanation-header'>
               ELEVATE YOUR DIGITAL EXPERIENCE WITH UNBEATABLE QUALITY AND COVERAGE
             </div>
           </BicolorTitledText>
 
-          <CheckedItem>Scale your device coverage testing using real-world different devices, screen resolutions, browsers, and platforms, with no emulators.</CheckedItem>
-          <CheckedItem>Every defect is manually reproduced, verified, and categorized by severity, to allow rapid fixes.</CheckedItem>
-          <CheckedItem>Bring your internal teams together and improve your working practices across the entire SDLC.</CheckedItem>
-          <CheckedItem>Detailed issue reports integrate seamlessly into your own platform(s).</CheckedItem>
+          <div className='bicolor-titled-container'>
+            <CheckedItem>Scale your device coverage testing using real-world different devices, screen resolutions, browsers, and platforms, with no emulators.</CheckedItem>
+            <CheckedItem>Every defect is manually reproduced, verified, and categorized by severity, to allow rapid fixes.</CheckedItem>
+            <CheckedItem>Bring your internal teams together and improve your working practices across the entire SDLC.</CheckedItem>
+            <CheckedItem>Detailed issue reports integrate seamlessly into your own platform(s).</CheckedItem>
+            
+            <Button
+                className="functional"
+                onClick={scrollToContactForm}
+            >Get in touch</Button>
+          </div>
 
-          <Button
-              className="functional"
-              onClick={scrollToContactForm}
-          >Get in touch</Button>
         </div>
 
         <div className="intermediate-image">
@@ -127,7 +130,7 @@ function Functional() {
             color1Text=""
             color2Text=""
           >
-            <div className='functional-cursive-text'>
+            <div className='vpat-explanation-header'>
               UNLIMITED SCALE, AT SPEED
             </div>
           </BicolorTitledText>
@@ -183,19 +186,21 @@ function Functional() {
             color1Text=""
             color2Text=""
           >
-            <div className="functional-cursive-text">
+            <div className='vpat-explanation-header'>
               DELIVER GLOBAL RELEASES THAT DELIGHT USERS
             </div>
           </BicolorTitledText>
+          
+          <div className='bicolor-titled-container'>
+            <CheckedItem>Improve customer satisfaction earning the trust and satisfaction of international users by ensuring bugs don’t affect their interactions with your brand and products.</CheckedItem>
+            <CheckedItem>Understand bug impact on local users ensuring end-users feel as though the products you deliver were built for them.</CheckedItem>
+            <CheckedItem>Test with real users on real devices for real results ensuring a consistent user experience for all end-users giving you a competitive edge in the oversaturated app market.</CheckedItem>
 
-          <CheckedItem>Improve customer satisfaction earning the trust and satisfaction of international users by ensuring bugs don’t affect their interactions with your brand and products.</CheckedItem>
-          <CheckedItem>Understand bug impact on local users ensuring end-users feel as though the products you deliver were built for them.</CheckedItem>
-          <CheckedItem>Test with real users on real devices for real results ensuring a consistent user experience for all end-users giving you a competitive edge in the oversaturated app market.</CheckedItem>
-
-          <Button
-              className="functional"
-              onClick={scrollToContactForm}
-          >Get in touch</Button>
+            <Button
+                className="functional"
+                onClick={scrollToContactForm}
+            >Get in touch</Button>
+          </div>
 
           <div className="intermediate-image">
               <div className="functional-first-encircled-img">
