@@ -42,7 +42,7 @@
   margin-right: 30px;
 }
 
-@media (min-width: 768px) and (max-width: 1600px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .a11y-navbar-contact {
     display: initial;
   }
@@ -51,7 +51,7 @@
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   .a11y-navbar-items {
     display: flex;
   }
