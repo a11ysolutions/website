@@ -115,8 +115,8 @@ function Accessibility() {
                 </div>
 
                 <div className="intermediate-image">
-                    <div className="automation-first-encircled-img">
-                        <img src="./hand-with-laptop-circular.png" alt="A hand with an open laptop in the background" className="automation-first-image"/>
+                    <div className="a11y-first-encircled-img">
+                        <img src="./hand-with-laptop-circular.png" alt="A hand with an open laptop in the background" className="a11y-first-image"/>
                     </div>
                     <div className="automation-first-blurred-circle"></div>
                 </div>
@@ -168,23 +168,34 @@ function Accessibility() {
 
                     <div className="vpat-explanation-header no-margin">THIS REPORT WILL INCLUDE:</div>
 
-                    <CheckedItem>Feature/Module/URL evaluated</CheckedItem>
-                    <CheckedItem>Screenshots/Video</CheckedItem>
-                    <CheckedItem>Compliance item violated</CheckedItem>
-                    <CheckedItem>Issue description</CheckedItem>
-                    <CheckedItem>Suggested solution</CheckedItem>
-                    <CheckedItem>WCAG 2.0/2.1 | Section 508</CheckedItem>
-                    <CheckedItem>Success Criteria Conformance Level (Level A|AA|AAA)</CheckedItem>
-                    <CheckedItem>Browsers & Screen Readers used</CheckedItem>
-                    <CheckedItem>Among others</CheckedItem>
+                    <div className="checked-items">
+                        <div className="checked-group-1">
+                            <CheckedItem>Feature/Module/URL evaluated</CheckedItem>
+                            <CheckedItem>Screenshots/Video</CheckedItem>
+                            <CheckedItem>Compliance item violated</CheckedItem>
+                            <CheckedItem>Issue description</CheckedItem>
+                            <CheckedItem>Suggested solution</CheckedItem>
+                        </div>
+
+                        <div className="checked-group-1">
+                            <CheckedItem>WCAG 2.0/2.1 | Section 508</CheckedItem>
+                            <CheckedItem>Success Criteria Conformance Level (Level A|AA|AAA)</CheckedItem>
+                            <CheckedItem>Browsers & Screen Readers used</CheckedItem>
+                            <CheckedItem>Among others</CheckedItem>
+                        </div>
+                    </div>
+
+                    <Button onClick={scrollToContactForm}
+                        className="automation"
+                    >Get in touch</Button>
 
                 </div>
 
                 <div className="intermediate-image">
-                    <div className="automation-first-encircled-img">
-                        <img src="./writing-in-paper.png" alt="Two people writing on a paper in an office" className="automation-first-image"/>
+                    <div className="a11y-first-encircled-img">
+                        <img src="./writing-in-paper.png" alt="Two people writing on a paper in an office" className="a11y-first-image"/>
                     </div>
-                    <div className="automation-first-blurred-circle"></div>
+                    <div className="a11y-first-blurred-circle"></div>
                 </div>
             </section>
 

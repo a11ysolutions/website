@@ -11,10 +11,6 @@
     font: normal normal normal 16px/24px Archivo;
 }
 
-.page-top{
-    /* margin-top: 135px; */
-}
-
 .intermediate-image{
     display: flex;
     flex-direction: column;
@@ -211,9 +207,9 @@
         align-self: flex-start;
     }
 
-    .checked-info, button.automation{
+    /* .checked-info, button.automation{
         align-self: flex-start;
-    }
+    } */
 
     button.automation{
         margin-left: 20px !important;
@@ -305,8 +301,8 @@
     }
 
     .pill-position{
-        top: 240px;
-        left: 1300px;
+        top: 100px;
+        left: 76%;
     }
     
 }

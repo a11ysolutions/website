@@ -12,11 +12,7 @@
 
     border: 80px solid #FFFFFF61;
     border-radius: 50%;
-    /* position: absolute; */
     z-index: 0;
-    /* opacity: 1; */
-    /* backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px); */
 }
 
 .page-container {
@@ -24,10 +20,6 @@
     flex-direction: column;
     align-items: center; 
     font: normal normal normal 16px/24px Archivo;
-}
-
-.a11y-page-top{
-    /* margin-top: 135px; */
 }
 
 .intermediate-image{
@@ -42,21 +34,26 @@
     margin: 120px 0 -90px 0;
 }
 
-.automation-first-encircled-img{
+.a11y-first-encircled-img{
     display: flex;
     align-self: center;
     justify-content: center;
     align-items: center;
     border: 24px solid #21CE99;
-    width: 287px;
-    height: 287px;
+    width: 387px;
+    height: 387px;
     border-radius: 287px;
     z-index: 10;
 }
 
-.automation-first-image {
-    width: 249px;
-    height: 249px;
+.a11y-first-image {
+    width: 349px;
+    height: 349px;
+}
+
+.checked-items {
+    display: flex;
+    flex-direction: column;
 }
 
 .automation-first-blurred-circle{
@@ -231,6 +228,11 @@
         align-items: center;
     }
 
+    .presentation-circle-1{
+        margin-top: -255px !important;
+        margin-right: -842px !important;
+    }
+
     .bicolor-titled-container{
         text-align: center;
         max-width: 60%;
@@ -284,20 +286,23 @@
         margin-top: 417px;
     }
 
-    .a11y-info-with-image{
+    /* .a11y-info-with-image{
         align-self: flex-start;
-    }
+    } */
 
-    .checked-info, button.automation{
+    /* .checked-info, button.automation{
         align-self: flex-start;
-    }
+    } */
 
     button.automation{
         margin-left: 20px !important;
     }
 
     .a11y-shadowed-section{
-        padding: 0
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
     }
 
     .a11y-info-with-image.a11y-shadowed-section .bicolor-titled-container{
@@ -305,7 +310,7 @@
     }
 
     .a11y-info-with-image.a11y-shadowed-section .checked-info{
-        max-width: 600px;
+        max-width: 800px;
     }
 
 
@@ -329,6 +334,10 @@
         justify-content: space-between;
     }
 
+    .checked-items {
+        flex-direction: row;
+    }
+
 }
 
 @media screen and (min-width: 1200px){
@@ -336,6 +345,10 @@
     section.a11y-qualities, section.a11y-page{
         align-items: center !important;
         max-width: 1000px;
+    }
+
+    .presentation-circle-1{
+        margin-right: -1642px !important;
     }
 
     .a11y-buttons{
@@ -366,7 +379,7 @@
     } */
 
     .automation-pill {
-        top: 250px !important;
+        top: 0px !important;
         left: 1350px !important;
     }
 

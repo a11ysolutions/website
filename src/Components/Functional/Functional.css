@@ -263,10 +263,10 @@
     align-self: flex-start;
   }
 
-  .checked-info,
+  /* .checked-info,
   button.functional {
     align-self: flex-start;
-  }
+  } */
 
   button.functional {
     margin-left: 110px !important;

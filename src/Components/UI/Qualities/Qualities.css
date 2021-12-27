@@ -35,6 +35,9 @@
     flex-direction: row;
     column-gap: 32px;
   }
+  .why-choose-us-qualities {
+    flex-direction: row;
+  }
   .a11y-qualities-top-section {
     flex-direction: row-reverse;
     column-gap: 32px;
