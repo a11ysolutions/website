@@ -13,7 +13,8 @@ import "./Accessibility.css";
 function Accessibility() {
     return (
         <div id='automation-main' className='page-container' >
-            <div className="page-top">
+            <div className="presentation-circle-1"></div>
+            <div className="a11y-page-top">
                 <Presentation
                     title="Our expert team will guarantee your product's accessibility"
                     texts={[
@@ -23,7 +24,6 @@ function Accessibility() {
                         "accessible to everyone."
                     ]}
                     buttonText="Get a free consultation" />
-
             </div>
             <Illustration
                 pillText="Accessibility"
