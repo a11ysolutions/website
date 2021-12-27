@@ -4,7 +4,7 @@ import { scrollToContactForm } from "../../Utils/Utils"
 import BicolorTitledText from "../BicolorTitledText/BicolorTitledText";
 function Toolset() {
   return (
-    <div style={{ marginTop: "139px" }}>
+    <div style={{ marginTop: "60px" }}>
       <BicolorTitledText
         color1="black"
         color2="#0D9E71"
