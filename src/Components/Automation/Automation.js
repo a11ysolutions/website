@@ -26,6 +26,8 @@ const ALARM_ICON = <GiAlarmClock className="checked-item-icon" />;
 function Automation() {
     return (
         <div id='automation-main' className='page-container' >
+            <div className="presentation-circle-1"></div>
+
             <div className="page-top">
                 <Presentation
                     title="Accelerate Automation with us"
@@ -154,11 +156,17 @@ function Automation() {
                         color2Text="we offer"
                     ></BicolorTitledText>
 
-                    <CheckedItem icon={TRENDING_ICON} >Reduce Regression Cost</CheckedItem>
-                    <CheckedItem icon={CHECKED_ICON}>Better Testing Quality</CheckedItem>
-                    <CheckedItem icon={STAR_ICON}>Better Resource utilization</CheckedItem>
-                    <CheckedItem icon={CLIPBOARD_ICON}>Multi-platform testing</CheckedItem>
-                    <CheckedItem icon={ALARM_ICON}>Faster time to market</CheckedItem>
+                    <div className="checked-items">
+                        <div>
+                            <CheckedItem icon={TRENDING_ICON} >Reduce Regression Cost</CheckedItem>
+                            <CheckedItem icon={CHECKED_ICON}>Better Testing Quality</CheckedItem>
+                            <CheckedItem icon={STAR_ICON}>Better Resource utilization</CheckedItem>
+                        </div>
+                        <div>
+                            <CheckedItem icon={CLIPBOARD_ICON}>Multi-platform testing</CheckedItem>
+                            <CheckedItem icon={ALARM_ICON}>Faster time to market</CheckedItem>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="last-image">

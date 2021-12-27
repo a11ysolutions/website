@@ -14,7 +14,7 @@
 .intermediate-image{
     display: flex;
     flex-direction: column;
-    margin: 120px 0;
+   /* margin: 120px 0; */
 }
 
 .last-image{
@@ -203,9 +203,9 @@
         margin-top: 417px;
     }
 
-    .info-with-image{
+    /* .info-with-image{
         align-self: flex-start;
-    }
+    } */
 
     /* .checked-info, button.automation{
         align-self: flex-start;
