@@ -6,7 +6,7 @@ import ToolList from "../ToolList/ToolList";
 
 function Toolset() {
   return (
-    <div style={{ marginTop: "60px" }}>
+    <div style={{ marginTop: "60px" }} className="toolset-container">
       <BicolorTitledText
         color1="black"
         color2="#0D9E71"
