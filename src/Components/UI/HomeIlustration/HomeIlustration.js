@@ -26,7 +26,9 @@ function HomeIlustration() {
                     Automation
                 </Pill>
                 <div className="home-ilustration-small-circle"></div>
-                <div className="home-ilustration-large-circle"></div>
+                <div style={{ width: "100%" }}>
+                    <div className="home-ilustration-large-circle"></div>
+                </div>
             </div>
         </div>
     )
