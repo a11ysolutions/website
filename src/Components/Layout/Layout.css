@@ -9,8 +9,7 @@
 }
 .right-circle {
   top: -135px;
-  left: 192px;
-  right: 0px;
+  right: -192px;
   width: 202px;
   height: 202px;
   border: 80px solid #ffffff61;
@@ -20,8 +19,8 @@
   z-index: 1;
 }
 .bottom-circle {
-  top: 955px;
-  left: 280px;
+  top: 850px;
+  right: -190px;
   width: 191px;
   height: 191px;
   border: 32px solid #ffffff61;
