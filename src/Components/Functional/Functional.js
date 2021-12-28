@@ -90,7 +90,7 @@ function Functional() {
             color1Text="What can we help"
             color2Text="you achieve today?"
           >
-            <div className='vpat-explanation-header'>
+            <div className='functional-explanation-header'>
               ELEVATE YOUR DIGITAL EXPERIENCE WITH UNBEATABLE QUALITY AND COVERAGE
             </div>
           </BicolorTitledText>
@@ -130,7 +130,7 @@ function Functional() {
             color1Text=""
             color2Text=""
           >
-            <div className='vpat-explanation-header'>
+            <div className='functional-explanation-header'>
               UNLIMITED SCALE, AT SPEED
             </div>
           </BicolorTitledText>
@@ -186,7 +186,7 @@ function Functional() {
             color1Text=""
             color2Text=""
           >
-            <div className='vpat-explanation-header'>
+            <div className='functional-explanation-header'>
               DELIVER GLOBAL RELEASES THAT DELIGHT USERS
             </div>
           </BicolorTitledText>
