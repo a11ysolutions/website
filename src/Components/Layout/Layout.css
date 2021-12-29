@@ -1,6 +1,6 @@
 .layout-content {
   padding: 16px 16px 0 16px;
-  background: linear-gradient(#21ce99 960px, white 20px);
+  background: linear-gradient(#21ce99 1040px, white 20px);
   overflow-x: hidden !important;
   overflow-y: hidden;
 }
@@ -19,7 +19,7 @@
   z-index: 1;
 }
 .bottom-circle {
-  top: 850px;
+  top: 930px;
   right: -190px;
   width: 191px;
   height: 191px;

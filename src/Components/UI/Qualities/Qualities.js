@@ -23,6 +23,10 @@ function Qualities() {
                     </p>
                     <Button onClick={scrollToContactForm}>Get in touch</Button>
                 </BicolorTitledText>
+                <div className="qualities-circles-container">
+                    <div className="qualities-right-circle"></div>
+                    <div className="qualities-left-circle"></div>
+                </div>
                 <div className="a11y-qualities-top-section">
                     <AchievementCard imgSrc="/quality-assurance.png">
                         <h3>Quality</h3>
@@ -60,6 +64,7 @@ function Qualities() {
                     </p>
                 </AchievementCard>
             </div>
+
         </div>
     )
 }
