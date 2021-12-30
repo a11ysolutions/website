@@ -1,10 +1,32 @@
 .a11y-services {
 }
+.services-circles-section {
+  position: relative;
+}
 
+.services-circle {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: -50px;
+  left: -100px;
+  border-radius: 50%;
+  border: 40px solid #21ce99;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .services-circles-section {
+    display: none;
+  }
+}
 @media (min-width: 1200px) {
   .a11y-services {
     display: flex;
     column-gap: 70px;
     align-items: flex-end;
+  }
+  .services-circles-section {
+    display: none;
   }
 }

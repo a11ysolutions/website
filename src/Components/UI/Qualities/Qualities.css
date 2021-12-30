@@ -71,6 +71,9 @@
     flex-direction: row-reverse;
     column-gap: 32px;
   }
+  .qualities-circles-container {
+    display: none;
+  }
 }
 @media (min-width: 1200px) {
   .a11y-qualities {
@@ -95,5 +98,8 @@
   }
   .why-choose-us-qualities {
     text-align: left !important;
+  }
+  .qualities-circles-container {
+    display: none;
   }
 }
