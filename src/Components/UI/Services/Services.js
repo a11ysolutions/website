@@ -8,6 +8,7 @@ function Services() {
                 header="Functional testing"
                 imgSrc="/functional-testing.png"
                 style={{ marginTop: "53px" }}
+                imgClass="services-functional-img"
                 onClickButton={() => {
                     document.location.href = "/functional"
                 }}
@@ -22,6 +23,7 @@ function Services() {
                 imgSrc="/accessibility-testing.png"
                 imgColor="#21ce99"
                 style={{ marginTop: "53px" }}
+                imgClass="services-accessibility-img"
                 imgStyle={{ boxShadow: "0px 3px 40px #17D1984D" }}
                 onClickButton={() => {
                     document.location.href = "/accessibility"
@@ -37,6 +39,7 @@ function Services() {
                 header="Automation testing"
                 imgSrc="/automation-testing.png"
                 style={{ marginTop: "53px" }}
+                imgClass="services-automation-img"
                 onClickButton={() => {
                     document.location.href = "/automation"
                 }}

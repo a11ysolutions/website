@@ -7,8 +7,9 @@ function Clients() {
             <BicolorTitledText
                 color2="black"
                 color1="#0D9E71"
-                color1Text="Trusted by many clients,"
+                color1Text="Trusted by many clients"
                 color2Text="including:"
+                breakLine={false}
             />
             <div className="clients-img-container">
                 <div className="clients-img-row">

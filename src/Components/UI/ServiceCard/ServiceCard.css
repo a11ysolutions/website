@@ -17,6 +17,9 @@
   display: flex;
   flex-direction: column;
 }
+.service-card-content h3 {
+  font: normal normal bold 18px/32px Archivo !important;
+}
 .service-card-text {
   line-height: 24px;
 }
