@@ -45,6 +45,7 @@
 @media (min-width: 768px) and (max-width: 1200px) {
   .a11y-navbar-contact {
     display: initial;
+    font-size: 20px;
   }
   .a11y-navbar-toggle {
     margin-right: 70px;

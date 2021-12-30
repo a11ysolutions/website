@@ -20,7 +20,7 @@ function Presentation({ title, texts, buttonText }) {
           )
         })
       }
-      <Button size="large" style={{ marginTop: "24px" }} onClick={scrollToContactForm}>
+      <Button size="large" className='presentation-button' onClick={scrollToContactForm}>
         Get a free consultation
         </Button>
     </div>
