@@ -26,7 +26,7 @@ const ALARM_ICON = <GiAlarmClock className="checked-item-icon" />;
 function Automation() {
     return (
         <div id='automation-main' className='page-container' >
-            <div className="presentation-circle-1"></div>
+            {/* <div className="presentation-circle-1"></div> */}
 
             <div className="page-top">
                 <Presentation

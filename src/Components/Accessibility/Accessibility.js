@@ -13,7 +13,7 @@ import "./Accessibility.css";
 function Accessibility() {
     return (
         <div id='automation-main' className='page-container' >
-            <div className="presentation-circle-1"></div>
+            {/* <div className="presentation-circle-1"></div> */}
             <div className="a11y-page-top">
                 <Presentation
                     title="Our expert team will guarantee your product's accessibility"
@@ -79,7 +79,7 @@ function Accessibility() {
 
 
             <section className="a11y-page second-info">
-                
+
                 <BicolorTitledText
                     color1="black"
                     color2="#0D9E71"
@@ -97,7 +97,7 @@ function Accessibility() {
                         className="automation"
                     >Get in touch</Button>
                 </div>
-                
+
             </section>
 
             <section className="a11y-info-with-image inverted">
@@ -110,13 +110,13 @@ function Accessibility() {
                     </div>
 
                     <Button onClick={scrollToContactForm}
-                            className="automation"
-                        >Get in touch</Button>
+                        className="automation"
+                    >Get in touch</Button>
                 </div>
 
                 <div className="intermediate-image">
                     <div className="a11y-first-encircled-img">
-                        <img src="./hand-with-laptop-circular.png" alt="A hand with an open laptop in the background" className="a11y-first-image"/>
+                        <img src="./hand-with-laptop-circular.png" alt="A hand with an open laptop in the background" className="a11y-first-image" />
                     </div>
                     <div className="automation-first-blurred-circle"></div>
                 </div>
@@ -140,20 +140,20 @@ function Accessibility() {
                 </div>
 
                 <div className="intermediate-image">
-                    <img src="./laptop-in-desktop-with-plants.png" alt="Open laptop on a desktop with p[lants in the background" className="automation-second-image"/>
+                    <img src="./laptop-in-desktop-with-plants.png" alt="Open laptop on a desktop with p[lants in the background" className="automation-second-image" />
                     <div className="automation-second-image-container">
-                        <img src="./procreator-ux-design-studio.png" alt="A man working on his desktop" className="automation-third-image"/>
-                        <img src="./explain-hand-with-laptop-circular.png" alt="A hand pointing to a laptop screen" className="automation-fourth-image"/>
+                        <img src="./procreator-ux-design-studio.png" alt="A man working on his desktop" className="automation-third-image" />
+                        <img src="./explain-hand-with-laptop-circular.png" alt="A hand pointing to a laptop screen" className="automation-fourth-image" />
                     </div>
                     <div className="automation-second-circle-container">
                         <div className="automation-second-circle" ></div>
                         <div className="automation-second-blurred-circle"></div>
                     </div>
                 </div>
-                
+
             </section>
-            
-            <section className="a11y-info-with-image inverted"> 
+
+            <section className="a11y-info-with-image inverted">
                 <div className="checked-info">
                     <BicolorTitledText
                         color1="black"
@@ -193,13 +193,13 @@ function Accessibility() {
 
                 <div className="intermediate-image">
                     <div className="a11y-first-encircled-img">
-                        <img src="./writing-in-paper.png" alt="Two people writing on a paper in an office" className="a11y-first-image"/>
+                        <img src="./writing-in-paper.png" alt="Two people writing on a paper in an office" className="a11y-first-image" />
                     </div>
                     <div className="a11y-first-blurred-circle"></div>
                 </div>
             </section>
 
-            <section className="a11y-info-with-image a11y-shadowed-section"> 
+            <section className="a11y-info-with-image a11y-shadowed-section">
                 <div className="checked-info">
                     <div>
                         <BicolorTitledText
@@ -214,13 +214,13 @@ function Accessibility() {
                         <div className="vpat-explanation-content no-margin">
                             Once your team has fixed all the issues found in our initial audit accessibility assessment we will do the Verification Testing phase
                             to confirm that your product finally met all the required accessibility guidelines.
-                            <br/><br/>
+                            <br /><br />
                             Also, we will check that any change or addition that you did hasn’t introduce any other accessibility issues. This way we ensure
                             your product is understood, navigated, used and accessible by everyone, regardless of the technology or platform used to access it.
                         </div>
                         <Button onClick={scrollToContactForm}
-                                className="automation"
-                            >Get in touch</Button>
+                            className="automation"
+                        >Get in touch</Button>
                     </div>
 
                     <div className="last-image">
@@ -240,13 +240,13 @@ function Accessibility() {
 
                         <div className="vpat-explanation-content no-margin">
                             How do you ensure, every time you make any change in your code or add a new feature, your product remains accessible?
-                            <br/><br/>
+                            <br /><br />
                             With Accessibility Monitoring we will test and verify periodically that your website or web application still met the
                             Accessibility Standards and Guidelines required to keep your product accessible to every one.
                         </div>
                         <Button onClick={scrollToContactForm}
-                                className="automation"
-                            >Get in touch</Button>
+                            className="automation"
+                        >Get in touch</Button>
                     </div>
 
                     <div className="last-image">
@@ -259,7 +259,7 @@ function Accessibility() {
                 </div>
 
 
-                
+
                 <div className="checked-info">
 
                     <div>
@@ -268,13 +268,13 @@ function Accessibility() {
                         <div className="vpat-explanation-content no-margin">
                             <b>We help your UX/UI Team</b> when building new Products, Features, and Applications from the very beginning to ensure your design
                             wireframes/mockups are in compliance with accessibility.
-                            <br/><br/>
+                            <br /><br />
                             Our experts will provide detailed annotations to point out any potential accessibility issues and will help you define the best
                             components so your Product will be WCAG compliant since Day 0.
                         </div>
                         <Button onClick={scrollToContactForm}
-                                className="automation"
-                            >Get in touch</Button>
+                            className="automation"
+                        >Get in touch</Button>
 
                     </div>
                     <div className="last-image">
