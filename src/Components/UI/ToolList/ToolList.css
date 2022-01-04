@@ -3,6 +3,8 @@
   height: 700px;
   opacity: 1;
   margin: 0 5%;
+
+  z-index: 10;
 }
 
 .row-container {
@@ -24,6 +26,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .toolset-container .bicolor-titled-container{

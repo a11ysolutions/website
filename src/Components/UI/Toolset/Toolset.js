@@ -4,6 +4,8 @@ import { scrollToContactForm } from "../../Utils/Utils";
 import BicolorTitledText from "../BicolorTitledText/BicolorTitledText";
 import ToolList from "../ToolList/ToolList";
 
+import "./Toolset.css";
+
 function Toolset() {
   return (
     <div style={{ marginTop: "60px" }} className="toolset-container">
@@ -23,6 +25,11 @@ function Toolset() {
           Get a free consultation
         </Button>
       </BicolorTitledText>
+      <div className="toolset-mobile-circle"></div>
+      <div className="toolset-tablet-circle"></div>
+      <div className="toolset-desktop-1-circle"></div>
+      <div className="toolset-desktop-2-circle"></div>
+      
       <ToolList></ToolList>
     </div>
   );

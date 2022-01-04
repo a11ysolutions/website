@@ -1,0 +1,54 @@
+.toolset-mobile-circle{
+    border: 56px solid #27DBA419;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    /* top: 6507px; */
+    left: 141px;
+    width: 253px;
+    height: 253px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.toolset-tablet-circle{
+    display: none;
+}
+
+.toolset-desktop-1-circle{
+    display: none;
+}
+
+.toolset-desktop-2-circle{
+    display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .toolset-mobile-circle{
+        display: none;
+    }
+    .toolset-tablet-circle{
+        display: block;
+    }
+    .toolset-desktop-1-circle{
+        display: none;
+    }
+    .toolset-desktop-2-circle{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .toolset-mobile-circle{
+        display: none;
+    }
+    .toolset-tablet-circle{
+        display: none;
+    }
+    .toolset-desktop-1-circle{
+        display: block;
+    }
+    .toolset-desktop-2-circle{
+        display: block;
+    }
+}

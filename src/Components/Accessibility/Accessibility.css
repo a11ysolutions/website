@@ -40,15 +40,15 @@
     justify-content: center;
     align-items: center;
     border: 24px solid #21CE99;
-    width: 387px;
-    height: 387px;
+    width: 317px;
+    height: 317px;
     border-radius: 287px;
     z-index: 10;
 }
 
 .a11y-first-image {
-    width: 349px;
-    height: 349px;
+    width: 300px;
+    height: 300px;
 }
 
 .checked-items {
