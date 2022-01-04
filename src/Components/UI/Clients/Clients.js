@@ -4,13 +4,15 @@ import BicolorTitledText from "../BicolorTitledText/BicolorTitledText"
 function Clients() {
     return (
         <div className="clients-container" id="clients">
-            <BicolorTitledText
-                color2="black"
-                color1="#0D9E71"
-                color1Text="Trusted by many clients"
-                color2Text="including:"
-                breakLine={false}
-            />
+            <div className="clients-bicolored-text">
+                <BicolorTitledText
+                    color2="black"
+                    color1="#0D9E71"
+                    color1Text="Trusted by many clients"
+                    color2Text="including:"
+                    breakLine={false}
+                />
+            </div>
             <div className="clients-img-container">
                 <div className="clients-img-row">
                     <div className="clients-img-card">

@@ -34,6 +34,7 @@
   .service-card-container {
     flex-direction: row;
     column-gap: 38px;
+    width: 608px;
   }
   .service-card {
     height: 140px;

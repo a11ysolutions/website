@@ -20,23 +20,26 @@ function Home() {
                 </div>
 
                 <Qualities />
-                <Clients />
 
             </div>
+            <Clients />
+
             <div className="home-our-services-section" id="our-services">
 
-                <BicolorTitledText
-                    color1="black"
-                    color2="#0D9E71"
-                    color1Text="Our"
-                    color2Text="services"
-                    className="home-our-services"
-                >
-                    <p>
-                        Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna.
+                <div className="home-services-bicolored-text">
+                    <BicolorTitledText
+                        color1="black"
+                        color2="#0D9E71"
+                        color1Text="Our"
+                        color2Text="services"
+                        className="home-our-services"
+                    >
+                        <p>
+                            Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna.
                     </p>
-                </BicolorTitledText>
+                    </BicolorTitledText>
+                </div>
                 <Services />
             </div>
             <Toolset />

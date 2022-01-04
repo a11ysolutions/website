@@ -18,16 +18,22 @@
   display: flex;
   flex-direction: column;
 }
+.home-services-bicolored-text {
+}
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .a11y-home-why-choose-us-clients {
     margin-top: 170px;
     display: flex;
   }
   .home-our-services-section {
-    margin-left: 64px;
+    align-items: center;
   }
   .home-our-services {
     text-align: left !important;
+  }
+  .home-services-bicolored-text {
+    width: 608px;
+    justify-self: center;
   }
 }
 @media (min-width: 1200px) {

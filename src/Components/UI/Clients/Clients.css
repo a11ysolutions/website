@@ -24,6 +24,8 @@
 }
 .clients-img-container {
 }
+.clients-bicolored-text {
+}
 @media (min-width: 768px) and (max-width: 1200px) {
   .clients-img-card {
     width: 296px;
@@ -40,6 +42,12 @@
   }
   .clients-img-row {
     column-gap: 16px;
+  }
+  .clients-img-container {
+    align-self: center;
+  }
+  .clients-bicolored-text {
+    align-self: center;
   }
 }
 
