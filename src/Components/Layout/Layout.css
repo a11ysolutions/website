@@ -27,7 +27,7 @@
   border-radius: 50%;
   position: absolute;
 }
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) {
   .layout-content {
     background: linear-gradient(#21ce99 1204px, white 20px);
   }
