@@ -5,7 +5,7 @@ import "./HomeIlustration.css"
 function HomeIlustration() {
     return (
         <div className="home-ilustration-container">
-            <div style={{ position: "relative", marginTop: "50px" }}>
+            <div style={{ position: "relative" }}>
                 <img
                     src="/coding-man@2x.png"
                     className="home-ilustration"
