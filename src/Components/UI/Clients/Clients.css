@@ -67,8 +67,13 @@
   }
   .clients-img-container {
     display: flex;
+    align-self: center;
   }
   .clients-img-row {
     column-gap: 20px;
+  }
+  .clients-bicolored-text {
+    align-self: center;
+    width: 1280px;
   }
 }
