@@ -40,10 +40,8 @@
   }
   .footer {
     display: flex;
-    padding-top: 81px;
-    padding-left: 308px;
-    padding-right: 308px;
-    padding-bottom: 48px;
+    padding: 6em 0px 0px 0px;
+    align-items: center;
   }
   .footer-section {
     display: flex;
