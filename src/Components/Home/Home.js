@@ -14,7 +14,7 @@ function Home() {
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                 <div className="a11y-home-presentation-container">
                     <PresentationSign />
-                    <div style={{ alignSelf: "center", marginTop: "100px" }}>
+                    <div className="home-page-ilustration-container">
                         <HomeIlustration />
                     </div>
                 </div>

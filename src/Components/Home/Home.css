@@ -20,6 +20,10 @@
 }
 .home-services-bicolored-text {
 }
+.home-page-ilustration-container {
+  align-self: center;
+  margin-top: 130px;
+}
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .a11y-home-why-choose-us-clients {
     margin-top: 170px;
@@ -34,6 +38,9 @@
   .home-services-bicolored-text {
     width: 608px;
     justify-self: center;
+  }
+  .home-page-ilustration-container {
+    margin-top: 30px;
   }
 }
 @media (min-width: 1200px) {

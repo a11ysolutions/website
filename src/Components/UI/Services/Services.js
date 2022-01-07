@@ -14,9 +14,9 @@ function Services() {
                 }}
             >
                 <p>We ensure your digital Products, Software,<br />
-                    Mobile and Web Applications deliver the<br />
-                    performance and experience they were<br />
-                    designed for.</p>
+                    Mobile and Web Applications deliver the performance<br />
+                    and experience they were designed for.
+                </p>
             </ServiceCard>
             <ServiceCard
                 header="Accessibility testing"
