@@ -25,11 +25,11 @@ function Toolset() {
           Get a free consultation
         </Button>
       </BicolorTitledText>
-      <div className="toolset-mobile-circle"></div>
+      {/* <div className="toolset-mobile-circle"></div> */}
       <div className="toolset-tablet-circle"></div>
       <div className="toolset-desktop-1-circle"></div>
       <div className="toolset-desktop-2-circle"></div>
-      
+
       <ToolList></ToolList>
     </div>
   );
