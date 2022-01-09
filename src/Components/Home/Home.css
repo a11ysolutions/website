@@ -17,6 +17,8 @@
 .home-our-services-section {
   display: flex;
   flex-direction: column;
+  background-color: #aaaaaa19;
+  padding: 20px;
 }
 .home-services-bicolored-text {
 }
@@ -62,5 +64,8 @@
   }
   .home-our-services {
     text-align: center !important;
+  }
+  .home-our-services h1 {
+    margin: 0px;
   }
 }

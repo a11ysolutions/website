@@ -1,9 +1,9 @@
 import React from "react";
 import "./AchievementCard.css";
 
-function AchievementCard({ children, imgSrc }) {
+function AchievementCard({ children, imgSrc, className }) {
   return (
-    <div className="achievement-card">
+    <div className={"achievement-card " + className}>
       <div>
         <div className="achievement-card-ellipse">
           <img
