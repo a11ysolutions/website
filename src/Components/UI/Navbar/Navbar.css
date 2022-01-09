@@ -9,6 +9,7 @@
 }
 .a11y-navbar-logo {
   margin-left: 20px;
+  z-index: 2;
 }
 .a11y-navbar-logo button {
   cursor: pointer;

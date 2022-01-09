@@ -10,6 +10,7 @@ function HomeIlustration() {
                     src="/coding-man@2x.png"
                     className="home-ilustration"
                     alt="man typing"
+                    style={{ zIndex: "2" }}
                 />
 
                 <Pill className="home-ilustration-functionality-pill">

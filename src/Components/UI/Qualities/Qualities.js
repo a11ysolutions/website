@@ -28,7 +28,7 @@ function Qualities() {
                     <div className="qualities-left-circle"></div>
                 </div>
                 <div className="a11y-qualities-top-section">
-                    <AchievementCard imgSrc="/quality-assurance.png">
+                    <AchievementCard imgSrc="/quality-assurance.png" className="qualities-quality-card">
                         <h3>Quality</h3>
                         <p>
                             Lorem ipsum dolor sit amet<br />
@@ -36,7 +36,7 @@ function Qualities() {
                             do eiusmod tempor.
                     </p>
                     </AchievementCard>
-                    <AchievementCard imgSrc="/experience.png">
+                    <AchievementCard imgSrc="/experience.png" className="qualities-experience-card">
                         <h3>Experience</h3>
                         <p>
                             Lorem ipsum dolor sit amet<br />

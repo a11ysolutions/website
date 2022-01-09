@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Fragment } from "react"
 import PresentationSign from "../UI/PresentationSign/PresentationSign"
 import HomeIlustration from "../UI/HomeIlustration/HomeIlustration"
 import "./Home.css"
@@ -10,7 +10,7 @@ import BicolorTitledText from "../UI/BicolorTitledText/BicolorTitledText"
 
 function Home() {
     return (
-        <div>
+        <Fragment>
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                 <div className="a11y-home-presentation-container">
                     <PresentationSign />
@@ -43,7 +43,7 @@ function Home() {
                 <Services />
             </div>
             <Toolset />
-        </div>
+        </Fragment>
     )
 }
 

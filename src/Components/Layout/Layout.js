@@ -13,6 +13,7 @@ function Layout({ children }) {
             <div className="layout-content">
                 <div className="circles-container">
                     <div className="right-circle"></div>
+                    <div className="left-circle"></div>
                     <div className="bottom-circle"></div>
                 </div>
 
