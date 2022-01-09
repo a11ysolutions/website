@@ -18,14 +18,14 @@ import "./Functional.css";
 import { scrollToContactForm } from "../Utils/Utils";
 
 
-const BUG_ICON = <MdBugReport className="checked-item-icon" />;
-const PUZZLE_ICON = <IoExtensionPuzzle className="checked-item-icon" />;
-const PERSON_ICON = <IoPersonCircle className="checked-item-icon" />;
-const SYNC_ICON = <AiOutlineSync className="checked-item-icon" />;
-const GEAR_ICON = <GoGear className="checked-item-icon" />;
-const CLIPBOARD_ICON = <FaClipboardList className="checked-item-icon" />;
-const SEARCH_ICON = <FaSearchPlus className="checked-item-icon" />;
-const SHIELD_ICON = <BsShieldFillCheck className="checked-item-icon" />;
+const BUG_ICON = <MdBugReport size="28" />;
+const PUZZLE_ICON = <IoExtensionPuzzle size="25" />;
+const PERSON_ICON = <IoPersonCircle size="25" />;
+const SYNC_ICON = <AiOutlineSync size="28" />;
+const GEAR_ICON = <GoGear size="28" />;
+const CLIPBOARD_ICON = <FaClipboardList size="28" />;
+const SEARCH_ICON = <FaSearchPlus size="25" />;
+const SHIELD_ICON = <BsShieldFillCheck size="25" />;
 
 function Functional() {
   return (
@@ -43,10 +43,10 @@ function Functional() {
       </div>
 
       <Illustration
-          pillText="Functionality"
-          imgSrc="./desktop.png"
-          containerStyle={{ position: "relative", marginTop: "50px" }}
-          pillPositionClass="pill-position"
+        pillText="Functionality"
+        imgSrc="./desktop.png"
+        containerStyle={{ position: "relative", marginTop: "50px" }}
+        pillPositionClass="pill-position"
       />
 
       <section className="info-with-image first-info">
@@ -69,16 +69,16 @@ function Functional() {
           </BicolorTitledText>
 
           <Button
-              className="functional"
-              onClick={scrollToContactForm}
+            className="functional"
+            onClick={scrollToContactForm}
           >Get in touch</Button>
         </div>
 
         <div className="functional-intermediate-image">
-            <div className="functional-first-encircled-img">
-                <img src="./desktop-two-monitors.png" alt="A desktop with two monitors" className="functional-first-image" />
-            </div>
-            <div className="functional-first-blurred-circle"></div>
+          <div className="functional-first-encircled-img">
+            <img src="./desktop-two-monitors.png" alt="A desktop with two monitors" className="functional-first-image" />
+          </div>
+          <div className="functional-first-blurred-circle"></div>
         </div>
       </section>
 
@@ -100,25 +100,25 @@ function Functional() {
             <CheckedItem>Every defect is manually reproduced, verified, and categorized by severity, to allow rapid fixes.</CheckedItem>
             <CheckedItem>Bring your internal teams together and improve your working practices across the entire SDLC.</CheckedItem>
             <CheckedItem>Detailed issue reports integrate seamlessly into your own platform(s).</CheckedItem>
-            
+
             <Button
-                className="functional"
-                onClick={scrollToContactForm}
+              className="functional"
+              onClick={scrollToContactForm}
             >Get in touch</Button>
           </div>
 
         </div>
 
         <div className="functional-intermediate-image">
-            <img src="./coding-man.png" alt="A man typing on a computer" className="functional-second-image" />
-            <div className="functional-second-image-container">
-                <img src="./computer-plant.png" alt="A computer and a plant" className="functional-third-image" />
-                <img src="./hand-bar.png" alt="A hand with an increasing digital bar on top" className="functional-fourth-image" />
-            </div>
-            <div className="functional-second-circle-container">
-                <div className="functional-second-circle" ></div>
-                <div className="functional-second-blurred-circle"></div>
-            </div>
+          <img src="./coding-man.png" alt="A man typing on a computer" className="functional-second-image" />
+          <div className="functional-second-image-container">
+            <img src="./computer-plant.png" alt="A computer and a plant" className="functional-third-image" />
+            <img src="./hand-bar.png" alt="A hand with an increasing digital bar on top" className="functional-fourth-image" />
+          </div>
+          <div className="functional-second-circle-container">
+            <div className="functional-second-circle" ></div>
+            <div className="functional-second-blurred-circle"></div>
+          </div>
         </div>
       </section>
 
@@ -134,9 +134,9 @@ function Functional() {
               UNLIMITED SCALE, AT SPEED
             </div>
           </BicolorTitledText>
-          
+
           <div className='functional-qualities-top-section'>
-            
+
             <AchievementCard imgSrc="folder-data.svg">
               <p>
                 <span style={{ fontWeight: "bold" }}>
@@ -190,23 +190,23 @@ function Functional() {
               DELIVER GLOBAL RELEASES THAT DELIGHT USERS
             </div>
           </BicolorTitledText>
-          
+
           <div className='bicolor-titled-container'>
             <CheckedItem>Improve customer satisfaction earning the trust and satisfaction of international users by ensuring bugs don’t affect their interactions with your brand and products.</CheckedItem>
             <CheckedItem>Understand bug impact on local users ensuring end-users feel as though the products you deliver were built for them.</CheckedItem>
             <CheckedItem>Test with real users on real devices for real results ensuring a consistent user experience for all end-users giving you a competitive edge in the oversaturated app market.</CheckedItem>
 
             <Button
-                className="functional"
-                onClick={scrollToContactForm}
+              className="functional"
+              onClick={scrollToContactForm}
             >Get in touch</Button>
           </div>
 
           <div className="functional-intermediate-image">
-              <div className="functional-first-encircled-img">
-                  <img src="./man-typing.png" alt="Typing on a laptop" className="functional-first-image" />
-              </div>
-              <div className="functional-first-blurred-circle"></div>
+            <div className="functional-first-encircled-img">
+              <img src="./man-typing.png" alt="Typing on a laptop" className="functional-first-image" />
+            </div>
+            <div className="functional-first-blurred-circle"></div>
           </div>
         </div>
       </section>
@@ -237,12 +237,12 @@ function Functional() {
         </div>
 
         <div className="last-image">
-            <div className="functional-third-circle-container">
-                <div className="functional-third-circle"></div>
-                <div className="functional-third-blurred-circle"></div>
-                <div className="functional-fourth-circle" ></div>
-            </div>
-            <img src="./man-typing-and-diagram.png" alt="A programmer working in a computer" className="functional-fith-image" />
+          <div className="functional-third-circle-container">
+            <div className="functional-third-circle"></div>
+            <div className="functional-third-blurred-circle"></div>
+            <div className="functional-fourth-circle" ></div>
+          </div>
+          <img src="./man-typing-and-diagram.png" alt="A programmer working in a computer" className="functional-fith-image" />
         </div>
       </section>
 
