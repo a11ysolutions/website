@@ -44,9 +44,9 @@ function Functional() {
 
       <Illustration
         pillText="Functionality"
-        imgSrc="./desktop.png"
+        imgSrc="./desktop@2x.png"
         containerStyle={{ position: "relative", marginTop: "50px" }}
-        pillPositionClass="pill-position"
+        pillPositionClass="functional-pill-position"
       />
 
       <section className="info-with-image first-info">

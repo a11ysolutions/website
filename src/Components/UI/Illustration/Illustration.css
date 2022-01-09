@@ -1,12 +1,12 @@
 .illustration-container {
-    align-self: center;
-    margin-top: 90px;
+  align-self: center;
+  margin-top: 90px;
 }
 
 .illustration-main {
-    width: 350px;
-    height: 520px;
-    /* overflow-y: hidden; */
+  width: 350px;
+  height: 520px;
+  /* overflow-y: hidden; */
 }
 
 .illustration {
@@ -35,25 +35,24 @@
   background-image: url("data:image/svg+xml,%3csvg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='150' ry='150' stroke='%23FFFFFF' stroke-width='20' stroke-dasharray='4.5' stroke-dashoffset='10' stroke-linecap='butt'/%3e%3c/svg%3e");
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px){
-
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .illustration-main {
     width: 100%;
     height: 520px;
   }
   .illustration {
-    width: 760px;
+    width: 660px;
     height: 500px;
   }
-  
+
   .illustration-small-circle {
     position: absolute;
     top: 200px;
-    left: 700px;
+    left: 600px;
     width: 120px;
     height: 120px;
   }
-  
+
   .illustration-large-circle {
     position: absolute;
     top: 100px;
@@ -61,10 +60,12 @@
     width: 300px;
     height: 300px;
   }
-} 
+  .illustration-container {
+    margin-top: 300px;
+  }
+}
 
 @media screen and (min-width: 1200px) {
-  
   .illustration-container {
     width: 100%;
     display: flex;
@@ -83,19 +84,17 @@
 
   .illustration-small-circle {
     position: absolute;
-    top: 0;
-    left: 1400px;
+    top: -60px;
+    left: 1420px;
     width: 120px;
     height: 120px;
   }
-  
+
   .illustration-large-circle {
     position: absolute;
-    top: 300px;
-    left: 230px;
+    top: 250px;
+    left: 280px;
     width: 200px;
     height: 200px;
   }
-
 }
-  

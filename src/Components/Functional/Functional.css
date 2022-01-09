@@ -172,7 +172,7 @@
   align-items: center;
 }
 
-/* .pill-position {
+/* .functional-pill-position {
   top: -40px;
   left: 170px;
 } */
@@ -286,10 +286,10 @@
     margin-left: 270px;
   }
 
-  /* .pill-position {
+  .functional-pill-position {
     top: -40px;
-    left: 470px;
-  } */
+    left: 350px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -379,8 +379,8 @@
     margin-right: 40px;
   }
 
-  /* .pill-position {
-    top: 240px;
-    left: 1300px;
-  } */
+  .functional-pill-position {
+    top: 250px;
+    left: 1350px;
+  }
 }

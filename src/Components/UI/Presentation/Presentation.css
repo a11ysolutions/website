@@ -1,52 +1,53 @@
 .presentation-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
 }
 
 .presentation-button {
-    margin-top: 24px;
+  margin-top: 24px;
 }
 
-.presentation-main h1{
-    width: 248px;
-    font: normal normal 900 32px/49px Archivo;
-    margin-bottom: 16px;
-    letter-spacing: 0px;
-    text-align: center;
+.presentation-main h1 {
+  width: 248px;
+  font: normal normal 900 48px/50px Archivo;
+  margin-bottom: 16px;
+  letter-spacing: 0px;
+  text-align: center;
+  z-index: 2;
 }
 
-.presentation-main text{
-    font: normal normal normal 18px/24px Archivo;
+.presentation-main text {
+  font: normal normal normal 18px/24px Archivo;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-    .presentation-button {
-        font-size: 18px;
-    }
-    
-    .presentation-main h1{
-        width: auto;
-        font: normal normal 900 56px/64px Archivo;
-        margin-bottom: 16px;
-        letter-spacing: 0px;
-    }
+  .presentation-button {
+    font-size: 18px;
+  }
 
-    .presentation-main text{
-        font: normal normal normal 24px/32px Archivo;
-    }
+  .presentation-main h1 {
+    width: auto;
+    font: normal normal 900 56px/64px Archivo;
+    margin-bottom: 16px;
+    letter-spacing: 0px;
+  }
+
+  .presentation-main text {
+    font: normal normal normal 24px/32px Archivo;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .presentation-main h1{
-        width: 664px;
-        font: normal normal 900 64px/72px Archivo;
-        margin-bottom: 16px;
-        letter-spacing: 0px;
-    }
+  .presentation-main h1 {
+    width: 664px;
+    font: normal normal 900 64px/72px Archivo;
+    margin-bottom: 16px;
+    letter-spacing: 0px;
+  }
 
-    .presentation-main text{
-        font: normal normal normal 24px/32px Archivo;
-    }
+  .presentation-main text {
+    font: normal normal normal 24px/32px Archivo;
+  }
 }
