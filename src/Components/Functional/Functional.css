@@ -290,6 +290,9 @@
     top: -40px;
     left: 350px;
   }
+  .checked-info-header {
+    text-align: left !important;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -382,5 +385,8 @@
   .functional-pill-position {
     top: 250px;
     left: 1350px;
+  }
+  .checked-info-header {
+    text-align: left !important;
   }
 }

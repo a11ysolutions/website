@@ -53,6 +53,7 @@ function Automation() {
                         color2="black"
                         color1Text="Scalable test"
                         color2Text="automation"
+                        className="checked-info-header"
                     >
                         Our test automation engineers will put your testing on the automation footing
                         to find more defects in less time. We do this in order to:
@@ -83,6 +84,7 @@ function Automation() {
                         color2="black"
                         color1Text="Faster speed"
                         color2Text="to market"
+                        className="checked-info-header"
                     >
                         We prepare the right test environment to smoothly run test cases for all targeted platforms,
                         devices, and browsers and ensure appropriate resource monitoring in order to deliver your products faster.
@@ -119,6 +121,7 @@ function Automation() {
                         color2="black"
                         color1Text="Ensure better"
                         color2Text="quality"
+                        className="checked-info-header"
                     >
                         We will catch every bug! After your team deploys any fix/update to your code, our regression tests come into play.
                         Our expertise will help you with

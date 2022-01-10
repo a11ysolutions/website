@@ -56,6 +56,7 @@ function Functional() {
             color2="black"
             color1Text="Our expert advice can help you"
             color2Text="solve your QA bottlenecks"
+            className="checked-info-header"
           >
             <p>Without consistently delivering a quality
             experience, brands and enterprises can’t fully
@@ -69,7 +70,7 @@ function Functional() {
           </BicolorTitledText>
 
           <Button
-            className="functional"
+            className="automation"
             onClick={scrollToContactForm}
           >Get in touch</Button>
         </div>
@@ -89,6 +90,7 @@ function Functional() {
             color2="black"
             color1Text="What can we help"
             color2Text="you achieve today?"
+            className="checked-info-header"
           >
             <div className='functional-explanation-header'>
               ELEVATE YOUR DIGITAL EXPERIENCE WITH UNBEATABLE QUALITY AND COVERAGE
