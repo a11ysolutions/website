@@ -200,6 +200,12 @@
   font-size: large;
 }
 
+.functional-second-explanation-header {
+  margin-top: 100px;
+  font-style: italic;
+  font-size: large;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .checked-with-icons {
     flex-direction: column;

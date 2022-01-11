@@ -104,7 +104,7 @@ function Functional() {
             <CheckedItem>Detailed issue reports integrate seamlessly into your own platform(s).</CheckedItem>
 
             <Button
-              className="functional"
+              className="automation"
               onClick={scrollToContactForm}
             >Get in touch</Button>
           </div>
@@ -132,7 +132,7 @@ function Functional() {
             color1Text=""
             color2Text=""
           >
-            <div className='functional-explanation-header'>
+            <div className='functional-second-explanation-header'>
               UNLIMITED SCALE, AT SPEED
             </div>
           </BicolorTitledText>
@@ -199,7 +199,7 @@ function Functional() {
             <CheckedItem>Test with real users on real devices for real results ensuring a consistent user experience for all end-users giving you a competitive edge in the oversaturated app market.</CheckedItem>
 
             <Button
-              className="functional"
+              className="automation"
               onClick={scrollToContactForm}
             >Get in touch</Button>
           </div>
