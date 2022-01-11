@@ -44,7 +44,7 @@ function Functional() {
 
       <Illustration
         pillText="Functionality"
-        imgSrc="./desktop@2x.png"
+        imgSrc={window.innerWidth >= 768 ? "./desktop@2x.png" : "./desktop.png"}
         containerStyle={{ position: "relative", marginTop: "50px" }}
         pillPositionClass="functional-pill-position"
       />

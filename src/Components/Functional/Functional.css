@@ -89,7 +89,7 @@
   border: 24px solid #21ce99;
   border-radius: 50%;
   z-index: 1;
-  right: 10px;
+  right: 30px;
   margin-top: 70px;
 }
 .functional-fith-image {
@@ -172,10 +172,10 @@
   align-items: center;
 }
 
-/* .functional-pill-position {
-  top: -40px;
-  left: 170px;
-} */
+.functional-pill-position {
+  top: -25px;
+  left: 150px;
+}
 
 .functional-cursive-text {
   width: 323px;
