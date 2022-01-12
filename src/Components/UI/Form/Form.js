@@ -6,6 +6,10 @@ function Form() {
 
     const initialValues = { name: "", companyName: "", email: "", phoneNumber: "", message: "" }
 
+    const COMPANY_EMAIL = "a11yweb.solutions@gmail.com";
+
+    const SUBJECT = "";
+
     const [formValues, setFormValues] = useState(initialValues)
     const [formErrors, setFormErrors] = useState({})
     let isSubmit = false
@@ -41,7 +45,22 @@ function Form() {
         if (Object.keys(validationErrors).length === 0) {
 
             // Submit the form
-            console.log("Submiting form ....")
+            const BODY = `
+                ${formValues.message}
+                -------
+                 
+                ${formValues.name} from ${formValues.companyName}
+            `;
+            
+            const URL_SUBJECT = SUBJECT.replace(" ", "%20");
+            let URL_BODY = BODY.replace(" ", "%20");
+            URL_BODY = URL_BODY.replace("\n", "%0A");
+
+
+            console.log(`Submiting form .... mailto:${COMPANY_EMAIL}?subject=${URL_SUBJECT}&body=${URL_BODY}`);
+
+            window.location.href = `mailto:${COMPANY_EMAIL}?subject=${SUBJECT}&body=${BODY}`
+
             // Reset values
             setFormValues(initialValues)
         }
