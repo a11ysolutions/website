@@ -49,7 +49,7 @@ function Functional() {
         pillPositionClass="functional-pill-position"
       />
 
-      <section className="info-with-image first-info">
+      <section className="functional-info-with-image first-info">
         <div className="checked-info">
           <BicolorTitledText
             color1="#0D9E71"
@@ -80,10 +80,11 @@ function Functional() {
             <img src="./desktop-two-monitors.png" alt="A desktop with two monitors" className="functional-first-image" />
           </div>
           <div className="functional-first-blurred-circle"></div>
+          <div className="functional-fourth-blurred-circle"></div>
         </div>
       </section>
 
-      <section className="info-with-image second-info">
+      <section className="functional-info-with-image second-info">
         <div className="checked-info">
           <BicolorTitledText
             color1="#0D9E71"
@@ -124,7 +125,7 @@ function Functional() {
         </div>
       </section>
 
-      <section className="info-with-image first-info">
+      <section className="functional-info-with-image second-info">
           <div className="functional-circles-container">
               <div className="functional-right-circle"></div>
               <div className="functional-left-circle"></div>
@@ -183,7 +184,7 @@ function Functional() {
         </div>
       </section>
 
-      <section className="info-with-image second-info">
+      <section className="functional-info-with-image second-info">
         <div className="checked-info">
           <BicolorTitledText
             color1="#0D9E71"
@@ -211,12 +212,12 @@ function Functional() {
             <div className="functional-first-encircled-img">
               <img src="./man-typing.png" alt="Typing on a laptop" className="functional-first-image" />
             </div>
-            <div className="functional-first-blurred-circle"></div>
+            <div className="functional-fifth-blurred-circle"></div>
           </div>
         </div>
       </section>
 
-      <section className="info-with-image shadowed-section">
+      <section className="functional-info-with-image shadowed-section">
         <div className="checked-info">
           <BicolorTitledText
             color1="#0D9E71"
