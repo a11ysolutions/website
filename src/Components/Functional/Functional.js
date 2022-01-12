@@ -125,20 +125,24 @@ function Functional() {
       </section>
 
       <section className="info-with-image first-info">
-        <div className="checked-info">
-          <BicolorTitledText
-            color1="#0D9E71"
-            color2="black"
-            color1Text=""
-            color2Text=""
-          >
+          <div className="functional-circles-container">
+              <div className="functional-right-circle"></div>
+              <div className="functional-left-circle"></div>
+          </div>
+
+          <div className="checked-info">
+            <BicolorTitledText
+              color1="#0D9E71"
+              color2="black"
+              color1Text=""
+              color2Text=""
+            >
             <div className='functional-second-explanation-header'>
               UNLIMITED SCALE, AT SPEED
             </div>
           </BicolorTitledText>
 
           <div className='functional-qualities-top-section'>
-
             <AchievementCard imgSrc="folder-data.svg">
               <p>
                 <span style={{ fontWeight: "bold" }}>
@@ -175,7 +179,6 @@ function Functional() {
                 by speeding up your testing workflow.
               </p>
             </AchievementCard>
-
           </div>
         </div>
       </section>

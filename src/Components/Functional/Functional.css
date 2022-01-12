@@ -5,6 +5,34 @@
   font: normal normal normal 16px/24px Archivo;
 }
 
+.functional-circles-container {
+  position: relative;
+  z-index: 0;
+}
+.functional-right-circle {
+  position: absolute;
+  top: 500px;
+  right: -280px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 56px solid #21ce99;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+}
+.functional-left-circle {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  top: 0px;
+  left: -400px;
+  border-radius: 50%;
+
+  border: 56px solid #27dba419;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+}
+
 .functional-header-text-button {
   text-align: left;
   padding: 20px;
@@ -103,6 +131,7 @@
 .functional-second-circle-container {
   display: flex;
   margin-top: -300px;
+  z-index: 2;
 }
 
 .functional-second-circle {
@@ -170,6 +199,7 @@
   flex-direction: column;
   row-gap: 24px;
   align-items: center;
+  z-index: 1;
 }
 
 .functional-pill-position {
