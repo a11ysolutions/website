@@ -139,7 +139,7 @@ function Accessibility() {
                     >Get in touch</Button>
                 </div>
 
-                <div className="intermediate-image">
+                <div className="intermediate-image a11y-img-combo">
                     <img src="./laptop-in-desktop-with-plants.png" alt="Open laptop on a desktop with p[lants in the background" className="automation-second-image" />
                     <div className="automation-second-image-container">
                         <img src="./procreator-ux-design-studio.png" alt="A man working on his desktop" className="automation-third-image" />
@@ -191,7 +191,7 @@ function Accessibility() {
 
                 </div>
 
-                <div className="intermediate-image">
+                <div className="intermediate-image a11y-img-combo">
                     <div className="a11y-first-encircled-img">
                         <img src="./writing-in-paper.png" alt="Two people writing on a paper in an office" className="a11y-first-image" />
                     </div>

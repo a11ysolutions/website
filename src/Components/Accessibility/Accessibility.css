@@ -221,6 +221,14 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1500px) {
+  .a11y-first-encircled-img{
+    margin-right: 100px;
+  }
+
+  .a11y-img-combo{
+    margin-bottom: 100px !important;
+    margin-right: 150px !important;
+  }
   .a11y-page.second-info {
     display: flex;
     flex-direction: column;
