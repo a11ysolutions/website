@@ -237,6 +237,10 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
+  .functional-circles-container {
+    display: none;
+  }
+
   .checked-with-icons {
     flex-direction: column;
     column-count: 2;
@@ -323,7 +327,7 @@
   }
 
   .functional-pill-position {
-    top: -40px;
+    top: -30px;
     left: 350px;
   }
   .checked-info-header {
@@ -332,6 +336,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .functional-circles-container {
+    display: none;
+  }
+
   .functional-cursive-text {
     width: 573px;
     height: 60px;
