@@ -26,7 +26,7 @@
 }
 .clients-bicolored-text {
 }
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1500px) {
   .clients-img-card {
     width: 296px;
     height: 120px;
@@ -51,7 +51,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   .clients-img-card {
     width: 310px;
     height: 120px;

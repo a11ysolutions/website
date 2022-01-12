@@ -22,7 +22,7 @@
   font: normal normal normal 18px/24px Archivo;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1500px) {
   .presentation-button {
     font-size: 18px;
   }
@@ -39,7 +39,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1500px) {
   .presentation-main h1 {
     width: 664px;
     font: normal normal 900 64px/72px Archivo;
