@@ -46,7 +46,7 @@ function Automation() {
                 pillPositionClass="pill-position"
             />
 
-            <section className="info-with-image first-info">
+            <section className="info-with-image automation-section first-info">
                 <div className="checked-info">
                     <BicolorTitledText
                         color1="#0D9E71"
@@ -69,7 +69,7 @@ function Automation() {
                     >Get in touch</Button>
                 </div>
 
-                <div className="intermediate-image">
+                <div className="intermediate-image a11y-img-combo">
                     <div className="automation-first-encircled-img">
                         <img src="./tablet-unpash.png" alt="Using a tablet" className="automation-first-image" />
                     </div>
@@ -77,7 +77,7 @@ function Automation() {
                 </div>
             </section>
 
-            <section className="info-with-image second-info">
+            <section className="info-with-image automation-section second-info">
                 <div className="checked-info">
                     <BicolorTitledText
                         color1="#0D9E71"
@@ -101,7 +101,7 @@ function Automation() {
                     >Get in touch</Button>
                 </div>
 
-                <div className="intermediate-image">
+                <div className="intermediate-image a11y-img-combo">
                     <img src="./women-with-mobile.png" alt="Woman using a mobile and smiling" className="automation-second-image" />
                     <div className="automation-second-image-container">
                         <img src="./laptop-and-tablet.png" alt="A laptop and a tablet" className="automation-third-image" />
@@ -114,7 +114,7 @@ function Automation() {
                 </div>
             </section>
 
-            <section className="info-with-image">
+            <section className="info-with-image automation-section">
                 <div className="checked-info">
                     <BicolorTitledText
                         color1="#0D9E71"
@@ -141,7 +141,7 @@ function Automation() {
                 </div>
 
 
-                <div className="intermediate-image">
+                <div className="intermediate-image a11y-img-combo">
                     <div className="automation-first-encircled-img">
                         <img src="./laptop-with-code.png" alt="A laptop with programming code written" className="automation-first-image" />
                     </div>
@@ -150,36 +150,38 @@ function Automation() {
             </section>
 
 
-            <section className="info-with-image shadowed-section">
-                <div className="checked-info">
-                    <BicolorTitledText
-                        color1="#0D9E71"
-                        color2="black"
-                        color1Text="Key Benefits"
-                        color2Text="we offer"
-                    ></BicolorTitledText>
+            <section className="shadowed-section">
+                <section className="info-with-image automation-section">
+                    <div className="checked-info">
+                        <BicolorTitledText
+                            color1="#0D9E71"
+                            color2="black"
+                            color1Text="Key Benefits"
+                            color2Text="we offer"
+                        ></BicolorTitledText>
 
-                    <div className="checked-items">
-                        <div>
-                            <CheckedItem icon={TRENDING_ICON} >Reduce Regression Cost</CheckedItem>
-                            <CheckedItem icon={CHECKED_ICON}>Better Testing Quality</CheckedItem>
-                            <CheckedItem icon={STAR_ICON}>Better Resource utilization</CheckedItem>
-                        </div>
-                        <div>
-                            <CheckedItem icon={CLIPBOARD_ICON}>Multi-platform testing</CheckedItem>
-                            <CheckedItem icon={ALARM_ICON}>Faster time to market</CheckedItem>
+                        <div className="checked-items">
+                            <div>
+                                <CheckedItem icon={TRENDING_ICON} >Reduce Regression Cost</CheckedItem>
+                                <CheckedItem icon={CHECKED_ICON}>Better Testing Quality</CheckedItem>
+                                <CheckedItem icon={STAR_ICON}>Better Resource utilization</CheckedItem>
+                            </div>
+                            <div>
+                                <CheckedItem icon={CLIPBOARD_ICON}>Multi-platform testing</CheckedItem>
+                                <CheckedItem icon={ALARM_ICON}>Faster time to market</CheckedItem>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div className="last-image">
-                    <div className="automation-third-circle-container">
-                        <div className="automation-third-circle"></div>
-                        <div className="automation-third-blurred-circle"></div>
-                        <div className="automation-fourth-circle" ></div>
+                    <div className="last-image">
+                        <div className="automation-third-circle-container">
+                            <div className="automation-third-circle"></div>
+                            <div className="automation-third-blurred-circle"></div>
+                            <div className="automation-fourth-circle" ></div>
+                        </div>
+                        <img src="./programmer.png" alt="A programmer working in a computer" className="automation-fith-image" />
                     </div>
-                    <img src="./programmer.png" alt="A programmer working in a computer" className="automation-fith-image" />
-                </div>
+                </section>
             </section>
 
             <Toolset />
