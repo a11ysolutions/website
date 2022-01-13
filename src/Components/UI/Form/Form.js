@@ -6,20 +6,21 @@ function Form() {
 
     const initialValues = { name: "", companyName: "", email: "", phoneNumber: "", message: "" }
 
-    const COMPANY_EMAIL = "a11yweb.solutions@gmail.com";
+    const COMPANY_EMAIL = "a11ycontact.info@gmail.com";
 
-    const SUBJECT = "";
-
+    
     const [formValues, setFormValues] = useState(initialValues)
     const [formErrors, setFormErrors] = useState({})
     let isSubmit = false
     //const [isSubmit, setIsSubmit] = useState(false)
-
+    
     const nameRef = useRef(null)
     const companyNameRef = useRef(null)
     const emailRef = useRef(null)
     const phoneNumberRef = useRef(null)
-
+    
+    const SUBJECT = `Interested from ${formValues.companyName}`;
+    
     let firstFieldWithError = null
     let attribute = { "aria-invalid": "true" }
 
@@ -45,21 +46,19 @@ function Form() {
         if (Object.keys(validationErrors).length === 0) {
 
             // Submit the form
-            const BODY = `
-                ${formValues.message}
-                -------
-                 
-                ${formValues.name} from ${formValues.companyName}
+            
+            const BODY = `${formValues.message}
+---------------------------
+${formValues.name} from ${formValues.companyName}
             `;
             
-            const URL_SUBJECT = SUBJECT.replace(" ", "%20");
-            let URL_BODY = BODY.replace(" ", "%20");
-            URL_BODY = URL_BODY.replace("\n", "%0A");
+            const URL_SUBJECT = encodeURIComponent(SUBJECT);
+            const URL_BODY = encodeURIComponent(BODY);
 
 
             console.log(`Submiting form .... mailto:${COMPANY_EMAIL}?subject=${URL_SUBJECT}&body=${URL_BODY}`);
 
-            window.location.href = `mailto:${COMPANY_EMAIL}?subject=${SUBJECT}&body=${BODY}`
+            window.location.href = `mailto:${COMPANY_EMAIL}?subject=${URL_SUBJECT}&body=${URL_BODY}`
 
             // Reset values
             setFormValues(initialValues)
