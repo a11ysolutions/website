@@ -50,13 +50,13 @@ function Functional() {
       />
 
       <section className="functional-info-with-image first-info">
-        <div className="checked-info">
+        <div className="functional-checked-info">
           <BicolorTitledText
             color1="#0D9E71"
             color2="black"
             color1Text="Our expert advice can help you"
             color2Text="solve your QA bottlenecks"
-            className="checked-info-header"
+            className="functional-checked-info-header"
           >
             <p>Without consistently delivering a quality
             experience, brands and enterprises can’t fully
@@ -85,13 +85,13 @@ function Functional() {
       </section>
 
       <section className="functional-info-with-image second-info">
-        <div className="checked-info">
+        <div className="functional-checked-info">
           <BicolorTitledText
             color1="#0D9E71"
             color2="black"
             color1Text="What can we help"
             color2Text="you achieve today?"
-            className="checked-info-header"
+            className="functional-checked-info-header"
           >
             <div className='functional-explanation-header'>
               ELEVATE YOUR DIGITAL EXPERIENCE WITH UNBEATABLE QUALITY AND COVERAGE
@@ -131,7 +131,7 @@ function Functional() {
               <div className="functional-left-circle"></div>
           </div>
 
-          <div className="checked-info">
+          <div className="functional-checked-info">
             <BicolorTitledText
               color1="#0D9E71"
               color2="black"
@@ -185,7 +185,7 @@ function Functional() {
       </section>
 
       <section className="functional-info-with-image second-info">
-        <div className="checked-info">
+        <div className="functional-checked-info">
           <BicolorTitledText
             color1="#0D9E71"
             color2="black"
@@ -218,7 +218,7 @@ function Functional() {
       </section>
 
       <section className="functional-info-with-image shadowed-section">
-        <div className="checked-info">
+        <div className="functional-checked-info">
           <BicolorTitledText
             color1="#0D9E71"
             color2="black"
