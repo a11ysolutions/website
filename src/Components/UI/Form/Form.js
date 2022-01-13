@@ -46,7 +46,7 @@ function Form() {
         if (Object.keys(validationErrors).length === 0) {
 
             // Submit the form
-            
+
             const BODY = `${formValues.message}
 ---------------------------
 ${formValues.name} from ${formValues.companyName}
@@ -55,8 +55,6 @@ ${formValues.name} from ${formValues.companyName}
             const URL_SUBJECT = encodeURIComponent(SUBJECT);
             const URL_BODY = encodeURIComponent(BODY);
 
-
-            console.log(`Submiting form .... mailto:${COMPANY_EMAIL}?subject=${URL_SUBJECT}&body=${URL_BODY}`);
 
             window.location.href = `mailto:${COMPANY_EMAIL}?subject=${URL_SUBJECT}&body=${URL_BODY}`
 
