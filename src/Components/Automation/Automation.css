@@ -293,10 +293,8 @@
   }
 
   .shadowed-section {
+    display: flex;
     padding: 20px;
-  }
-
-  .shadowed-section {
     align-items: center;
     justify-content: center;
   }
