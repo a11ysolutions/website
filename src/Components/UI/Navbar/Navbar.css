@@ -43,7 +43,7 @@
   margin-right: 30px;
 }
 
-@media (min-width: 768px) and (max-width: 1500px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .a11y-navbar-contact {
     display: initial;
     font-size: 20px;
@@ -53,7 +53,7 @@
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
   .a11y-navbar-items {
     display: flex;
   }
@@ -69,13 +69,13 @@
     border-radius: 30px;
   }
   .a11y-navbar-logo {
-    margin-left: 160px;
+    /* margin-left: 160px; */
   }
   .a11y-navbar-contact {
     width: 161px !important;
     height: 45px !important;
     display: initial;
-    margin-right: 300px;
+    /* margin-right: 300px; */
     margin-top: 5px;
   }
   .a11y-navbar-logo-img {

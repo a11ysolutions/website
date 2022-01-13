@@ -27,7 +27,7 @@
   width: 64px;
   height: 49px;
 }
-@media screen and (min-width: 768px) and (max-width: 1500px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .services-circle {
     left: auto;
     top: -20px;
@@ -45,7 +45,7 @@
     height: 71px;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
   .a11y-services {
     display: flex;
     column-gap: 70px;

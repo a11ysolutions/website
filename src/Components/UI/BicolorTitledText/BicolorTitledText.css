@@ -12,7 +12,7 @@
   font: normal normal normal 16px/24px Archivo;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1500px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .bicolor-titled-container {
     max-width: 400px;
   }
@@ -25,7 +25,7 @@
     font: normal normal normal 16px/24px Archivo;
   }
 }
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1200px) {
   .bicolor-titled-container {
     max-width: 532px;
   }
@@ -39,7 +39,7 @@
     font: normal normal normal 18px/24px Archivo;
   }
 
-  .a11y-first-bicolored div{
+  .a11y-first-bicolored div {
     display: none;
   }
 }

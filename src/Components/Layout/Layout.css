@@ -29,7 +29,7 @@
 }
 .left-circle {
 }
-@media (min-width: 768px) and (max-width: 1500px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .layout-content {
     background: linear-gradient(#21ce99 1204px, white 20px);
   }
@@ -54,7 +54,7 @@
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
   .layout-content {
     background: linear-gradient(#21ce99 1204px, white 20px);
   }

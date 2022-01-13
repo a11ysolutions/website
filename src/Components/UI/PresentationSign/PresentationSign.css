@@ -12,7 +12,7 @@
   font: normal normal 18px/24px Archivo;
   z-index: 2;
 }
-@media (min-width: 768px) and (max-width: 1500px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .presentation-sign b {
     font: normal normal 900 64px/60px Archivo;
   }
@@ -20,7 +20,7 @@
     font: normal normal 24px/32px Archivo;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
   .presentation-sign {
     align-items: flex-start;
   }
@@ -31,6 +31,6 @@
   }
   .presentation-sign b {
     text-align: start;
-    font: normal normal 900 100px/100px Archivo;
+    font: normal normal 900 64px/72px Archivo;
   }
 }

@@ -237,7 +237,7 @@
   font-size: large;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1500px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .functional-fourth-blurred-circle {
     position: absolute;
     right: 300px;
@@ -387,33 +387,33 @@
     text-align: left !important;
   }
 
-  .functional-first-encircled-img{
+  .functional-first-encircled-img {
     width: 450px;
     height: 450px;
   }
 
-  .functional-first-encircled-img img{
+  .functional-first-encircled-img img {
     width: 420px;
     height: 420px;
   }
 
-  .functional-second-image{
+  .functional-second-image {
     width: 220px;
     height: 220px;
   }
 
-  .functional-fourth-image{
+  .functional-fourth-image {
     width: 160px;
     height: 160px;
   }
 
-  .functional-third-image{
+  .functional-third-image {
     width: 240px;
     height: 240px;
   }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1200px) {
   .functional-fifth-blurred-circle {
     width: 150px;
     height: 150px;
@@ -500,27 +500,27 @@
     margin-left: 100px;
   }
 
-  .functional-first-encircled-img{
+  .functional-first-encircled-img {
     width: 450px;
     height: 450px;
   }
 
-  .functional-first-encircled-img img{
+  .functional-first-encircled-img img {
     width: 420px;
     height: 420px;
   }
 
-  .functional-second-image{
+  .functional-second-image {
     width: 220px;
     height: 220px;
   }
 
-  .functional-fourth-image{
+  .functional-fourth-image {
     width: 160px;
     height: 160px;
   }
 
-  .functional-third-image{
+  .functional-third-image {
     width: 240px;
     height: 240px;
   }

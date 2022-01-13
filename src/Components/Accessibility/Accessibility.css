@@ -220,12 +220,12 @@
   flex-direction: column;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1500px) {
-  .a11y-first-encircled-img{
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .a11y-first-encircled-img {
     margin-right: 100px;
   }
 
-  .a11y-img-combo{
+  .a11y-img-combo {
     margin-bottom: 100px !important;
     margin-right: 150px !important;
   }
@@ -345,7 +345,7 @@
   }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1200px) {
   section.a11y-qualities,
   section.a11y-page {
     align-items: center !important;

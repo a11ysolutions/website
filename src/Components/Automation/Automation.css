@@ -164,8 +164,8 @@
   left: 170px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1500px) {
-  .automation-section{
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .automation-section {
     align-self: center;
   }
 
@@ -234,12 +234,12 @@
     left: 470px;
   }
 
-  .last-image{
+  .last-image {
     margin-left: 100px;
   }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1200px) {
   .info-with-image {
     flex-direction: row;
   }
