@@ -59,7 +59,7 @@ function Functional() {
             className="functional-checked-info-header"
           >
             <p>Without consistently delivering a quality
-            experience, brands and enterprises can’t fully
+              experience, brands and enterprises can’t fully
               guarantee customer satisfaction.<br></br><br></br>
 
               We help development teams deliver
@@ -207,13 +207,12 @@ function Functional() {
               onClick={scrollToContactForm}
             >Get in touch</Button>
           </div>
-
-          <div className="functional-intermediate-image">
-            <div className="functional-first-encircled-img">
-              <img src="./man-typing.png" alt="Typing on a laptop" className="functional-first-image" />
-            </div>
-            <div className="functional-fifth-blurred-circle"></div>
+        </div>
+        <div className="functional-intermediate-image">
+          <div className="functional-first-encircled-img">
+            <img src="./man-typing.png" alt="Typing on a laptop" className="functional-first-image" />
           </div>
+          <div className="functional-fifth-blurred-circle"></div>
         </div>
       </section>
 
