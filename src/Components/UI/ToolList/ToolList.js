@@ -28,7 +28,7 @@ function ToolList() {
       {/* </div> */}
 
       {/* <div className="row-container"> */}
-        <img src="./talkback-image.png" alt="talk back logo" className="tool-image"></img>
+        {/* <img src="./talkback-image.png" alt="talk back logo" className="tool-image"></img> */}
         <img src="./cucumber-image.png" alt="cucumber logo" className="tool-image"></img>
         <img src="./figma-image.png" alt="figma logo" className="tool-image"></img>
       {/* </div> */}
