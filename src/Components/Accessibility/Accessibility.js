@@ -27,7 +27,7 @@ function Accessibility() {
             </div>
             <Illustration
                 pillText="Accessibility"
-                imgSrc="./explain-hand-with-laptop.png"
+                imgSrc={window.innerWidth >= 768 ? "./explain-hand-with-laptop@2x.png" : "./explain-hand-with-laptop.png"}
                 containerStyle={{ position: "relative", marginTop: "50px" }}
                 pillPositionClass="pill-position"
             />

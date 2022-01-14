@@ -41,7 +41,7 @@ function Automation() {
             </div>
             <Illustration
                 pillText="Automation"
-                imgSrc="./working-code@2x.png"
+                imgSrc={window.innerWidth >= 768 ? "./working-code@2x.png" : "./working-code.png"}
                 containerStyle={{ position: "relative", marginTop: "50px" }}
                 pillPositionClass="pill-position"
             />
