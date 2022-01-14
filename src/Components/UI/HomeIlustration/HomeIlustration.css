@@ -84,32 +84,33 @@
     overflow-x: hidden;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   .home-ilustration {
-    height: 590px;
-    width: 590px;
+    height: 400px;
+    width: 400px;
   }
   .home-ilustration-functionality-pill {
     position: absolute;
-    top: 300px;
-    left: 450px;
+    top: 190px;
+    left: 350px;
   }
   .home-ilustration-accessibility-pill {
-    top: 360px;
-    left: -100px;
+    top: 260px;
+    left: -170px;
   }
   .home-ilustration-automation-pill {
-    top: 475px;
-    left: 50px;
+    top: 355px;
+    left: -50px;
   }
   .home-ilustration-small-circle {
-    top: 40px;
-    left: 70px;
+    top: 10px;
+    left: 20px;
   }
   .home-ilustration-large-circle {
-    top: 420px;
-    left: 400px;
+    top: 280px;
+    left: 240px;
     z-index: 1;
   }
 }
