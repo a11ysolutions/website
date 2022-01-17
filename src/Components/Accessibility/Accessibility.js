@@ -90,8 +90,8 @@ function Accessibility() {
                 </BicolorTitledText>
 
                 <div className="a11y-buttons">
-                    <Button onClick={scrollToContactForm} size="large" variant="negative">
-                        View a Sample VPAT
+                    <Button size="large" variant="negative">
+                        <a className="no-decorator-link" href="./VPAT_Template.pdf">View a Sample VPAT</a>
                     </Button>
                     <Button onClick={scrollToContactForm}
                         className="automation"
