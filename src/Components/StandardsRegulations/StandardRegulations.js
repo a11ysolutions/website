@@ -2,6 +2,7 @@ import React from 'react'
 import BicolorTitledText from '../UI/BicolorTitledText/BicolorTitledText'
 import Button from '../UI/Button/Button'
 import CheckedItem from '../UI/CheckedItem/CheckedItem'
+import FirmSamples from '../UI/FirmSamples/FirmSamples'
 import VerticalCard from '../UI/VerticalCard/VerticalCard'
 import { scrollToContactForm } from '../Utils/Utils'
 
@@ -34,7 +35,9 @@ function StandardRegulations() {
                 color2Text="Lawsuits Samples"
             />
 
-            {/* EMPRESAS */}
+            <section className="shadowed-section">
+                <FirmSamples />
+            </section>
 
             <section className="info-with-image automation-section first-info">
                 <div className="checked-info">

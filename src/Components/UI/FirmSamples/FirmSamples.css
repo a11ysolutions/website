@@ -1,0 +1,16 @@
+.firm-content-desktop{
+    display: none;
+}
+
+.firm-content-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px dashed #21CE99;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.firm-content-mobile .firm-content-description{
+    margin: 20px 0;
+}
