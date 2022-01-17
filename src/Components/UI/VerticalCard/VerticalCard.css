@@ -1,0 +1,14 @@
+.vertical-card{
+    margin: 40px 0;
+    width: 343px;
+}
+
+.vertical-card-title{
+    text-align: center;
+    font: normal normal bold 18px/24px Archivo;
+    margin-bottom: 20px;
+}
+.vertical-card-button{
+    color: white;
+    margin-top: 20px;
+}

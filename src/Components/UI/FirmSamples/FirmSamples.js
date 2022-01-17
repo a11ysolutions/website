@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import FirmContent from './FirmContent';
 import SAMPLES from './Samples'
 import "./FirmSamples.css";
@@ -9,6 +9,11 @@ function FirmSamples() {
 
     const [selectedFirm, setSelectedFirm] = useState(keys[0]);
 
+    useEffect(() => {
+        const layout = document.querySelector(".layout-content");
+
+        layout.style.background = "white";
+    }, [])
     return (
         <div className="firm-samples">
             <div className="firm-listing">
@@ -16,7 +21,7 @@ function FirmSamples() {
                     {
                         keys.map(firm =>
                             <li key={firm} className={`firm selected-${firm === selectedFirm}`} onClick={() => setSelectedFirm(firm)}>
-                                {firm}
+                                <div role="button" tabIndex={0} className='firm-name'>{firm}</div>
                                 {firm === selectedFirm && <FirmContent firmName={firm} className="firm-content-mobile" />}
                             </li>)
                     }

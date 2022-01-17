@@ -9,7 +9,7 @@
 
 .no-decorator-link{
   text-decoration: none;
-  color: black;
+  color: unset;
 }
 
 @media (prefers-reduced-motion: no-preference) {

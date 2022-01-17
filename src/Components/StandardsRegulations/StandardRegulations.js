@@ -6,6 +6,8 @@ import FirmSamples from '../UI/FirmSamples/FirmSamples'
 import VerticalCard from '../UI/VerticalCard/VerticalCard'
 import { scrollToContactForm } from '../Utils/Utils'
 
+import "./StandardRegulations.css";
+
 function StandardRegulations() {
     return (
         <div className="page-container">
@@ -19,23 +21,59 @@ function StandardRegulations() {
 
             <div className="vertical-cards-container">
                 <div>
-                    <VerticalCard></VerticalCard>
-                    <VerticalCard></VerticalCard>
+                    <VerticalCard
+                        title={"Americans with Disabilities Act (ADA)"} 
+                        btnText={"Find out more"}
+                        btnUrl={"https://www.ada.gov/"} 
+                    >
+                        The Americans with Disabilities Act of 1990 is a civil rights law that prohibits
+                        discrimination based on disability. It affords similar protections against discrimination
+                        to Americans with disabilities as the Civil Rights Act of 1964, which made discrimination
+                        based on race, religion, sex, national origin, and other characteristics illegal.
+                    </VerticalCard>
+                    <VerticalCard
+                        title={"Section 508 Amendment to the Rehabilitation Act"} 
+                        btnText={"Find out more"}
+                        btnUrl={"https://www.section508.gov/manage/laws-and-policies/"} 
+                    >
+                        The Americans with Disabilities Act of 1990 is a civil rights law that prohibits
+                        discrimination based on disability. It affords similar protections against discrimination
+                        to Americans with disabilities as the Civil Rights Act of 1964, which made discrimination
+                        based on race, religion, sex, national origin, and other characteristics illegal.
+                    </VerticalCard>
                 </div>
                 <div>
-                    <VerticalCard></VerticalCard>
-                    <VerticalCard></VerticalCard>
+                    <VerticalCard
+                        title={"Web Content Accessibility Guidelines (WCAG)"} 
+                        btnText={"Find out more"}
+                        btnUrl={"https://www.w3.org/TR/WCAG21/"} 
+                    >
+                        The Americans with Disabilities Act of 1990 is a civil rights law that prohibits
+                        discrimination based on disability. It affords similar protections against discrimination
+                        to Americans with disabilities as the Civil Rights Act of 1964, which made discrimination
+                        based on race, religion, sex, national origin, and other characteristics illegal.
+                    </VerticalCard>
+                    <VerticalCard
+                        title={"European Standard EN 301 549"} 
+                        btnText={"Find out more"}
+                        btnUrl={`https://digital-strategy.ec.europa.eu/en/policies/latest-changes-accessibility-standard`} 
+                    >
+                        The Americans with Disabilities Act of 1990 is a civil rights law that prohibits
+                        discrimination based on disability. It affords similar protections against discrimination
+                        to Americans with disabilities as the Civil Rights Act of 1964, which made discrimination
+                        based on race, religion, sex, national origin, and other characteristics illegal.
+                    </VerticalCard>
                 </div>
             </div>
 
-            <BicolorTitledText
-                color1="black"
-                color2="#0D9E71"
-                color1Text="Web Accessibility"
-                color2Text="Lawsuits Samples"
-            />
 
             <section className="shadowed-section">
+                <BicolorTitledText
+                    color1="black"
+                    color2="#0D9E71"
+                    color1Text="Web Accessibility"
+                    color2Text="Lawsuits Samples"
+                />
                 <FirmSamples />
             </section>
 
