@@ -11,10 +11,10 @@
 }
 .functional-right-circle {
   position: absolute;
-  top: 500px;
+  top: 570px;
   right: -280px;
-  width: 90px;
-  height: 90px;
+  width: 62px;
+  height: 62px;
   border-radius: 50%;
   border: 56px solid #21ce99;
   backdrop-filter: blur(30px);

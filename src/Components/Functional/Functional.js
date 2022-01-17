@@ -103,12 +103,12 @@ function Functional() {
             <CheckedItem>Every defect is manually reproduced, verified, and categorized by severity, to allow rapid fixes.</CheckedItem>
             <CheckedItem>Bring your internal teams together and improve your working practices across the entire SDLC.</CheckedItem>
             <CheckedItem>Detailed issue reports integrate seamlessly into your own platform(s).</CheckedItem>
+          </div>
 
-            <Button
+          <Button
               className="automation"
               onClick={scrollToContactForm}
             >Get in touch</Button>
-          </div>
 
         </div>
 
@@ -201,12 +201,13 @@ function Functional() {
             <CheckedItem>Improve customer satisfaction earning the trust and satisfaction of international users by ensuring bugs don’t affect their interactions with your brand and products.</CheckedItem>
             <CheckedItem>Understand bug impact on local users ensuring end-users feel as though the products you deliver were built for them.</CheckedItem>
             <CheckedItem>Test with real users on real devices for real results ensuring a consistent user experience for all end-users giving you a competitive edge in the oversaturated app market.</CheckedItem>
-
-            <Button
-              className="automation"
-              onClick={scrollToContactForm}
-            >Get in touch</Button>
           </div>
+
+          <Button
+            className="automation"
+            onClick={scrollToContactForm}
+          >Get in touch</Button>
+        
         </div>
         <div className="functional-intermediate-image">
           <div className="functional-first-encircled-img">
