@@ -35,9 +35,9 @@ function Home() {
                         className="home-our-services"
                     >
                         <p>
-                            Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna.
-                    </p>
+                            We provide more than services, we provide opportunities to make your product better 
+                            and not only maintain but also attract new users.
+                        </p>
                     </BicolorTitledText>
                 </div>
                 <Services />

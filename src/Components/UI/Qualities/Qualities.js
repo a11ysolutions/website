@@ -17,9 +17,9 @@ function Qualities() {
                     className="home-why-choose-us"
                 >
                     <p>
-                        Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea.
+                        With us you will be proactive, instead of reactive, 
+                        we will help you to prevent software defects and ease upcoming test design activities. 
+                        With us, you will cover all the testing life cycles.
                     </p>
                     <Button onClick={scrollToContactForm}>Get in touch</Button>
                 </BicolorTitledText>
@@ -31,18 +31,17 @@ function Qualities() {
                     <AchievementCard imgSrc="/quality-assurance.png" className="qualities-quality-card">
                         <h3>Quality</h3>
                         <p>
-                            Lorem ipsum dolor sit amet<br />
-                            consectetur adipiscing elit, sed<br />
-                            do eiusmod tempor.
-                    </p>
+                            We will ensure your product is implemented correctly, <br /> 
+                            helping you to take it to the top degree of excellence.
+                        </p>
                     </AchievementCard>
                     <AchievementCard imgSrc="/experience.png" className="qualities-experience-card">
                         <h3>Experience</h3>
                         <p>
-                            Lorem ipsum dolor sit amet<br />
-                            consectetur adipiscing elit, sed<br />
-                            do eiusmod tempor.
-                    </p>
+                            We have the right experience you need, our testers engineers are ready
+                            to join your project at any phase of the software development life cycle, 
+                            testing exactly what you need and when you need it.
+                        </p>
                     </AchievementCard>
                 </div>
             </div>
@@ -50,17 +49,17 @@ function Qualities() {
                 <AchievementCard imgSrc="/growth.png">
                     <h3>Best/Fast Results</h3>
                     <p>
-                        Lorem ipsum dolor sit amet<br />
-                        consectetur adipiscing elit, sed<br />
-                        do eiusmod tempor.
+                        We will take care of your product's evolvement and accelerate engineering potential
+                         to achieve business growth in a cost-efficient way, 
+                         helping you to obtain better and faster product results.
                     </p>
                 </AchievementCard>
                 <AchievementCard imgSrc="/passion.png">
                     <h3>Passion/Commitment</h3>
                     <p>
-                        Lorem ipsum dolor sit amet<br />
-                        consectetur adipiscing elit, sed<br />
-                        do eiusmod tempor.
+                        Every new project drives our imagination and will to learn, 
+                        we focus on getting to the very core of your business and assisting you 
+                        to create market-dominant products.
                     </p>
                 </AchievementCard>
             </div>

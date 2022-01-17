@@ -16,10 +16,7 @@ function Toolset() {
         color2Text="toolset"
       >
         <p>
-          Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea.
+          With the tools below and beyond we ensure your product is ready to go out to the market.
         </p>
         <Button size="large" onClick={scrollToContactForm}>
           Get a free consultation
