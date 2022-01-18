@@ -24,13 +24,14 @@
     padding: 0 20px;;
 }
 
-.regulations{
+.regulations, .shadowed-regulations{
     display: flex;
     flex-direction: column;
     align-items: center !important;
 }
 
-.regulations h1{
+.regulations h1,
+.shadowed-regulations h1{
     text-align: center !important;
 }
 
@@ -67,7 +68,7 @@
     margin-top: -5px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px){
+@media screen and (min-width: 768px){
     
     .vertical-cards-container{
         display: flex;

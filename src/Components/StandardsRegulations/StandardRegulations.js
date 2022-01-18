@@ -81,7 +81,7 @@ function StandardRegulations() {
             </div>
 
 
-            <section className="shadowed-section regulations">
+            <section className="shadowed-section shadowed-regulations">
                 <BicolorTitledText
                     color1="black"
                     color2="#0D9E71"

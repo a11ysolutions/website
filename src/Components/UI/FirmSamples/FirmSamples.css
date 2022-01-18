@@ -49,3 +49,37 @@
 .firm-name{
     cursor: pointer;
 }
+
+@media screen and (min-width: 768px){
+
+    .firm-samples {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .firm-listing {
+        width: 50%;
+        border-right: 1px dashed #21CE99;
+        padding-right: 50px;
+        
+    }
+
+    .firm-content-desktop{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 40%;
+        text-align: start !important;
+    }
+
+    .firm-content-desktop img{
+        margin-bottom: 30px;
+    }
+
+    .firm-content-mobile{
+        display: none;
+    }
+}
