@@ -185,6 +185,7 @@
 .functional-checked-info {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .shadowed-section {
@@ -362,11 +363,6 @@
     margin-top: 100px;
   }
 
-  /* .functional-checked-info,
-  button.functional {
-    align-self: flex-start;
-  } */
-
   button.functional {
     margin-left: 110px !important;
   }
@@ -496,6 +492,9 @@
     margin-top: 150px;
   }
 
+  .functional-checked-info{
+    width: unset !important;
+  }
   .second-info .functional-checked-info {
     margin-left: 100px;
   }
@@ -574,5 +573,12 @@
   }
   .functional-checked-info-header {
     text-align: left !important;
+  }
+
+  .card-subgroup{
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    justify-content: space-between;
   }
 }

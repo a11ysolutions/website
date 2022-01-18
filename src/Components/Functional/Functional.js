@@ -144,42 +144,46 @@ function Functional() {
           </BicolorTitledText>
 
           <div className='functional-qualities-top-section'>
-            <AchievementCard imgSrc="folder-data.svg">
-              <p>
-                <span style={{ fontWeight: "bold" }}>
-                  Fully verified and reviewed results
-                </span>{" "}
-                within hours, with no extra triage required.
-              </p>
-            </AchievementCard>
+            <div className="card-subgroup">
+              <AchievementCard imgSrc="folder-data.svg">
+                <p>
+                  <span style={{ fontWeight: "bold" }}>
+                    Fully verified and reviewed results
+                  </span>{" "}
+                  within hours, with no extra triage required.
+                </p>
+              </AchievementCard>
 
-            <AchievementCard imgSrc="data-user.svg">
-              <p>
-                <span style={{ fontWeight: "bold" }}>
-                  Shift your in-house testing workload to our 24/7/365
-                </span>{" "}
-                on-demand crowd to help you scale and execute tests in <br></br>{" "}
-                real-time.
-              </p>
-            </AchievementCard>
+              <AchievementCard imgSrc="data-user.svg">
+                <p>
+                  <span style={{ fontWeight: "bold" }}>
+                    Shift your in-house testing workload to our 24/7/365
+                  </span>{" "}
+                  on-demand crowd to help you scale and execute tests in <br></br>{" "}
+                  real-time.
+                </p>
+              </AchievementCard>
+            </div>
 
-            <AchievementCard imgSrc="searching.svg">
-              <p>
-                <span style={{ fontWeight: "bold" }}>
-                  Test overnight, weekends included,
-                </span>{" "}
-                thanks to our vetted global community of professional testers.
-              </p>
-            </AchievementCard>
+            <div className="card-subgroup">
+              <AchievementCard imgSrc="searching.svg">
+                <p>
+                  <span style={{ fontWeight: "bold" }}>
+                    Test overnight, weekends included,
+                  </span>{" "}
+                  thanks to our vetted global community of professional testers.
+                </p>
+              </AchievementCard>
 
-            <AchievementCard imgSrc="verification.svg">
-              <p>
-                <span style={{ fontWeight: "bold" }}>
-                  Remove any potential QA bottlenecks
-                </span>{" "}
-                by speeding up your testing workflow.
-              </p>
-            </AchievementCard>
+              <AchievementCard imgSrc="verification.svg">
+                <p>
+                  <span style={{ fontWeight: "bold" }}>
+                    Remove any potential QA bottlenecks
+                  </span>{" "}
+                  by speeding up your testing workflow.
+                </p>
+              </AchievementCard>
+            </div>
           </div>
         </div>
       </section>
