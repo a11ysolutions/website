@@ -434,11 +434,8 @@
   .functional-qualities-top-section {
     display: flex;
     flex-direction: row;
-    flex-flow: row wrap;
-    column-gap: 100px;
     justify-content: center;
     align-items: center;
-    column-count: 4;
   }
 
   .functional-right-circle {
@@ -578,7 +575,11 @@
   .card-subgroup{
     display: flex;
     flex-direction: row;
-    width: 45%;
-    justify-content: space-between;
+    width: 46%;
+  }
+
+  .achievement-card{
+    
+    margin: 0 4%;
   }
 }
