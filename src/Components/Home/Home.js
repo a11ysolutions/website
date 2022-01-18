@@ -35,7 +35,8 @@ function Home() {
                         className="home-our-services"
                     >
                         <p>
-                            We provide more than services, we provide opportunities to make your product better 
+                            We provide more than services, <br />
+                            we provide opportunities to make your product better<br />
                             and not only maintain but also attract new users.
                         </p>
                     </BicolorTitledText>
