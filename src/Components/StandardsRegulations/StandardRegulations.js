@@ -128,6 +128,7 @@ function StandardRegulations() {
                 </div>
 
                 <img src="./encircled-bg-large.png" alt="Using a tablet" className="regulations-desktop-img" />
+
             </section>
 
             <section className="green-bg-section regulations">

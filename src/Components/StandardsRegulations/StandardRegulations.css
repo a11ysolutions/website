@@ -70,7 +70,10 @@
 }
 
 .regulations-desktop-img{
-    display: none;
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    margin-top: -50%;
 }
 
 .regulation-section .checked-item-text{
@@ -111,6 +114,7 @@
         width: 90%;
         height: 30%;
         margin-top: -200px;
+        margin-left: 0 !important;
     }
 }
 
