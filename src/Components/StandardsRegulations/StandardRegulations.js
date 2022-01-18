@@ -127,12 +127,7 @@ function StandardRegulations() {
                     >Get in touch</Button>
                 </div>
 
-                <div className="intermediate-image a11y-img-combo">
-                    <div className="automation-first-encircled-img">
-                        <img src="./tablet-unpash.png" alt="Using a tablet" className="automation-first-image" />
-                    </div>
-                    <div className="automation-first-blurred-circle"></div>
-                </div>
+                <img src="./encircled-bg-large.png" alt="Using a tablet" className="regulations-desktop-img" />
             </section>
 
             <section className="green-bg-section regulations">

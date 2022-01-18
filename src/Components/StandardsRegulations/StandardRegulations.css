@@ -48,6 +48,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 40px;
+}
+
+.regulation-section.first-info{
+    margin-top: 20px;
 }
 
 .regulation-section .checked-info{
@@ -57,12 +62,16 @@
     align-items: center;
 }
 
+
 .regulation-section .checked-item{
     width: unset;
     align-self: flex-start;
     margin-left: 18px !important;
 }
 
+.regulations-desktop-img{
+    display: none;
+}
 
 .regulation-section .checked-item-text{
     margin-top: -5px;
@@ -97,4 +106,37 @@
         align-self: center !important;
     }
 
+    .regulations-desktop-img{
+        display: block;
+        width: 90%;
+        height: 30%;
+        margin-top: -200px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+
+    .regulation-section{
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: unset !important;
+        justify-content: space-between;
+    }
+
+    .regulations-desktop-img{
+        display: block;
+        width: 50%;
+        height: 80%;
+    }
+
+    .regulation-section .checked-info{
+        align-items: unset;
+        width: unset;
+        margin-left: 30px;
+    }
+
+    .regulation-section .checked-info button{
+        align-self: flex-start !important;
+    }
+    
 }
