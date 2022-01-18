@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import BicolorTitledText from '../UI/BicolorTitledText/BicolorTitledText'
 import Button from '../UI/Button/Button'
 import CheckedItem from '../UI/CheckedItem/CheckedItem'
@@ -9,6 +9,15 @@ import { scrollToContactForm } from '../Utils/Utils'
 import "./StandardRegulations.css";
 
 function StandardRegulations() {
+
+    useEffect(() => {
+        const layout = document.querySelector(".layout-content");
+        const topCircles = document.querySelector(".circles-container");
+
+        layout.style.background = "white";
+        topCircles.style.display = "none";
+    }, [])
+
     return (
         <div className="page-container">
             
@@ -87,13 +96,13 @@ function StandardRegulations() {
                     <BicolorTitledText
                         color1="#0D9E71"
                         color2="black"
-                        color1Text="Web Accessibility"
-                        color2Text="Lawsuits Samples"
+                        color1Text="Tips for being"
+                        color2Text="accessibility compliant"
                         className="checked-info-header"
                     >
-                        Whether your organization is already involved in litigation or is proactive with accessibility,
+                        <span>Whether your organization is already involved in litigation or is proactive with accessibility,
                         the best course of action is to make your website or app conformant with WCAG 2.0/2.1 Level AA.
-                        <br /><br />
+                        <br /><br /></span>
                         AS A START, WE RECOMMEND THE FOLLOWING TIPS:
                     </BicolorTitledText>
 

@@ -66,3 +66,34 @@
 .regulation-section .checked-item-text{
     margin-top: -5px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    
+    .vertical-cards-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vertical-cards-container .v-card-subgroup{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .regulation-section .bicolor-titled-container{
+        max-width: 80%
+    }
+    .regulation-section .bicolor-titled-container div span{
+        display: none;
+    }
+
+    .regulation-section .checked-item{
+        align-self: unset;
+    }
+
+    .regulation-section button{
+        align-self: center !important;
+    }
+
+}

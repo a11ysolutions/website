@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import FirmContent from './FirmContent';
 import SAMPLES from './Samples'
 import "./FirmSamples.css";
@@ -9,11 +9,6 @@ function FirmSamples() {
 
     const [selectedFirm, setSelectedFirm] = useState(keys[0]);
 
-    useEffect(() => {
-        const layout = document.querySelector(".layout-content");
-
-        layout.style.background = "white";
-    }, [])
     return (
         <div className="firm-samples">
             <div className="firm-listing">
