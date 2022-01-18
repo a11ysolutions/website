@@ -166,7 +166,7 @@ function Automation() {
                                 <CheckedItem icon={CHECKED_ICON}>Better Testing Quality</CheckedItem>
                                 <CheckedItem icon={STAR_ICON}>Better Resource utilization</CheckedItem>
                             </div>
-                            <div>
+                            <div className="second-section-items">
                                 <CheckedItem icon={CLIPBOARD_ICON}>Multi-platform testing</CheckedItem>
                                 <CheckedItem icon={ALARM_ICON}>Faster time to market</CheckedItem>
                             </div>

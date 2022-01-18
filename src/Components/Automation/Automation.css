@@ -164,6 +164,10 @@
   left: 170px;
 }
 
+.second-section-items{
+  margin-top: -10px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .automation-section {
     align-self: center;
@@ -237,6 +241,10 @@
   .last-image {
     margin-left: 100px;
   }
+
+  .second-section-items{
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -307,5 +315,9 @@
   .pill-position {
     top: 100px;
     left: 76%;
+  }
+
+  .second-section-items{
+    margin-top: 0px;
   }
 }
