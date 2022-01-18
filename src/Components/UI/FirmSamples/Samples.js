@@ -2,7 +2,7 @@
 
 const SAMPLES = {
     "Netflix": {
-        "img": "./netflix.png",
+        "img": "./netflix-logo-large.png",
         "content": "In 2012, the National Association of the Deaf brought a lawsuit against streaming service Netflix for failing to provide adequate closed captioning on most of its “Watch Instantly” content. At the time, the streaming service landscape was much less abundant than it is now: Netflix was the only major online-only movie-watching service, making the disparity in access for viewers who are deaf or hard of hearing that much more significant."
     },
     

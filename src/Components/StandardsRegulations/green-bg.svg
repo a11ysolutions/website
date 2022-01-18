@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="508" viewBox="0 0 375 508">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_4384" data-name="Rectangle 4384" width="375" height="508" transform="translate(1545 4019)" fill="#21ce99"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_2" data-name="Mask Group 2" transform="translate(-1545 -4019)" clip-path="url(#clip-path)">
+    <rect id="Rectangle_4383" data-name="Rectangle 4383" width="375" height="508" transform="translate(1545 4019)" fill="#21ce99"/>
+    <g id="Ellipse_100" data-name="Ellipse 100" transform="translate(1373 4332)" fill="none" stroke="rgba(255,255,255,0.38)" stroke-width="80">
+      <circle cx="172.5" cy="172.5" r="172.5" stroke="none"/>
+      <circle cx="172.5" cy="172.5" r="132.5" fill="none"/>
+    </g>
+    <g id="Ellipse_101" data-name="Ellipse 101" transform="translate(1782 3867)" fill="none" stroke="rgba(255,255,255,0.38)" stroke-width="80">
+      <circle cx="153" cy="153" r="153" stroke="none"/>
+      <circle cx="153" cy="153" r="113" fill="none"/>
+    </g>
+    <g id="Ellipse_102" data-name="Ellipse 102" transform="translate(1875 3960)" fill="none" stroke="#fff" stroke-width="8" stroke-dasharray="4">
+      <circle cx="60" cy="60" r="60" stroke="none"/>
+      <circle cx="60" cy="60" r="56" fill="none"/>
+    </g>
+    <g id="Ellipse_103" data-name="Ellipse 103" transform="translate(1490 4449)" fill="none" stroke="#fff" stroke-width="8" stroke-dasharray="4">
+      <circle cx="55.5" cy="55.5" r="55.5" stroke="none"/>
+      <circle cx="55.5" cy="55.5" r="51.5" fill="none"/>
+    </g>
+  </g>
+</svg>

@@ -17,12 +17,14 @@ function StandardRegulations() {
                 color2="#0D9E71"
                 color1Text="Web Accessibility"
                 color2Text="Standards & Regulations"
+                className="regulations"
             />
 
             <div className="vertical-cards-container">
-                <div>
+                <div className='v-card-subgroup'>
                     <VerticalCard
-                        title={"Americans with Disabilities Act (ADA)"} 
+                        title={"Americans with Disabilities Act (ADA)"}
+                        imgUrl={"./ada-logo.svg"}
                         btnText={"Find out more"}
                         btnUrl={"https://www.ada.gov/"} 
                     >
@@ -32,7 +34,8 @@ function StandardRegulations() {
                         based on race, religion, sex, national origin, and other characteristics illegal.
                     </VerticalCard>
                     <VerticalCard
-                        title={"Section 508 Amendment to the Rehabilitation Act"} 
+                        title={"Section 508 Amendment to the Rehabilitation Act"}
+                        imgUrl={"./508-amendment.svg"}
                         btnText={"Find out more"}
                         btnUrl={"https://www.section508.gov/manage/laws-and-policies/"} 
                     >
@@ -42,9 +45,10 @@ function StandardRegulations() {
                         based on race, religion, sex, national origin, and other characteristics illegal.
                     </VerticalCard>
                 </div>
-                <div>
+                <div className='v-card-subgroup'>
                     <VerticalCard
-                        title={"Web Content Accessibility Guidelines (WCAG)"} 
+                        title={"Web Content Accessibility Guidelines (WCAG)"}
+                        imgUrl={"./wcag-logo.svg"}
                         btnText={"Find out more"}
                         btnUrl={"https://www.w3.org/TR/WCAG21/"} 
                     >
@@ -54,7 +58,8 @@ function StandardRegulations() {
                         based on race, religion, sex, national origin, and other characteristics illegal.
                     </VerticalCard>
                     <VerticalCard
-                        title={"European Standard EN 301 549"} 
+                        title={"European Standard EN 301 549"}
+                        imgUrl={"./european-standard.svg"}
                         btnText={"Find out more"}
                         btnUrl={`https://digital-strategy.ec.europa.eu/en/policies/latest-changes-accessibility-standard`} 
                     >
@@ -67,7 +72,7 @@ function StandardRegulations() {
             </div>
 
 
-            <section className="shadowed-section">
+            <section className="shadowed-section regulations">
                 <BicolorTitledText
                     color1="black"
                     color2="#0D9E71"
@@ -77,7 +82,7 @@ function StandardRegulations() {
                 <FirmSamples />
             </section>
 
-            <section className="info-with-image automation-section first-info">
+            <section className="info-with-image regulation-section first-info">
                 <div className="checked-info">
                     <BicolorTitledText
                         color1="#0D9E71"
@@ -121,7 +126,7 @@ function StandardRegulations() {
                 </div>
             </section>
 
-            <section className="green-bg-section">
+            <section className="green-bg-section regulations">
                 <BicolorTitledText
                     color1="black"
                     color2="#0D9E71"

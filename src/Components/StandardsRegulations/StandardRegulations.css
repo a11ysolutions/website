@@ -1,11 +1,68 @@
+
+.vertical-cards-container{
+    width: 100%;
+}
+
+.vertical-cards-container .v-card-subgroup{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .green-bg-section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
-    background-color: #0D9E71;
-    padding: 0;
+    background-image: url("./green-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 400px;
     text-align: center;
-    /* background: transparent url('/Mask Group 2.png') 0% 0% no-repeat padding-box; */
+    z-index: 10;
+    width: 100%;
+    padding: 0 20px;;
+}
+
+.regulations{
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+}
+
+.regulations h1{
+    text-align: center !important;
+}
+
+.regulations div{
+    text-align: center !important;
+}
+
+.regulations button{
+    align-self: unset !important;
+}
+
+.regulation-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.regulation-section .checked-info{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.regulation-section .checked-item{
+    width: unset;
+    align-self: flex-start;
+    margin-left: 18px !important;
+}
+
+
+.regulation-section .checked-item-text{
+    margin-top: -5px;
 }
