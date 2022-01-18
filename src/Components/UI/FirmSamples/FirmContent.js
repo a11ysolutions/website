@@ -5,9 +5,14 @@ function FirmContent({firmName, className}) {
     
     const firm = SAMPLES[firmName];
 
+    const firmImgPrefix = firm.img.split(".")[1];
+
     return (
         <div className={`firm-content ${className}`}>
-            <img src={firm.img} alt={`${firmName} logo`}/>
+            {firm.img.endsWith('png') && <img src={firm.img} alt={`${firmName} logo`} className='firm-img-desktop'/>}
+            {firm.img.endsWith('png') && <img src={`.${firmImgPrefix}-small.png`} alt={`${firmName} logo`} className='firm-img-mobile'/>}
+            {firm.img.endsWith('svg') && <img src={firm.img} alt={`${firmName} logo`}/>}
+
 
             <div className="firm-content-description">
                 {firm.content}

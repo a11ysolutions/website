@@ -2,12 +2,12 @@
 
 const SAMPLES = {
     "Netflix": {
-        "img": "./netflix-logo-large.png",
+        "img": "./netflix.png",
         "content": "In 2012, the National Association of the Deaf brought a lawsuit against streaming service Netflix for failing to provide adequate closed captioning on most of its “Watch Instantly” content. At the time, the streaming service landscape was much less abundant than it is now: Netflix was the only major online-only movie-watching service, making the disparity in access for viewers who are deaf or hard of hearing that much more significant."
     },
     
     "Winn-Dixie": {
-        "img": "./winn-dixie.png",
+        "img": "./winn-dixie.svg",
         "content": "Five years after the Netflix case, Florida resident Juan Carlos Gil sued grocery store chain Winn-Dixie in what was deemed the first trial of its kind. The judge ruled that because Winn-Dixie’s website was so heavily integrated with its physical stores, it was subject to accessibility requirements outlined in the ADA. This case – resting on the complaint that the website was not accessible to visually impaired users relying on screen reader technology – helped paved the way for many similar cases listed below."
     },
 

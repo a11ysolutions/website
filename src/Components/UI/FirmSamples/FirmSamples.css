@@ -50,6 +50,14 @@
     cursor: pointer;
 }
 
+.firm-img-desktop{
+    display: none;
+}
+
+.firm-img-mobile{
+    display: block;
+}
+
 @media screen and (min-width: 768px){
 
     .firm-samples {
@@ -80,6 +88,14 @@
     }
 
     .firm-content-mobile{
+        display: none;
+    }
+
+    .firm-img-desktop{
+        display: block;
+    }
+    
+    .firm-img-mobile{
         display: none;
     }
 }
