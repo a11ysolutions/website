@@ -79,9 +79,9 @@
 
 @media screen and (min-width: 1200px) {
   .home-ilustration-container {
-    width: 790px;
+    width: 590px;
     height: 790px;
-    overflow-x: hidden;
+    overflow-x: visible;
     display: flex;
     justify-content: center;
     align-items: center;

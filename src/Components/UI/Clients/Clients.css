@@ -1,9 +1,16 @@
 .clients-container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 60px;
   font: normal normal 900 32px/40px Archivo;
+}
+
+.clients-bicolored-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .clients-img-row {
   display: flex;
@@ -20,12 +27,7 @@
   justify-content: center;
   margin-top: 16px;
 }
-.clients-img {
-}
-.clients-img-container {
-}
-.clients-bicolored-text {
-}
+
 @media (min-width: 768px) and (max-width: 1200px) {
   .clients-img-card {
     width: 296px;
