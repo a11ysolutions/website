@@ -238,6 +238,12 @@
   font-size: large;
 }
 
+.card-subgroup{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .functional-fourth-blurred-circle {
     position: absolute;
@@ -406,6 +412,13 @@
   .functional-third-image {
     width: 240px;
     height: 240px;
+  }
+
+  .card-subgroup{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    column-gap: 75px;
   }
 }
 
