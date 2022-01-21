@@ -29,11 +29,11 @@ function StandardRegulations() {
                 className="regulations"
             />
 
-            <div className="vertical-cards-container">
+            <div className="vertical-cards-container" id="compliance-section">
                 <div className='v-card-subgroup'>
                     <VerticalCard
                         title={"Americans with Disabilities Act (ADA)"}
-                        imgUrl={"./ada-logo.svg"}
+                        imgUrl={"/ada-logo.svg"}
                         btnText={"Find out more"}
                         btnUrl={"https://www.ada.gov/"} 
                     >
@@ -44,7 +44,7 @@ function StandardRegulations() {
                     </VerticalCard>
                     <VerticalCard
                         title={"Section 508 Amendment to the Rehabilitation Act"}
-                        imgUrl={"./508-amendment.svg"}
+                        imgUrl={"/508-amendment.svg"}
                         btnText={"Find out more"}
                         btnUrl={"https://www.section508.gov/manage/laws-and-policies/"} 
                     >
@@ -57,7 +57,7 @@ function StandardRegulations() {
                 <div className='v-card-subgroup'>
                     <VerticalCard
                         title={"Web Content Accessibility Guidelines (WCAG)"}
-                        imgUrl={"./wcag-logo.svg"}
+                        imgUrl={"/wcag-logo.svg"}
                         btnText={"Find out more"}
                         btnUrl={"https://www.w3.org/TR/WCAG21/"} 
                     >
@@ -68,7 +68,7 @@ function StandardRegulations() {
                     </VerticalCard>
                     <VerticalCard
                         title={"European Standard EN 301 549"}
-                        imgUrl={"./european-standard.svg"}
+                        imgUrl={"/european-standard.svg"}
                         btnText={"Find out more"}
                         btnUrl={`https://digital-strategy.ec.europa.eu/en/policies/latest-changes-accessibility-standard`} 
                     >
@@ -127,7 +127,7 @@ function StandardRegulations() {
                     >Get in touch</Button>
                 </div>
 
-                <img src="./encircled-bg-large.png" alt="Using a tablet" className="regulations-desktop-img" />
+                <img src="/encircled-bg-large.png" alt="Using a tablet" className="regulations-desktop-img" />
 
             </section>
 

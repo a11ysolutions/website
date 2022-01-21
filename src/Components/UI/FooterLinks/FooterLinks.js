@@ -10,7 +10,7 @@ function FooterLinks() {
                     <li style={{}}><a href="/regulations" className="footer-link">Web Accessibility Standards and Regulations </a></li>
                     <li><a href="/#clients" className="footer-link">Services </a></li>
                     <li><a href="/privacy-policy" className="footer-link">Privacy Policy</a></li>
-                    <li><a href="#clients" className="footer-link">Sitemap </a></li>
+                    <li><a href="/sitemap" className="footer-link">Sitemap </a></li>
                 </ul>
             </nav>
         </div>

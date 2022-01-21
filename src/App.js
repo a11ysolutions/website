@@ -6,6 +6,7 @@ import Functional from './Components/Functional/Functional';
 import PrivacyPolicy from './Components/PrivacyPolicy/PrivacyPolicy';
 import Automation from './Components/Automation/Automation';
 import StandardRegulations from './Components/StandardsRegulations/StandardRegulations';
+import Sitemap from './Components/Sitemap/Sitemap';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/automation" element={<Automation />} />
         <Route path="/regulations" element={<StandardRegulations />} />
+        <Route path="/sitemap" element={<Sitemap />} />
 
       </Routes>
     </div>

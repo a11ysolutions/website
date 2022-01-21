@@ -20,7 +20,7 @@ function Footer() {
                         <ContactInfo />
                     </div>
                 </div>
-                <div className="footer-form">
+                <div className="footer-form" id="footer-form">
                     <Form />
                 </div>
             </div>

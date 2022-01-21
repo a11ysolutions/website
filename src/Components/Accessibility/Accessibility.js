@@ -27,7 +27,7 @@ function Accessibility() {
             </div>
             <Illustration
                 pillText="Accessibility"
-                imgSrc={window.innerWidth >= 768 ? "./explain-hand-with-laptop@2x.png" : "./explain-hand-with-laptop.png"}
+                imgSrc={window.innerWidth >= 768 ? "/explain-hand-with-laptop@2x.png" : "/explain-hand-with-laptop.png"}
                 containerStyle={{ position: "relative", marginTop: "50px" }}
                 pillPositionClass="pill-position"
             />
@@ -116,7 +116,7 @@ function Accessibility() {
 
                 <div className="intermediate-image">
                     <div className="a11y-first-encircled-img">
-                        <img src="./hand-with-laptop-circular.png" alt="A hand with an open laptop in the background" className="a11y-first-image" />
+                        <img src="/hand-with-laptop-circular.png" alt="A hand with an open laptop in the background" className="a11y-first-image" />
                     </div>
                     <div className="automation-first-blurred-circle"></div>
                 </div>
@@ -140,10 +140,10 @@ function Accessibility() {
                 </div>
 
                 <div className="intermediate-image a11y-img-combo">
-                    <img src="./laptop-in-desktop-with-plants.png" alt="Open laptop on a desktop with p[lants in the background" className="automation-second-image" />
+                    <img src="/laptop-in-desktop-with-plants.png" alt="Open laptop on a desktop with p[lants in the background" className="automation-second-image" />
                     <div className="automation-second-image-container">
-                        <img src="./procreator-ux-design-studio.png" alt="A man working on his desktop" className="automation-third-image" />
-                        <img src="./explain-hand-with-laptop-circular.png" alt="A hand pointing to a laptop screen" className="automation-fourth-image" />
+                        <img src="/procreator-ux-design-studio.png" alt="A man working on his desktop" className="automation-third-image" />
+                        <img src="/explain-hand-with-laptop-circular.png" alt="A hand pointing to a laptop screen" className="automation-fourth-image" />
                     </div>
                     <div className="automation-second-circle-container">
                         <div className="automation-second-circle" ></div>
@@ -193,7 +193,7 @@ function Accessibility() {
 
                 <div className="intermediate-image a11y-img-combo">
                     <div className="a11y-first-encircled-img">
-                        <img src="./writing-in-paper.png" alt="Two people writing on a paper in an office" className="a11y-first-image" />
+                        <img src="/writing-in-paper.png" alt="Two people writing on a paper in an office" className="a11y-first-image" />
                     </div>
                     <div className="a11y-first-blurred-circle"></div>
                 </div>
@@ -228,7 +228,7 @@ function Accessibility() {
                             <div className="automation-third-blurred-circle"></div>
                             <div className="a11y-fourth-circle" ></div>
                         </div>
-                        <img src="./approved-agreement-allowed-validation-concept.png" alt="A screen with the word approved" className="automation-fith-image" />
+                        <img src="/approved-agreement-allowed-validation-concept.png" alt="A screen with the word approved" className="automation-fith-image" />
                     </div>
                 </div>
 
@@ -254,7 +254,7 @@ function Accessibility() {
                             <div className="automation-third-blurred-circle"></div>
                             <div className="a11y-fourth-circle" ></div>
                         </div>
-                        <img src="./result-economy-success-report-solution-statistics.png" alt="A person viewing charts on a paper" className="automation-fith-image" />
+                        <img src="/result-economy-success-report-solution-statistics.png" alt="A person viewing charts on a paper" className="automation-fith-image" />
                     </div>
                 </div>
 
@@ -282,7 +282,7 @@ function Accessibility() {
                             <div className="automation-third-blurred-circle"></div>
                             <div className="a11y-fourth-circle" ></div>
                         </div>
-                        <img src="./cooperation-analyst-chart-professional-paper-economics.png" alt="A person viewing charts on a paper" className="automation-fith-image" />
+                        <img src="/cooperation-analyst-chart-professional-paper-economics.png" alt="A person viewing charts on a paper" className="automation-fith-image" />
                     </div>
                 </div>
 
