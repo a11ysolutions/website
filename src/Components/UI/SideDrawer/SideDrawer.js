@@ -11,7 +11,7 @@ function SideDrawer({ show, onClose }) {
         attachedClasses = ["side-drawer", "open"]
 
     return (
-        <div className={attachedClasses.join(" ")}>
+        <div className={attachedClasses.join(" ")} aria-hidden={!show}>
             <div style={{ display: "flex", justifyContent: "space-between", margin: "21px" }}>
                 <Logo
                     style={{
