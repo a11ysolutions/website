@@ -151,7 +151,7 @@ ${formValues.name} from ${formValues.companyName}
                                 aria-describedby="email-error"
                                 {...(formErrors["email"] && attribute)}
                             />
-                            <div id="name-email" className="error-message">{formErrors.email}</div>
+                            <div id="email-error" className="error-message">{formErrors.email}</div>
                         </div>
                     </div>
                     <div>
