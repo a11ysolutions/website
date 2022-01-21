@@ -4,7 +4,7 @@
   z-index: 10;
 }
 
-.bicolor-titled-container h1 {
+.bicolor-titled-container h2 {
   font: normal normal 900 32px/40px Archivo;
 }
 
@@ -16,7 +16,7 @@
   .bicolor-titled-container {
     max-width: 400px;
   }
-  .bicolor-titled-container h1 {
+  .bicolor-titled-container h2 {
     font: normal normal 900 40px/44px Archivo;
   }
 
@@ -29,7 +29,7 @@
   .bicolor-titled-container {
     max-width: 532px;
   }
-  .bicolor-titled-container h1 {
+  .bicolor-titled-container h2 {
     font: normal normal 900 56px/100px Archivo;
     line-height: 80px;
   }

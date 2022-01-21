@@ -5,13 +5,13 @@ function BicolorTitledText({ color1, color2, color1Text, color2Text, children, c
 
     return (
         <div className={"bicolor-titled-container " + className}>
-            <h1 style={{ color: color2 }}>
+            <h2 style={{ color: color2 }}>
                 <span style={{ color: color1 }}>
                     {color1Text}
                 </span>
                 {breakLine ? <br /> : " "}
                 {color2Text}
-            </h1>
+            </h2>
             <div>{children}</div>
         </div>
     )
