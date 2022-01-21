@@ -14,8 +14,7 @@
 .a11y-navbar-logo button {
   cursor: pointer;
 }
-.a11y-navbar-logo-img {
-}
+
 .a11y-navbar-toggle {
   margin-left: auto;
   display: flex;
@@ -68,9 +67,7 @@
     color: white;
     border-radius: 30px;
   }
-  .a11y-navbar-logo {
-    /* margin-left: 160px; */
-  }
+  
   .a11y-navbar-contact {
     width: 161px !important;
     height: 45px !important;
