@@ -7,6 +7,11 @@
   cursor: pointer;
   font-family: Archivo;
 }
+
+.a11y-button:focus{
+outline: 5px solid yellow;  
+}
+
 .a11y-button-large {
   width: 246px;
 }
