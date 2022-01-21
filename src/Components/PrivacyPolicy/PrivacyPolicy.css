@@ -2,6 +2,18 @@
   margin-top: 135px;
 } */
 
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font: normal normal normal 16px/24px Archivo;
+}
+
+.privacy-policy-pill-position {
+  top: -25px;
+  left: 150px;
+}
+
 .privacy-policy {
   text-align: left;
   padding: 36px;
@@ -20,4 +32,18 @@
 }
 .privacy-policy p {
   color: #595959;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .privacy-policy-pill-position {
+    top: -30px;
+    left: 350px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .privacy-policy-pill-position {
+    top: 250px;
+    left: 1150px;
+  }
 }
