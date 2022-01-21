@@ -25,9 +25,11 @@ function Navbar({ onClickMenu }) {
 
             <div className="a11y-navbar-toggle">
                 <div className="a11y-navbar-items">
-                    <a href="/#why-choose-us">Why choose us</a>
-                    <a href="/#our-services">Our services</a>
-                    <a href="/#clients">Clients</a>
+                    <ul>
+                        <li><a href="/#why-choose-us">Why choose us</a></li>
+                        <li><a href="/#our-services">Our services</a></li>
+                        <li><a href="/#clients">Clients</a></li>
+                    </ul>
                 </div>
 
                 <Button
