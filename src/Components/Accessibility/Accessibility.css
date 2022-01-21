@@ -370,16 +370,11 @@
   .bicolor-titled-container {
     display: flex;
     flex-direction: column;
-    /* max-width: 80%; */
   }
 
-  /* .bicolor-titled-container div{
-        text-align: center;
-    } */
-
-  /* .a11y-info-with-image{
-        flex-direction: row;
-    } */
+  section.a11y-page .bicolor-titled-container {
+    max-width: 80%;
+  }
 
   .automation-pill {
     top: 0px !important;

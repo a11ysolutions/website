@@ -49,6 +49,9 @@
   }
 }
 @media (min-width: 1200px) {
+  .home-qualities{
+    margin-left: 30px;
+  }
   .a11y-home-presentation-container {
     display: flex;
     justify-content: center;

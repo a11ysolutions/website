@@ -5,9 +5,9 @@ import BicolorTitledText from "../BicolorTitledText/BicolorTitledText"
 import { scrollToContactForm } from "../../Utils/Utils"
 import Button from "../Button/Button"
 
-function Qualities() {
+function Qualities({className=""}) {
     return (
-        <div className="a11y-qualities" id="why-choose-us">
+        <div className={`a11y-qualities ${className}`} id="why-choose-us">
             <div className="why-choose-us-qualities">
                 <BicolorTitledText
                     color1="black"

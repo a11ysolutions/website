@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React, { Fragment, useEffect } from "react"
 import PresentationSign from "../UI/PresentationSign/PresentationSign"
 import HomeIlustration from "../UI/HomeIlustration/HomeIlustration"
 import "./Home.css"
@@ -9,6 +9,11 @@ import Qualities from "../UI/Qualities/Qualities"
 import BicolorTitledText from "../UI/BicolorTitledText/BicolorTitledText"
 
 function Home() {
+
+    useEffect(() => {
+        const layout = document.querySelector(".layout-content");
+        layout.style.padding = "0";
+    }, [])
     return (
         <Fragment>
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
@@ -19,7 +24,7 @@ function Home() {
                     </div>
                 </div>
 
-                <Qualities />
+                <Qualities className="home-qualities" />
 
             </div>
             <Clients />
