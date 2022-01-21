@@ -133,6 +133,7 @@ ${formValues.name} from ${formValues.companyName}
                                 type="text"
                                 value={formValues.companyName}
                                 onChange={changeHandler}
+                                autoComplete="organization"
                                 aria-describedby="company-name-error"
                                 {...(formErrors["companyName"] && attribute)}
                             />
