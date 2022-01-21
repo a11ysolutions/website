@@ -5,7 +5,7 @@ import { scrollToContactForm } from "../../Utils/Utils"
 
 function PresentationSign() {
     return <div className="presentation-sign">
-        <b>It's time <br />to evolve!</b>
+        <h1><b>It's time <br />to evolve!</b></h1>
 
         <p>
             We are committed to delivering <br />
