@@ -19,9 +19,7 @@ function PrivacyPolicy() {
       </div>
       <Illustration
         pillText="Privacy"
-        imgSrc={
-          window.innerWidth >= 768 ? "/coding-man@2x.png" : "/coding-man.png"
-        }
+        imgSrc={window.innerWidth >= 768 ? "/desktop@2x.png" : "/desktop.png"}
         containerStyle={{ position: "relative", marginTop: "50px" }}
         pillPositionClass="privacy-policy-pill-position"
       />
