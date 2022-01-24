@@ -91,11 +91,12 @@
   margin-left: 20px;
 }
 
-.vpat-explanation-header {
+.vpat-explanation-header h3{
   margin-top: 80px;
   margin-bottom: 20px;
   font-style: italic;
   font-size: large;
+  font-weight: normal;
 }
 
 .vpat-explanation-content {

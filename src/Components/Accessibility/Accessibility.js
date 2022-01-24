@@ -102,7 +102,7 @@ function Accessibility() {
 
             <section className="a11y-info-with-image inverted">
                 <div className="vpat a11y-page second-info">
-                    <div className="vpat vpat-explanation-header">WHAT IS A <b>VPAT</b>?</div>
+                    <div className="vpat vpat-explanation-header"><h3>WHAT IS A <b>VPAT</b>?</h3></div>
 
                     <div className="vpat vpat-explanation-content">
                         A VPAT is a clear documentation on how your digital product conforms to WCAG criteria. It clearly states which accessibility
@@ -125,7 +125,7 @@ function Accessibility() {
             <section className="a11y-info-with-image">
                 <div className="vpat a11y-page second-info">
                     <div className="vpat vpat-explanation-header">
-                        WHY MY PRODUCT OR ORGANIZATION <b>NEEDS A VPAT</b>?
+                        <h3>WHY MY PRODUCT OR ORGANIZATION <b>NEEDS A VPAT</b>?</h3>
                     </div>
 
                     <div className="vpat vpat-explanation-content">
@@ -166,7 +166,7 @@ function Accessibility() {
                         your content and help your team to walk through a detailed defects analysis report to determine what you should do next.
                     </BicolorTitledText>
 
-                    <div className="vpat-explanation-header no-margin">THIS REPORT WILL INCLUDE:</div>
+                    <div className="vpat-explanation-header no-margin"><h3>THIS REPORT WILL INCLUDE:</h3></div>
 
                     <div className="checked-items">
                         <div className="checked-group-1">
@@ -209,7 +209,7 @@ function Accessibility() {
                             color2Text="will help you also with"
                         ></BicolorTitledText>
 
-                        <div className="vpat-explanation-header no-margin">VERIFICATION TESTING</div>
+                        <div className="vpat-explanation-header no-margin"><h3>VERIFICATION TESTING</h3></div>
 
                         <div className="vpat-explanation-content no-margin">
                             Once your team has fixed all the issues found in our initial audit accessibility assessment we will do the Verification Testing phase
@@ -236,7 +236,7 @@ function Accessibility() {
                 <div className="checked-info second">
 
                     <div className="second-text-info">
-                        <div className="vpat-explanation-header no-margin">ACCESSIBILITY MONITOR</div>
+                        <div className="vpat-explanation-header no-margin"><h3>ACCESSIBILITY MONITOR</h3></div>
 
                         <div className="vpat-explanation-content no-margin">
                             How do you ensure, every time you make any change in your code or add a new feature, your product remains accessible?
@@ -263,7 +263,7 @@ function Accessibility() {
                 <div className="checked-info">
 
                     <div>
-                        <div className="vpat-explanation-header no-margin">UX/UI AUDITS</div>
+                        <div className="vpat-explanation-header no-margin"><h3>UX/UI AUDITS</h3></div>
 
                         <div className="vpat-explanation-content no-margin">
                             <b>We help your UX/UI Team</b> when building new Products, Features, and Applications from the very beginning to ensure your design

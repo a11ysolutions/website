@@ -94,7 +94,7 @@ function Functional() {
             className="functional-checked-info-header"
           >
             <div className='functional-explanation-header'>
-              ELEVATE YOUR DIGITAL EXPERIENCE WITH UNBEATABLE QUALITY AND COVERAGE
+              <h3>ELEVATE YOUR DIGITAL EXPERIENCE WITH UNBEATABLE QUALITY AND COVERAGE</h3>
             </div>
           </BicolorTitledText>
 
@@ -139,7 +139,7 @@ function Functional() {
               color2Text=""
             >
             <div className='functional-second-explanation-header'>
-              UNLIMITED SCALE, AT SPEED
+              <h3>UNLIMITED SCALE, AT SPEED</h3>
             </div>
           </BicolorTitledText>
 
@@ -197,7 +197,7 @@ function Functional() {
             color2Text=""
           >
             <div className='functional-explanation-header'>
-              DELIVER GLOBAL RELEASES THAT DELIGHT USERS
+              <h3>DELIVER GLOBAL RELEASES THAT DELIGHT USERS</h3>
             </div>
           </BicolorTitledText>
 

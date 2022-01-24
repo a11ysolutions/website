@@ -226,16 +226,18 @@
   margin-top: 10;
 }
 
-.functional-explanation-header {
+.functional-explanation-header h3{
   margin-top: 40px;
   font-style: italic;
   font-size: large;
+  font-weight: normal;
 }
 
-.functional-second-explanation-header {
+.functional-second-explanation-header h3{
   margin-top: 100px;
   font-style: italic;
   font-size: large;
+  font-weight: normal;
 }
 
 .card-subgroup{
