@@ -4,50 +4,50 @@ function ToolList() {
   return (
     <div className="external-container">
       {/* <div className="row-container"> */}
-        <img src="/aws-image.png" alt="amazon web services logo" className="tool-image"></img>
-        <img src="/jaws-image.png" alt="jaws logo" className="tool-image"></img>
-        <img src="/postman-image.png" alt="postman logo" className="tool-image"></img>
+        <div className="tool-image"><img src="/aws-image.svg" alt="amazon web services logo" ></img></div>
+        <div className="tool-image"><img src="/jaws-image.svg" alt="jaws logo" ></img></div>
+        <div className="tool-image"><img src="/postman-image.svg" alt="postman logo" ></img></div>
       {/* </div> */}
 
       {/* <div className="row-container"> */}
-        <img src="/se-image.png" alt="selenium logo" className="tool-image"></img>
-        <img src="/awslambda-image.png" alt="amazon web services lambda logo" className="tool-image"></img>
-        <img src="/puppeteer-image.png" alt="puppeteer logo" className="tool-image"></img>
+        <div className="tool-image"><img src="/se-image.svg" alt="selenium logo" ></img></div>
+        <div className="tool-image"><img src="/awslambda-image.svg" alt="amazon web services lambda logo" ></img></div>
+        <div className="tool-image"><img src="/puppeteer-image.svg" alt="puppeteer logo" ></img></div>
       {/* </div> */}
 
       {/* <div className="row-container"> */}
-        <img src="/confluence-image.png" alt="confluence logo" className="tool-image"></img>
-        <img src="/browserstack-image.png" alt="browser stack logo" className="tool-image"></img>
-        <img src="/invision-image.png" alt="invision logo" className="tool-image"></img>
+        <div className="tool-image"><img src="/confluence-image.svg" alt="confluence logo" ></img></div>
+        <div className="tool-image"><img src="/browserstack-image.svg" alt="browser stack logo" ></img></div>
+        <div className="tool-image"><img src="/invision-image.svg" alt="invision logo" ></img></div>
       {/* </div> */}
 
       {/* <div className="row-container"> */}
-        <img src="/jenkins-image.png" alt="jenkins logo" className="tool-image"></img>
-        <img src="/voiceover-image.png" alt="voice over logo" className="tool-image"></img>
-        <img src="/nvda-image.png" alt="nvda logo" className="tool-image"></img>
+        <div className="tool-image"><img src="/jenkins-image.svg" alt="jenkins logo" ></img></div>
+        <div className="tool-image"><img src="/voiceover-image.svg" alt="voice over logo" ></img></div>
+        <div className="tool-image"><img src="/nvda-image.svg" alt="nvda logo" ></img></div>
       {/* </div> */}
 
       {/* <div className="row-container"> */}
-        {/* <img src="/talkback-image.png" alt="talk back logo" className="tool-image"></img> */}
-        <img src="/cucumber-image.png" alt="cucumber logo" className="tool-image"></img>
-        <img src="/figma-image.png" alt="figma logo" className="tool-image"></img>
+        {/* <div className="tool-image"><img src="/talkback-image.svg" alt="talk back logo" ></img></div> */}
+        <div className="tool-image"><img src="/cucumber-image.svg" alt="cucumber logo" ></img></div>
+        <div className="tool-image"><img src="/figma-image.svg" alt="figma logo" ></img></div>
       {/* </div> */}
 
       {/* <div className="row-container"> */}
-        <img src="/jira-image.png" alt="jira logo" className="tool-image"></img>
-        <img src="/amp-image.png" alt="amp logo" className="tool-image"></img>
-        <img src="/ax-image.png" alt="ax logo" className="tool-image"></img>
+        <div className="tool-image"><img src="/jira-image.svg" alt="jira logo" ></img></div>
+        <div className="tool-image"><img src="/amp-image.svg" alt="amp logo" ></img></div>
+        <div className="tool-image"><img src="/ax-image.svg" alt="ax logo" ></img></div>
       {/* </div> */}
 
       {/* <div className="row-container"> */}
-        <img src="/xd-image.png" alt="xd logo" className="tool-image"></img>
-        <img src="/soapui-image.png" alt="soap ui logo" className="tool-image"></img>
-        <img src="/testng-image.png" alt="test ng logo" className="tool-image"></img>
+        <div className="tool-image"><img src="/xd-image.svg" alt="xd logo" ></img></div>
+        <div className="tool-image"><img src="/soapui-image.svg" alt="soap ui logo" ></img></div>
+        <div className="tool-image"><img src="/testng-image.svg" alt="test ng logo" ></img></div>
       {/* </div> */}
 
       {/* <div className="row-container"> */}
-        <img src="/abstract-image.png" alt="abstract logo" className="tool-image"></img>
-        <img src="/maven-image.png" alt="maven logo" className="tool-image"></img>
+        <div className="tool-image"><img src="/abstract-image.svg" alt="abstract logo" ></img></div>
+        <div className="tool-image"><img src="/maven-image.svg" alt="maven logo" ></img></div>
       {/* </div> */}
     </div>
   );
