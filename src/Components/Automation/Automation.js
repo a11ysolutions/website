@@ -71,7 +71,7 @@ function Automation() {
 
                 <div className="intermediate-image a11y-img-combo">
                     <div className="automation-first-encircled-img">
-                        <img src="/tablet-unpash.png" alt="Using a tablet" className="automation-first-image" />
+                        <img src="/tablet-unpash.png" alt="" className="automation-first-image" />
                     </div>
                     <div className="automation-first-blurred-circle"></div>
                 </div>
@@ -102,10 +102,10 @@ function Automation() {
                 </div>
 
                 <div className="intermediate-image a11y-img-combo">
-                    <img src="/women-with-mobile.png" alt="Woman using a mobile and smiling" className="automation-second-image" />
+                    <img src="/women-with-mobile.png" alt="" className="automation-second-image" />
                     <div className="automation-second-image-container">
-                        <img src="/laptop-and-tablet.png" alt="A laptop and a tablet" className="automation-third-image" />
-                        <img src="/laptop-and-screen.png" alt="A laptop and a computer screen" className="automation-fourth-image" />
+                        <img src="/laptop-and-tablet.png" alt="" className="automation-third-image" />
+                        <img src="/laptop-and-screen.png" alt="" className="automation-fourth-image" />
                     </div>
                     <div className="automation-second-circle-container">
                         <div className="automation-second-circle" ></div>
@@ -143,7 +143,7 @@ function Automation() {
 
                 <div className="intermediate-image a11y-img-combo">
                     <div className="automation-first-encircled-img">
-                        <img src="/laptop-with-code.png" alt="A laptop with programming code written" className="automation-first-image" />
+                        <img src="/laptop-with-code.png" alt="" className="automation-first-image" />
                     </div>
                     <div className="automation-first-blurred-circle"></div>
                 </div>
@@ -179,7 +179,7 @@ function Automation() {
                             <div className="automation-third-blurred-circle"></div>
                             <div className="automation-fourth-circle" ></div>
                         </div>
-                        <img src="/programmer.png" alt="A programmer working in a computer" className="automation-fith-image" />
+                        <img src="/programmer.png" alt="" className="automation-fith-image" />
                     </div>
                 </section>
             </section>
