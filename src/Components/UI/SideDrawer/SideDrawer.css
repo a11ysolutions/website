@@ -21,14 +21,24 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 36px;
+  margin: 36px !important;
+  list-style-type: none;
+  padding: 0 !important;
+  font-size: larger;
+}
+
+.side-drawer-links li {
+  margin-bottom: 24px;
 }
 
 .side-drawer-links a {
   text-decoration-line: underline;
   text-decoration-color: black;
   color: black;
-  margin-bottom: 24px;
+}
+
+.side-drawer-button {
+  margin: 36px;
 }
 
 @media (min-width: 770px) and (max-width: 1200px) {

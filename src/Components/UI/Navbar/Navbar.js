@@ -24,13 +24,11 @@ function Navbar({ onClickMenu }) {
             </div>
 
             <div className="a11y-navbar-toggle">
-                <div className="a11y-navbar-items">
-                    {/* <ul> */}
-                        <a href="/#why-choose-us">Why choose us</a>
-                        <a href="/#our-services">Our services</a>
-                        <a href="/#clients">Clients</a>
-                    {/* </ul> */}
-                </div>
+                <ul className="a11y-navbar-items">
+                    <li><a href="/#why-choose-us">Why choose us</a></li>
+                    <li><a href="/#our-services">Our services</a></li>
+                    <li><a href="/#clients">Clients</a></li>
+                </ul>
 
                 <Button
                     className="a11y-navbar-contact"

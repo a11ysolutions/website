@@ -26,19 +26,19 @@ function SideDrawer({ show, onClose }) {
                     <IoCloseSharp color="black" size="25" />
                 </button>
             </div>
-            <div className="side-drawer-links">
-                <a onClick={onClose} href="/#why-choose-us">Why choose us</a>
-                <a onClick={onClose} href="/#our-services">Our services</a>
-                <a onClick={onClose} href="/#clients">Clients</a>
-                <a onClick={onClose} href="/#why-choose-us">Services Politics</a>
-                <a onClick={onClose} href="/#why-choose-us">Terms and Conditions</a>
-                <div className="side-drawer-button">
+            <ul className="side-drawer-links">
+                <li><a onClick={onClose} href="/#why-choose-us">Why choose us</a></li>
+                <li><a onClick={onClose} href="/#our-services">Our services</a></li>
+                <li><a onClick={onClose} href="/#clients">Clients</a></li>
+                <li><a onClick={onClose} href="/#why-choose-us">Services Politics</a></li>
+                <li><a onClick={onClose} href="/#why-choose-us">Terms and Conditions</a></li>
+            </ul>
+            <div className="side-drawer-button">
                     <Button
                         onClick={() => { window.location.href = "#contact-us"; onClose() }}
                     >
                         Contact us
-                        </Button>
-                </div>
+                    </Button>
             </div>
         </div>
     )

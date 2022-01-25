@@ -25,6 +25,7 @@
   display: none;
   align-items: center;
   column-gap: 55px;
+  list-style-type: none !important;
 }
 .a11y-navbar-items a {
   text-decoration: none;
