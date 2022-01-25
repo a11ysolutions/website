@@ -105,7 +105,7 @@ function PrivacyPolicy() {
                 </span>
               </span>
             </li>
-            <div>
+            <li>
               <span>
                 <span>
                   <span>
@@ -143,7 +143,7 @@ function PrivacyPolicy() {
                   </span>
                 </li>
               </div>
-            </div>
+            </li>
           </ul>
           <div>
             <span>
@@ -167,61 +167,35 @@ function PrivacyPolicy() {
                 </span>
               </span>
             </li>
-            <div>
+            <li>
               <span>
                 <span>
                   <span>
                     <span data-custom-class="body_text">
-                      <span>
-                        <span data-custom-class="body_text"></span>
-                      </span>
+                      "<strong>Services</strong>," we are referring to our
                     </span>
                   </span>
                 </span>
               </span>
-              <div>
+              <span>
                 <span>
                   <span>
-                    <span>
-                      <span data-custom-class="body_text">
-                        <span>
-                          <span data-custom-class="body_text"> </span>
-                        </span>
-                      </span>
-                    </span>
+                    <span data-custom-class="body_text"> Website,</span>
                   </span>
                 </span>
-              </div>
-              <li>
-                <span>
-                  <span>
-                    <span>
-                      <span data-custom-class="body_text">
-                        "<strong>Services</strong>," we are referring to our
-                      </span>
-                    </span>
-                  </span>
-                </span>
-                <span>
-                  <span>
-                    <span>
-                      <span data-custom-class="body_text"> Website,</span>
-                    </span>
-                  </span>
-                </span>
+              </span>
 
+              <span>
                 <span>
                   <span>
-                    <span>
-                      <span data-custom-class="body_text">
-                         and other related services, including any sales,
-                        marketing, or events
-                      </span>
+                    <span data-custom-class="body_text">
+                       and other related services, including any sales,
+                      marketing, or events
                     </span>
                   </span>
                 </span>
-              </li>
-            </div>
+              </span>
+            </li>
           </ul>
           <div>
             <span>
@@ -599,12 +573,12 @@ function PrivacyPolicy() {
                                         We may use your information to fulfill
                                         and manage your orders, payments,
                                         returns, and exchanges made through the{" "}
+                                        Website .
                                       </span>
                                     </span>
                                   </span>
                                 </span>
                               </li>
-                              Website .
                               <li>
                                 <span>
                                   <span>
