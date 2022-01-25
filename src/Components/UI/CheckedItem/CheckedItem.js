@@ -2,7 +2,7 @@ import "./CheckedItem.css";
 
 export default function CheckedItem({children, icon}) {
     return (
-        <div className="checked-item">
+        <div className="checked-item" role="listitem">
             {
                 icon ? 
                     <div className='checked-item-icon-container'>{icon}</div> :

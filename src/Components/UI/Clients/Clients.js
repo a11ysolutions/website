@@ -13,9 +13,9 @@ function Clients() {
                     breakLine={false}
                 />
             </div>
-            <div className="clients-img-container">
+            <div className="clients-img-container" role={'list'}>
                 <div className="clients-img-row">
-                    <div className="clients-img-card">
+                    <div className="clients-img-card" role={'listitem'}>
                         <img
                             alt="client front10"
                             src="/client-front10.png"
@@ -25,7 +25,7 @@ function Clients() {
                             }}
                         />
                     </div>
-                    <div className="clients-img-card">
+                    <div className="clients-img-card" role={'listitem'}>
                         <img
                             alt="client adavec"
                             src="/adavec.png"
@@ -37,7 +37,7 @@ function Clients() {
                     </div>
                 </div>
                 <div className="clients-img-row">
-                    <div className="clients-img-card">
+                    <div className="clients-img-card" role={'listitem'}>
                         <img
                             alt="client pixel perfecto"
                             src="/client-pixel.png"
@@ -47,7 +47,7 @@ function Clients() {
                             }}
                         />
                     </div>
-                    <div className="clients-img-card">
+                    <div className="clients-img-card" role={'listitem'}>
                         <img
                             alt="client everymundo"
                             src="/client-em.png"

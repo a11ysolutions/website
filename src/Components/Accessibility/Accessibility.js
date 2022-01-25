@@ -32,7 +32,7 @@ function Accessibility() {
                 pillPositionClass="pill-position"
             />
 
-            <section className="a11y-qualities">
+            <section className="a11y-qualities" role={'list'}>
                 <div className="why-choose-us-qualities">
                     <BicolorTitledText
                         color1="black"
@@ -168,7 +168,7 @@ function Accessibility() {
 
                     <div className="vpat-explanation-header no-margin"><h3>THIS REPORT WILL INCLUDE:</h3></div>
 
-                    <div className="checked-items">
+                    <div className="checked-items" role="list">
                         <div className="checked-group-1">
                             <CheckedItem>Feature/Module/URL evaluated</CheckedItem>
                             <CheckedItem>Screenshots/Video</CheckedItem>
