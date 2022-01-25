@@ -7,7 +7,7 @@ export default function CheckedItem({children, icon}) {
                 icon ? 
                     <div className='checked-item-icon-container'>{icon}</div> :
                     <div className="checked-sign-container">
-                        <img src="/check.svg" alt="Check sign" className="checked-item-icon" />
+                        <img src="/check.svg" alt="" className="checked-item-icon" />
                     </div>
             }
             <div className="checked-item-text">{children}</div>

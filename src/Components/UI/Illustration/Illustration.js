@@ -10,7 +10,7 @@ function Illustration({ pillText, imgSrc, containerStyle, pillPositionClass }) {
           <img
             src={imgSrc}
             className="illustration"
-            alt="Main illustration"
+            alt=""
           />
 
           <Pill className={pillPositionClass}>{pillText}</Pill>
