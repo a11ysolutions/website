@@ -12,6 +12,7 @@ function Services() {
                 onClickButton={() => {
                     document.location.href = "/functional"
                 }}
+                ariaLabel="Learn more about functional testing"
             >
                 <p>We ensure your digital Products, Software,<br />
                     Mobile and Web Applications deliver the performance<br />
@@ -28,6 +29,7 @@ function Services() {
                 onClickButton={() => {
                     document.location.href = "/accessibility"
                 }}
+                ariaLabel="Learn more about accessibility testing"
             >
                 <p>
                     We ensure your product is WCAG <br />
@@ -43,6 +45,7 @@ function Services() {
                 onClickButton={() => {
                     document.location.href = "/automation"
                 }}
+                ariaLabel="Learn more about test automation"
             >
                 <p>
                     We check your product is functioning  <br />
