@@ -98,7 +98,7 @@ function Functional() {
             </div>
           </BicolorTitledText>
 
-          <div className='bicolor-titled-container'>
+          <div className='bicolor-titled-container' role="list">
             <CheckedItem>Scale your device coverage testing using real-world different devices, screen resolutions, browsers, and platforms, with no emulators.</CheckedItem>
             <CheckedItem>Every defect is manually reproduced, verified, and categorized by severity, to allow rapid fixes.</CheckedItem>
             <CheckedItem>Bring your internal teams together and improve your working practices across the entire SDLC.</CheckedItem>
@@ -143,7 +143,7 @@ function Functional() {
             </div>
           </BicolorTitledText>
 
-          <div className='functional-qualities-top-section'>
+          <div className='functional-qualities-top-section' role={'list'}>
             <div className="card-subgroup">
               <AchievementCard imgSrc="folder-data.svg">
                 <p>
@@ -201,7 +201,7 @@ function Functional() {
             </div>
           </BicolorTitledText>
 
-          <div className='bicolor-titled-container'>
+          <div className='bicolor-titled-container' role="list">
             <CheckedItem>Improve customer satisfaction earning the trust and satisfaction of international users by ensuring bugs don’t affect their interactions with your brand and products.</CheckedItem>
             <CheckedItem>Understand bug impact on local users ensuring end-users feel as though the products you deliver were built for them.</CheckedItem>
             <CheckedItem>Test with real users on real devices for real results ensuring a consistent user experience for all end-users giving you a competitive edge in the oversaturated app market.</CheckedItem>
@@ -230,7 +230,7 @@ function Functional() {
             color2Text="We Offer"
           ></BicolorTitledText>
 
-          <div className='checked-items'>
+          <div className='checked-items' role="list">
             <div>
               <CheckedItem icon={BUG_ICON} >Smoke testing</CheckedItem>
               <CheckedItem icon={PUZZLE_ICON}>Module / Component testing</CheckedItem>

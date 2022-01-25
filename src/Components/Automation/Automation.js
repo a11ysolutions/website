@@ -47,7 +47,7 @@ function Automation() {
             />
 
             <section className="info-with-image automation-section first-info">
-                <div className="checked-info">
+                <div className="checked-info" role="list">
                     <BicolorTitledText
                         color1="#0D9E71"
                         color2="black"
@@ -78,7 +78,7 @@ function Automation() {
             </section>
 
             <section className="info-with-image automation-section second-info">
-                <div className="checked-info">
+                <div className="checked-info" role="list">
                     <BicolorTitledText
                         color1="#0D9E71"
                         color2="black"
@@ -115,7 +115,7 @@ function Automation() {
             </section>
 
             <section className="info-with-image automation-section">
-                <div className="checked-info">
+                <div className="checked-info" role="list">
                     <BicolorTitledText
                         color1="#0D9E71"
                         color2="black"
@@ -160,7 +160,7 @@ function Automation() {
                             color2Text="we offer"
                         ></BicolorTitledText>
 
-                        <div className="checked-items">
+                        <div className="checked-items" role="list">
                             <div>
                                 <CheckedItem icon={TRENDING_ICON} >Reduce Regression Cost</CheckedItem>
                                 <CheckedItem icon={CHECKED_ICON}>Better Testing Quality</CheckedItem>

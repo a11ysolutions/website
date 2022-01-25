@@ -3,7 +3,7 @@ import ServiceCard from "../ServiceCard/ServiceCard"
 import "./Services.css"
 function Services() {
     return (
-        <div className="a11y-services">
+        <div className="a11y-services" role={'list'}>
             <ServiceCard
                 header="Functional testing"
                 imgSrc="/functional-testing.png"

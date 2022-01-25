@@ -3,7 +3,7 @@ import "./AchievementCard.css";
 
 function AchievementCard({ children, imgSrc, className }) {
   return (
-    <div className={"achievement-card " + className}>
+    <div className={"achievement-card " + className} role="listitem">
       <div>
         <div className="achievement-card-ellipse">
           <img
