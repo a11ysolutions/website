@@ -9,7 +9,7 @@ function AchievementCard({ children, imgSrc, className }) {
           <img
             src={imgSrc}
             className="achievement-card-img"
-            alt="card icon"
+            alt=""
           />
         </div>
 
