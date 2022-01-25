@@ -127,7 +127,7 @@ function StandardRegulations() {
                     >Get in touch</Button>
                 </div>
 
-                <img src="/encircled-bg-large.png" alt="Using a tablet" className="regulations-desktop-img" />
+                <img src="/encircled-bg-large.png" alt="" className="regulations-desktop-img" />
 
             </section>
 

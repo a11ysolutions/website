@@ -77,7 +77,7 @@ function Functional() {
 
         <div className="functional-intermediate-image">
           <div className="functional-first-encircled-img">
-            <img src="/desktop-two-monitors.png" alt="A desktop with two monitors" className="functional-first-image" />
+            <img src="/desktop-two-monitors.png" alt="" className="functional-first-image" />
           </div>
           <div className="functional-first-blurred-circle"></div>
           <div className="functional-fourth-blurred-circle"></div>
@@ -113,10 +113,10 @@ function Functional() {
         </div>
 
         <div className="functional-intermediate-image">
-          <img src="/coding-man.png" alt="A man typing on a computer" className="functional-second-image" />
+          <img src="/coding-man.png" alt="" className="functional-second-image" />
           <div className="functional-second-image-container">
-            <img src="/computer-plant.png" alt="A computer and a plant" className="functional-third-image" />
-            <img src="/hand-bar.png" alt="A hand with an increasing digital bar on top" className="functional-fourth-image" />
+            <img src="/computer-plant.png" alt="" className="functional-third-image" />
+            <img src="/hand-bar.png" alt="" className="functional-fourth-image" />
           </div>
           <div className="functional-second-circle-container">
             <div className="functional-second-circle" ></div>
@@ -215,7 +215,7 @@ function Functional() {
         </div>
         <div className="functional-intermediate-image">
           <div className="functional-first-encircled-img">
-            <img src="/man-typing.png" alt="Typing on a laptop" className="functional-first-image" />
+            <img src="/man-typing.png" alt="" className="functional-first-image" />
           </div>
           <div className="functional-fifth-blurred-circle"></div>
         </div>
@@ -252,7 +252,7 @@ function Functional() {
             <div className="functional-third-blurred-circle"></div>
             <div className="functional-fourth-circle" ></div>
           </div>
-          <img src="/man-typing-and-diagram.png" alt="A programmer working in a computer" className="functional-fith-image" />
+          <img src="/man-typing-and-diagram.png" alt="" className="functional-fith-image" />
         </div>
       </section>
 

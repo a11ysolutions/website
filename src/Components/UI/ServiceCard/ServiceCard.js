@@ -7,7 +7,7 @@ function ServiceCard({ children, header, imgSrc, imgColor = "white", style, onCl
         <div className="service-card-container" style={{ ...style }} role={'listitem'}>
             <div className="service-card" style={{ backgroundColor: imgColor, ...imgStyle }}>
                 <img
-                    alt={header}
+                    alt=""
                     src={imgSrc}
                     className={imgClass}
                 />
