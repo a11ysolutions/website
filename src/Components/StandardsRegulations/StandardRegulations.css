@@ -1,4 +1,6 @@
-
+.not-bold-h3{
+    font-weight: normal;
+}
 .vertical-cards-container{
     width: 100%;
 }

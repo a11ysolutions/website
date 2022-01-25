@@ -7,9 +7,9 @@ function VerticalCard({imgUrl, title, children, btnText, btnUrl}) {
         <div className="vertical-card">
 
             <img src={imgUrl} alt={title} />
-            <div className="vertical-card-title">
+            <h3 className="vertical-card-title">
                 {title}
-            </div>
+            </h3>
 
             <div>{children}</div>
 

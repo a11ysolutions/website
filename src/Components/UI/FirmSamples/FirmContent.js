@@ -5,7 +5,7 @@ function FirmContent({firmName, className}) {
     
     const firm = SAMPLES[firmName];
 
-    const firmImgPrefix = firm.img.split(".")[1];
+    const firmImgPrefix = firm.img.split(".")[0];
 
     return (
         <div className={`firm-content ${className}`}>

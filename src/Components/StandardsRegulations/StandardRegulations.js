@@ -103,7 +103,7 @@ function StandardRegulations() {
                         <span>Whether your organization is already involved in litigation or is proactive with accessibility,
                         the best course of action is to make your website or app conformant with WCAG 2.0/2.1 Level AA.
                         <br /><br /></span>
-                        AS A START, WE RECOMMEND THE FOLLOWING TIPS:
+                        <h3 className='not-bold-h3'>AS A START, WE RECOMMEND THE FOLLOWING TIPS:</h3>
                     </BicolorTitledText>
 
                     <CheckedItem>
