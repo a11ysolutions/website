@@ -91,7 +91,7 @@
   margin-left: 20px;
 }
 
-.vpat-explanation-header h3{
+.vpat-explanation-header h3 {
   margin-top: 80px;
   margin-bottom: 20px;
   font-style: italic;
@@ -482,5 +482,8 @@
 
   .checked-items {
     flex-direction: row;
+  }
+  .accessibility-presentation-sign-custom-text h1 {
+    width: 700px;
   }
 }

@@ -23,7 +23,9 @@ function Accessibility() {
                         "compliance goals and make the web",
                         "accessible to everyone."
                     ]}
-                    buttonText="Get a free consultation" />
+                    buttonText="Get a free consultation"
+                    className="accessibility-presentation-sign-custom-text"
+                />
             </div>
             <Illustration
                 pillText="Accessibility"
