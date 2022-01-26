@@ -7,13 +7,16 @@
   height: 48px;
   border-radius: 36px;
   background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .a11y-pill-text {
   font-weight: bold;
   font-size: 18px;
-  position: absolute;
-  top: 14px;
-  left: 32px;
+  /* position: absolute; */
+  /* top: 14px; */
+  /* left: 32px; */
 }
 
 .a11y-dot {
@@ -49,9 +52,9 @@
   }
   .a11y-pill-text {
     font: normal normal bold 20px/44px Archivo;
-    position: absolute;
+    /* position: absolute;
     top: 9px;
-    left: 40px;
+    left: 40px; */
   }
 
   .a11y-dot {

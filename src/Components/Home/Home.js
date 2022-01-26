@@ -20,7 +20,11 @@ function Home() {
                 <div className="a11y-home-presentation-container">
                     <PresentationSign />
                     <div className="home-page-ilustration-container">
-                        <HomeIlustration />
+                        <HomeIlustration
+                            firstPillText="Functionality"
+                            secondPillText="Accessibility"
+                            thirdPillText="Automation"
+                        />
                     </div>
                 </div>
 

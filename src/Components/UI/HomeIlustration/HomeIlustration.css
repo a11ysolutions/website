@@ -79,7 +79,7 @@
 
 @media screen and (min-width: 1200px) {
   .home-ilustration-container {
-    width: 590px;
+    width: 390px;
     height: 790px;
     overflow-x: visible;
     display: flex;
@@ -94,23 +94,25 @@
   .home-ilustration-functionality-pill {
     position: absolute;
     top: 190px;
-    left: 350px;
+    left: 250px;
   }
   .home-ilustration-accessibility-pill {
     top: 260px;
-    left: -170px;
+    left: -70px;
   }
   .home-ilustration-automation-pill {
     top: 355px;
-    left: -50px;
+    left: 20px;
   }
   .home-ilustration-small-circle {
     top: 10px;
     left: 20px;
   }
   .home-ilustration-large-circle {
+    width: 160px;
+    height: 170px;
     top: 280px;
-    left: 240px;
+    left: 260px;
     z-index: 1;
   }
 }

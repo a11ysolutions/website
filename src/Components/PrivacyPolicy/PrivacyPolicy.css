@@ -20,8 +20,8 @@
   display: flex;
   justify-content: center;
   margin: auto;
-  margin-top: 300px;
   max-width: 1020px;
+  z-index: 1;
 }
 
 .privacy-policy span {
@@ -32,6 +32,10 @@
 }
 .privacy-policy p {
   color: #595959;
+}
+
+.privacy-policy-ilustration-container {
+  margin-top: 50px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -45,5 +49,11 @@
   .privacy-policy-pill-position {
     top: 250px;
     left: 1150px;
+  }
+  .privacy-policy-presentation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 99px;
   }
 }

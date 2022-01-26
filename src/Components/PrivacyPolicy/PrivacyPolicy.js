@@ -1,28 +1,31 @@
 import React from "react";
 import "./PrivacyPolicy.css";
 import Presentation from "../UI/Presentation/Presentation";
-import Illustration from "../UI/Illustration/Illustration";
+import HomeIlustration from "../UI/HomeIlustration/HomeIlustration";
 
 function PrivacyPolicy() {
   return (
     <div id="privacy-policy-main" className="page-container">
-      <div className="page-top">
-        <Presentation
-          title="Privacy Policy"
-          texts={[
-            "Lorem ipsum dolor ",
-            "sit amet consectetur adipiscing elit,",
-            "sed do eiusmod tempor",
-          ]}
-          buttonText="Get a free consultation"
-        />
+      <div className="privacy-policy-presentation-container">
+        <div className="page-top">
+          <Presentation
+            title="Privacy Policy"
+            texts={[
+              "Lorem ipsum dolor ",
+              "sit amet consectetur adipiscing elit,",
+              "sed do eiusmod tempor",
+            ]}
+            buttonText="Get a free consultation"
+          />
+        </div>
+        <div className="privacy-policy-ilustration-container">
+          <HomeIlustration
+            firstPillText="Secure"
+            secondPillText="Reliable"
+            thirdPillText="Ethical"
+          />
+        </div>
       </div>
-      <Illustration
-        pillText="Privacy"
-        imgSrc={window.innerWidth >= 768 ? "/desktop@2x.png" : "/desktop.png"}
-        containerStyle={{ position: "relative", marginTop: "50px" }}
-        pillPositionClass="privacy-policy-pill-position"
-      />
       <div className="privacy-policy">
         <div>
           <h2>Privacy Notice</h2>
@@ -189,8 +192,8 @@ function PrivacyPolicy() {
                 <span>
                   <span>
                     <span data-custom-class="body_text">
-                       and other related services, including any sales,
-                      marketing, or events
+                      and other related services, including any sales,
+                     marketing, or events
                     </span>
                   </span>
                 </span>
@@ -411,7 +414,7 @@ function PrivacyPolicy() {
 
             <span>
               <span data-custom-class="body_text">
-                 or otherwise when you contact us.
+                or otherwise when you contact us.
               </span>
             </span>
           </div>
@@ -568,7 +571,7 @@ function PrivacyPolicy() {
                                     <span>
                                       <span data-custom-class="body_text">
                                         <strong>
-                                          Fulfill and manage your orders. 
+                                          Fulfill and manage your orders.
                                         </strong>
                                         We may use your information to fulfill
                                         and manage your orders, payments,
@@ -670,12 +673,12 @@ function PrivacyPolicy() {
                                       </strong>
                                     </span>
                                     <span data-custom-class="body_text">
-                                       We may use your information to develop
-                                      and display personalized content and
-                                      advertising (and work with third parties
-                                      who do so) tailored to your interests
-                                      and/or location and to measure its
-                                      effectiveness.
+                                      We may use your information to develop
+                                     and display personalized content and
+                                     advertising (and work with third parties
+                                     who do so) tailored to your interests
+                                     and/or location and to measure its
+                                     effectiveness.
                                     </span>
                                   </span>
                                 </span>
@@ -689,10 +692,10 @@ function PrivacyPolicy() {
                                       </strong>
                                     </span>
                                     <span data-custom-class="body_text">
-                                       We may use your information for other
-                                      business purposes, such as data analysis,
-                                      identifying usage trends, determining the
-                                      effectiveness of our promotional campaigns
+                                      We may use your information for other
+                                     business purposes, such as data analysis,
+                                     identifying usage trends, determining the
+                                     effectiveness of our promotional campaigns
                                       and to evaluate and improve our{" "}
                                     </span>
                                   </span>
@@ -718,10 +721,10 @@ function PrivacyPolicy() {
                                       <em>In Short:</em>
                                     </strong>
                                     <em>
-                                        We only share information with your
-                                      consent, to comply with laws, to provide
-                                      you with services, to protect your rights,
-                                      or to fulfill business obligations.
+                                      We only share information with your
+                                    consent, to comply with laws, to provide
+                                    you with services, to protect your rights,
+                                    or to fulfill business obligations.
                                       <br />
                                       <br />
                                     </em>
@@ -887,10 +890,10 @@ function PrivacyPolicy() {
                                     <em>In Short: </em>
                                   </strong>
                                   <em>
-                                     We keep your information for as long as
-                                    necessary to fulfill the purposes outlined
-                                    in this privacy notice unless otherwise
-                                    required by law.
+                                    We keep your information for as long as
+                                   necessary to fulfill the purposes outlined
+                                   in this privacy notice unless otherwise
+                                   required by law.
                                     <br />
                                     <br />
                                   </em>
@@ -957,9 +960,9 @@ function PrivacyPolicy() {
                                     <em>In Short: </em>
                                   </strong>
                                   <em>
-                                     We aim to protect your personal information
-                                    through a system of organizational and
-                                    technical security measures.
+                                    We aim to protect your personal information
+                                   through a system of organizational and
+                                   technical security measures.
                                     <br />
                                     <br />
                                   </em>
@@ -1288,7 +1291,7 @@ function PrivacyPolicy() {
                                   privacy notice.
                                 </span>
                               </span>
-                               
+
                             </span>
                           </div>
                           <div></div>
@@ -1305,9 +1308,9 @@ function PrivacyPolicy() {
                                     <em>In Short: </em>
                                   </strong>
                                   <em>
-                                     Yes, if you are a resident of California,
-                                    you are granted specific rights regarding
-                                    access to your personal information.
+                                    Yes, if you are a resident of California,
+                                   you are granted specific rights regarding
+                                   access to your personal information.
                                     <br />
                                     <br />
                                   </em>
@@ -1508,7 +1511,7 @@ function PrivacyPolicy() {
                                   <span>
                                     <span>
                                       <span data-custom-class="body_text">
-                                         or by post to:
+                                        or by post to:
                                       </span>
                                     </span>
                                   </span>
