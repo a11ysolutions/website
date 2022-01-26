@@ -33,4 +33,7 @@
     text-align: start;
     font: normal normal 900 64px/72px Archivo;
   }
+  .presentation-sign h1 {
+    text-align: left;
+  }
 }

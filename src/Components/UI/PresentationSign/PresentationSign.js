@@ -3,8 +3,8 @@ import Button from "../Button/Button"
 import "./PresentationSign.css"
 import { scrollToContactForm } from "../../Utils/Utils"
 
-function PresentationSign() {
-    return <div className="presentation-sign">
+function PresentationSign({ className }) {
+    return <div className={"presentation-sign " + className}>
         <h1><b>It's time <br />to evolve!</b></h1>
 
         <p>

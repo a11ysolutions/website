@@ -3,10 +3,10 @@ import Button from "../Button/Button";
 import "./Presentation.css";
 import { scrollToContactForm } from "../../Utils/Utils";
 
-function Presentation({ title, texts, buttonText }) {
+function Presentation({ title, texts, buttonText, className }) {
 
   return (
-    <div className="presentation-main">
+    <div className={"presentation-main " + className}>
       <h1>{title}</h1>
 
       {

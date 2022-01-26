@@ -18,7 +18,7 @@ function Home() {
         <Fragment>
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                 <div className="a11y-home-presentation-container">
-                    <PresentationSign />
+                    <PresentationSign className="home-presentation-sign-custom-text" />
                     <div className="home-page-ilustration-container">
                         <HomeIlustration
                             firstPillText="Functionality"

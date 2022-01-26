@@ -5,7 +5,7 @@ import HomeIlustration from "../UI/HomeIlustration/HomeIlustration";
 
 function PrivacyPolicy() {
   return (
-    <div id="privacy-policy-main" className="page-container">
+    <div id="privacy-policy-main" className="privacy-policy-page-container">
       <div className="privacy-policy-presentation-container">
         <div className="page-top">
           <Presentation
@@ -16,6 +16,8 @@ function PrivacyPolicy() {
               "sed do eiusmod tempor",
             ]}
             buttonText="Get a free consultation"
+            className="privacy-policy-presentation-sign"
+
           />
         </div>
         <div className="privacy-policy-ilustration-container">

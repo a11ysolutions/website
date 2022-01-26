@@ -14,7 +14,7 @@
   justify-content: center;
 }
 
-.clients-container{
+.clients-container {
   margin-bottom: 30px;
 }
 
@@ -49,7 +49,7 @@
   }
 }
 @media (min-width: 1200px) {
-  .home-qualities{
+  .home-qualities {
     margin-left: 30px;
   }
   .a11y-home-presentation-container {
@@ -76,5 +76,8 @@
   }
   .home-page-ilustration-container {
     margin-top: 10px;
+  }
+  .home-presentation-sign-custom-text h1 {
+    text-align: left;
   }
 }
