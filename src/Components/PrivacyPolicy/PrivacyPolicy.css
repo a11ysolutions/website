@@ -47,8 +47,9 @@
 
 @media screen and (min-width: 1200px) {
   .privacy-policy-pill-position {
-    top: 250px;
-    left: 1150px;
+    /* top: 250px;
+    left: 1150px; */
+    display: none;
   }
   .privacy-policy-presentation-container {
     display: flex;
