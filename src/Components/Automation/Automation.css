@@ -278,7 +278,7 @@
     height: 400px;
     align-self: center;
     margin-top: 0;
-    margin-left: 140%;
+    margin-left: 80%;
   }
 
   .automation-third-circle {
@@ -288,8 +288,9 @@
   }
 
   .automation-fourth-circle {
-    right: 10%;
-    margin-top: 230px;
+    /* right: 10%;
+    margin-top: 230px; */
+    display: none;
   }
 
   .automation-third-blurred-circle {
