@@ -30,8 +30,8 @@
     max-width: 532px;
   }
   .bicolor-titled-container h2 {
-    font: normal normal 900 56px/100px Archivo;
-    line-height: 80px;
+    font: normal normal 900 45px/50px Archivo;
+    /* line-height: 80px; */
   }
 
   .bicolor-titled-container p {
