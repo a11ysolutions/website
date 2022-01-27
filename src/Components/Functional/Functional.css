@@ -449,7 +449,7 @@
   .functional-qualities-top-section {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
   }
 
@@ -541,7 +541,7 @@
     height: 400px;
     align-self: center;
     margin-top: 0;
-    margin-left: 140%;
+    margin-left: 80%;
   }
 
   .functional-third-circle {
@@ -551,10 +551,11 @@
   }
 
   .functional-fourth-circle {
-    right: 50px;
+    /* right: 50px;
     margin-top: 320px;
     width: 40px;
-    height: 40px;
+    height: 40px; */
+    display: none;
   }
 
   .functional-third-blurred-circle {
