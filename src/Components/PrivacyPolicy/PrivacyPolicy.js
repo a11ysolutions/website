@@ -110,39 +110,12 @@ function PrivacyPolicy() {
                 <span>
                   <span>
                     <span data-custom-class="body_text">
-                      <span>
-                        <span data-custom-class="body_text"></span>
-                      </span>
+                      Engage with us in other related ways ― including any
+                      sales, marketing, or events
                     </span>
                   </span>
                 </span>
               </span>
-              <div>
-                <span>
-                  <span>
-                    <span>
-                      <span data-custom-class="body_text">
-                        <span>
-                          <span data-custom-class="body_text"></span>
-                        </span>
-                      </span>
-                    </span>
-                  </span>
-                </span>
-                <div></div>
-                <li>
-                  <span>
-                    <span>
-                      <span>
-                        <span data-custom-class="body_text">
-                          Engage with us in other related ways ― including any
-                          sales, marketing, or events
-                        </span>
-                      </span>
-                    </span>
-                  </span>
-                </li>
-              </div>
             </li>
           </ul>
           <div>
