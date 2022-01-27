@@ -28,12 +28,15 @@
   .presentation-sign p {
     text-align: start;
     font: normal normal 24px/32px Archivo;
+    z-index: 2;
   }
   .presentation-sign b {
     text-align: start;
+    z-index: 2;
     font: normal normal 900 64px/72px Archivo;
   }
   .presentation-sign h1 {
+    z-index: 2;
     text-align: left;
   }
 }
