@@ -226,21 +226,21 @@
   margin-top: 10;
 }
 
-.functional-explanation-header h3{
+.functional-explanation-header h3 {
   margin-top: 40px;
   font-style: italic;
   font-size: large;
   font-weight: normal;
 }
 
-.functional-second-explanation-header h3{
+.functional-second-explanation-header h3 {
   margin-top: 100px;
   font-style: italic;
   font-size: large;
   font-weight: normal;
 }
 
-.card-subgroup{
+.card-subgroup {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -416,7 +416,7 @@
     height: 240px;
   }
 
-  .card-subgroup{
+  .card-subgroup {
     display: flex;
     flex-direction: row;
     width: 70%;
@@ -501,10 +501,10 @@
 
   .second-info {
     flex-direction: row-reverse;
-    margin-top: 150px;
+    margin-top: 0px;
   }
 
-  .functional-checked-info{
+  .functional-checked-info {
     width: unset !important;
   }
   .second-info .functional-checked-info {
@@ -591,14 +591,13 @@
     text-align: left !important;
   }
 
-  .card-subgroup{
+  .card-subgroup {
     display: flex;
     flex-direction: row;
     width: 46%;
   }
 
-  .achievement-card{
-    
+  .achievement-card {
     margin: 0 4%;
   }
 }

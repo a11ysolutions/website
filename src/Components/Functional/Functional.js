@@ -45,7 +45,7 @@ function Functional() {
       <Illustration
         pillText="Functionality"
         imgSrc={window.innerWidth >= 768 ? "/desktop@2x.png" : "/desktop.png"}
-        containerStyle={{ position: "relative", marginTop: "50px" }}
+        containerStyle={{ position: "relative", marginTop: "60px" }}
         pillPositionClass="functional-pill-position"
       />
 
@@ -106,9 +106,9 @@ function Functional() {
           </div>
 
           <Button
-              className="automation"
-              onClick={scrollToContactForm}
-            >Get in touch</Button>
+            className="automation"
+            onClick={scrollToContactForm}
+          >Get in touch</Button>
 
         </div>
 
@@ -126,18 +126,18 @@ function Functional() {
       </section>
 
       <section className="functional-info-with-image second-info">
-          <div className="functional-circles-container">
-              <div className="functional-right-circle"></div>
-              <div className="functional-left-circle"></div>
-          </div>
+        <div className="functional-circles-container">
+          <div className="functional-right-circle"></div>
+          <div className="functional-left-circle"></div>
+        </div>
 
-          <div className="functional-checked-info">
-            <BicolorTitledText
-              color1="#0D9E71"
-              color2="black"
-              color1Text=""
-              color2Text=""
-            >
+        <div className="functional-checked-info">
+          <BicolorTitledText
+            color1="#0D9E71"
+            color2="black"
+            color1Text=""
+            color2Text=""
+          >
             <div className='functional-second-explanation-header'>
               <h3>UNLIMITED SCALE, AT SPEED</h3>
             </div>
@@ -211,7 +211,7 @@ function Functional() {
             className="automation"
             onClick={scrollToContactForm}
           >Get in touch</Button>
-        
+
         </div>
         <div className="functional-intermediate-image">
           <div className="functional-first-encircled-img">
