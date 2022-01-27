@@ -24,7 +24,7 @@ function Qualities({className=""}) {
                     <Button onClick={scrollToContactForm}>Get in touch</Button>
                 </BicolorTitledText>
                 <div className="qualities-circles-container">
-                    {/* <div className="qualities-right-circle"></div> */}
+                    <div className="qualities-right-circle"></div>
                     <div className="qualities-left-circle"></div>
                 </div>
                 <div className="a11y-qualities-top-section">

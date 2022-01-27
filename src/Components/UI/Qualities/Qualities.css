@@ -124,7 +124,8 @@
     border: 56px solid #27dba419;
   }
   .qualities-right-circle {
-    top: 100px;
-    right: -870px;
+    /* top: 100px;
+    right: -870px; */
+    display: none;
   }
 }
