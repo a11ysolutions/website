@@ -35,7 +35,7 @@ function Accessibility() {
             />
 
             <section className="a11y-qualities" role={'list'}>
-                <div className="why-choose-us-qualities">
+                <div className="a11y-why-choose-us-qualities">
                     <BicolorTitledText
                         color1="black"
                         color2="#0D9E71"
