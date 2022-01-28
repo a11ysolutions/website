@@ -9,7 +9,7 @@ function HomeIlustration({ firstPillText, secondPillText, thirdPillText }) {
                 <img
                     src="/coding-man@2x.png"
                     className="home-ilustration"
-                    alt="man typing"
+                    alt="We work passionately on functional testing, accessibility testing, and automation testing services."
                     style={{ zIndex: "2" }}
                 />
 
