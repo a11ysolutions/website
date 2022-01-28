@@ -17,11 +17,11 @@ import { scrollToContactForm } from "../Utils/Utils"
 // import { scrollToContactForm } from "../Utils/Utils"
 
 
-const TRENDING_ICON = <FiTrendingDown className="checked-item-icon" />;
-const CHECKED_ICON = <AiFillCheckCircle className="checked-item-icon" />;
-const STAR_ICON = <AiFillStar className="checked-item-icon" />;
-const CLIPBOARD_ICON = <FaClipboardList className="checked-item-icon" />;
-const ALARM_ICON = <GiAlarmClock className="checked-item-icon" />;
+const TRENDING_ICON = <FiTrendingDown className="checked-item-icon" role="img" aria-hidden="true"/>;
+const CHECKED_ICON = <AiFillCheckCircle className="checked-item-icon" role="img" aria-hidden="true"/>;
+const STAR_ICON = <AiFillStar className="checked-item-icon" role="img" aria-hidden="true"/>;
+const CLIPBOARD_ICON = <FaClipboardList className="checked-item-icon" role="img" aria-hidden="true"/>;
+const ALARM_ICON = <GiAlarmClock className="checked-item-icon" role="img" aria-hidden="true"/>;
 
 function Automation() {
     return (

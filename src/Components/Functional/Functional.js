@@ -18,14 +18,14 @@ import "./Functional.css";
 import { scrollToContactForm } from "../Utils/Utils";
 
 
-const BUG_ICON = <MdBugReport size="28" />;
-const PUZZLE_ICON = <IoExtensionPuzzle size="25" />;
-const PERSON_ICON = <IoPersonCircle size="25" />;
-const SYNC_ICON = <AiOutlineSync size="28" />;
-const GEAR_ICON = <GoGear size="28" />;
-const CLIPBOARD_ICON = <FaClipboardList size="28" />;
-const SEARCH_ICON = <FaSearchPlus size="25" />;
-const SHIELD_ICON = <BsShieldFillCheck size="25" />;
+const BUG_ICON = <MdBugReport size="28" role="img" aria-hidden="true"/>;
+const PUZZLE_ICON = <IoExtensionPuzzle size="25" role="img" aria-hidden="true"/>;
+const PERSON_ICON = <IoPersonCircle size="25" role="img" aria-hidden="true"/>;
+const SYNC_ICON = <AiOutlineSync size="28" role="img" aria-hidden="true"/>;
+const GEAR_ICON = <GoGear size="28" role="img" aria-hidden="true"/>;
+const CLIPBOARD_ICON = <FaClipboardList size="28" role="img" aria-hidden="true"/>;
+const SEARCH_ICON = <FaSearchPlus size="25" role="img" aria-hidden="true"/>;
+const SHIELD_ICON = <BsShieldFillCheck size="25" role="img" aria-hidden="true"/>;
 
 function Functional() {
   return (
