@@ -48,7 +48,7 @@ const SAMPLES = {
     },
 
     "Fox News Network": {
-        "img": "/fox-news.png",
+        "img": "/fox-news.svg",
         "content": "Fox News Network was the target of a class action lawsuit that resulted in a settlement in 2018. Many of the complaints in the Fox case were similar to those in other cases on this list, creating barriers for users with visual impairments. These included a lack of alt text for images and links, as well as redundant or empty links that hampered keyboard-based navigation for blind or visually impaired users."
     }
 }
