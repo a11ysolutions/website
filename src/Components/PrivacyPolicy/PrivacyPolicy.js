@@ -320,9 +320,11 @@ function PrivacyPolicy() {
                   <u></u>
                 </strong>
                 <strong>
-                  Personal information you disclose to us
-                  <br />
-                  <br />
+                  <h3>
+                    Personal information you disclose to us
+                    <br />
+                    <br />
+                  </h3>
                 </strong>
               </span>
             </span>
@@ -430,9 +432,11 @@ function PrivacyPolicy() {
                 <span>
                   <span data-custom-class="body_text">
                     <strong>
-                      Personal Information Provided by You.
-                      <br />
-                      <br />
+                      <h3>
+                        Personal Information Provided by You.
+                        <br />
+                        <br />
+                      </h3>
                     </strong>
                   </span>
                 </span>
