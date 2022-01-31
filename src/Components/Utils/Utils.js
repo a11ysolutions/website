@@ -1,5 +1,8 @@
 
 export const scrollToContactForm = () => {
-    const contactForm = document.getElementById("contact-us")
-    contactForm.scrollIntoView(true)
+    
+    const nameField = document.getElementById("name")
+
+    nameField.focus()
+    window.location.hash = "contact-us"
 }
