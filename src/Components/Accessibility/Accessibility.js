@@ -50,12 +50,12 @@ function Accessibility() {
                     <div className="a11y-qualities-top-section">
                         <AchievementCard imgSrc="/video-play.svg">
                             <h3>Video captioning and audio descriptions</h3>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
+                            <p>By adding closed captions to your videos, and, describing visual information needed to understand the content, we'll allow more viewers to enjoy your media.</p>
                         </AchievementCard>
 
                         <AchievementCard imgSrc="/utensils.svg">
                             <h3>Design</h3>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
+                            <p>We'll review if your design meets accessibility from the very beginning, reviewing your mockups/wireframes against WCAG standard, helping you to ensure that everyone has equal access.</p>
                         </AchievementCard>
                     </div>
                 </div>
@@ -63,14 +63,16 @@ function Accessibility() {
                 <div className="a11y-qualities-section">
                     <AchievementCard imgSrc="/desktop-pc.svg">
                         <h3>Websites</h3>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
+                        <p>We will help you to make your website usable by as many people as possible, whatever their hardware, software, language, location, or ability.</p>
                     </AchievementCard>
 
                     <AchievementCard imgSrc="/group-icons.svg">
                         <h3>Mobile Applications</h3>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
+                        <p>We will help you build natively and think about accessibility early and often, making your applications to be more accessible to people with disabilities when they are using mobile phones and other devices.</p>
                     </AchievementCard>
+                </div>
 
+                <div className="a11y-qualities-section">
                     <AchievementCard imgSrc="/folder-data.svg">
                         <h3>Pdfs, word documents, presentations or spreadsheets</h3>
                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
