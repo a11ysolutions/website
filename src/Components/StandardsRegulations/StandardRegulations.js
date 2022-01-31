@@ -25,7 +25,7 @@ function StandardRegulations() {
                 color1="black"
                 color2="#0D9E71"
                 color1Text="Web Accessibility"
-                color2Text="Standards & Regulations"
+                color2Text="Standards and Regulations"
                 className="regulations"
             />
 
