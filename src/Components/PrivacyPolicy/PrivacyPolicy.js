@@ -78,7 +78,7 @@ function PrivacyPolicy() {
             </span>
           </div>
           <div>
-            <span> </span>
+            <span></span>
           </div>
           <div>
             <span>
@@ -102,6 +102,7 @@ function PrivacyPolicy() {
                         target="_blank"
                         rel="noreferrer"
                         data-custom-class="link"
+                        aria-label="a11ysolutions.com (opens in a new window)"
                       >
                         a11ysolutions.com
                       </a>
@@ -189,7 +190,7 @@ function PrivacyPolicy() {
             </span>
           </div>
           <div>
-            <span> </span>
+            <span></span>
           </div>
           <div>
             <span>
@@ -207,11 +208,11 @@ function PrivacyPolicy() {
             </span>
           </div>
           <div>
-            <span> </span>
+            <span></span>
           </div>
           <h2>TABLE OF CONTENTS</h2>
           <div>
-            <span> </span>
+            <span></span>
           </div>
           <div>
             <span>
@@ -1189,6 +1190,7 @@ function PrivacyPolicy() {
                                               target="_blank"
                                               rel="noopener noreferrer"
                                               data-custom-class="link"
+                                              aria-label="European Commission (opens in a new window)"
                                             >
                                               European Commission
                                             </a>
@@ -1222,6 +1224,7 @@ function PrivacyPolicy() {
                                                   target="_blank"
                                                   rel="noopener noreferrer"
                                                   data-custom-class="link"
+                                                  aria-label="Federal Data Protection and Information Commissioner (opens in a new window)"
                                                 >
                                                   {" "}
                                                   Federal Data Protection and
@@ -1596,6 +1599,7 @@ function PrivacyPolicy() {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         data-custom-class="link"
+                                        aria-label="Data Subject Access Request Form (opens in a new window)"
                                       >
                                         Data Subject Access Request Form
                                       </a>
