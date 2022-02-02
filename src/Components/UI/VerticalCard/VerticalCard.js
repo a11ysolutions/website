@@ -13,7 +13,7 @@ function VerticalCard({imgUrl, title, children, btnText, btnUrl}) {
 
             <div>{children}</div>
 
-            <Button className="vertical-card-button"><a className="no-decorator-link" href={btnUrl}>{btnText}</a></Button>
+            <Button className="vertical-card-button"><a className="no-decorator-link" href={btnUrl} target="_blank" rel="noreferrer">{btnText}</a></Button>
         </div>
     )
 }
