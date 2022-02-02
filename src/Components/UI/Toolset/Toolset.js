@@ -8,7 +8,7 @@ import "./Toolset.css";
 
 function Toolset() {
   return (
-    <div style={{ marginTop: "60px" }} className="toolset-container">
+    <div className="toolset-container">
       <BicolorTitledText
         color1="black"
         color2="#0D9E71"
