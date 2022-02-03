@@ -7,8 +7,22 @@ import PrivacyPolicy from './Components/PrivacyPolicy/PrivacyPolicy';
 import Automation from './Components/Automation/Automation';
 import StandardRegulations from './Components/StandardsRegulations/StandardRegulations';
 import Sitemap from './Components/Sitemap/Sitemap';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [currentUrl] = useState(window.location.pathname);
+  
+  useEffect(() => {
+
+    if(currentUrl === "/" || currentUrl === "/regulations")
+      return
+    
+    const layout = document.querySelector(".layout-content");
+    console.log(layout)
+    layout.style.background = "linear-gradient(#21ce99 950px, white 20px)"
+
+  }, [currentUrl])
+  
   return (
     <div className="App">
       <Routes>
