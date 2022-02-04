@@ -6,6 +6,7 @@ import Illustration from "../UI/Illustration/Illustration"
 import Presentation from "../UI/Presentation/Presentation"
 import Toolset from "../UI/Toolset/Toolset"
 
+import { Helmet } from "react-helmet";
 import { FiTrendingDown } from "react-icons/fi"
 import { AiFillCheckCircle, AiFillStar } from "react-icons/ai"
 import { FaClipboardList } from "react-icons/fa"
@@ -27,6 +28,12 @@ function Automation() {
     return (
         <div id='automation-main' className='page-container' >
             {/* <div className="presentation-circle-1"></div> */}
+
+            <Helmet>
+              <title>
+                Automation testing services-a11ysolutions
+              </title>
+            </Helmet>
 
             <div className="page-top">
                 <Presentation

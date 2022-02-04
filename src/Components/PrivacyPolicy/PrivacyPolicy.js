@@ -1,11 +1,19 @@
 import React from "react";
 import "./PrivacyPolicy.css";
+import { Helmet } from "react-helmet";
 import Presentation from "../UI/Presentation/Presentation";
 import HomeIlustration from "../UI/HomeIlustration/HomeIlustration";
 
 function PrivacyPolicy() {
   return (
     <div id="privacy-policy-main" className="privacy-policy-page-container">
+
+      <Helmet>
+        <title>
+          Privacy Policy-a11ysolutions
+        </title>
+      </Helmet>
+
       <div className="privacy-policy-presentation-container">
         <div className="page-top">
           <Presentation

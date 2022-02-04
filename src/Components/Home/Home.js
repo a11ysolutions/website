@@ -7,6 +7,7 @@ import Services from "../UI/Services/Services"
 import Toolset from "../UI/Toolset/Toolset"
 import Qualities from "../UI/Qualities/Qualities"
 import BicolorTitledText from "../UI/BicolorTitledText/BicolorTitledText"
+import { Helmet } from "react-helmet";
 
 function Home() {
 
@@ -16,6 +17,13 @@ function Home() {
     }, [])
     return (
         <Fragment>
+
+            <Helmet>
+                <title>
+                    Functional, Accessibility and Automation testing services-a11ysolutions
+                </title>
+            </Helmet>
+
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                 <div className="a11y-home-presentation-container">
                     <PresentationSign className="home-presentation-sign-custom-text" />

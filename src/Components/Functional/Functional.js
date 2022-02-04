@@ -7,6 +7,7 @@ import Button from "../UI/Button/Button";
 import Toolset from "../UI/Toolset/Toolset";
 import CheckedItem from "../UI/CheckedItem/CheckedItem"
 
+import { Helmet } from "react-helmet";
 import { MdBugReport } from "react-icons/md";
 import { IoExtensionPuzzle, IoPersonCircle } from "react-icons/io5";
 import { AiOutlineSync } from "react-icons/ai";
@@ -30,6 +31,12 @@ const SHIELD_ICON = <BsShieldFillCheck size="25" role="img" aria-hidden="true"/>
 function Functional() {
   return (
     <div id='functional-main' className='page-container' >
+      <Helmet>
+        <title>
+          Functional testing services-a11ysolutions
+        </title>
+      </Helmet>
+
       <div className="page-top">
         <Presentation
           title="Scalable Functional Testing Services"

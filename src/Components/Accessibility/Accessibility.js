@@ -6,6 +6,8 @@ import CheckedItem from "../UI/CheckedItem/CheckedItem"
 import Illustration from "../UI/Illustration/Illustration"
 import Presentation from "../UI/Presentation/Presentation"
 import Toolset from "../UI/Toolset/Toolset"
+
+import { Helmet } from "react-helmet";
 import { scrollToContactForm } from "../Utils/Utils"
 
 import "./Accessibility.css";
@@ -14,6 +16,13 @@ function Accessibility() {
     return (
         <div id='automation-main' className='page-container' >
             {/* <div className="presentation-circle-1"></div> */}
+
+            <Helmet>
+              <title>
+                Accessibility testing services-a11ysolutions
+              </title>
+            </Helmet>
+
             <div className="a11y-page-top">
                 <Presentation
                     title="Our expert team will guarantee your product's accessibility"

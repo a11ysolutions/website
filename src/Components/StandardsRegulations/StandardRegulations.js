@@ -4,6 +4,8 @@ import Button from '../UI/Button/Button'
 import CheckedItem from '../UI/CheckedItem/CheckedItem'
 import FirmSamples from '../UI/FirmSamples/FirmSamples'
 import VerticalCard from '../UI/VerticalCard/VerticalCard'
+
+import { Helmet } from "react-helmet";
 import { scrollToContactForm } from '../Utils/Utils'
 
 import "./StandardRegulations.css";
@@ -20,6 +22,12 @@ function StandardRegulations() {
 
     return (
         <div className="page-container">
+
+            <Helmet>
+              <title>
+                Regulations-a11ysolutions
+              </title>
+            </Helmet>
             
             <BicolorTitledText
                 color1="black"
