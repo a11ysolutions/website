@@ -106,21 +106,23 @@ function StandardRegulations() {
                         <h3 className='not-bold-h3'>AS A START, WE RECOMMEND THE FOLLOWING TIPS:</h3>
                     </BicolorTitledText>
 
-                    <CheckedItem>
-                        <b>Fix the technical basics.</b> The most common ADA lawsuit complaints about websites are missing alt text,
-                        missing labels, empty links, redundant links, and missing page titles. For apps, they include incompatibility
-                        with screen reader technology, missing alt text, and missing navigation links.
-                    </CheckedItem>
-                    <CheckedItem>
-                        <b>Include people with disabilities in your user testing.</b> Though automated scans are a helpful first step in identifying
-                        problems, they cannot always emulate the nuances of human interactions with digital interfaces. User testing that includes
-                        people with disabilities gives you a more holistic picture of your website’s or app’s user experience.
-                    </CheckedItem>
-                    <CheckedItem>
-                        <b>Commit to long-term maintenance.</b> No software can instantly identify, let alone fix, all of your digital accessibility problems
-                        once and for all. The digital landscape is ever-evolving, as are human users. True accessibility requires a long-term,
-                        comprehensive digital accessibility testing, remediation, and maintenance program.
-                    </CheckedItem>
+                    <div className="checked-items" role="list">
+                        <CheckedItem>
+                            <b>Fix the technical basics.</b> The most common ADA lawsuit complaints about websites are missing alt text,
+                            missing labels, empty links, redundant links, and missing page titles. For apps, they include incompatibility
+                            with screen reader technology, missing alt text, and missing navigation links.
+                        </CheckedItem>
+                        <CheckedItem>
+                            <b>Include people with disabilities in your user testing.</b> Though automated scans are a helpful first step in identifying
+                            problems, they cannot always emulate the nuances of human interactions with digital interfaces. User testing that includes
+                            people with disabilities gives you a more holistic picture of your website’s or app’s user experience.
+                        </CheckedItem>
+                        <CheckedItem>
+                            <b>Commit to long-term maintenance.</b> No software can instantly identify, let alone fix, all of your digital accessibility problems
+                            once and for all. The digital landscape is ever-evolving, as are human users. True accessibility requires a long-term,
+                            comprehensive digital accessibility testing, remediation, and maintenance program.
+                        </CheckedItem>
+                    </div>                    
 
                     <Button onClick={scrollToContactForm}
                         className="automation"
