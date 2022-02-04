@@ -17,7 +17,6 @@ function PrivacyPolicy() {
             ]}
             buttonText="Get a free consultation"
             className="privacy-policy-presentation-sign"
-
           />
         </div>
         <div className="privacy-policy-ilustration-container">
@@ -169,7 +168,7 @@ function PrivacyPolicy() {
                   <span>
                     <span data-custom-class="body_text">
                       and other related services, including any sales,
-                     marketing, or events
+                      marketing, or events
                     </span>
                   </span>
                 </span>
@@ -214,103 +213,105 @@ function PrivacyPolicy() {
           <div>
             <span></span>
           </div>
-          <div>
-            <span>
-              <span>
-                <a href="#infocollect" data-custom-class="link">
-                  1. WHAT INFORMATION DO WE COLLECT?
-                </a>
-              </span>
-            </span>
-          </div>
-          <div>
-            <span>
-              <span>
-                <a href="#infouse" data-custom-class="link">
-                  2. HOW DO WE USE YOUR INFORMATION?
-                </a>
-              </span>
-            </span>
-          </div>
-          <div>
-            <span>
+          <ul>
+            <li>
               <span>
                 <span>
-                  <a href="#infoshare" data-custom-class="link">
-                    3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?
+                  <a href="#infocollect" data-custom-class="link">
+                    1. WHAT INFORMATION DO WE COLLECT?
                   </a>
                 </span>
               </span>
-            </span>
-          </div>
-          <div>
-            <span>
+            </li>
+            <li>
               <span>
-                <a href="#inforetain" data-custom-class="link">
-                  4. HOW LONG DO WE KEEP YOUR INFORMATION?
+                <span>
+                  <a href="#infouse" data-custom-class="link">
+                    2. HOW DO WE USE YOUR INFORMATION?
+                  </a>
+                </span>
+              </span>
+            </li>
+            <li>
+              <span>
+                <span>
+                  <span>
+                    <a href="#infoshare" data-custom-class="link">
+                      3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?
+                    </a>
+                  </span>
+                </span>
+              </span>
+            </li>
+            <li>
+              <span>
+                <span>
+                  <a href="#inforetain" data-custom-class="link">
+                    4. HOW LONG DO WE KEEP YOUR INFORMATION?
+                  </a>
+                </span>
+              </span>
+            </li>
+            <li>
+              <span>
+                <span>
+                  <a href="#infosafe" data-custom-class="link">
+                    5. HOW DO WE KEEP YOUR INFORMATION SAFE?
+                  </a>
+                </span>
+              </span>
+            </li>
+            <li>
+              <span>
+                <span>
+                  <a href="#infominors" data-custom-class="link">
+                    6. DO WE COLLECT INFORMATION FROM MINORS?
+                  </a>
+                </span>
+              </span>
+            </li>
+            <li>
+              <span>
+                <span>
+                  <a href="#privacyrights" data-custom-class="link">
+                    7. WHAT ARE YOUR PRIVACY RIGHTS?
+                  </a>
+                </span>
+              </span>
+            </li>
+            <li>
+              <span>
+                <a href="#DNT" data-custom-class="link">
+                  8. CONTROLS FOR DO-NOT-TRACK FEATURES
                 </a>
               </span>
-            </span>
-          </div>
-          <div>
-            <span>
+            </li>
+            <li>
               <span>
-                <a href="#infosafe" data-custom-class="link">
-                  5. HOW DO WE KEEP YOUR INFORMATION SAFE?
+                <a href="#caresidents" data-custom-class="link">
+                  9. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?
                 </a>
               </span>
-            </span>
-          </div>
-          <div>
-            <span>
+            </li>
+            <li>
               <span>
-                <a href="#infominors" data-custom-class="link">
-                  6. DO WE COLLECT INFORMATION FROM MINORS?
+                <a href="#policyupdates" data-custom-class="link">
+                  10. DO WE MAKE UPDATES TO THIS NOTICE?
                 </a>
               </span>
-            </span>
-          </div>
-          <div>
-            <span>
-              <span>
-                <a href="#privacyrights" data-custom-class="link">
-                  7. WHAT ARE YOUR PRIVACY RIGHTS?
-                </a>
-              </span>
-            </span>
-          </div>
-          <div>
-            <span>
-              <a href="#DNT" data-custom-class="link">
-                8. CONTROLS FOR DO-NOT-TRACK FEATURES
+            </li>
+            <li>
+              <a href="#contact" data-custom-class="link">
+                11. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?
               </a>
-            </span>
-          </div>
-          <div>
-            <span>
-              <a href="#caresidents" data-custom-class="link">
-                9. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?
+            </li>
+            <li>
+              <a href="#request" data-custom-class="link">
+                12. HOW CAN YOU REVIEW, UPDATE OR DELETE THE DATA WE COLLECT
+                FROM YOU?
               </a>
-            </span>
-          </div>
-          <div>
-            <span>
-              <a href="#policyupdates" data-custom-class="link">
-                10. DO WE MAKE UPDATES TO THIS NOTICE?
-              </a>
-            </span>
-          </div>
-          <div>
-            <a href="#contact" data-custom-class="link">
-              11. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?
-            </a>
-          </div>
-          <div>
-            <a href="#request" data-custom-class="link">
-              12. HOW CAN YOU REVIEW, UPDATE OR DELETE THE DATA WE COLLECT FROM
-              YOU?
-            </a>
-          </div>
+            </li>
+          </ul>
           <div></div>
           <h2 id="infocollect">1. WHAT INFORMATION DO WE COLLECT?</h2>
           <div>
@@ -653,12 +654,12 @@ function PrivacyPolicy() {
                                       </strong>
                                     </span>
                                     <span data-custom-class="body_text">
-                                      We may use your information to develop
-                                     and display personalized content and
-                                     advertising (and work with third parties
-                                     who do so) tailored to your interests
-                                     and/or location and to measure its
-                                     effectiveness.
+                                      We may use your information to develop and
+                                      display personalized content and
+                                      advertising (and work with third parties
+                                      who do so) tailored to your interests
+                                      and/or location and to measure its
+                                      effectiveness.
                                     </span>
                                   </span>
                                 </span>
@@ -673,9 +674,9 @@ function PrivacyPolicy() {
                                     </span>
                                     <span data-custom-class="body_text">
                                       We may use your information for other
-                                     business purposes, such as data analysis,
-                                     identifying usage trends, determining the
-                                     effectiveness of our promotional campaigns
+                                      business purposes, such as data analysis,
+                                      identifying usage trends, determining the
+                                      effectiveness of our promotional campaigns
                                       and to evaluate and improve our{" "}
                                     </span>
                                   </span>
@@ -702,9 +703,9 @@ function PrivacyPolicy() {
                                     </strong>
                                     <em>
                                       We only share information with your
-                                    consent, to comply with laws, to provide
-                                    you with services, to protect your rights,
-                                    or to fulfill business obligations.
+                                      consent, to comply with laws, to provide
+                                      you with services, to protect your rights,
+                                      or to fulfill business obligations.
                                       <br />
                                       <br />
                                     </em>
@@ -871,9 +872,9 @@ function PrivacyPolicy() {
                                   </strong>
                                   <em>
                                     We keep your information for as long as
-                                   necessary to fulfill the purposes outlined
-                                   in this privacy notice unless otherwise
-                                   required by law.
+                                    necessary to fulfill the purposes outlined
+                                    in this privacy notice unless otherwise
+                                    required by law.
                                     <br />
                                     <br />
                                   </em>
@@ -941,8 +942,8 @@ function PrivacyPolicy() {
                                   </strong>
                                   <em>
                                     We aim to protect your personal information
-                                   through a system of organizational and
-                                   technical security measures.
+                                    through a system of organizational and
+                                    technical security measures.
                                     <br />
                                     <br />
                                   </em>
@@ -1273,7 +1274,6 @@ function PrivacyPolicy() {
                                   privacy notice.
                                 </span>
                               </span>
-
                             </span>
                           </div>
                           <div></div>
@@ -1291,8 +1291,8 @@ function PrivacyPolicy() {
                                   </strong>
                                   <em>
                                     Yes, if you are a resident of California,
-                                   you are granted specific rights regarding
-                                   access to your personal information.
+                                    you are granted specific rights regarding
+                                    access to your personal information.
                                     <br />
                                     <br />
                                   </em>
