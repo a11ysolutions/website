@@ -114,7 +114,7 @@ function StandardRegulations() {
                         <h3 className='not-bold-h3'>AS A START, WE RECOMMEND THE FOLLOWING TIPS:</h3>
                     </BicolorTitledText>
 
-                    <div className="checked-items" role="list">
+                    <div role="list">
                         <CheckedItem>
                             <b>Fix the technical basics.</b> The most common ADA lawsuit complaints about websites are missing alt text,
                             missing labels, empty links, redundant links, and missing page titles. For apps, they include incompatibility
