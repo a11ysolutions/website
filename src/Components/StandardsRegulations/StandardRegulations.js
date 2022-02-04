@@ -9,14 +9,15 @@ import { Helmet } from "react-helmet";
 import { scrollToContactForm } from '../Utils/Utils'
 
 import "./StandardRegulations.css";
+import HomeIlustration from '../UI/HomeIlustration/HomeIlustration'
 
 function StandardRegulations() {
 
     useEffect(() => {
-        const layout = document.querySelector(".layout-content");
+        // const layout = document.querySelector(".layout-content");
         const topCircles = document.querySelector(".circles-container");
 
-        layout.style.background = "white";
+        // layout.style.background = "white";
         topCircles.style.display = "none";
     }, [])
 
@@ -29,13 +30,29 @@ function StandardRegulations() {
               </title>
             </Helmet>
             
-            <BicolorTitledText
-                color1="black"
-                color2="#0D9E71"
-                color1Text="Web Accessibility"
-                color2Text="Standards and Regulations"
-                className="regulations"
-            />
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginBottom: "60px"}}>
+                <div className="a11y-home-presentation-container">
+                    <div className="presentation-sign home-presentation-sign-custom-text">
+                        <h1 style={{zIndex: 2}}><b>Web Accessibility <br />Standards</b></h1>
+
+                        <p>
+                            We are committed to delivering <br />
+                            your product with the best quality ever.
+                        </p>
+
+                        <Button size="large" style={{ marginTop: "24px" }} onClick={scrollToContactForm}>
+                            Get a free consultation
+                        </Button>
+                    </div>
+                    <div className="home-page-ilustration-container">
+                        <HomeIlustration
+                            firstPillText="Functionality"
+                            secondPillText="Accessibility"
+                            thirdPillText="Automation"
+                        />
+                    </div>
+                </div>
+            </div>
 
             <div className="vertical-cards-container" id="compliance-section">
                 <div className='v-card-subgroup'>
@@ -141,7 +158,7 @@ function StandardRegulations() {
 
             </section>
 
-            <section className="green-bg-section regulations">
+            <section className="shadowed-section regulations">
                 <BicolorTitledText
                     color1="black"
                     color2="#0D9E71"
