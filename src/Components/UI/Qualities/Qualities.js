@@ -7,7 +7,7 @@ import Button from "../Button/Button"
 
 function Qualities({className=""}) {
     return (
-        <div className={`a11y-qualities ${className}`} id="why-choose-us" role="list">
+        <div className={`a11y-qualities ${className}`} id="why-choose-us">
             <div className="why-choose-us-qualities">
                 <BicolorTitledText
                     color1="black"
@@ -27,7 +27,7 @@ function Qualities({className=""}) {
                     <div className="qualities-right-circle"></div>
                     <div className="qualities-left-circle"></div>
                 </div>
-                <div className="a11y-qualities-top-section">
+                <div className="a11y-qualities-top-section" role="list">
                     <AchievementCard imgSrc="/quality-assurance.png" className="qualities-quality-card">
                         <h3>Quality</h3>
                         <p>
@@ -45,7 +45,7 @@ function Qualities({className=""}) {
                     </AchievementCard>
                 </div>
             </div>
-            <div className="a11y-qualities-section">
+            <div className="a11y-qualities-section" role="list">
                 <AchievementCard imgSrc="/growth.png">
                     <h3>Best/Fast Results</h3>
                     <p>

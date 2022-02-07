@@ -54,7 +54,7 @@ function Automation() {
             />
 
             <section className="info-with-image automation-section first-info">
-                <div className="checked-info" role="list">
+                <div className="checked-info">
                     <BicolorTitledText
                         color1="#0D9E71"
                         color2="black"
@@ -66,10 +66,12 @@ function Automation() {
                         to find more defects in less time. We do this in order to:
                     </BicolorTitledText>
 
-                    <CheckedItem>Effectively develop test scripts</CheckedItem>
-                    <CheckedItem>Thoroughly assess every test cycle</CheckedItem>
-                    <CheckedItem>Produce better software and faster</CheckedItem>
-                    <CheckedItem>Build test automation environment rapidly</CheckedItem>
+                    <div className='bicolor-titled-container' role="list">
+                        <CheckedItem>Effectively develop test scripts</CheckedItem>
+                        <CheckedItem>Thoroughly assess every test cycle</CheckedItem>
+                        <CheckedItem>Produce better software and faster</CheckedItem>
+                        <CheckedItem>Build test automation environment rapidly</CheckedItem>
+                    </div>
 
                     <Button onClick={scrollToContactForm}
                         className="automation"
@@ -85,7 +87,7 @@ function Automation() {
             </section>
 
             <section className="info-with-image automation-section second-info">
-                <div className="checked-info" role="list">
+                <div className="checked-info">
                     <BicolorTitledText
                         color1="#0D9E71"
                         color2="black"
@@ -98,10 +100,12 @@ function Automation() {
                         Key benefits we offer to you are:
                     </BicolorTitledText>
 
-                    <CheckedItem>Our test automation engineers create re-usable high-level application-specific libraries to reduce testing time and costs.</CheckedItem>
-                    <CheckedItem>We run tests after every change in your software which will help you to deliver new product features even more quickly and efficiently while not compromising on software quality.</CheckedItem>
-                    <CheckedItem>We help you to get away from slow releases and defects found in production.</CheckedItem>
-                    <CheckedItem>With our help, you will become Proactive instead of Reactive</CheckedItem>
+                    <div className="bicolor-titled-container" role="list">
+                        <CheckedItem>Our test automation engineers create re-usable high-level application-specific libraries to reduce testing time and costs.</CheckedItem>
+                        <CheckedItem>We run tests after every change in your software which will help you to deliver new product features even more quickly and efficiently while not compromising on software quality.</CheckedItem>
+                        <CheckedItem>We help you to get away from slow releases and defects found in production.</CheckedItem>
+                        <CheckedItem>With our help, you will become Proactive instead of Reactive</CheckedItem>
+                    </div>
 
                     <Button onClick={scrollToContactForm}
                         className="automation"
@@ -122,7 +126,7 @@ function Automation() {
             </section>
 
             <section className="info-with-image automation-section">
-                <div className="checked-info" role="list">
+                <div className="checked-info">
                     <BicolorTitledText
                         color1="#0D9E71"
                         color2="black"
@@ -134,12 +138,14 @@ function Automation() {
                         Our expertise will help you with
                     </BicolorTitledText>
 
-                    <CheckedItem>Schedule your Test Execution 24/7</CheckedItem>
-                    <CheckedItem>Easy Regression Testing</CheckedItem>
-                    <CheckedItem>Powerful Test Reports</CheckedItem>
-                    <CheckedItem>Ability to Perform Testing on Multiple Platforms in Parallel</CheckedItem>
-                    <CheckedItem>Maximize the Test Coverage</CheckedItem>
-                    <CheckedItem>Scalability</CheckedItem>
+                    <div className="bicolor-titled-container" role="list">
+                        <CheckedItem>Schedule your Test Execution 24/7</CheckedItem>
+                        <CheckedItem>Easy Regression Testing</CheckedItem>
+                        <CheckedItem>Powerful Test Reports</CheckedItem>
+                        <CheckedItem>Ability to Perform Testing on Multiple Platforms in Parallel</CheckedItem>
+                        <CheckedItem>Maximize the Test Coverage</CheckedItem>
+                        <CheckedItem>Scalability</CheckedItem>
+                    </div>
 
 
                     <Button onClick={scrollToContactForm}

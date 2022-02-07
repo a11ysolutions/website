@@ -43,7 +43,7 @@ function Accessibility() {
                 pillPositionClass="pill-position"
             />
 
-            <section className="a11y-qualities" role={'list'}>
+            <section className="a11y-qualities">
                 <div className="a11y-why-choose-us-qualities">
                     <BicolorTitledText
                         color1="black"
@@ -56,7 +56,7 @@ function Accessibility() {
                         to find more defects in less time. We do this in order to:
                     </BicolorTitledText>
 
-                    <div className="a11y-qualities-top-section">
+                    <div className="a11y-qualities-top-section" role="list">
                         <AchievementCard imgSrc="/video-play.svg">
                             <h3>Video captioning and audio descriptions</h3>
                             <p>By adding closed captions to your videos, and, describing visual information needed to understand the content, we'll allow more viewers to enjoy your media.</p>
@@ -69,7 +69,7 @@ function Accessibility() {
                     </div>
                 </div>
 
-                <div className="a11y-qualities-section">
+                <div className="a11y-qualities-section" role="list">
                     <AchievementCard imgSrc="/desktop-pc.svg">
                         <h3>Websites</h3>
                         <p>We will help you to make your website usable by as many people as possible, whatever their hardware, software, language, location, or ability.</p>
@@ -81,7 +81,7 @@ function Accessibility() {
                     </AchievementCard>
                 </div>
 
-                <div className="a11y-qualities-section">
+                <div className="a11y-qualities-section" role="list">
                     <AchievementCard imgSrc="/folder-data.svg">
                         <h3>Pdfs, word documents, presentations or spreadsheets</h3>
                         <p>All type of users will benefits from this because your documents will be created to be as easily readable by a sighted reader as a low vision or non-sighted reader.</p>
