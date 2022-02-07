@@ -14,7 +14,7 @@ function App() {
   
   useEffect(() => {
 
-    if(currentUrl === "/" || currentUrl === "/regulations")
+    if(currentUrl === "/" || currentUrl === "/regulations" || currentUrl === "/privacy-policy")
       return
     
     const layout = document.querySelector(".layout-content");

@@ -1,18 +1,45 @@
-component: website
-name: a11y-website
-app: a11y-website
-stage: dev
+service: a11y-website
+
+plugins:
+  - serverless-finch
+
 provider:
   name: aws
-  runtime: nodejs12.x
-
-inputs:
-  src:
-    src: ./src
-    hook: yarn build
-    dist: ./build
-  domain: serverless.com
   region: us-east-2
-  bucketName: a11y-website-${stage}
-  indexDocument: index.html
-  errorDocument: index.html
+  stage: dev
+
+custom:
+  client:
+    bucketName: a11ysolutions.com
+
+# resources:
+#   Resources:
+#     StaticSite:
+#       Type: AWS::S3::Bucket
+#       Properties:
+#         AccessControl: PublicRead
+#         BucketName: ${self:custom.siteName}-${self:provider.stage}
+#         WebsiteConfiguration:
+#           IndexDocument: index.html
+#     StaticSiteS3BucketPolicy:
+#       Type: AWS::S3::BucketPolicy
+#       Properties:
+#         Bucket:
+#           Ref: StaticSite
+#         PolicyDocument:
+#           Statement:
+#             - Sid: PublicReadGetObject
+#               Effect: Allow
+#               Principal: "*"
+#               Action:
+#               - s3:GetObject
+#               Resource:
+#                 Fn::Join: [
+#                   "", [
+#                     "arn:aws:s3:::",
+#                     {
+#                       "Ref": "StaticSite"
+#                     },
+#                     "/*"
+#                   ]
+#                 ]
