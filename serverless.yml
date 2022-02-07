@@ -1,0 +1,18 @@
+component: website
+name: a11y-website
+app: a11y-website
+stage: dev
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+inputs:
+  src:
+    src: ./src
+    hook: yarn build
+    dist: ./build
+  domain: serverless.com
+  region: us-east-2
+  bucketName: a11y-website-${stage}
+  indexDocument: index.html
+  errorDocument: index.html
