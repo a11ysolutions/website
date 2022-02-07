@@ -19,6 +19,7 @@ function Navbar({ onClickMenu }) {
                             width: "60px",
                             height: "24px",
                         }}
+                        altText="A11ySolutions home"
                     />
                 </a>
             </div>

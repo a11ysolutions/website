@@ -18,6 +18,7 @@ function SideDrawer({ show, onClose }) {
                                 marginLeft: "15px",
                                 height: "28px"
                             }}
+                            altText="A11ySolutions"
                         />
                         <button
                             className="toggle-menu-btn"
