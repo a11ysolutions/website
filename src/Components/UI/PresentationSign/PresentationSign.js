@@ -5,7 +5,10 @@ import { scrollToContactForm } from "../../Utils/Utils"
 
 function PresentationSign({ className }) {
     return <div className={"presentation-sign " + className}>
-        <h1 style={{zIndex: 2}}><b>It's time <br />to evolve!</b></h1>
+        <h1 style={{zIndex: 2, display: "flex", flexDirection: "column"}}>
+            <b>It's time</b>
+            <b>to evolve!</b>
+        </h1>
 
         <p>
             We are committed to delivering <br />
