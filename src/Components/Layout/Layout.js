@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from "react"
+import React, { useState,useRef, Fragment } from "react"
 import "./Layout.css"
 import Navbar from "../UI/Navbar/Navbar"
 import SideDrawer from "../UI/SideDrawer/SideDrawer"
@@ -7,6 +7,13 @@ import Footer from "../UI/Footer/Footer"
 
 function Layout({ children }) {
     const [showSideDrawer, setShowSideDrawer] = useState(false)
+    
+    const h2Ref = useRef(null)
+
+    const focusH2 = () =>{
+        h2Ref.current.scrollIntoView()
+        h2Ref.current.focus()    
+    }
 
     return (
         <Fragment>
@@ -19,14 +26,16 @@ function Layout({ children }) {
 
                 <Navbar
                     onClickMenu={() => { setShowSideDrawer(true); }}
+                    onClickContactUs = { ()=> { focusH2() }}
                 />
                 <SideDrawer
                     show={showSideDrawer}
                     onClose={() => setShowSideDrawer(false)}
+                    onClickContactUs = { ()=> { focusH2(); setShowSideDrawer(false) }}
                 />
                 {children}
             </div>
-            <Footer />
+            <Footer reference = {h2Ref}/>
         </Fragment>
 
     )
