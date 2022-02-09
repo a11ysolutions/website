@@ -26,7 +26,7 @@ function StandardRegulations() {
 
             <Helmet>
               <title>
-                Regulations-a11ysolutions
+                Regulations | A11ysolutions
               </title>
             </Helmet>
             

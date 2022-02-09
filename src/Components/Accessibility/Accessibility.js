@@ -19,7 +19,7 @@ function Accessibility() {
 
             <Helmet>
               <title>
-                Accessibility testing services-a11ysolutions
+                Accessibility testing services | A11ysolutions
               </title>
             </Helmet>
 
