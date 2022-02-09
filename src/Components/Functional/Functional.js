@@ -33,7 +33,7 @@ function Functional() {
     <div id='functional-main' className='page-container' >
       <Helmet>
         <title>
-          Functional testing services-a11ysolutions
+          Functional testing services | A11ysolutions
         </title>
       </Helmet>
 

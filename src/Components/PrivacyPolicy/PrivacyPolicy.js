@@ -10,7 +10,7 @@ function PrivacyPolicy() {
 
       <Helmet>
         <title>
-          Privacy Policy-a11ysolutions
+          Privacy Policy | A11ysolutions
         </title>
       </Helmet>
 

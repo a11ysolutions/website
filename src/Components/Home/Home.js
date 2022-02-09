@@ -20,7 +20,7 @@ function Home() {
 
             <Helmet>
                 <title>
-                    Functional, Accessibility and Automation testing services-a11ysolutions
+                    Functional, Accessibility and Automation testing services | A11ysolutions
                 </title>
             </Helmet>
 
