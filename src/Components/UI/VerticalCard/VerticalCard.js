@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../Button/Button'
+import CardButton from '../CardButton/CardButton.js'
 import "./VerticalCard.css";
 
 function VerticalCard({imgUrl, title, children, btnText, btnUrl}) {
@@ -13,7 +13,9 @@ function VerticalCard({imgUrl, title, children, btnText, btnUrl}) {
 
             <div>{children}</div>
 
-            <Button className="vertical-card-button"><a className="no-decorator-link" href={btnUrl} target="_blank" rel="noreferrer">{btnText}</a></Button>
+            <CardButton className="vertical-card-button card-button">
+                <a className="no-decorator-link" href={btnUrl} target="_blank" rel="noreferrer">{btnText}</a>
+            </CardButton>
         </div>
     )
 }
