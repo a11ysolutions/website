@@ -5,7 +5,7 @@ import Logo from "../Logo/Logo"
 import "../ToggleMenu/ToggleMenu.css"
 import Button from "../Button/Button"
 
-function SideDrawer({ show, onClose }) {
+function SideDrawer({ show, onClose, onClickContactUs }) {
     let attachedClasses = ["side-drawer", "close"]
     if (show)
         attachedClasses = ["side-drawer", "open"]
@@ -36,7 +36,9 @@ function SideDrawer({ show, onClose }) {
                     </ul>
                     <div className="side-drawer-button">
                             <Button
-                                onClick={() => { window.location.href = "#contact-us"; onClose() }}
+                                //onClick={() => { window.location.href = "#contact-us"; onClose() }}
+                                onClick={onClickContactUs}
+                                
                             >
                                 Contact us
                             </Button>

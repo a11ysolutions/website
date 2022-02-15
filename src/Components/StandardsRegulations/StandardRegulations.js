@@ -60,7 +60,8 @@ function StandardRegulations() {
                         title={"Americans with Disabilities Act (ADA)"}
                         imgUrl={"/ada-logo.svg"}
                         btnText={"Find out more"}
-                        btnUrl={"https://www.ada.gov/"} 
+                        btnUrl={"https://www.ada.gov/"}
+                        linkAriaLabel={"Find out more about Americans with Disabilities Act (ADA)"} 
                     >
                         The Americans with Disabilities Act of 1990 is a civil rights law that prohibits
                         discrimination based on disability. It affords similar protections against discrimination
@@ -72,6 +73,7 @@ function StandardRegulations() {
                         imgUrl={"/508-amendment.svg"}
                         btnText={"Find out more"}
                         btnUrl={"https://www.section508.gov/manage/laws-and-policies/"} 
+                        linkAriaLabel ={"Find out more about Section 508 Amendment to the Rehabilitation Act"}
                     >
                         The Americans with Disabilities Act of 1990 is a civil rights law that prohibits
                         discrimination based on disability. It affords similar protections against discrimination
@@ -85,6 +87,7 @@ function StandardRegulations() {
                         imgUrl={"/wcag-logo.svg"}
                         btnText={"Find out more"}
                         btnUrl={"https://www.w3.org/TR/WCAG21/"} 
+                        linkAriaLabel = {"Find out more about Web Content Accessibility Guidelines (WCAG)"}
                     >
                         The Americans with Disabilities Act of 1990 is a civil rights law that prohibits
                         discrimination based on disability. It affords similar protections against discrimination
@@ -96,6 +99,7 @@ function StandardRegulations() {
                         imgUrl={"/european-standard.svg"}
                         btnText={"Find out more"}
                         btnUrl={`https://digital-strategy.ec.europa.eu/en/policies/latest-changes-accessibility-standard`} 
+                        linkAriaLabel = {"Find out more about European Standard EN 301 549"}
                     >
                         The Americans with Disabilities Act of 1990 is a civil rights law that prohibits
                         discrimination based on disability. It affords similar protections against discrimination

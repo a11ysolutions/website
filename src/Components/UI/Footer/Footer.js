@@ -6,7 +6,7 @@ import ContactInfo from "../ContactInfo/ContactInfo"
 import Form from "../Form/Form"
 import SocialLinks from "../SocialLinks/SocialLinks"
 
-function Footer() {
+function Footer({reference}) {
     return (
         <footer className="footer" id="footer">
             <div className="footer-section">
@@ -17,7 +17,7 @@ function Footer() {
                         <SocialLinks />
                     </div>
                     <div>
-                        <ContactInfo />
+                        <ContactInfo reference={reference}/>
                     </div>
                 </div>
                 <div className="footer-form" id="footer-form">

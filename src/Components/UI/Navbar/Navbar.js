@@ -3,9 +3,10 @@ import "./Navbar.css"
 import Logo from "../Logo/Logo"
 import ToggleMenu from "../ToggleMenu/ToggleMenu"
 import Button from "../Button/Button"
-import { scrollToContactForm } from "../../Utils/Utils"
+//import { scrollToContactForm} from "../../Utils/Utils"
 
-function Navbar({ onClickMenu }) {
+function Navbar({ onClickMenu, onClickContactUs }) {
+    
     return (
         <div className="a11y-navbar">
             <div className="a11y-navbar-logo">
@@ -33,7 +34,9 @@ function Navbar({ onClickMenu }) {
 
                 <Button
                     className="a11y-navbar-contact"
-                    onClick={scrollToContactForm}
+                    //onClick={scrollToContactForm}
+                    onClick={onClickContactUs}
+
                     style={{
                         width: "150px",
                         height: "40px",
