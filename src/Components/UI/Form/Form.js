@@ -181,7 +181,7 @@ ${formValues.name} from ${formValues.companyName}
                     </div>
                 </div>
                 <div className="form-group form-button" >
-                    <Button variant="light" style={{ marginTop: "1em", height: "3em" }}>Submit now</Button>
+                    <Button role="button" className="footer-link" variant="light" style={{ marginTop: "1em", height: "3em" }}>Submit now</Button>
                 </div>
 
             </form>
