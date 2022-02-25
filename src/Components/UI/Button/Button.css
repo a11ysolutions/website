@@ -35,6 +35,9 @@ outline: 5px solid yellow;
   border: 2px solid #000000;
   font-weight: 550;
 }
+.a11y-button-negative:hover {
+  outline:#0D9E71 3px solid;
+}
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .a11y-button {

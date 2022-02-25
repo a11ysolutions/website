@@ -2,6 +2,7 @@ import React from "react"
 import AchievementCard from "../UI/AchievementCard/AchievementCard"
 import BicolorTitledText from "../UI/BicolorTitledText/BicolorTitledText"
 import Button from "../UI/Button/Button"
+import CardButton from "../UI/CardButton/CardButton"
 import CheckedItem from "../UI/CheckedItem/CheckedItem"
 import Illustration from "../UI/Illustration/Illustration"
 import Presentation from "../UI/Presentation/Presentation"
@@ -103,9 +104,9 @@ function Accessibility() {
                 </BicolorTitledText>
 
                 <div className="a11y-buttons">
-                    <Button size="large" variant="negative">
+                    <CardButton className="card-button" size="large" variant="negative">
                         <a className="no-decorator-link" href="./VPAT_Template.pdf">View a Sample VPAT</a>
-                    </Button>
+                    </CardButton>
                     <Button onClick={scrollToContactForm}
                         className="automation"
                     >Get in touch</Button>

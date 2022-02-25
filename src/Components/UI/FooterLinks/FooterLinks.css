@@ -9,3 +9,7 @@
     text-decoration: none;
     color:#ffffff;
 }
+
+.footer-link:hover{
+    outline: 5px solid yellow;
+}
