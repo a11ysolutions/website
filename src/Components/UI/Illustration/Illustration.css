@@ -12,6 +12,7 @@
 .illustration {
   width: 343px;
   height: 455px;
+  max-width: 99%;
 }
 
 .illustration-small-circle {

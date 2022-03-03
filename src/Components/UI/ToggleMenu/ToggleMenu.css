@@ -1,4 +1,5 @@
 .toggle-menu-btn {
+  display: block;
   background: none;
   border: none;
   cursor: pointer;
