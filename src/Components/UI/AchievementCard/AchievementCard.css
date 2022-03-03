@@ -1,6 +1,7 @@
 .achievement-card {
   min-height: 123px;
   width: 343px;
+  max-width: 95%;
   background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 16px;
   align-items: left;
@@ -29,6 +30,7 @@
   text-align: left;
   color: #000000;
 }
+
 .achievement-card-img {
   height: 32.34px;
   width: 32.34px;
