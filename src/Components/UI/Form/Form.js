@@ -6,7 +6,7 @@ function Form() {
 
     const initialValues = { name: "", companyName: "", email: "", phoneNumber: "", message: "" }
 
-    const COMPANY_EMAIL = "a11ycontact.info@gmail.com";
+    const COMPANY_EMAIL = "a11ycontact@a11ysolutions.com";
 
     
     const [formValues, setFormValues] = useState(initialValues)

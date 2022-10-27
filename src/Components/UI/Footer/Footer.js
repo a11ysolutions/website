@@ -25,7 +25,7 @@ function Footer({reference}) {
                 </div>
             </div>
             <div className="footer-copyright">
-                <div>Copyright 2021 <strong>a11ySolutions.{" "}</strong></div>
+                <div>Copyright {new Date().getFullYear()} <strong>a11ySolutions.{" "}</strong></div>
                 <div>All Rights Reserved</div>
             </div>
         </footer>
