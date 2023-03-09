@@ -19,9 +19,7 @@ function PrivacyPolicy() {
           <Presentation
             title="Privacy Policy"
             texts={[
-              "Lorem ipsum dolor ",
-              "sit amet consectetur adipiscing elit,",
-              "sed do eiusmod tempor",
+              ""
             ]}
             buttonText="Get a free consultation"
             className="privacy-policy-presentation-sign"

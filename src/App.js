@@ -8,6 +8,7 @@ import Automation from './Components/Automation/Automation';
 import StandardRegulations from './Components/StandardsRegulations/StandardRegulations';
 import Sitemap from './Components/Sitemap/Sitemap';
 import { useEffect, useState } from 'react';
+import AccessibilityStatement from './Components/AccessibilityStatement/AccessibilityStatement';
 
 function App() {
   const [currentUrl] = useState(window.location.pathname);
@@ -30,6 +31,7 @@ function App() {
         <Route path="/accessibility" element={<Accessibility />} />
         <Route path="/functional" element={<Functional />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/a11y-statement" element={<AccessibilityStatement />} />
         <Route path="/automation" element={<Automation />} />
         <Route path="/regulations" element={<StandardRegulations />} />
         <Route path="/sitemap" element={<Sitemap />} />

@@ -19,7 +19,7 @@
   padding: 36px;
   display: flex;
   justify-content: center;
-  margin: 200px auto auto auto;
+  margin: 300px auto auto auto;
   max-width: 1020px;
   z-index: 1;
 }
@@ -31,7 +31,7 @@
   color: blue !important;
 }
 .privacy-policy p {
-  color: #595959;
+  color: black;
 }
 
 .privacy-policy-ilustration-container {
