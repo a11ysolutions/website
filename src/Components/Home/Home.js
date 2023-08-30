@@ -4,10 +4,11 @@ import HomeIlustration from "../UI/HomeIlustration/HomeIlustration"
 import "./Home.css"
 import Clients from "../UI/Clients/Clients"
 import Services from "../UI/Services/Services"
-import Toolset from "../UI/Toolset/Toolset"
+// import Toolset from "../UI/Toolset/Toolset"
 import Qualities from "../UI/Qualities/Qualities"
 import BicolorTitledText from "../UI/BicolorTitledText/BicolorTitledText"
 import { Helmet } from "react-helmet";
+import OurProducts from "../UI/OurProducts/OurProducts"
 
 function Home() {
 
@@ -60,7 +61,8 @@ function Home() {
                 </div>
                 <Services />
             </div>
-            <Toolset />
+            {/* <Toolset /> */}
+            <OurProducts />
         </Fragment>
     )
 }

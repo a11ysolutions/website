@@ -29,6 +29,7 @@ function Navbar({ onClickMenu, onClickContactUs }) {
                 <ul className="a11y-navbar-items">
                     <li><a href="/#why-choose-us">Why choose us</a></li>
                     <li><a href="/#our-services">Our services</a></li>
+                    <li><a href="/#our-products">Our products</a></li>
                     <li><a href="/#clients">Clients</a></li>
                 </ul>
 

@@ -30,6 +30,7 @@ function SideDrawer({ show, onClose, onClickContactUs }) {
                     <ul className="side-drawer-links">
                         <li><a onClick={onClose} href="/#why-choose-us">Why choose us</a></li>
                         <li><a onClick={onClose} href="/#our-services">Our services</a></li>
+                        <li><a onClick={onClose} href="/#our-products">Our products</a></li>
                         <li><a onClick={onClose} href="/#clients">Clients</a></li>
                         <li><a onClick={onClose} href="/#why-choose-us">Services Politics</a></li>
                         <li><a onClick={onClose} href="/#why-choose-us">Terms and Conditions</a></li>
