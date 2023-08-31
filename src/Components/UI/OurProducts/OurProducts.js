@@ -33,7 +33,9 @@ function OurProducts() {
               a11yBot provides immediate, expert guidance, effectively becoming your on-demand accessibility
               consultant.
             </p>
-            <Button size="large">Learn More</Button>
+            <Button onClick={() => (document.location.href = '/a11yBot')} size="large">
+              Learn More
+            </Button>
           </div>
         </div>
 
