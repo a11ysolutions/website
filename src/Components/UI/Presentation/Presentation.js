@@ -21,7 +21,7 @@ function Presentation({ title, texts, buttonText, className }) {
         })
       }
       <Button size="large" className='presentation-button' onClick={scrollToContactForm}>
-        Get a free consultation
+        {buttonText || 'Get a free consultation'}
         </Button>
     </div>
   );
