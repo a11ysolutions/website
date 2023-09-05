@@ -7,7 +7,6 @@ import { useLocation } from 'react-router'
 
 function Layout({ children }) {
   const { pathname } = useLocation()
-  console.log("🚀  pathname:", pathname)
   const [showSideDrawer, setShowSideDrawer] = useState(false)
 
   const h2Ref = useRef(null)
@@ -17,12 +16,14 @@ function Layout({ children }) {
     h2Ref.current.focus()
   }
 
-  const hasa11yBotContainer = pathname === '/a11yBot'
-  const layoutContentClasses = `layout-content ${hasa11yBotContainer ? 'layout-helper' : ''}`
+  const hasa11yBotContainer = pathname === '/alliBot'
+  const hasa11yWidgetContainer = pathname === '/alliWidget'
+  const layoutA11yBotClasses = `${hasa11yBotContainer ? 'layout-a11yBot' : ''}`
+  const layoutA11yWidgetClasses = `${hasa11yWidgetContainer ? 'layout-a11yWidget' : ''}`
 
   return (
     <Fragment>
-      <div className={layoutContentClasses}>
+      <div className={`layout-content ${layoutA11yBotClasses} ${layoutA11yWidgetClasses}`}>
         <div className="circles-container">
           <div className="right-circle"></div>
           <div className="left-circle"></div>
