@@ -1,0 +1,71 @@
+.form-fb-inputs {
+  display: flex;
+  grid-column-gap: 16px;
+  column-gap: 16px;
+  flex-direction: column;
+  width: 308px;
+  margin: 3rem auto 0;
+}
+
+.form-fb-input {
+  height: 2em;
+  border: #d6d4d4 thin solid;
+  border-radius: 0.3125rem;
+  color: #7c7c7c;
+  font: inherit;
+  width: 302px;
+}
+
+textarea.form-fb-input {
+  height: 70px;
+}
+
+.a11yBot-feedback-form .form-group {
+  margin-top: 0;
+}
+
+.x-large {
+  width: 308px;
+  border-radius: 0.3125rem;
+  margin-top: 12px;
+}
+
+.form-fb-group .error-message {
+  text-align: left;
+}
+
+@media (min-width: 768px) and (max-width: 1199.99px) {
+  .form-fb-input,
+  .form-fb-inputs,
+  .x-large {
+    width: 280px;
+  }
+
+  .form-fb-inputs {
+    margin: 3rem 0 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-fb-input {
+    height: 2em;
+    border: #d6d4d4 thin solid;
+    border-radius: 0.3125rem;
+    color: #7c7c7c !important;
+    font: inherit;
+    width: 280px;
+  }
+
+  .form-fb-inputs,
+  .x-large {
+    width: 280px;
+  }
+
+  .form-fb-group {
+    margin-bottom: 1rem;
+  }
+
+  .error-message {
+    position: absolute;
+  }
+}
