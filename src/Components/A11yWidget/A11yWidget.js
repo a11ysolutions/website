@@ -23,7 +23,7 @@ function A11yWidget()  {
               'Elevate the user experience with our accessibility widget, ensuring WCAG 2.1 compliance and universal web access.',
             ]}
             buttonText="TRY IT NOW"
-            handleClick
+            handleClick={navigateToHome}
             className="a11yBot-presentation-sign"
           />
         </div>
