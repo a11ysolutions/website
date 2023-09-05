@@ -9,6 +9,7 @@ import Qualities from "../UI/Qualities/Qualities"
 import BicolorTitledText from "../UI/BicolorTitledText/BicolorTitledText"
 import { Helmet } from "react-helmet";
 import OurProducts from "../UI/OurProducts/OurProducts"
+import { handleOpenWidget } from "../Utils/Utils"
 
 function Home() {
 
@@ -19,19 +20,7 @@ function Home() {
       const layout = document.querySelector('.layout-content')
       layout.style.padding = '0'
 
-      window.addEventListener('load', () => {
-        if (openWidget) {
-          const targetElement = document.getElementById('why-choose-us')
-          targetElement.scrollIntoView({ behavior: 'smooth' })
-          const widget = document.getElementById('wa11y-widget-icon')
-
-          widget.focus()
-          widget.click()
-        }
-
-        const newUrl = window.location.pathname
-        window.history.replaceState({}, '', newUrl)
-      })
+      handleOpenWidget(openWidget)
     }, [openWidget])
 
     return (

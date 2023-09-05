@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../Button/Button";
 import "./Presentation.css";
-import { scrollToContactForm, scrollToWidget } from "../../Utils/Utils";
+import { scrollToContactForm, navigateToHome } from "../../Utils/Utils";
 
 function Presentation({ title, texts, buttonText, className, handleClick }) {
 
@@ -20,7 +20,7 @@ function Presentation({ title, texts, buttonText, className, handleClick }) {
           )
         })
       }
-      <Button size="large" className='presentation-button' onClick={handleClick ? scrollToWidget : scrollToContactForm}>
+      <Button size="large" className='presentation-button' onClick={handleClick ? navigateToHome : scrollToContactForm}>
         {buttonText || 'Get a free consultation'}
         </Button>
     </div>

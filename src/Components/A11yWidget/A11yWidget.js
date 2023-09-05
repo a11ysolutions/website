@@ -6,7 +6,7 @@ import HomeIlustration from '../UI/HomeIlustration/HomeIlustration'
 import BicolorTitledText from '../UI/BicolorTitledText/BicolorTitledText'
 import CustomCard from '../UI/CustomCard/CustomCard'
 import Button from '../UI/Button/Button'
-import { scrollToWidget } from '../Utils/Utils'
+import { navigateToHome } from '../Utils/Utils'
 
 function A11yWidget()  {
   return (
@@ -84,7 +84,7 @@ function A11yWidget()  {
         <div className="a11yBot-tryNow">
           <div className="a11yBot-tryNow-container">
             <h1>Give it a try for free</h1>
-            <Button size="large" onClick={scrollToWidget}>TRY IT NOW</Button>
+            <Button size="large" onClick={navigateToHome}>TRY IT NOW</Button>
           </div>
         </div>
       </div>
