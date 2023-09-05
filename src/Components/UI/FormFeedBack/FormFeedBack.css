@@ -36,9 +36,8 @@ textarea.form-fb-input {
 
 @media (min-width: 768px) and (max-width: 1199.99px) {
   .form-fb-input,
-  .form-fb-inputs,
-  .x-large {
-    width: 280px;
+  .form-fb-inputs {
+    width: 302px;
   }
 
   .form-fb-inputs {
@@ -58,7 +57,7 @@ textarea.form-fb-input {
 
   .form-fb-inputs,
   .x-large {
-    width: 280px;
+    width: 286px;
   }
 
   .form-fb-group {
