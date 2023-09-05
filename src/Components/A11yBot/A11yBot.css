@@ -1,3 +1,8 @@
+.a11yBot-page-container .home-ilustration-container > div {
+  width: fit-content;
+  margin: 50px auto 0;
+}
+
 .a11yBot-page-container {
   display: flex;
   flex-direction: column;
@@ -37,13 +42,13 @@
   width: 100%;
   height: 100%;
   border-radius: 0.3rem;
+  display: block;
 }
 
 .a11yBot-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* max-width: 1020px; */
   width: 100%;
   margin: auto;
 }
@@ -52,33 +57,25 @@
 .a11yBot-features {
   display: flex;
   flex-wrap: wrap;
-  /* width: 100%; */
   max-width: 1020px;
-  margin-top: 2rem;
   padding: 0 1rem;
 }
 
-.a11yBot-features > :nth-child(1),
-.a11yBot-features > :nth-child(2) {
+#a11yBot .a11yBot-features > :nth-child(1),
+#a11yBot .a11yBot-features > :nth-child(2) {
   height: 420px;
 }
 
-.a11yBot-features > :nth-child(3),
-.a11yBot-features > :nth-child(4) {
-  height: 340px;
-}
-
-.a11yBot-features > :nth-child(even) {
-  margin-top: 4rem;
-  margin-bottom: 1rem;
+.a11yBot-features .custom-card {
+  margin-top: 2rem;
 }
 
 .a11yBot-features > :last-child {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
-.layout-content.layout-helper {
-  padding: 0;
+.layout-content.layout-a11yBot {
+  padding: 16px 0 0;
 }
 
 /** a11yBot-tryNow */
@@ -96,27 +93,50 @@
   align-items: center;
 }
 
+/*** a11yBot-feedback  */
+.a11yBot-feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 36px;
+}
+
+.a11yBot-feedback-content {
+  margin-bottom: 4rem;
+}
+
+.a11yBot-feedback-text {
+  max-width: 564px;
+  margin: 0 auto;
+}
+
 /** a11yBot-review */
 .a11yBot-review {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
+  margin: 2rem auto;
   max-width: 1020px;
-  /* width: 100%; */
   padding: 0 1rem;
 }
 
 .a11yBot-review-container {
   width: 100%;
+  background-color: #21ce99;
 }
 
-.a11yBot-container .a11yBot-review .bicolor-titled-container p {
+.a11yBot-container .a11yBot-review .bicolor-titled-container p,
+.a11yBot-container .a11yBot-feedback .bicolor-titled-container p {
   font: normal normal normal 22px/28px Archivo;
 }
 
 /** @media query */
-@media (min-width: 600px) and (max-width: 767.99px) {
+@media (max-width: 767px) {
+  .a11yBot-feedback .bicolor-titled-container div {
+    max-width: 500px;
+    text-align: center;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -146,6 +166,10 @@
     font: normal normal normal 24px/30px Archivo;
   }
 
+  .a11yBot-features {
+    margin-top: 2rem;
+  }
+
   .a11yBot-features > :nth-child(1),
   .a11yBot-container .home-services-bicolored-text {
     z-index: 2;
@@ -155,14 +179,28 @@
     flex-direction: row;
   }
 
-  .a11yBot-container .a11yBot-review .bicolor-titled-container p {
+  .a11yBot-container .a11yBot-review .bicolor-titled-container p,
+  .a11yBot-container .a11yBot-feedback .bicolor-titled-container p {
     font: normal normal normal 36px/42px Archivo;
+  }
+
+  .a11yBot-features > :nth-child(even) {
+    margin-top: 4rem;
+  }
+
+  .a11yBot-features > :last-child {
+    margin-bottom: 5rem;
+  }
+
+  .a11yBot-feedback-text {
+    text-align: left;
+    font: normal normal normal 22px/32px Archivo;
   }
 }
 
 @media screen and (min-width: 1200px) {
   /** layout */
-  .layout-content.layout-helper {
+  .layout-content.layout-a11yBot {
     background: linear-gradient(#21ce99 650px, white 20px) !important;
   }
 
@@ -199,8 +237,7 @@
   }
 
   .a11yBot-container {
-    /* max-width: 1250px; */
-    margin: 7rem auto auto;
+    margin: 12rem auto auto;
   }
 
   .first-photo {
@@ -211,6 +248,10 @@
     font: normal normal normal 24px/30px Archivo;
   }
 
+  .a11yBot-features {
+    margin-top: 2rem;
+  }
+
   .a11yBot-features > :nth-child(1) {
     z-index: 2;
   }
@@ -219,7 +260,37 @@
     flex-direction: row;
   }
 
-  .a11yBot-container .a11yBot-review .bicolor-titled-container p {
+  .a11yBot-feedback .bicolor-titled-container {
+    max-width: 750px;
+  }
+
+  .a11yBot-feedback .bicolor-titled-container p {
+    max-width: 750px;
+  }
+
+  .a11yBot-feedback-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1020px;
+    gap: 2rem;
+  }
+
+  .a11yBot-container .a11yBot-review .bicolor-titled-container p,
+  .a11yBot-container .a11yBot-feedback .bicolor-titled-container p {
     font: normal normal normal 36px/42px Archivo;
+  }
+
+  .a11yBot-features > :nth-child(even) {
+    margin-top: 4rem;
+  }
+
+  .a11yBot-features > :last-child {
+    margin-bottom: 5rem;
+  }
+
+  .a11yBot-feedback-text {
+    text-align: left;
+    font: normal normal normal 22px/32px Archivo;
   }
 }
