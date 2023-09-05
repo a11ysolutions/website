@@ -12,10 +12,26 @@ import OurProducts from "../UI/OurProducts/OurProducts"
 
 function Home() {
 
+    const urlParams = new URLSearchParams(window.location.search)
+    const openWidget = urlParams.get('openWidget')
+
     useEffect(() => {
-        const layout = document.querySelector(".layout-content");
-        layout.style.padding = "0";
-    }, [])
+      const layout = document.querySelector('.layout-content')
+      layout.style.padding = '0'
+
+      window.addEventListener('load', () => {
+        if (openWidget) {
+          const widget = document.getElementById('wa11y-widget-icon')
+          widget.focus()
+          widget.click()
+        }
+        
+        const newUrl = window.location.pathname
+        window.history.replaceState({}, '', newUrl)
+      })
+
+    }, [openWidget])
+
     return (
         <Fragment>
 
