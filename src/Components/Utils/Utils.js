@@ -9,20 +9,16 @@ export const navigateToHome = () => {
   window.location.href = '/?openWidget=true'
 }
 
+export const navigateToAlliBot = () => {
+  window.open('https://allibot.a11ysolutions.com/', '_blank')
+}
+
 export const handleOpenWidget = (openWidget) => {
   window.addEventListener('load', () => {
     if (openWidget) {
-      const targetElement = document.getElementById('why-choose-us')
-      const clientWidth = window.innerWidth
-      let targetPosition = targetElement.offsetTop
+      const targetElement = document.getElementById('our-services')
 
-      if (clientWidth >= 768 && clientWidth < 1200) {
-        targetPosition += 40
-      } else if (window.innerWidth >= 1200) {
-        targetPosition += 100
-      }
-
-      window.scrollTo({ top: targetPosition, behavior: 'smooth' })
+      window.scrollTo({ top: targetElement.offsetTop, behavior: 'smooth' })
       const widget = document.getElementById('wa11y-widget-icon')
 
       widget.focus()

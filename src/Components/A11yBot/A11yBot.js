@@ -7,6 +7,7 @@ import CustomCard from '../UI/CustomCard/CustomCard'
 import Button from '../UI/Button/Button'
 import FormFeedBack from '../UI/FormFeedBack/FormFeedBack'
 import './A11yBot.css'
+import { navigateToAlliBot } from '../Utils/Utils'
 
 function A11yBot() {
   return (
@@ -22,6 +23,7 @@ function A11yBot() {
             texts={[
               'A chatbot designed to provide assistance and answer any accessibility questions based on the WCAG 2.1 Standard.',
             ]}
+            handleClick={navigateToAlliBot}
             buttonText="TRY IT NOW"
             className="a11yBot-presentation-sign"
           />
@@ -76,7 +78,7 @@ function A11yBot() {
         <div className="a11yBot-tryNow">
           <div className="a11yBot-tryNow-container">
             <h1>Give it a try for free</h1>
-            <Button size="large">TRY IT NOW</Button>
+            <Button size="large" onClick={navigateToAlliBot}>TRY IT NOW</Button>
           </div>
         </div>
 
