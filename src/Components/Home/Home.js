@@ -21,15 +21,17 @@ function Home() {
 
       window.addEventListener('load', () => {
         if (openWidget) {
+          const targetElement = document.getElementById('why-choose-us')
+          targetElement.scrollIntoView({ behavior: 'smooth' })
           const widget = document.getElementById('wa11y-widget-icon')
+
           widget.focus()
           widget.click()
         }
-        
+
         const newUrl = window.location.pathname
         window.history.replaceState({}, '', newUrl)
       })
-
     }, [openWidget])
 
     return (
