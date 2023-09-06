@@ -1,5 +1,4 @@
 import React from 'react'
-import './A11yWidget.css'
 import { Helmet } from 'react-helmet'
 import Presentation from '../UI/Presentation/Presentation'
 import HomeIlustration from '../UI/HomeIlustration/HomeIlustration'
@@ -7,6 +6,7 @@ import BicolorTitledText from '../UI/BicolorTitledText/BicolorTitledText'
 import CustomCard from '../UI/CustomCard/CustomCard'
 import Button from '../UI/Button/Button'
 import { navigateToHome } from '../Utils/Utils'
+import './A11yWidget.css'
 
 function A11yWidget() {
   return (
@@ -45,37 +45,67 @@ function A11yWidget() {
           </BicolorTitledText>
         </div>
 
-        <div className="a11yBot-features">
-          <CustomCard imgSrc="/user-customization.jpg" className="">
+        <div className="a11yBot-features" role="list">
+          <CustomCard
+            imgSrc="/user-customization.jpg"
+            imgDiv="/back-mac.png"
+            classImgDivBrowser="imgDiv-mac"
+            className=""
+          >
             <h3>User Customization</h3>
             <p>
               Allows users to adjust text size, contrast, and other visual elements according to their needs.
             </p>
           </CustomCard>
-          <CustomCard imgSrc="/wcag-2.1-compliance.png" className="shadow-none">
+          <CustomCard
+            imgSrc="/wcag-2.1-compliance.png"
+            imgDiv="/back-browser.png"
+            classImgDivBrowser="imgDiv-browser"
+            className="shadow-none image-fit-contained"
+          >
             <h3>WCAG 2.1 Compliance</h3>
             <p>
               Ensures that your website meets the Web Content Accessibility Guidelines, reducing legal risks.
             </p>
           </CustomCard>
-          <CustomCard imgSrc="/inclusivity.jpg" className="shadow-none">
+          <CustomCard
+            imgSrc="/inclusivity.jpg"
+            imgDiv="/back-mac.png"
+            classImgDivBrowser="imgDiv-mac"
+            className="shadow-none"
+          >
             <h3>Inclusivity</h3>
             <p>
               Expands your potential customer base by making your website usable for people with disabilities.
             </p>
           </CustomCard>
-          <CustomCard imgSrc="/user-experience.jpg" className="">
+          <CustomCard
+            imgSrc="/user-experience.jpg"
+            imgDiv="/back-browser.png"
+            classImgDivBrowser="imgDiv-browser"
+            className="image-increase-height"
+          >
             <h3>User Experience</h3>
             <p>
               Improves the overall user experience by making the website more navigable and understandable for
               all.
             </p>
           </CustomCard>
-          <CustomCard imgSrc="/brand-reputation.jpg" className="">
+          <CustomCard
+            imgSrc="/brand-reputation.jpg"
+            imgDiv="/back-mac.png"
+            classImgDivBrowser="imgDiv-mac"
+            className=""
+          >
             <h3>Brand Reputation</h3>
             <p>Enhances your brand image by showing a commitment to inclusivity and equality.</p>
           </CustomCard>
-          <CustomCard imgSrc="/technical-support.jpg" className="shadow-none">
+          <CustomCard
+            imgSrc="/technical-support.jpg"
+            imgDiv="/back-browser.png"
+            classImgDivBrowser="imgDiv-browser"
+            className="shadow-none image-increase-height"
+          >
             <h3>Technical Support</h3>
             <p>Provides 24/7 customer support to assist with any accessibility issues.</p>
           </CustomCard>
