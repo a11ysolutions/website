@@ -3,7 +3,7 @@ import './FormFeedBack.css'
 import Button from '../Button/Button'
 
 function FormFeedBack() {
-  const initialValues = { email: '', message: '' }
+  const initialValues = { emailFeedBack: '', messageFeedBack: '' }
   const COMPANY_EMAIL = 'felipe.perez@a11ysolutions.com'
   const [formValues, setFormValues] = useState(initialValues)
   const emailRef = useRef(null)
@@ -16,7 +16,7 @@ function FormFeedBack() {
 
   const onSubmit = (event) => {
     event.preventDefault()
-      const BODY = `${formValues.message}
+      const BODY = `${formValues.messageFeedBack}
 ---------------------------
 
             `
@@ -35,30 +35,30 @@ function FormFeedBack() {
         <div className="form-fb-inputs">
           <div className="form-left-section">
             <div className="form-fb-group">
-              <label htmlFor="email" style={{ display: 'block', textAlign: 'left' }}>
+              <label htmlFor="emailFeedBack" style={{ display: 'block', textAlign: 'left' }}>
                 Email
               </label>
               <input
-                id="email"
+                id="emailFeedBack"
                 className='form-fb-input'
                 ref={emailRef}
                 type="email"
                 autoComplete="email"
-                value={formValues.email}
+                value={formValues.emailFeedBack}
                 onChange={changeHandler}
               />
             </div>
           </div>
           <div style={{ paddingTop: '12px' }}>
             <div className="form-fb-group">
-              <label htmlFor="message" style={{ display: 'block', textAlign: 'left' }}>
+              <label htmlFor="messageFeedBack" style={{ display: 'block', textAlign: 'left' }}>
                 Message
               </label>
               <textarea
-                id="message"
+                id="messageFeedBack"
                 className="form-fb-input"
                 type="text"
-                value={formValues.message}
+                value={formValues.messageFeedBack}
                 onChange={changeHandler}
               />
             </div>

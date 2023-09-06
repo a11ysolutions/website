@@ -11,7 +11,7 @@
   height: 2em;
   border: #d6d4d4 thin solid;
   border-radius: 0.3125rem;
-  color: #7c7c7c;
+  color: #444444 ;
   font: inherit;
   width: 302px;
 }
@@ -50,7 +50,7 @@ textarea.form-fb-input {
     height: 2em;
     border: #d6d4d4 thin solid;
     border-radius: 0.3125rem;
-    color: #7c7c7c !important;
+    color: #444444 !important;
     font: inherit;
     width: 280px;
   }

@@ -1,15 +1,17 @@
-.footer-links{
-    list-style-type: none;
-    padding-left: 0px
- }
-.footer-nav ul li{
-    padding:1em 0;
+.footer-links {
+  list-style-type: none;
+  padding-left: 0px;
 }
-.footer-link{
-    text-decoration: none;
-    color:#ffffff;
+.footer-nav ul li {
+  padding: 1em 0;
 }
-
-.footer-link:hover{
-    outline: 5px solid yellow;
+.footer-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+.a11y-button.footer-link {
+  color: #000;
+}
+.footer-link:hover {
+  outline: 5px solid yellow;
 }

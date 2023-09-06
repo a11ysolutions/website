@@ -29,7 +29,7 @@ function A11yBot() {
           />
         </div>
         <div className="privacy-policy-ilustration-container">
-          <HomeIlustration src="/alliBot.png" />
+          <HomeIlustration src="/alliBot.svg" />
         </div>
       </div>
 
@@ -46,12 +46,12 @@ function A11yBot() {
           </BicolorTitledText>
         </div>
 
-        <div className="a11yBot-features">
+        <div className="a11yBot-features" role="list">
           <CustomCard
-            imgSrc="/instant-accessibility-responses.jpg"
-            // imgDiv="/back-mac.png"
+            imgSrc="/instant-accessibility-responses.png"
+            imgDiv="/back-mac.png"
             classImgDivBrowser="imgDiv-mac"
-            className=""
+            className="custom-img-first"
           >
             <h3>Instant Accessibility Responses</h3>
             <p>
@@ -62,9 +62,9 @@ function A11yBot() {
           </CustomCard>
           <CustomCard
             imgSrc="/expert-guidance.png"
-            // imgDiv="/back-browser.png"
+            imgDiv="/back-browser.png"
             classImgDivBrowser="imgDiv-browser"
-            className="shadow-none"
+            className="shadow-none image-increase-height"
           >
             <h3>Expert Guidance</h3>
             <p>
@@ -73,8 +73,8 @@ function A11yBot() {
             </p>
           </CustomCard>
           <CustomCard
-            imgSrc="/user-friendly-interface.jpg"
-            // imgDiv="/back-mac.png"
+            imgSrc="/user-friendly-interface.png"
+            imgDiv="/back-mac.png"
             classImgDivBrowser="imgDiv-mac"
             className="shadow-none"
           >
@@ -85,8 +85,8 @@ function A11yBot() {
             </p>
           </CustomCard>
           <CustomCard
-            imgSrc="/multi-platform-support.jpg"
-            // imgDiv="/back-browser.png"
+            imgSrc="/multi-platform-support.png"
+            imgDiv="/back-browser.png"
             classImgDivBrowser="imgDiv-browser"
             className=""
           >
@@ -121,7 +121,7 @@ function A11yBot() {
                 <p>Thank you for your thoughtful contribution!</p>
               </div>
             </div>
-            <div className="a11yBot-feedback-form" id="footer-form">
+            <div className="a11yBot-feedback-form" id="footer-feedback-form">
               <FormFeedBack />
             </div>
           </div>
@@ -135,11 +135,10 @@ function A11yBot() {
                 color2=""
                 color2Text="Some awesome reviews"
                 className="home-our-services"
-              >
-              </BicolorTitledText>
+              ></BicolorTitledText>
             </div>
 
-            <div className="a11yBot-review-container">
+            <div className="a11yBot-review-content" role="list">
               <CustomCard
                 imgSrc="/yainery-bolanos.png"
                 className="custom-horizontal-card"
