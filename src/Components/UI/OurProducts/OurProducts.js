@@ -20,8 +20,8 @@ function OurProducts() {
         <div className="our-products-container">
           <div className="our-products-item_photo">
             <img
-              src="/alliBot.png"
-              className=""
+              src="/alliBot.svg"
+              className="img-alliBot"
               alt="No more endless Googling or diving into forums for answers to your web accessibility questions. a11yBot provides immediate, expert guidance, effectively becoming your on-demand accessibility consultant."
               style={{}}
             />

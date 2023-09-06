@@ -25,6 +25,10 @@
   border-radius: 0.6rem;
 }
 
+.our-products-container img.img-alliBot {
+  width: auto;
+}
+
 .our-products-item_text p {
   margin-bottom: 2rem;
 }
