@@ -13,9 +13,9 @@
   box-shadow: 0 20px 33px 0 rgba(0, 0, 0, 0.3);
 }
 
-.custom-card:last-child {
+/* .custom-card:last-child {
   height: 365px;
-}
+} */
 
 .custom-horizontal-card {
   margin-bottom: 2rem;
