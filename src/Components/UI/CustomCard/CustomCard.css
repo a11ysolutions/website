@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  max-width: 345px;
+  max-width: 380px;
+  /* max-width: 345px; */
   /* height: 420px; */
   height: 340px;
   margin: 0 auto;
@@ -62,8 +63,27 @@
   width: 100%;
   display: block;
   object-fit: cover;
-  border-radius: 0.3125rem;
-  /* margin: auto; */
+}
+
+.imgDiv-mac {
+  position: absolute;
+  width: 380px;
+  height: 230px;
+  /* z-index: -1; */
+  top: -27px;
+  left: -42px;
+}
+
+.imgDiv-browser {
+  position: absolute;
+  width: 362px;
+  height: 230px;
+  top: -30px;
+  left: -29px;
+}
+
+.imgDivPosition {
+  position: inherit;
 }
 
 @media screen and (min-width: 768px) {

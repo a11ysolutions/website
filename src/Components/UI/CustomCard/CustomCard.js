@@ -1,7 +1,9 @@
 import React from 'react'
 import './CustomCard.css'
 
-function FeatureCard({ children, imgSrc, className, classEllipseBar, classTextContainer, icon }) {
+function FeatureCard({ children, imgSrc, imgDiv, className, classEllipseBar, classImgDivMac, classImgDivBrowser, classTextContainer, icon,}) {
+  const divStyle = imgDiv ? { backgroundImage: `url(${process.env.PUBLIC_URL}${imgDiv})` } : {}
+
   return (
     <div className={`custom-card ${className}`} role="listitem">
       <div className={`custom-card-ellipse ${classEllipseBar}`}>
@@ -10,7 +12,8 @@ function FeatureCard({ children, imgSrc, className, classEllipseBar, classTextCo
             <img src="./quotation.svg" className="custom-card-icon" alt="" />
           </div>
         )}
-        <img src={imgSrc} className="custom-card-img" alt="" />
+        {imgDiv && <div className={`${classImgDivMac} ${classImgDivBrowser}`} style={divStyle}></div>}
+        <img src={imgSrc} className={`custom-card-img ${imgDiv ? 'imgDivPosition' : ''}`} alt="" />
       </div>
       <div className={`custom-card-text-container ${classTextContainer}`}>{children}</div>
     </div>
