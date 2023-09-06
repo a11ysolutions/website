@@ -8,7 +8,7 @@ import CustomCard from '../UI/CustomCard/CustomCard'
 import Button from '../UI/Button/Button'
 import { navigateToHome } from '../Utils/Utils'
 
-function A11yWidget()  {
+function A11yWidget() {
   return (
     <div id="a11yWidget" className="a11yBot-page-container">
       <Helmet>
@@ -83,14 +83,15 @@ function A11yWidget()  {
 
         <div className="a11yBot-tryNow">
           <div className="a11yBot-tryNow-container">
-            <h1>Give it a try for free</h1>
-            <Button size="large" onClick={navigateToHome}>TRY IT NOW</Button>
+            <h2 className="a11yBot-tryNow-text">Give it a try for free</h2>
+            <Button size="large" onClick={navigateToHome}>
+              TRY IT NOW
+            </Button>
           </div>
         </div>
       </div>
     </div>
   )
 }
-
 
 export default A11yWidget

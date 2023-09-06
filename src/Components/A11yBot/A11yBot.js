@@ -47,7 +47,12 @@ function A11yBot() {
         </div>
 
         <div className="a11yBot-features">
-          <CustomCard imgSrc="/instant-accessibility-responses.jpg" className="">
+          <CustomCard
+            imgSrc="/instant-accessibility-responses.jpg"
+            // imgDiv="/back-mac.png"
+            classImgDivBrowser="imgDiv-mac"
+            className=""
+          >
             <h3>Instant Accessibility Responses</h3>
             <p>
               Immediate, real-time feedback on any web accessibility queries or issues you may have. Whether
@@ -55,21 +60,36 @@ function A11yBot() {
               trying to identify potential issues.
             </p>
           </CustomCard>
-          <CustomCard imgSrc="/expert-guidance.png" className="shadow-none">
+          <CustomCard
+            imgSrc="/expert-guidance.png"
+            // imgDiv="/back-browser.png"
+            classImgDivBrowser="imgDiv-browser"
+            className="shadow-none"
+          >
             <h3>Expert Guidance</h3>
             <p>
               Benefit from the expertise of our AI-powered chatbot, meticulously engineered to comply with
               WCAG 2.1 Standards, ensuring inclusivity for all users.
             </p>
           </CustomCard>
-          <CustomCard imgSrc="/user-friendly-interface.jpg" className="shadow-none">
+          <CustomCard
+            imgSrc="/user-friendly-interface.jpg"
+            // imgDiv="/back-mac.png"
+            classImgDivBrowser="imgDiv-mac"
+            className="shadow-none"
+          >
             <h3>User-Friendly Interface</h3>
             <p>
               AlliBot features an intuitive interface, making it easy for users to interact and seek
               assistance.
             </p>
           </CustomCard>
-          <CustomCard imgSrc="/multi-platform-support.jpg" className="">
+          <CustomCard
+            imgSrc="/multi-platform-support.jpg"
+            // imgDiv="/back-browser.png"
+            classImgDivBrowser="imgDiv-browser"
+            className=""
+          >
             <h3>Multi-platform Support</h3>
             <p>Access our chatbot from various devices and platforms, ensuring accessibility on the go.</p>
           </CustomCard>
@@ -77,15 +97,17 @@ function A11yBot() {
 
         <div className="a11yBot-tryNow">
           <div className="a11yBot-tryNow-container">
-            <h1>Give it a try for free</h1>
-            <Button size="large" onClick={navigateToAlliBot}>TRY IT NOW</Button>
+            <h2 className="a11yBot-tryNow-text">Give it a try for free</h2>
+            <Button size="large" onClick={navigateToAlliBot}>
+              TRY IT NOW
+            </Button>
           </div>
         </div>
 
         <div className="a11yBot-feedback ">
           <div className="home-services-bicolored-text">
             <BicolorTitledText color1="black" color2="#0D9E71" className="home-our-services">
-              <p>We are committed to creating a world that is both inclusive and equitable for everyone.</p>
+              <h2>We are committed to creating a world that is both inclusive and equitable for everyone.</h2>
             </BicolorTitledText>
           </div>
 
@@ -108,8 +130,12 @@ function A11yBot() {
         <div className="a11yBot-review-container">
           <div className="a11yBot-review">
             <div className="home-services-bicolored-text">
-              <BicolorTitledText color1="black" color2="#0D9E71" className="home-our-services">
-                <p>Some awesome reviews</p>
+              <BicolorTitledText
+                color1="black"
+                color2=""
+                color2Text="Some awesome reviews"
+                className="home-our-services"
+              >
               </BicolorTitledText>
             </div>
 
