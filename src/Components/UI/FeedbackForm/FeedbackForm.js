@@ -1,8 +1,8 @@
 import React, { useState, useRef } from 'react'
-import './FormFeedBack.css'
 import Button from '../Button/Button'
+import './FeedbackForm.css'
 
-function FormFeedBack() {
+function FeedbackForm() {
   const initialValues = { emailFeedBack: '', messageFeedBack: '' }
   const COMPANY_EMAIL = 'felipe.perez@a11ysolutions.com'
   const [formValues, setFormValues] = useState(initialValues)
@@ -78,4 +78,4 @@ function FormFeedBack() {
     </div>
   )
 }
-export default FormFeedBack
+export default FeedbackForm
