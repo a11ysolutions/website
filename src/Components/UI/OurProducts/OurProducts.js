@@ -17,12 +17,12 @@ function OurProducts() {
       </div>
 
       <div className="our-products">
-        <div className="our-products-container">
+        <div className="our-products-content">
           <div className="our-products-item_photo">
             <img
               src="/alliBot.svg"
               className="img-alliBot"
-              alt="No more endless Googling or diving into forums for answers to your web accessibility questions. a11yBot provides immediate, expert guidance, effectively becoming your on-demand accessibility consultant."
+              alt="No more endless Googling or diving into forums for answers to your web accessibility questions. AlliBot provides immediate, expert guidance, effectively becoming your on-demand accessibility consultant."
               style={{}}
             />
           </div>
@@ -30,7 +30,7 @@ function OurProducts() {
             <h3>AlliBot: Your AI-driven expert for instant and tailored accessibility solutions</h3>
             <p>
               No more endless Googling or diving into forums for answers to your web accessibility questions.
-              a11yBot provides immediate, expert guidance, effectively becoming your on-demand accessibility
+              AlliBot provides immediate, expert guidance, effectively becoming your on-demand accessibility
               consultant.
             </p>
             <Button onClick={() => (document.location.href = '/alliBot')} size="large">
@@ -39,10 +39,10 @@ function OurProducts() {
           </div>
         </div>
 
-        <div className="our-products-container reverse">
+        <div className="our-products-content reverse">
           <div className="our-products-item_photo">
             <img
-              src="/a11yWidget.png"
+              src="/alliWidget.png"
               className=""
               alt="Provide real-time accessibility adjustments. The AlliWidget ensures that all visitors, regardless of their abilities, can interact with your site effortlessly. By integrating our Accessibility Widget, you're not just adding a feature to your website; you're elevating the entire user experience."
               style={{}}

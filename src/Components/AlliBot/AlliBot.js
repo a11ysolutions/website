@@ -4,19 +4,20 @@ import HomeIlustration from '../UI/HomeIlustration/HomeIlustration'
 import Presentation from '../UI/Presentation/Presentation'
 import BicolorTitledText from '../UI/BicolorTitledText/BicolorTitledText'
 import CustomCard from '../UI/CustomCard/CustomCard'
-import Button from '../UI/Button/Button'
-import FormFeedBack from '../UI/FormFeedBack/FormFeedBack'
-import './A11yBot.css'
+import FeedbackForm from '../UI/FeedbackForm/FeedbackForm'
 import { navigateToAlliBot } from '../Utils/Utils'
+import TryItNow from '../UI/TryItNow/TryItNow'
+import './AlliBot.css'
 
-function A11yBot() {
+function AlliBot() {
   return (
-    <div id="a11yBot" className="a11yBot-page-container">
+    <div id="alliBot" className="alliBot-page-container">
       <Helmet>
         <title>AlliBot - Empowering Inclusive Experiences | A11ysolutions</title>
       </Helmet>
 
-      <div className="a11yBot-presentation-container">
+      {/* =============== alliBot-presentation-container =============== */}
+      <div className="alliBot-presentation-container">
         <div className="page-top">
           <Presentation
             title="AlliBot - Empowering Inclusive Experiences"
@@ -25,7 +26,7 @@ function A11yBot() {
             ]}
             handleClick={navigateToAlliBot}
             buttonText="TRY IT NOW"
-            className="a11yBot-presentation-sign"
+            className="alliBot-presentation-sign"
           />
         </div>
         <div className="privacy-policy-ilustration-container">
@@ -33,12 +34,12 @@ function A11yBot() {
         </div>
       </div>
 
-      <div className="a11yBot-container">
+      {/* =============== alliBot-content ===============  */}
+      <div className="alliBot-content">
         <div className="home-services-bicolored-text">
           <BicolorTitledText
             color1="black"
             color2="#0D9E71"
-            // color1Text="ENTERPRISE FEATURES"
             color2Text="Enterprise features"
             className="home-our-services"
           >
@@ -46,7 +47,8 @@ function A11yBot() {
           </BicolorTitledText>
         </div>
 
-        <div className="a11yBot-features" role="list">
+        {/* =============== alliBot-features ===============  */}
+        <div className="alliBot-features" role="list">
           <CustomCard
             imgSrc="/instant-accessibility-responses.png"
             imgDiv="/back-mac.png"
@@ -95,24 +97,19 @@ function A11yBot() {
           </CustomCard>
         </div>
 
-        <div className="a11yBot-tryNow">
-          <div className="a11yBot-tryNow-container">
-            <h2 className="a11yBot-tryNow-text">Give it a try for free</h2>
-            <Button size="large" onClick={navigateToAlliBot}>
-              TRY IT NOW
-            </Button>
-          </div>
-        </div>
+        {/* =============== tryItNow ===============  */}
+        <TryItNow handleNavigate={navigateToAlliBot} buttonText="TRY IT NOW" />
 
-        <div className="a11yBot-feedback ">
+        {/* =============== alliBot-feedback ===============  */}
+        <div className="alliBot-feedback">
           <div className="home-services-bicolored-text">
             <BicolorTitledText color1="black" color2="#0D9E71" className="home-our-services">
               <h2>We are committed to creating a world that is both inclusive and equitable for everyone.</h2>
             </BicolorTitledText>
           </div>
 
-          <div className="a11yBot-feedback-content">
-            <div className="a11yBot-feedback-text">
+          <div className="alliBot-feedback-content">
+            <div className="alliBot-feedback-text">
               <div>
                 <p>
                   Your feedback on AlliBot is invaluable to us and instrumental in refining its capabilities.
@@ -121,14 +118,15 @@ function A11yBot() {
                 <p>Thank you for your thoughtful contribution!</p>
               </div>
             </div>
-            <div className="a11yBot-feedback-form" id="footer-feedback-form">
-              <FormFeedBack />
+            <div className="alliBot-feedback-form" id="footer-feedback-form">
+              <FeedbackForm />
             </div>
           </div>
         </div>
 
-        <div className="a11yBot-review-container">
-          <div className="a11yBot-review">
+        {/* =============== alliBot-review ===============  */}
+        <div className="alliBot-review">
+          <div className="alliBot-review-header">
             <div className="home-services-bicolored-text">
               <BicolorTitledText
                 color1="black"
@@ -138,7 +136,7 @@ function A11yBot() {
               ></BicolorTitledText>
             </div>
 
-            <div className="a11yBot-review-content" role="list">
+            <div className="alliBot-review-content" role="list">
               <CustomCard
                 imgSrc="/yainery-bolanos.png"
                 className="custom-horizontal-card"
@@ -148,9 +146,8 @@ function A11yBot() {
               >
                 <h3>Yainery Bolanos, CEO/Co-Founder at Adaved</h3>
                 <p>
-                  AlliBot has streamlined our workflow, helped our team to ensure compliance and even educated
-                  them around web accessibility. I highly recommend it to any organization that is serious
-                  about making the web a more inclusive space.
+                  We just started using AlliBot and it's already helping us a lot. It's like having a
+                  specialist with us all the time, making our work faster and better.
                 </p>
               </CustomCard>
               <CustomCard
@@ -162,9 +159,8 @@ function A11yBot() {
               >
                 <h3>Luis Terrero, CEO/Founder at PixelPerfecto</h3>
                 <p>
-                  AlliBot has empowered us to be proactive rather than reactive when it comes to
-                  accessibility. This is not just a problem-solving tool, it's an educational resource, the
-                  chatbot have helped our team deepen their understanding of web accessibility.
+                  We recently started using AlliBot and we're very happy. Even in its MVP stage, the chatbot
+                  is like an expert on web accessibility. It gives quick and useful advice.
                 </p>
               </CustomCard>
               <CustomCard
@@ -176,10 +172,8 @@ function A11yBot() {
               >
                 <h3>Dariel Vila, CEO/Co-Founder at Front10 and Woxo</h3>
                 <p>
-                  Even though AlliBot is still in its initial phase, AlliBot has been a game-changer for us.
-                  In regards to accessibility, one of the significant challenges we've faced is the need for
-                  quick, accurate answers to complex accessibility questions and AlliBot has been invaluable
-                  in this regard, saving us hours of research and trial and error.
+                  AlliBot has made a significant impact for us. It's new, but it consistently helps us with
+                  web accessibility. We're pleased to have it as part of our toolkit.
                 </p>
               </CustomCard>
             </div>
@@ -190,4 +184,4 @@ function A11yBot() {
   )
 }
 
-export default A11yBot
+export default AlliBot

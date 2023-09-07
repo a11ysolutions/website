@@ -4,18 +4,19 @@ import Presentation from '../UI/Presentation/Presentation'
 import HomeIlustration from '../UI/HomeIlustration/HomeIlustration'
 import BicolorTitledText from '../UI/BicolorTitledText/BicolorTitledText'
 import CustomCard from '../UI/CustomCard/CustomCard'
-import Button from '../UI/Button/Button'
 import { navigateToHome } from '../Utils/Utils'
-import './A11yWidget.css'
+import TryItNow from '../UI/TryItNow/TryItNow'
+import './AlliWidget.css'
 
-function A11yWidget() {
+function AlliWidget() {
   return (
-    <div id="a11yWidget" className="a11yBot-page-container">
+    <div id="alliWidget" className="alliWidget-page-container">
       <Helmet>
         <title>AlliWidget - Your ultimate automated Web Accessibility Solution | A11ysolutions</title>
       </Helmet>
 
-      <div className="a11yBot-presentation-container">
+      {/* =============== alliWidget-presentation-container =============== */}
+      <div className="alliWidget-presentation-container">
         <div className="page-top">
           <Presentation
             title="Introducing AlliWidget, your ultimate automated Web Accessibility Solution"
@@ -24,15 +25,16 @@ function A11yWidget() {
             ]}
             buttonText="TRY IT NOW"
             handleClick={navigateToHome}
-            className="a11yBot-presentation-sign"
+            className="alliWidget-presentation-sign"
           />
         </div>
         <div className="privacy-policy-ilustration-container">
-          <HomeIlustration src="/a11yWidget.png" />
+          <HomeIlustration src="/alliWidget.png" />
         </div>
       </div>
 
-      <div className="a11yBot-container">
+      {/* =============== alliWidget-content ===============  */}
+      <div className="alliWidget-content">
         <div className="home-services-bicolored-text">
           <BicolorTitledText
             color1="black"
@@ -45,7 +47,8 @@ function A11yWidget() {
           </BicolorTitledText>
         </div>
 
-        <div className="a11yBot-features" role="list">
+        {/* =============== alliWidget-features ===============  */}
+        <div className="alliWidget-features" role="list">
           <CustomCard
             imgSrc="/user-customization.jpg"
             imgDiv="/back-mac.png"
@@ -111,17 +114,11 @@ function A11yWidget() {
           </CustomCard>
         </div>
 
-        <div className="a11yBot-tryNow">
-          <div className="a11yBot-tryNow-container">
-            <h2 className="a11yBot-tryNow-text">Give it a try for free</h2>
-            <Button size="large" onClick={navigateToHome}>
-              TRY IT NOW
-            </Button>
-          </div>
-        </div>
+        {/* =============== tryItNow ===============  */}
+        <TryItNow handleNavigate={navigateToHome} buttonText="TRY IT NOW" />
       </div>
     </div>
   )
 }
 
-export default A11yWidget
+export default AlliWidget

@@ -9,8 +9,8 @@ import StandardRegulations from './Components/StandardsRegulations/StandardRegul
 import Sitemap from './Components/Sitemap/Sitemap';
 import { useEffect, useState } from 'react';
 import AccessibilityStatement from './Components/AccessibilityStatement/AccessibilityStatement';
-import A11yBot from './Components/A11yBot/A11yBot';
-import A11yWidget  from './Components/A11yWidget/A11yWidget';
+import AlliBot from './Components/AlliBot/AlliBot';
+import AlliWidget  from './Components/AlliWidget/AlliWidget';
 
 function App() {
   const [currentUrl] = useState(window.location.pathname);
@@ -32,8 +32,8 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/accessibility" element={<Accessibility />} />
         <Route path="/functional" element={<Functional />} />
-        <Route path="/alliBot" element={<A11yBot />} />
-        <Route path="/alliWidget" element={<A11yWidget />} />
+        <Route path="/alliBot" element={<AlliBot />} />
+        <Route path="/alliWidget" element={<AlliWidget />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/a11y-statement" element={<AccessibilityStatement />} />
         <Route path="/automation" element={<Automation />} />

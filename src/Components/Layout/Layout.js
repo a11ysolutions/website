@@ -16,14 +16,14 @@ function Layout({ children }) {
     h2Ref.current.focus()
   }
 
-  const hasa11yBotContainer = pathname === '/alliBot'
-  const hasa11yWidgetContainer = pathname === '/alliWidget'
-  const layoutA11yBotClasses = `${hasa11yBotContainer ? 'layout-a11yBot' : ''}`
-  const layoutA11yWidgetClasses = `${hasa11yWidgetContainer ? 'layout-a11yWidget' : ''}`
+  const hasAlliBotContainer = pathname === '/alliBot'
+  const hasAlliWidgetContainer = pathname === '/alliWidget'
+  const layoutAlliBotClasses = `${hasAlliBotContainer ? 'layout-alliBot' : ''}`
+  const layoutAlliWidgetClasses = `${hasAlliWidgetContainer ? 'layout-alliWidget' : ''}`
 
   return (
     <Fragment>
-      <div className={`layout-content ${layoutA11yBotClasses} ${layoutA11yWidgetClasses}`}>
+      <div className={`layout-content ${layoutAlliBotClasses} ${layoutAlliWidgetClasses}`}>
         <div className="circles-container">
           <div className="right-circle"></div>
           <div className="left-circle"></div>
