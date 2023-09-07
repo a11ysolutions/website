@@ -53,7 +53,7 @@ function AlliWidget() {
             imgSrc="/user-customization.jpg"
             imgDiv="/back-mac.png"
             classImgDivBrowser="imgDiv-mac"
-            className=""
+            className="custom-sized-image"
           >
             <h3>User Customization</h3>
             <p>
@@ -64,7 +64,7 @@ function AlliWidget() {
             imgSrc="/wcag-2.1-compliance.png"
             imgDiv="/back-browser.png"
             classImgDivBrowser="imgDiv-browser"
-            className="shadow-none image-fit-contained"
+            className="shadow-none image-fit-contained "
           >
             <h3>WCAG 2.1 Compliance</h3>
             <p>
@@ -75,7 +75,7 @@ function AlliWidget() {
             imgSrc="/inclusivity.jpg"
             imgDiv="/back-mac.png"
             classImgDivBrowser="imgDiv-mac"
-            className="shadow-none"
+            className="shadow-none custom-sized-image"
           >
             <h3>Inclusivity</h3>
             <p>
@@ -86,7 +86,7 @@ function AlliWidget() {
             imgSrc="/user-experience.jpg"
             imgDiv="/back-browser.png"
             classImgDivBrowser="imgDiv-browser"
-            className="image-increase-height"
+            className="image-increase-height custom-sized-image"
           >
             <h3>User Experience</h3>
             <p>
@@ -98,7 +98,7 @@ function AlliWidget() {
             imgSrc="/brand-reputation.jpg"
             imgDiv="/back-mac.png"
             classImgDivBrowser="imgDiv-mac"
-            className=""
+            className="custom-sized-image"
           >
             <h3>Brand Reputation</h3>
             <p>Enhances your brand image by showing a commitment to inclusivity and equality.</p>
@@ -107,7 +107,7 @@ function AlliWidget() {
             imgSrc="/technical-support.jpg"
             imgDiv="/back-browser.png"
             classImgDivBrowser="imgDiv-browser"
-            className="shadow-none image-increase-height"
+            className="shadow-none image-increase-height custom-sized-image"
           >
             <h3>Technical Support</h3>
             <p>Provides 24/7 customer support to assist with any accessibility issues.</p>

@@ -12,6 +12,10 @@
   object-fit: cover;
 }
 
+.alliWidget-features .image-fit-contained img {
+  object-fit: contain;
+}
+
 /* =============== alliWidget-presentation-container =============== */
 .alliWidget-presentation-container {
   padding: 0 16px;
@@ -91,14 +95,14 @@
 }
 
 /* =============== @media (min-width: 768px) and (max-width: 799.999px) =============== */
-@media (min-width: 768px) and (max-width: 799.999px) {
+@media (min-width: 768px) and (max-width: 816.99px) {
   .layout-content.layout-alliWidget {
     background: linear-gradient(#21ce99 1255px, white 20px) !important;
   }
 }
 
 /* =============== @media (min-width: 800px) and (max-width: 954.999px) =============== */
-@media (min-width: 800px) and (max-width: 954.999px) {
+@media (min-width: 817px) and (max-width: 954.999px) {
   .layout-content.layout-alliWidget {
     background: linear-gradient(#21ce99 1156px, white 20px) !important;
   }

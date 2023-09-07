@@ -53,7 +53,7 @@ function AlliBot() {
             imgSrc="/instant-accessibility-responses.png"
             imgDiv="/back-mac.png"
             classImgDivBrowser="imgDiv-mac"
-            className="custom-img-first"
+            className="custom-sized-image"
           >
             <h3>Instant Accessibility Responses</h3>
             <p>

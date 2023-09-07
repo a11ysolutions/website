@@ -3,19 +3,12 @@
   flex-direction: column;
   overflow: hidden;
   max-width: 380px;
-  /* max-width: 345px; */
-  /* height: 420px; */
-  /* height: 340px; */
   height: fit-content;
   margin: 0 auto;
   padding: 1rem;
   border-radius: 0.312rem;
   box-shadow: 0 20px 33px 0 rgba(0, 0, 0, 0.3);
 }
-
-/* .custom-card:last-child {
-  height: 365px;
-} */
 
 .custom-horizontal-card {
   margin-bottom: 2rem;
@@ -37,6 +30,12 @@
   width: 301px;
   height: 160px;
   margin: 2rem auto;
+}
+
+.custom-sized-image .custom-card-ellipse {
+  width: 287px;
+  height: 150px;
+  padding: 0.4rem;
 }
 
 .icon-container {
@@ -67,23 +66,25 @@
   height: 100%;
   width: 100%;
   display: block;
-  /* object-fit: cover; */
+}
+
+.alliBot-features .imgDiv-mac {
+  width: 384px;
 }
 
 .imgDiv-mac {
   position: absolute;
-  width: 380px;
-  height: 220px;
-  top: -27px;
-  left: -42px;
+  width: 386px;
+  height: 216px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .imgDiv-browser {
   position: absolute;
   width: 362px;
   height: 220px;
-  /* top: -30px; */
-  /* left: -29px; */
   top: 50%;
   left: 51%;
   transform: translate(-50%, -50%);
@@ -91,15 +92,6 @@
 
 .imgDivPosition {
   position: inherit;
-}
-
-.custom-img-first .custom-card-ellipse {
-  width: 287px;
-  height: 150px;
-  padding: 0.4rem;
-}
-.image-fit-contained img {
-  object-fit: contain !important;
 }
 
 .image-increase-height img {
