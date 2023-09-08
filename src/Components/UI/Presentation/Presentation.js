@@ -3,7 +3,7 @@ import Button from "../Button/Button";
 import "./Presentation.css";
 import { scrollToContactForm } from "../../Utils/Utils";
 
-function Presentation({ title, texts, buttonText, className }) {
+function Presentation({ title, texts, buttonText, className, handleClick }) {
 
   return (
     <div className={"presentation-main " + className}>
@@ -20,8 +20,8 @@ function Presentation({ title, texts, buttonText, className }) {
           )
         })
       }
-      <Button size="large" className='presentation-button' onClick={scrollToContactForm}>
-        Get a free consultation
+      <Button size="large" className='presentation-button' onClick={handleClick ? handleClick : scrollToContactForm}>
+        {buttonText || 'Get a free consultation'}
         </Button>
     </div>
   );
