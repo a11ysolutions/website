@@ -98,6 +98,7 @@
   height: 111%;
 }
 
+/* =============== @media (min-width: 768px) =============== */
 @media screen and (min-width: 768px) {
   .custom-horizontal-card {
     flex-direction: row;
@@ -113,6 +114,15 @@
   }
 }
 
+/* =============== @media (min-width: 872px) =============== */
+@media screen and (max-width: 872px) {
+  .alliBot-features-content .custom-card,
+  .alliWidget-features .custom-card {
+    margin-top: 2rem !important;
+  }
+}
+
+/* =============== @media (min-width: 872.99px) =============== */
 @media screen and (min-width: 872.99px) {
   .shadow-none {
     box-shadow: none;

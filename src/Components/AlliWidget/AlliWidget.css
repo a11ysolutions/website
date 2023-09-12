@@ -1,11 +1,12 @@
+.layout-content.layout-alliWidget {
+  padding: 0;
+  background: none !important;
+}
+
 .alliWidget-page-container {
   display: flex;
   flex-direction: column;
   font: normal normal normal 16px/24px Archivo;
-}
-
-.layout-content.layout-alliWidget {
-  padding: 16px 0 0;
 }
 
 .alliWidget-features .custom-card-ellipse img {
@@ -19,6 +20,7 @@
 /* =============== alliWidget-presentation-container =============== */
 .alliWidget-presentation-container {
   padding: 0 16px;
+  background: #21ce99;
 }
 
 .alliWidget-presentation-container .privacy-policy-ilustration-container {
@@ -38,7 +40,7 @@
 
 .alliWidget-presentation-container .home-ilustration-container {
   width: 85%;
-  height: 400px;
+  height: 370px;
   margin: 0 5%;
 }
 
@@ -74,10 +76,6 @@
   padding: 0 1rem;
 }
 
-.alliWidget-features .custom-card {
-  margin-top: 2rem;
-}
-
 .alliWidget-features > :last-child {
   margin-bottom: 3rem;
 }
@@ -91,27 +89,6 @@
 
   .alliWidget-presentation-container .privacy-policy-ilustration-container {
     margin-top: 30px;
-  }
-}
-
-/* =============== @media (min-width: 768px) and (max-width: 799.999px) =============== */
-@media (min-width: 768px) and (max-width: 816.99px) {
-  .layout-content.layout-alliWidget {
-    background: linear-gradient(#21ce99 1255px, white 20px) !important;
-  }
-}
-
-/* =============== @media (min-width: 800px) and (max-width: 954.999px) =============== */
-@media (min-width: 817px) and (max-width: 954.999px) {
-  .layout-content.layout-alliWidget {
-    background: linear-gradient(#21ce99 1156px, white 20px) !important;
-  }
-}
-
-/* =============== @media (min-width: 955px) and (max-width: 1200px) =============== */
-@media (min-width: 955px) and (max-width: 1200px) {
-  .layout-content.layout-alliWidget {
-    background: linear-gradient(#21ce99 1099px, white 20px) !important;
   }
 }
 
@@ -148,7 +125,15 @@
     z-index: 2;
   }
 
+  .alliWidget-features > :nth-child(odd) {
+    margin-top: 4rem;
+  }
+
   .alliWidget-features > :nth-child(even) {
+    margin-top: 6rem;
+  }
+
+  .alliWidget-features > :nth-child(4) {
     margin-top: 4rem;
   }
 
@@ -159,10 +144,6 @@
 
 /* =============== @media (min-width: 1200px) =============== */
 @media screen and (min-width: 1200px) {
-  .layout-content.layout-alliWidget {
-    background: linear-gradient(#21ce99 860px, white 20px) !important;
-  }
-
   .alliWidget-presentation-container {
     display: flex;
     justify-content: center;
@@ -172,7 +153,7 @@
 
   .alliWidget-presentation-container .page-top {
     width: 50%;
-    margin: auto;
+    margin: auto auto 7rem;
   }
 
   .alliWidget-presentation-container .privacy-policy-ilustration-container {
@@ -192,7 +173,7 @@
   }
 
   .alliWidget-content {
-    margin: 12rem auto auto;
+    margin: 5rem auto auto;
   }
 
   .alliWidget-content .bicolor-titled-container p {
@@ -208,18 +189,19 @@
     z-index: 2;
   }
 
+  .alliWidget-features > :nth-child(odd) {
+    margin-top: 4rem;
+  }
+
   .alliWidget-features > :nth-child(even) {
+    margin-top: 6rem;
+  }
+
+  .alliWidget-features > :nth-child(4) {
     margin-top: 4rem;
   }
 
   .alliWidget-features > :last-child {
     margin-bottom: 5rem;
-  }
-}
-
-/* =============== @media (min-width: 1522px) =============== */
-@media screen and (min-width: 1522px) {
-  .layout-content.layout-alliWidget {
-    background: linear-gradient(#21ce99 750px, white 20px) !important;
   }
 }

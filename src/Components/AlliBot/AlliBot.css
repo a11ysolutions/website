@@ -1,3 +1,8 @@
+.layout-content.layout-alliBot {
+  padding: 0;
+  background: none !important;
+}
+
 .alliBot-page-container .home-ilustration-container > div {
   width: fit-content;
   margin: 50px auto 0;
@@ -9,6 +14,10 @@
   font: normal normal normal 16px/24px Archivo;
 }
 
+.alliBot-presentation-container {
+  background: #21ce99;
+}
+
 .alliBot-presentation-sign text:last-of-type {
   margin-top: 1rem;
 }
@@ -17,16 +26,12 @@
   margin: 0 7%;
 }
 
-.layout-content.layout-alliBot {
-  padding: 16px 0 0;
-}
-
 /* =============== alliBot-presentation-container =============== */
 .alliBot-presentation-container .privacy-policy-ilustration-container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 90px;
+  margin-top: 0px;
   z-index: 2;
 }
 
@@ -55,16 +60,18 @@
 /* =============== alliBot-features =============== */
 .alliBot-features {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   max-width: 1020px;
   padding: 0 1rem;
 }
 
-.alliBot-features .custom-card {
-  margin-top: 2rem;
+.alliBot-features-content {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.alliBot-features > :last-child {
+.alliBot-features-content > :last-child {
   margin-bottom: 3rem;
 }
 
@@ -86,6 +93,19 @@
   margin: 0 auto;
 }
 
+.feedback-link {
+  color: #0a7c58;
+  padding: 0 0.1rem;
+}
+
+.feedback-link:hover {
+  outline: 3px solid #000;
+}
+
+.privacy-statement {
+  max-width: 564px;
+}
+
 /* =============== alliBot-review =============== */
 .alliBot-review {
   width: 100%;
@@ -103,7 +123,8 @@
 
 /* =============== @media (max-width: 767px) =============== */
 @media screen and (max-width: 767px) {
-  .alliBot-feedback .bicolor-titled-container div {
+  .alliBot-feedback .bicolor-titled-container div,
+  .alliBot-features .bicolor-titled-container {
     max-width: 500px;
     text-align: center;
   }
@@ -129,43 +150,54 @@
     margin: auto;
   }
 
-  .alliBot-content .bicolor-titled-container {
-    max-width: 70%;
+  .alliBot-content .bicolor-titled-container,
+  .alliBot-features .bicolor-titled-container {
+    /* max-width: 70%; */
+    max-width: 100%;
   }
 
   .alliBot-content .bicolor-titled-container p {
     font: normal normal normal 24px/30px Archivo;
   }
 
-  .alliBot-features {
-    margin-top: 2rem;
-  }
-
-  .alliBot-features > :nth-child(1),
-  .alliBot-content .home-services-bicolored-text {
+  .alliBot-features-content > :nth-child(1),
+  .alliBot-content .home-services-bicolored-text,
+  .standalone-card {
     z-index: 2;
   }
 
-  .alliBot-features > :nth-child(even) {
+  .alliBot-features-content > :nth-child(odd) {
     margin-top: 4rem;
   }
 
-  .alliBot-features > :last-child {
+  .alliBot-features-content > :nth-child(even) {
+    margin-top: 6rem;
+  }
+
+  .alliBot-features-content > :nth-child(4) {
+    margin-top: 4rem;
+  }
+
+  .alliBot-features-content > :last-child {
     margin-bottom: 5rem;
+  }
+
+  .standalone-card {
+    margin-top: 1rem;
   }
 
   .alliBot-feedback-text {
     text-align: left;
     font: normal normal normal 22px/32px Archivo;
   }
+
+  .privacy-statement {
+    text-align: left;
+  }
 }
 
 /* =============== @media (min-width: 1200px) =============== */
 @media screen and (min-width: 1200px) {
-  .layout-content.layout-alliBot {
-    background: linear-gradient(#21ce99 650px, white 20px) !important;
-  }
-
   .alliBot-page-container .home-ilustration-container > div {
     width: 263px;
     height: 313px;
@@ -180,7 +212,7 @@
 
   .alliBot-presentation-container .page-top {
     width: 50%;
-    margin: auto;
+    margin: auto auto 7rem;
   }
 
   .alliBot-presentation-container .privacy-policy-ilustration-container {
@@ -200,30 +232,45 @@
   }
 
   .alliBot-content {
-    margin: 12rem auto auto;
+    margin: 5rem auto auto;
   }
 
   .alliBot-content .bicolor-titled-container p {
     font: normal normal normal 24px/30px Archivo;
   }
 
-  .alliBot-features {
-    margin-top: 2rem;
+  .alliBot-features-content {
+    margin-top: 1rem;
   }
 
-  .alliBot-features > :nth-child(1) {
+  .alliBot-features-content > :nth-child(1),
+  .alliBot-content .home-services-bicolored-text,
+  .standalone-card {
     z-index: 2;
   }
 
-  .alliBot-features > :nth-child(even) {
+  .alliBot-features-content > :nth-child(odd) {
     margin-top: 4rem;
   }
 
-  .alliBot-features > :last-child {
+  .alliBot-features-content > :nth-child(even) {
+    margin-top: 6rem;
+  }
+
+  .alliBot-features-content > :nth-child(4) {
+    margin-top: 4rem;
+  }
+
+  .alliBot-features-content > :last-child {
     margin-bottom: 5rem;
   }
 
-  .alliBot-feedback .bicolor-titled-container {
+  .standalone-card {
+    margin-top: 3rem;
+  }
+
+  .alliBot-feedback .bicolor-titled-container,
+  .alliBot-features .bicolor-titled-container {
     max-width: 750px;
   }
 
@@ -242,5 +289,10 @@
   .alliBot-feedback-text {
     text-align: left;
     font: normal normal normal 22px/32px Archivo;
+  }
+
+  .privacy-statement {
+    max-width: 882px;
+    text-align: left;
   }
 }

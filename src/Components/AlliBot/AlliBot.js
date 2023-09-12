@@ -20,9 +20,9 @@ function AlliBot() {
       <div className="alliBot-presentation-container">
         <div className="page-top">
           <Presentation
-            title="AlliBot - Empowering Inclusive Experiences"
+            title="Meet AlliBot: The Chatbot Transforming Web Accessibility"
             texts={[
-              'A chatbot designed to provide assistance and answer any accessibility questions based on the WCAG 2.1 Standard.',
+              'Navigate the complexities of web accessibility effortlessly with AI-powered expertise. AlliBot is your on-demand guide, offering both theoretical insights and practical solutions for instant compliance.',
             ]}
             handleClick={navigateToAlliBot}
             buttonText="TRY IT NOW"
@@ -36,65 +36,81 @@ function AlliBot() {
 
       {/* =============== alliBot-content ===============  */}
       <div className="alliBot-content">
-        <div className="home-services-bicolored-text">
-          <BicolorTitledText
-            color1="black"
-            color2="#0D9E71"
-            color2Text="Enterprise features"
-            className="home-our-services"
-          >
-            <p>Some awesome features</p>
-          </BicolorTitledText>
-        </div>
-
         {/* =============== alliBot-features ===============  */}
         <div className="alliBot-features" role="list">
-          <CustomCard
-            imgSrc="/instant-accessibility-responses.png"
-            imgDiv="/back-mac.png"
-            classImgDivBrowser="imgDiv-mac"
-            className="custom-sized-image"
-          >
-            <h3>Instant Accessibility Responses</h3>
-            <p>
-              Immediate, real-time feedback on any web accessibility queries or issues you may have. Whether
-              you're a developer looking to ensure your website meets accessibility standards or a tester
-              trying to identify potential issues.
-            </p>
-          </CustomCard>
-          <CustomCard
-            imgSrc="/expert-guidance.png"
-            imgDiv="/back-browser.png"
-            classImgDivBrowser="imgDiv-browser"
-            className="shadow-none image-increase-height"
-          >
-            <h3>Expert Guidance</h3>
-            <p>
-              Benefit from the expertise of our AI-powered chatbot, meticulously engineered to comply with
-              WCAG 2.1 Standards, ensuring inclusivity for all users.
-            </p>
-          </CustomCard>
-          <CustomCard
-            imgSrc="/user-friendly-interface.png"
-            imgDiv="/back-mac.png"
-            classImgDivBrowser="imgDiv-mac"
-            className="shadow-none"
-          >
-            <h3>User-Friendly Interface</h3>
-            <p>
-              AlliBot features an intuitive interface, making it easy for users to interact and seek
-              assistance.
-            </p>
-          </CustomCard>
-          <CustomCard
-            imgSrc="/multi-platform-support.png"
-            imgDiv="/back-browser.png"
-            classImgDivBrowser="imgDiv-browser"
-            className=""
-          >
-            <h3>Multi-platform Support</h3>
-            <p>Access our chatbot from various devices and platforms, ensuring accessibility on the go.</p>
-          </CustomCard>
+          <div className="home-services-bicolored-text" role="listitem">
+            <BicolorTitledText
+              color1="#0D9E71"
+              color1Text="Why Choose AlliBot for Your Web Accessibility Needs?"
+              className="home-our-services"
+            ></BicolorTitledText>
+          </div>
+
+          <div className="standalone-card">
+            <CustomCard className="">
+              <h3>Backed by Industry Experts</h3>
+              <p>
+                The team behind AlliBot brings years of combined experience in web accessibility and AI
+                technology. We've collaborated with top industry leaders to ensure that AlliBot is not just
+                smart, but also reliable and effective.
+              </p>
+            </CustomCard>
+          </div>
+
+          <div className="alliBot-features-content">
+            <CustomCard
+              imgSrc="/instant-accessibility-responses.png"
+              imgDiv="/back-mac.png"
+              classImgDivBrowser="imgDiv-mac"
+              className="custom-sized-image"
+            >
+              <h3>Get Answers Right Away</h3>
+              <p>
+                Whether you're a developer trying to meet WCAG standards or a tester finding accessibility
+                flaws, AlliBot delivers immediate and accurate answers. No more sifting through forums or
+                waiting for email responses—get the info you need instantly.
+              </p>
+            </CustomCard>
+            <CustomCard
+              imgSrc="/expert-guidance.png"
+              imgDiv="/back-browser.png"
+              classImgDivBrowser="imgDiv-browser"
+              className="shadow-none image-increase-height"
+            >
+              <h3>Industry-Backed Expertise</h3>
+              <p>
+                AlliBot isn't just smart—it's trained on the latest WCAG standards to ensure you're getting
+                reliable, up-to-date advice. That means you can focus on creating a more inclusive web
+                environment without second-guessing your decisions.
+              </p>
+            </CustomCard>
+            <CustomCard
+              imgSrc="/user-friendly-interface.png"
+              imgDiv="/back-mac.png"
+              classImgDivBrowser="imgDiv-mac"
+              className="shadow-none"
+            >
+              <h3>Simple and Easy to Use</h3>
+              <p>
+                We know that web accessibility can be complex. That's why we’ve designed AlliBot’s user
+                interface to be as straightforward as possible. Navigate through solutions effortlessly,
+                whether you're an accessibility expert or just getting started.
+              </p>
+            </CustomCard>
+            <CustomCard
+              imgSrc="/multi-platform-support.png"
+              imgDiv="/back-browser.png"
+              classImgDivBrowser="imgDiv-browser"
+              className=""
+            >
+              <h3>Always Accessible, On Any Device</h3>
+              <p>
+                Need help while you're on the go? AlliBot has you covered. Our chatbot works seamlessly across
+                a variety of devices, from laptops to smartphones, so you can get the support you need,
+                whenever you need it.
+              </p>
+            </CustomCard>
+          </div>
         </div>
 
         {/* =============== tryItNow ===============  */}
@@ -104,7 +120,7 @@ function AlliBot() {
         <div className="alliBot-feedback">
           <div className="home-services-bicolored-text">
             <BicolorTitledText color1="black" color2="#0D9E71" className="home-our-services">
-              <h2>We are committed to creating a world that is both inclusive and equitable for everyone.</h2>
+              <h2>Your Voice Matters in Creating a More Inclusive World</h2>
             </BicolorTitledText>
           </div>
 
@@ -112,8 +128,10 @@ function AlliBot() {
             <div className="alliBot-feedback-text">
               <div>
                 <p>
-                  Your feedback on AlliBot is invaluable to us and instrumental in refining its capabilities.
-                  Please share your experience to help us enhance the service for you and others.
+                  Your insights don't just help us improve AlliBot; they contribute to our broader mission of
+                  making the digital world more accessible for everyone. Whether it's a suggestion, question,
+                  or praise, your voice matters in shaping a more inclusive future. Please share your
+                  feedback.
                 </p>
                 <p>Thank you for your thoughtful contribution!</p>
               </div>
@@ -121,6 +139,17 @@ function AlliBot() {
             <div className="alliBot-feedback-form" id="footer-feedback-form">
               <FeedbackForm />
             </div>
+          </div>
+          <div className="privacy-statement ">
+            <p>
+              Privacy Statement: Your privacy is important to us. The information you provide in this feedback
+              form will be used solely for the purpose of improving AlliBot and our services. We will not
+              share, sell, or distribute your personal information to any third parties without your explicit
+              consent. For more details, please read our{' '}
+              <a href="/privacy-policy" className="feedback-link">
+                Privacy Policy .
+              </a>
+            </p>
           </div>
         </div>
 
