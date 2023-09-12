@@ -8,12 +8,6 @@
   margin: 50px auto 0;
 }
 
-.alliBot-page-container {
-  display: flex;
-  flex-direction: column;
-  font: normal normal normal 16px/24px Archivo;
-}
-
 .alliBot-presentation-container {
   background: #21ce99;
 }
