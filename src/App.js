@@ -11,6 +11,7 @@ import { useEffect, useState } from 'react';
 import AccessibilityStatement from './Components/AccessibilityStatement/AccessibilityStatement';
 import AlliBot from './Components/AlliBot/AlliBot';
 import AlliWidget  from './Components/AlliWidget/AlliWidget';
+import { AlliBotFeedback } from './Components/AlliBotFeedback/AlliBotFeedback';
 
 function App() {
   const [currentUrl] = useState(window.location.pathname);
@@ -37,6 +38,7 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/a11y-statement" element={<AccessibilityStatement />} />
         <Route path="/automation" element={<Automation />} />
+        <Route path="/alliBot-feedback" element={<AlliBotFeedback />} />
         <Route path="/regulations" element={<StandardRegulations />} />
         <Route path="/sitemap" element={<Sitemap />} />
 

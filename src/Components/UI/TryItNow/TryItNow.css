@@ -1,18 +1,20 @@
 .tryItNow {
   width: 100%;
   background-color: #21ce99;
+  position: relative;
 }
 
 .tryItNow-content {
-  max-width: 1020px;
-  margin: 2rem auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  max-width: 1020px;
+  margin: 4rem auto;
+  padding: 3rem 0;
 }
 
-.tryItNow-text {
+.tryItNow-text h2 {
   font: normal normal 900 32px/40px Archivo;
 }
 
@@ -22,7 +24,7 @@
     flex-direction: row;
   }
 
-  .tryItNow-text {
+  .tryItNow-text h2 {
     font: normal normal 900 40px/44px Archivo;
     margin: 0.22em 0;
   }
@@ -34,8 +36,12 @@
     flex-direction: row;
   }
 
-  .tryItNow-text {
-    font: normal normal 900 40px/44px Archivo;
+  .tryItNow-text h2 {
+    font: normal normal 900 45px/50px Archivo;
     margin: 0.22em 0;
+  }
+
+  .tryItNow-content {
+    text-align: left;
   }
 }
