@@ -2,15 +2,20 @@ import React from 'react'
 import Button from '../Button/Button'
 import './TryItNow.css'
 
-function TryItNow({ handleNavigate, buttonText }) {
+function TryItNow({ text, subText, buttonText, handleNavigate, children }) {
   return (
     <div className="tryItNow">
       <div className="tryItNow-content">
-        <h2 className="tryItNow-text">Give it a try for free</h2>
+        <div className="tryItNow-text">
+          <h2>{text}</h2>
+          <p>{subText}</p>
+        </div>
         <Button size="large" onClick={handleNavigate}>
           {buttonText}
         </Button>
       </div>
+
+      {children}
     </div>
   )
 }
