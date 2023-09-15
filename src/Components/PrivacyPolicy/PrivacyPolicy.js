@@ -449,7 +449,9 @@ function PrivacyPolicy() {
                 </span>
               </span>
             </span>
-            We collect:
+            <p style={{fontWeight: 'bold', color: '#595959'}}>
+              We collect:
+            </p>
             <ul>
               <li>names</li>
               <li>phone numbers</li>
