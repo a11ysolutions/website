@@ -449,7 +449,7 @@ function PrivacyPolicy() {
                 </span>
               </span>
             </span>
-            We collect:
+              We collect:
             <ul>
               <li>names</li>
               <li>phone numbers</li>
