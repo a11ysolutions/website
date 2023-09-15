@@ -115,7 +115,7 @@ function AlliWidget() {
         </div>
 
         {/* =============== tryItNow ===============  */}
-        <TryItNow handleNavigate={navigateToHome} buttonText="TRY IT NOW" />
+        <TryItNow handleNavigate={navigateToHome} text='Give it a try for free' buttonText="Try It Now" />
       </div>
     </div>
   )
