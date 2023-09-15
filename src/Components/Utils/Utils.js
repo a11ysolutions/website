@@ -9,6 +9,10 @@ export const navigateToHome = () => {
   window.location.href = '/?openWidget=true'
 }
 
+export const navigateFeedbackHub = () => {
+  window.location.href = '/alliBot-feedback'
+}
+
 export const navigateToAlliBot = () => {
   window.open('https://allibot.a11ysolutions.com/', '_blank')
 }

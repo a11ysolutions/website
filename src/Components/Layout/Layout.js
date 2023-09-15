@@ -18,12 +18,14 @@ function Layout({ children }) {
 
   const hasAlliBotContainer = pathname === '/alliBot'
   const hasAlliWidgetContainer = pathname === '/alliWidget'
+  const hasFeedbackHubContainer = pathname === '/alliBot-feedback'
   const layoutAlliBotClasses = `${hasAlliBotContainer ? 'layout-alliBot' : ''}`
   const layoutAlliWidgetClasses = `${hasAlliWidgetContainer ? 'layout-alliWidget' : ''}`
+  const layoutFeedbackHubClasses = `${hasFeedbackHubContainer ? 'layout-feedback-hub' : ''}`
 
   return (
     <Fragment>
-      <div className={`layout-content ${layoutAlliBotClasses} ${layoutAlliWidgetClasses}`}>
+      <div className={`layout-content ${layoutAlliBotClasses} ${layoutAlliWidgetClasses} ${layoutFeedbackHubClasses}`}>
         <div className="circles-container">
           <div className="right-circle"></div>
           <div className="left-circle"></div>
