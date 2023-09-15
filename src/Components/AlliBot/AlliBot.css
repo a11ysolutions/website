@@ -3,13 +3,10 @@
   background: none !important;
 }
 
+/* =============== alliBot-presentation-container =============== */
 .alliBot-page-container .home-ilustration-container > div {
   width: fit-content;
   margin: 50px auto 0;
-}
-
-.alliBot-presentation-container {
-  background: #21ce99;
 }
 
 .alliBot-presentation-sign text:last-of-type {
@@ -17,10 +14,14 @@
 }
 
 .alliBot-presentation-sign {
-  margin: 0 5%;
+  margin: 0 7%;
 }
 
-/* =============== alliBot-presentation-container =============== */
+.alliBot-presentation-container {
+  background: #21ce99;
+  position: relative;
+}
+
 .alliBot-presentation-container .privacy-policy-ilustration-container {
   display: flex;
   justify-content: center;
@@ -51,13 +52,50 @@
   margin: auto;
 }
 
+/* =============== alliBot-accessibility =============== */
+.alliBot-accessibility {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 6rem 2rem 7rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.alliBot-accessibility-content,
+.alliBot-why-choose-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 2rem;
+  /* max-width: 880px; */
+  /* margin-top: 1.5rem; */
+}
+
+.accessibility-item,
+.alliBot-accessibility-content {
+  text-align: left;
+}
+
+.accessibility-item h3,
+.alliBot-accessibility-content h3 {
+  margin-bottom: 0.5rem;
+}
+
+.accessibility-item p,
+.alliBot-accessibility-content p {
+  margin-top: 0;
+}
+
 /* =============== alliBot-features =============== */
 .alliBot-features {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 1020px;
-  padding: 0 1rem;
+  padding: 0 1rem 3rem;
 }
 
 .alliBot-features-content {
@@ -69,41 +107,49 @@
   margin-bottom: 3rem;
 }
 
-/* =============== alliBot-feedback =============== */
-.alliBot-feedback {
+/* =============== alliBot-why-choose =============== */
+.alliBot-why-choose {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto;
-  padding: 36px;
+  position: relative;
+  width: 100%;
+  padding: 5rem 2rem 3rem;
+  background-color: #000;
+  color: #fff;
 }
 
-.alliBot-feedback-content {
-  margin-bottom: 4rem;
+/* .alliBot-why-choose-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 2rem;
+  margin-top: 1.5rem;
+} */
+
+.why-choose-item,
+.alliBot-why-choose-content {
+  text-align: left;
 }
 
-.alliBot-feedback-text {
-  max-width: 564px;
-  margin: 0 auto;
+.why-choose-item h3,
+.alliBot-why-choose-content h3 {
+  margin-bottom: 0.5rem;
 }
 
-.feedback-link {
-  color: #0a7c58;
-  padding: 0 0.1rem;
+.why-choose-item p,
+.alliBot-why-choose-content p {
+  margin-top: 0;
 }
 
-.feedback-link:hover {
-  outline: 3px solid #000;
+.custom-why-choose-button{
+  width: 280px;
 }
-
-.privacy-statement {
-  max-width: 564px;
-}
-
 /* =============== alliBot-review =============== */
 .alliBot-review {
   width: 100%;
-  background-color: #21ce99;
+  position: relative;
+  /* background-color: #21ce99; */
 }
 
 .alliBot-review-header {
@@ -117,8 +163,10 @@
 
 /* =============== @media (max-width: 767px) =============== */
 @media screen and (max-width: 767px) {
-  .alliBot-feedback .bicolor-titled-container div,
-  .alliBot-features .bicolor-titled-container {
+  /* .alliBot-feedback .bicolor-titled-container div, */
+  .alliBot-features .bicolor-titled-container,
+  .alliBot-accessibility .bicolor-titled-container,
+  .alliBot-why-choose .bicolor-titled-container {
     max-width: 500px;
     text-align: center;
   }
@@ -154,11 +202,12 @@
     font: normal normal normal 24px/30px Archivo;
   }
 
-  .alliBot-features-content > :nth-child(1),
+  /* .alliBot-features-content > :nth-child(1),
   .alliBot-content .home-services-bicolored-text,
-  .standalone-card {
+  .standalone-card,
+  .alliBot-accessibility {
     z-index: 2;
-  }
+  } */
 
   .alliBot-features-content > :nth-child(odd) {
     margin-top: 4rem;
@@ -180,14 +229,18 @@
     margin-top: 1rem;
   }
 
-  .alliBot-feedback-text {
+  .alliBot-accessibility-content,
+  .alliBot-why-choose-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* .alliBot-feedback-text {
     text-align: left;
     font: normal normal normal 22px/32px Archivo;
-  }
+  } */
 
-  .privacy-statement {
+  /* .privacy-statement {
     text-align: left;
-  }
+  } */
 }
 
 /* =============== @media (min-width: 1200px) =============== */
@@ -205,12 +258,12 @@
   }
 
   .alliBot-presentation-container .page-top {
-    width: auto;
+    width: 50%;
     margin: auto auto 7rem;
   }
 
   .alliBot-presentation-container .privacy-policy-ilustration-container {
-    width: 50%;
+    width: 40%;
     margin: auto auto auto 0;
   }
 
@@ -226,7 +279,12 @@
   }
 
   .alliBot-content {
-    margin: 5rem auto auto;
+    margin: auto;
+    /* padding-top: 2rem; */
+  }
+
+  .alliBot-features {
+    padding-top: 3rem;
   }
 
   .alliBot-content .bicolor-titled-container p {
@@ -237,11 +295,12 @@
     margin-top: 1rem;
   }
 
-  .alliBot-features-content > :nth-child(1),
+  /* .alliBot-features-content > :nth-child(1),
   .alliBot-content .home-services-bicolored-text,
-  .standalone-card {
+  .standalone-card,
+  .alliBot-accessibility {
     z-index: 2;
-  }
+  } */
 
   .alliBot-features-content > :nth-child(odd) {
     margin-top: 4rem;
@@ -263,30 +322,38 @@
     margin-top: 3rem;
   }
 
-  .alliBot-feedback .bicolor-titled-container,
+  /* .alliBot-feedback .bicolor-titled-container, */
   .alliBot-features .bicolor-titled-container {
     max-width: 750px;
   }
 
-  .alliBot-feedback .bicolor-titled-container p {
-    max-width: 750px;
+  .alliBot-accessibility-content {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .alliBot-feedback-content {
+  .alliBot-why-choose-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* .alliBot-feedback .bicolor-titled-container p {
+    max-width: 750px;
+  } */
+
+  /* .alliBot-feedback-content {
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 1020px;
     gap: 2rem;
-  }
+  } */
 
-  .alliBot-feedback-text {
+  /* .alliBot-feedback-text {
     text-align: left;
     font: normal normal normal 22px/32px Archivo;
-  }
+  } */
 
-  .privacy-statement {
+  /* .privacy-statement {
     max-width: 882px;
     text-align: left;
-  }
+  } */
 }
