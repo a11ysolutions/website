@@ -14,7 +14,6 @@ function TryItNow({ text, subText, buttonText, handleNavigate, children }) {
           {buttonText}
         </Button>
       </div>
-
       {children}
     </div>
   )

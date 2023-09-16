@@ -2,15 +2,15 @@
   position: absolute;
   height: 55px;
   width: 100%;
-  top: 0;
+  top: -1px;
   background-size: auto 55px;
-  transform: scaleY(-1);
+  transform: rotate(180deg);
 }
 
 .bottom-divider {
   position: absolute;
   height: 55px;
   width: 100%;
-  bottom: 0;
+  bottom: -1px;
   background-size: auto 55px;
 }
