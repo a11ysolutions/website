@@ -3,6 +3,10 @@
   background: none !important;
 }
 
+#wa11y-widget-icon {
+  z-index: 50 !important;
+}
+
 .alliWidget-page-container {
   display: flex;
   flex-direction: column;
