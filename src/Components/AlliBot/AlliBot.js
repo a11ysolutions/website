@@ -35,7 +35,6 @@ function AlliBot() {
 
       {/* =============== alliBot-content ===============  */}
       <div className="alliBot-content">
-        
         {/* =============== alliBot-accessibility ===============  */}
         <div className="alliBot-accessibility" role="list">
           <div className="home-services-bicolored-text" role="listitem">
@@ -132,7 +131,7 @@ function AlliBot() {
               <h3>Stay Ahead of the Ever-Changing Game</h3>
               <p>
                 Adapt instantly to new Standard/Laws updates with code solutions that are always up-to-date.
-                [Your Chatbot's Name] keeps you ahead of the curve, so you never have to play catch-up.
+                AlliBot keeps you ahead of the curve, so you never have to play catch-up.
               </p>
             </CustomCard>
             <CustomCard
@@ -143,8 +142,8 @@ function AlliBot() {
             >
               <h3>Break Free from the Costly Consultant Trap</h3>
               <p>
-                Forget about those expensive consultants. [Your Chatbot's Name] offers you guidance and code
-                solutions you need at a fraction of the cost, directly in your chat window.
+                Forget about those expensive consultants. AlliBot offers you guidance and code solutions you
+                need at a fraction of the cost, directly in your chat window.
               </p>
             </CustomCard>
           </div>
