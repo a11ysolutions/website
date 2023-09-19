@@ -95,7 +95,7 @@ function AlliBot() {
 
           <div className="alliBot-features-content">
             <CustomCard
-              imgSrc="/instant-accessibility-responses.png"
+              imgSrc="/undraw_accessible_efforlessly.svg"
               imgDiv="/back-mac.png"
               classImgDivBrowser="imgDiv-mac"
               className="custom-sized-image"
@@ -109,10 +109,10 @@ function AlliBot() {
               </p>
             </CustomCard>
             <CustomCard
-              imgSrc="/expert-guidance.png"
+              imgSrc="/undraw_eliminate_compliance_nightmares.svg"
               imgDiv="/back-browser.png"
               classImgDivBrowser="imgDiv-browser"
-              className="shadow-none image-increase-height"
+              className="shadow-none custom-sized-image image-increase-height"
             >
               <h3>Eliminate Compliance Nightmares</h3>
               <p>
@@ -123,10 +123,10 @@ function AlliBot() {
               </p>
             </CustomCard>
             <CustomCard
-              imgSrc="/user-friendly-interface.png"
+              imgSrc="/undraw_stay_ahead.svg"
               imgDiv="/back-mac.png"
               classImgDivBrowser="imgDiv-mac"
-              className="shadow-none"
+              className="shadow-none custom-sized-image"
             >
               <h3>Stay Ahead of the Ever-Changing Game</h3>
               <p>
@@ -135,10 +135,10 @@ function AlliBot() {
               </p>
             </CustomCard>
             <CustomCard
-              imgSrc="/multi-platform-support.png"
+              imgSrc="/undraw_break_free_consultant.svg"
               imgDiv="/back-browser.png"
               classImgDivBrowser="imgDiv-browser"
-              className=""
+              className="custom-sized-image image-increase-height"
             >
               <h3>Break Free from the Costly Consultant Trap</h3>
               <p>
@@ -221,7 +221,7 @@ function AlliBot() {
             <div className="home-services-bicolored-text">
               <BicolorTitledText
                 color1="black"
-                color2=""
+                color2="#21ce99"
                 color2Text="Some awesome reviews"
                 className="home-our-services"
               ></BicolorTitledText>
