@@ -221,7 +221,7 @@ function AlliBot() {
             <div className="home-services-bicolored-text">
               <BicolorTitledText
                 color1="black"
-                color2="#21ce99"
+                color2="#0D9E71"
                 color2Text="Some awesome reviews"
                 className="home-our-services"
               ></BicolorTitledText>
