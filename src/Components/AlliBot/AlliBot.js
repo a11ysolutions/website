@@ -95,7 +95,7 @@ function AlliBot() {
 
           <div className="alliBot-features-content">
             <CustomCard
-              imgSrc="/undraw_accessible_efforlessly2.svg"
+              imgSrc="/undraw_accessible_efforlessly.svg"
               imgDiv="/back-mac.png"
               classImgDivBrowser="imgDiv-mac"
               className="custom-sized-image"
@@ -109,7 +109,7 @@ function AlliBot() {
               </p>
             </CustomCard>
             <CustomCard
-              imgSrc="/undraw_eliminate_compliance_nightmares2.svg"
+              imgSrc="/undraw_eliminate_compliance_nightmares.svg"
               imgDiv="/back-browser.png"
               classImgDivBrowser="imgDiv-browser"
               className="shadow-none custom-sized-image image-increase-height"
@@ -123,7 +123,7 @@ function AlliBot() {
               </p>
             </CustomCard>
             <CustomCard
-              imgSrc="/undraw_stay_ahead2.svg"
+              imgSrc="/undraw_stay_ahead.svg"
               imgDiv="/back-mac.png"
               classImgDivBrowser="imgDiv-mac"
               className="shadow-none custom-sized-image"
@@ -135,7 +135,7 @@ function AlliBot() {
               </p>
             </CustomCard>
             <CustomCard
-              imgSrc="/undraw_break_free_consultant2.svg"
+              imgSrc="/undraw_break_free_consultant.svg"
               imgDiv="/back-browser.png"
               classImgDivBrowser="imgDiv-browser"
               className="custom-sized-image image-increase-height"
