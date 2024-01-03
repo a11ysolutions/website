@@ -16,8 +16,8 @@ function OurProducts() {
         ></BicolorTitledText>
       </div>
 
-      <div className="our-products">
-        <div className="our-products-content">
+      <div className="our-products" role='list'>
+        <div className="our-products-content"  role='listitem'>
           <div className="our-products-item_photo">
             <img
               src="/alliBot.svg"
@@ -39,7 +39,7 @@ function OurProducts() {
           </div>
         </div>
 
-        <div className="our-products-content reverse">
+        <div className="our-products-content reverse" role='listitem'>
           <div className="our-products-item_photo">
             <img
               src="/alliWidget.png"
