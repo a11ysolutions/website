@@ -33,7 +33,7 @@ function AccessibilityStatement() {
           />
         </div>
       </div>
-      <div className="privacy-policy">
+      <div className="privacy-policy-statement">
         <div>
           <h2>Accessibility Statement for a11ySolutions, llc</h2>
           <p>Last updated March 9, 2023.</p>
