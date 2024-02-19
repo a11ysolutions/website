@@ -14,7 +14,7 @@
   left: 150px;
 }
 
-.privacy-policy {
+.privacy-policy-statement {
   text-align: left;
   padding: 36px;
   display: flex;
@@ -24,13 +24,13 @@
   z-index: 1;
 }
 
-.privacy-policy span {
+.privacy-policy-statement span {
   color: #595959;
 }
-.privacy-policy a {
+.privacy-policy-statement a {
   color: blue !important;
 }
-.privacy-policy p {
+.privacy-policy-statement p {
   color: black;
 }
 
