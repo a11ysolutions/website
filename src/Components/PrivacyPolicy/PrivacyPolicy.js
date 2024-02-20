@@ -16,7 +16,7 @@ function PrivacyPolicy() {
         <div className="page-top">
           <Presentation
             title="Privacy Policy"
-            texts={[""]}
+            texts={["How A11YSolutions LLC Protects Your Information"]}
             buttonText="Get a free consultation"
             className="privacy-policy-presentation-sign"
           />
