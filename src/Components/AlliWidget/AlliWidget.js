@@ -4,7 +4,7 @@ import Presentation from "../UI/Presentation/Presentation";
 import BicolorTitledText from "../UI/BicolorTitledText/BicolorTitledText";
 import CustomCard from "../UI/CustomCard/CustomCard";
 import TryItNow from "../UI/TryItNow/TryItNow";
-import "./alliWidget.css";
+import './alliWidget.css';
 import { ImageDivider } from "../UI/ImageDivider/ImageDivider";
 import Button from "../UI/Button/Button";
 import { navigateToHome } from "../Utils/Utils";
