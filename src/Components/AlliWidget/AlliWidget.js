@@ -4,128 +4,112 @@ import Presentation from "../UI/Presentation/Presentation";
 import BicolorTitledText from "../UI/BicolorTitledText/BicolorTitledText";
 import CustomCard from "../UI/CustomCard/CustomCard";
 import TryItNow from "../UI/TryItNow/TryItNow";
-import './AlliWidget.css';
+import "./AlliWidget.css";
 import { ImageDivider } from "../UI/ImageDivider/ImageDivider";
 import Button from "../UI/Button/Button";
 import { navigateToHome } from "../Utils/Utils";
 
 function AlliWidget() {
   const servicesList = {
-    title: "Struggling with Web Accessibility?",
+    title:
+      "Overcoming Accessibility Challenges: Is Your Website Truly Inclusive?",
     services: [
       {
-        title: "Ever Felt Lost in Endless Documentation?",
+        title: "Starting Your Accessibility Journey",
         description:
-          "You're navigating a labyrinth of complex guidelines, conflicting tutorials, and outdated articles. Each click feels like another wrong turn, trapping you deeper in a maze with no escape.",
+          "Unsure where to begin with transforming your site into an accessible haven for all users?",
       },
       {
-        title: "Ever Felt Lost in Endless Documentation?",
+        title: "Legal and Compliance Concerns",
         description:
-          "You're navigating a labyrinth of complex guidelines, conflicting tutorials, and outdated articles. Each click feels like another wrong turn, trapping you deeper in a maze with no escape.",
+          "Worried about the legal implications of not meeting WCAG and Section 508 standards?",
       },
       {
-        title: "Ever Felt Lost in Endless Documentation?",
+        title: "Budgeting for Accessibility",
         description:
-          "You're navigating a labyrinth of complex guidelines, conflicting tutorials, and outdated articles. Each click feels like another wrong turn, trapping you deeper in a maze with no escape.",
+          "Concerned about the costs associated with making your website fully accessible?",
       },
       {
-        title: "Ever Felt Lost in Endless Documentation?",
+        title: "Maintaining Your Brand's Image",
         description:
-          "You're navigating a labyrinth of complex guidelines, conflicting tutorials, and outdated articles. Each click feels like another wrong turn, trapping you deeper in a maze with no escape.",
+          "Afraid that lack of accessibility compliance could tarnish your brand's reputation?",
       },
     ],
   };
   const featuresList = {
-    title: "Enterprise features",
+    title: "Solutions to Your Accessibility Challenges",
     features: [
       {
-        title: "User Customization",
+        title: "Quick Start",
         description:
-          "Allows users to adjust text size, contrast, and other visual elements according to their needs.",
+          "Our widget is a practical first step towards improving your site's accessibility, offering partial compliance and easing the transition towards full standards adherence.",
         imgDiv: "/back-mac.png",
         classImgDivBrowser: "imgDiv-mac",
         className: "shadow-none custom-sized-image image-increase-height",
         imgSrc: "/user-customization.jpg",
       },
       {
-        title: "WCAG 2.1 Compliance",
+        title: "Boost Compliance",
         description:
-          "Ensures that your website meets the Web Content Accessibility Guidelines, reducing legal risks.",
+          "It enhances your site's compatibility with accessibility standards, reducing legal risks by addressing critical compliance areas effectively.",
         imgDiv: "/back-mac.png",
         classImgDivBrowser: "imgDiv-mac",
         className: "custom-sized-image",
         imgSrc: "/wcag-2.1-compliance.png",
       },
       {
-        title: "Inclusivity",
+        title: "Affordable Approach",
         description:
-          "Expands your potential customer base by making your website usable for people with disabilities.",
+          "Implement key accessibility features without a hefty investment, offering a cost-efficient solution to common accessibility hurdles.",
         imgDiv: "/back-mac.png",
         classImgDivBrowser: "imgDiv-mac",
         className: "custom-sized-image ",
         imgSrc: "/inclusivity.jpg",
       },
       {
-        title: "User Experience",
+        title: "Brand Integrity",
         description:
-          "Improves the overall user experience by making the website more navigable and understandable for all.",
+          "Improve your website's accessibility and demonstrate your commitment to inclusivity, positively impacting your brand's image.",
         imgDiv: "/back-mac.png",
         classImgDivBrowser: "imgDiv-mac",
         className: "shadow-none custom-sized-image image-increase-height",
         imgSrc: "/user-experience.jpg",
       },
-      {
-        title: "Brand Reputation",
-        description:
-          "Enhances your brand image by showing a commitment to inclusivity and equality.",
-        imgDiv: "/back-mac.png",
-        classImgDivBrowser: "imgDiv-mac",
-        className: "shadow-none custom-sized-image image-increase-height",
-        imgSrc: "/brand-reputation.jpg",
-      },
-      {
-        title: "Technical Support",
-        description:
-          "Provides 24/7 customer support to assist with any accessibility issues.",
-        imgDiv: "/back-mac.png",
-        classImgDivBrowser: "imgDiv-mac",
-        className: "custom-sized-image",
-        imgSrc: "/technical-support.jpg",
-      },
     ],
   };
   const chooseList = {
-    title: "Why Choose alliWidget? Unbeatable Features for Unparalleled Ease",
+    title:
+      "Seeking a Step Towards Enhanced Web Accessibility? Why Choose AlliWidget?",
     chooses: [
       {
-        title: "AI-Powered Precision",
+        title: "Simplicity and Efficiency",
         description:
-          "Leverage the power of AI for pinpoint accuracy. alliWidget understands your queries and provides solutions that hit the mark, every time.",
+          "Designed for easy integration and immediate impact on accessibility.",
       },
       {
-        title: "AI-Powered Precision",
+        title: "Focused Compliance",
         description:
-          "Leverage the power of AI for pinpoint accuracy. alliWidget understands your queries and provides solutions that hit the mark, every time.",
+          "Targets key compliance areas to effectively address common accessibility barriers.",
       },
       {
-        title: "AI-Powered Precision",
+        title: "Cost-Effective Solution",
         description:
-          "Leverage the power of AI for pinpoint accuracy. alliWidget understands your queries and provides solutions that hit the mark, every time.",
+          "Offers a significant improvement in accessibility without the need for large investments.",
       },
       {
-        title: "AI-Powered Precision",
+        title: "Brand Integrity",
         description:
-          "Leverage the power of AI for pinpoint accuracy. alliWidget understands your queries and provides solutions that hit the mark, every time.",
+          "Demonstrates your commitment to inclusivity, enhancing your brand's reputation.",
       },
       {
-        title: "AI-Powered Precision",
+        title: "24/7 Support",
         description:
-          "Leverage the power of AI for pinpoint accuracy. alliWidget understands your queries and provides solutions that hit the mark, every time.",
+          "Dedicated around-the-clock support ensures any issues are promptly addressed, providing peace of mind and reliable assistance.",
       },
       {
-        title: "AI-Powered Precision",
+        title: "Expert Team",
         description:
-          "Leverage the power of AI for pinpoint accuracy. alliWidget understands your queries and provides solutions that hit the mark, every time.",
+          "The widget is backed by a passionate team with extensive experience in accessibility, committed to delivering the best solutions and staying ahead of compliance trends.",
       },
     ],
   };
@@ -142,9 +126,9 @@ function AlliWidget() {
       <div className="alliWidget-presentation-container">
         <div className="page-top">
           <Presentation
-            title="Introducing AlliWidget, your ultimate automated Web Accessibility Solution"
+            title="Need to be more inclusive and comply immediately with Web Accessibility Standards?"
             texts={[
-              "Elevate the user experience with our accessibility widget, ensuring WCAG 2.1 compliance and universal web access.",
+              "Unlock instantaneously web accessibility barriers and more with AlliWidget.",
             ]}
             handleClick={navigateToHome}
             buttonText="TRY IT NOW"
