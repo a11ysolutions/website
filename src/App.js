@@ -24,10 +24,12 @@ function App() {
       currentUrl === "/privacy-policy"
     )
       return;
-
     const layout = document.querySelector(".layout-content");
-    console.log(layout);
-    layout.style.background = "linear-gradient(#21ce99 950px, white 20px)";
+    if (currentUrl === "/alliWidget" || currentUrl === "/alliBot") {
+      layout.style.background = "linear-gradient(#21ce99 1500px, white 20px)";
+    } else {
+      layout.style.background = "linear-gradient(#21ce99 950px, white 20px)";
+    }
   }, [currentUrl]);
 
   return (

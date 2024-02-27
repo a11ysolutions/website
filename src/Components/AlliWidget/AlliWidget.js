@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import Presentation from "../UI/Presentation/Presentation";
 import BicolorTitledText from "../UI/BicolorTitledText/BicolorTitledText";
