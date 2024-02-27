@@ -1,17 +1,17 @@
 .layout-content.layout-alliWidget {
-  padding: 0;
+  padding: 0 !important;
   background: none !important;
 }
 
 /* =============== alliWidget-presentation-image =============== */
 .alliWidget-image {
   object-fit: scale-down;
-  width: clamp(150px, 100%, 800px);
-  height: clamp(150px, 100%, 800px);
+  width: clamp(150px, 100%, 400px);
+  height: clamp(150px, 100%, 300px);
 }
 
 /* =============== alliBot-presentation-container =============== */
-.alliWidget-page-container .home-ilustration-container > div {
+.alliWidget-page-container .home-ilustration-container>div {
   width: fit-content;
   margin: 50px auto 0;
 }
@@ -108,7 +108,7 @@
   flex-wrap: wrap;
 }
 
-.alliWidget-features-content > :last-child {
+.alliWidget-features-content> :last-child {
   margin-bottom: 3rem;
 }
 
@@ -139,9 +139,10 @@
   margin-top: 0;
 }
 
-.custom-why-choose-button{
+.custom-why-choose-button {
   width: 280px;
 }
+
 /* =============== alliBot-review =============== */
 .alliWidget-review {
   width: 100%;
@@ -159,6 +160,7 @@
 
 /* =============== @media (max-width: 767px) =============== */
 @media screen and (max-width: 767px) {
+
   .alliWidget-features .bicolor-titled-container,
   .alliWidget-accessibility .bicolor-titled-container,
   .alliWidget-why-choose .bicolor-titled-container {
@@ -196,19 +198,19 @@
     font: normal normal normal 24px/30px Archivo;
   }
 
-  .alliWidget-features-content > :nth-child(odd) {
+  .alliWidget-features-content> :nth-child(odd) {
     margin-top: 0.2rem;
   }
 
-  .alliWidget-features-content > :nth-child(even) {
+  .alliWidget-features-content> :nth-child(even) {
     margin-top: 0.2rem;
   }
 
-  .alliWidget-features-content > :nth-child(4) {
+  .alliWidget-features-content> :nth-child(4) {
     margin-top: 4rem;
   }
 
-  .alliWidget-features-content > :last-child {
+  .alliWidget-features-content> :last-child {
     margin-bottom: 0.2rem;
   }
 
@@ -224,7 +226,7 @@
 
 /* =============== @media (min-width: 1200px) =============== */
 @media screen and (min-width: 1200px) {
-  .alliWidget-page-container .home-ilustration-container > div {
+  .alliWidget-page-container .home-ilustration-container>div {
     width: 263px;
     height: 313px;
   }
@@ -273,19 +275,19 @@
     margin-top: 1rem;
   }
 
-  .alliWidget-features-content > :nth-child(odd) {
+  .alliWidget-features-content> :nth-child(odd) {
     margin-top: 4rem;
   }
 
-  .alliWidget-features-content > :nth-child(even) {
+  .alliWidget-features-content> :nth-child(even) {
     margin-top: 6rem;
   }
 
-  .alliWidget-features-content > :nth-child(4) {
+  .alliWidget-features-content> :nth-child(4) {
     margin-top: 4rem;
   }
 
-  .alliWidget-features-content > :last-child {
+  .alliWidget-features-content> :last-child {
     margin-bottom: 5rem;
   }
 
