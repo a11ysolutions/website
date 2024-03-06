@@ -115,7 +115,7 @@ function AlliWidget() {
   };
 
   const theCompetitionList = {
-    title: "Alliwidget vs. The Competition",
+    title: "Alliwidget: Leading the Way",
     section_one: {
       title: "Alliwidget is not just another widget, it's a game-changer.",
       description:
