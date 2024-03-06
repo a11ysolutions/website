@@ -143,6 +143,51 @@
   width: 280px;
 }
 
+/* =============== Alliwidget vs. The Competition =============== */
+.alliWidget-competition {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  position: relative;
+  width: 100%;
+  padding: 2rem;
+  background-color: white;
+  color: black;
+}
+
+.alliWidget-competition-image {
+  object-fit: scale-down;
+  width: clamp(150px, 100%, 600px);
+  height: clamp(150px, 100%, 600px);
+}
+
+.alliWidget-competition-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: start;
+  justify-content: start;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.competition-title {
+  font: normal normal 900 35px / 40px Archivo;
+  color: #0D9E71;
+  text-align: start;
+}
+
+.competition-subtitle {
+  font: normal normal 700 20px / 22px Archivo;
+  padding-bottom: 10px;
+}
+
+.competition-text-content {
+  font: normal normal 500 16px / 18px Archivo;
+  color: black;
+  text-align: start;
+}
+
 /* =============== alliBot-review =============== */
 .alliWidget-review {
   width: 100%;
@@ -221,6 +266,21 @@
   .alliWidget-accessibility-content,
   .alliWidget-why-choose-content {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .alliWidget-competition {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .alliWidget-competition-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
 
@@ -305,5 +365,19 @@
 
   .alliWidget-why-choose-content {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .alliWidget-competition {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding: 5rem 5rem 8rem 8rem;
+  }
+
+  .alliWidget-competition-content {
+    display: flex;
+    flex-direction: row;
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 }
