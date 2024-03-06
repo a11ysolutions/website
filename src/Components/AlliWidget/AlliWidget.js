@@ -113,6 +113,42 @@ function AlliWidget() {
       },
     ],
   };
+
+  const theCompetitionList = {
+    title: "Alliwidget vs. The Competition",
+    section_one: {
+      title: "Alliwidget is not just another widget, it's a game-changer.",
+      description:
+        "Unlike anything you've seen before, Alliwidget includes Allibot, our AI-powered Web Accessibility Expert, setting a new standard in making the web accessible for everyone. Here's how we stand out:",
+    },
+    section_two: {
+      title: "Beyond the Bot: Comprehensive Accessibility Auditing",
+      description:
+        "But our commitment to your website's accessibility doesn't end with Allibot. We also provide a manual audit, identifying and suggesting solutions for up to 10 accessibility issues that overlays might miss. This dual approach ensures your website achieves the highest accessibility standards, making Alliwidget the clear choice over the competition.",
+    },
+    list: [
+      {
+        description:
+          "AI-Powered Precision: Allibot's cutting-edge AI technology understands and addresses your specific needs with unparalleled accuracy, providing solutions that precisely target your issues.",
+      },
+      {
+        description:
+          "Immediate Code Solutions: Instantly receive the code snippets you need directly from Allibot. Simply copy, paste, and resolve your web accessibility issues on the spot, no delays, no waiting.",
+      },
+      {
+        description:
+          "Up-to-Date Expertise: Stay ahead of the curve. Allibot's knowledge base is continuously updated, ensuring you're always in line with the latest web accessibility standards and practices.",
+      },
+      {
+        description:
+          "Enterprise-Level Reliability: Benefit from five years of proven experience and reliability that industries across the board trust, now accessible through an intuitive chat interface.",
+      },
+      {
+        description:
+          "Affordable Expertise: Why pay more for expert advice? Allibot delivers professional web accessibility consulting at a fraction of the cost, making expert knowledge accessible to all.",
+      },
+    ],
+  };
   return (
     <div id="alliWidget" className="alliWidget-page-container">
       <Helmet>
@@ -227,6 +263,41 @@ function AlliWidget() {
             ))}
           </div>
 
+          <ImageDivider bottom top />
+        </div>
+
+        {/* =============== Alliwidget vs. The Competition ===============  */}
+        <div className="alliWidget-competition" role="list">
+          <div className="alliWidget-competition-content">
+            <img
+              alt="We work passionately on functional testing, accessibility testing, and automation testing services."
+              className="alliWidget-competition-image"
+              src="/competitors_section.png"
+            />
+            <div role="listitem">
+              <h2 className="competition-title">{theCompetitionList.title}</h2>
+              <p className="competition-text-content">
+                <span className="competition-subtitle">
+                  {theCompetitionList.section_one.title}
+                </span>
+                <br />
+                {theCompetitionList.section_one.description}
+              </p>
+              <ul>
+                {theCompetitionList.list.map((c) => (
+                  <li role="listitem">
+                    <p className="competition-text-content">{c.description}</p>
+                  </li>
+                ))}
+              </ul>
+              <p className="competition-text-content">
+                <span className="competition-subtitle">
+                  {theCompetitionList.section_two.title}
+                </span>
+                <br /> {theCompetitionList.section_two.description}
+              </p>
+            </div>
+          </div>
           <ImageDivider top />
         </div>
 
@@ -236,7 +307,7 @@ function AlliWidget() {
           text="Give it a try for free"
           buttonText="Try It Now"
         >
-          <ImageDivider top variantTopBlack bottom />
+          <ImageDivider top bottom />
         </TryItNow>
 
         {/* =============== alliWidget-review ===============  */}
