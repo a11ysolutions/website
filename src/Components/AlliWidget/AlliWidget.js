@@ -43,7 +43,8 @@ function AlliWidget() {
         title: "Quick Start",
         description:
           "Our widget is a practical first step towards improving your site's accessibility, offering partial compliance and easing the transition towards full standards adherence.",
-        className: "shadow-none feature-card custom-sized-image image-increase-height",
+        className:
+          "shadow-none feature-card custom-sized-image image-increase-height",
         imgSrc: "/quick_start.png",
       },
       {
@@ -64,7 +65,8 @@ function AlliWidget() {
         title: "Brand Integrity",
         description:
           "Improve your website's accessibility and demonstrate your commitment to inclusivity, positively impacting your brand's image.",
-        className: "feature-card shadow-none custom-sized-image image-increase-height",
+        className:
+          "feature-card shadow-none custom-sized-image image-increase-height",
         imgSrc: "/brand_integrity.png",
       },
     ],
@@ -254,8 +256,7 @@ function AlliWidget() {
               </CustomCard>
             ))}
           </div>
-
-          <ImageDivider bottom top />
+          <ImageDivider top />
         </div>
 
         {/* =============== Alliwidget vs. The Competition ===============  */}
@@ -290,7 +291,7 @@ function AlliWidget() {
               </p>
             </div>
           </div>
-          <ImageDivider top />
+          <ImageDivider top variantTopBlack />
         </div>
 
         {/* =============== tryItNow ===============  */}

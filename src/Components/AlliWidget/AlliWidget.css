@@ -100,16 +100,12 @@
   flex-direction: column;
   align-items: center;
   max-width: 1020px;
-  padding: 0 1rem 3rem;
+  padding-top: 2rem;
 }
 
 .alliWidget-features-content {
   display: flex;
   flex-wrap: wrap;
-}
-
-.alliWidget-features-content> :last-child {
-  margin-bottom: 3rem;
 }
 
 .feature-card:hover {
@@ -121,9 +117,11 @@
   0% {
     background-color: #f9fafa;
   }
+
   50% {
     background-color: #6fffbe;
   }
+
   100% {
     background-color: #f9fafa;
   }
@@ -136,7 +134,10 @@
   align-items: center;
   position: relative;
   width: 100%;
-  padding: 5rem 2rem 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 0rem;
   background-color: #000;
   color: #fff;
 }
@@ -167,7 +168,7 @@
   align-items: start;
   position: relative;
   width: 100%;
-  padding: 2rem;
+  padding: 5rem 2rem 3rem;
   background-color: white;
   color: black;
 }
@@ -175,17 +176,16 @@
 .alliWidget-competition-image {
   object-fit: scale-down;
   width: clamp(150px, 100%, 600px);
-  height: clamp(150px, 100%, 600px);
+  height: clamp(150px, 100%, 800px);
+  padding-top: 2rem;
 }
 
 .alliWidget-competition-content {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 2rem;
   align-items: start;
   justify-content: start;
-  padding-left: 4rem;
-  padding-right: 4rem;
 }
 
 .competition-title {
@@ -342,15 +342,11 @@
   }
 
   .alliWidget-features {
-    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .alliWidget-content .bicolor-titled-container p {
     font: normal normal normal 24px/30px Archivo;
-  }
-
-  .alliWidget-features-content {
-    margin-top: 1rem;
   }
 
   .alliWidget-features-content> :nth-child(odd) {
@@ -389,7 +385,6 @@
     display: flex;
     flex-direction: row;
     align-items: start;
-    padding: 5rem 5rem 8rem 8rem;
   }
 
   .alliWidget-competition-content {
