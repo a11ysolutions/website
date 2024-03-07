@@ -43,37 +43,29 @@ function AlliWidget() {
         title: "Quick Start",
         description:
           "Our widget is a practical first step towards improving your site's accessibility, offering partial compliance and easing the transition towards full standards adherence.",
-        imgDiv: "/back-mac.png",
-        classImgDivBrowser: "imgDiv-mac",
-        className: "shadow-none custom-sized-image image-increase-height",
-        imgSrc: "/user-customization.jpg",
+        className: "shadow-none feature-card custom-sized-image image-increase-height",
+        imgSrc: "/quick_start.png",
       },
       {
         title: "Boost Compliance",
         description:
           "It enhances your site's compatibility with accessibility standards, reducing legal risks by addressing critical compliance areas effectively.",
-        imgDiv: "/back-mac.png",
-        classImgDivBrowser: "imgDiv-mac",
-        className: "custom-sized-image",
-        imgSrc: "/wcag-2.1-compliance.png",
+        className: "feature-card custom-sized-image",
+        imgSrc: "/boot_compliance.png",
       },
       {
         title: "Affordable Approach",
         description:
           "Implement key accessibility features without a hefty investment, offering a cost-efficient solution to common accessibility hurdles.",
-        imgDiv: "/back-mac.png",
-        classImgDivBrowser: "imgDiv-mac",
-        className: "custom-sized-image ",
-        imgSrc: "/inclusivity.jpg",
+        className: "feature-card custom-sized-image",
+        imgSrc: "/affordable_approach.png",
       },
       {
         title: "Brand Integrity",
         description:
           "Improve your website's accessibility and demonstrate your commitment to inclusivity, positively impacting your brand's image.",
-        imgDiv: "/back-mac.png",
-        classImgDivBrowser: "imgDiv-mac",
-        className: "shadow-none custom-sized-image image-increase-height",
-        imgSrc: "/user-experience.jpg",
+        className: "feature-card shadow-none custom-sized-image image-increase-height",
+        imgSrc: "/brand_integrity.png",
       },
     ],
   };
@@ -115,7 +107,7 @@ function AlliWidget() {
   };
 
   const theCompetitionList = {
-    title: "Alliwidget vs. The Competition",
+    title: "Alliwidget: Leading the Way",
     section_one: {
       title: "Alliwidget is not just another widget, it's a game-changer.",
       description:
