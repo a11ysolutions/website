@@ -6,6 +6,7 @@ import CustomCard from "../UI/CustomCard/CustomCard";
 import TryItNow from "../UI/TryItNow/TryItNow";
 import "./AlliWidget.css";
 import { ImageDivider } from "../UI/ImageDivider/ImageDivider";
+import ButtonRotatingBackgroundGradient from "../UI/ButtonRotatingBackgroundGradient/ButtonRotatingBackgroundGradient";
 import Button from "../UI/Button/Button";
 import { navigateToHome } from "../Utils/Utils";
 
@@ -43,30 +44,28 @@ function AlliWidget() {
         title: "Quick Start",
         description:
           "Our widget is a practical first step towards improving your site's accessibility, offering partial compliance and easing the transition towards full standards adherence.",
-        className:
-          "shadow-none feature-card custom-sized-image image-increase-height",
-        imgSrc: "/quick_start.png",
+        className: "feature-card custom-sized-image image-increase-height",
+        imgSrc: "/quick _start.jpg",
       },
       {
         title: "Boost Compliance",
         description:
           "It enhances your site's compatibility with accessibility standards, reducing legal risks by addressing critical compliance areas effectively.",
-        className: "feature-card custom-sized-image",
+        className: "shadow-none feature-card custom-sized-image",
         imgSrc: "/boot_compliance.png",
       },
       {
         title: "Affordable Approach",
         description:
           "Implement key accessibility features without a hefty investment, offering a cost-efficient solution to common accessibility hurdles.",
-        className: "feature-card custom-sized-image",
+        className: "shadow-none feature-card custom-sized-image",
         imgSrc: "/affordable_approach.png",
       },
       {
         title: "Brand Integrity",
         description:
           "Improve your website's accessibility and demonstrate your commitment to inclusivity, positively impacting your brand's image.",
-        className:
-          "feature-card shadow-none custom-sized-image image-increase-height",
+        className: "feature-card custom-sized-image image-increase-height",
         imgSrc: "/brand_integrity.png",
       },
     ],
@@ -143,6 +142,43 @@ function AlliWidget() {
       },
     ],
   };
+
+  const frequentlyQuestion = {
+    title: "Frequently Asked Questions",
+    chooses: [
+      {
+        title: "How do I install Alliwidget on my website?",
+        description:
+          "Seamlessly integrate AlliWidget in two simple steps: begin with domain verification to secure your installation, followed by embedding a single line of code into your website's HTML. For guidance, our technical support team offers exemplary service to facilitate a smooth integration.",
+      },
+      {
+        title: "How long does the installation process take?",
+        description:
+          "The installation of AlliWidget is designed for efficiency, ensuring immediate enhancement of your site’s accessibility upon completion of two brief steps.",
+      },
+      {
+        title:
+          "Can Alliwidget enable users with disabilities to use my website?",
+        description:
+          "Indeed, AlliWidget is expertly crafted to significantly elevate the accessibility of your website. It empowers individuals with disabilities with the ability to navigate, understand, and interact with your digital content effortlessly.",
+      },
+      {
+        title: "Can Alliwidget help mitigate legal risk?",
+        description:
+          "AlliWidget provides a robust compliance framework, adhering to WCAG, ADA, and Section 508 standards, thus minimizing legal exposure. Our suite of accessibility tools is meticulously tailored to maintain your website’s adherence to current legal standards.",
+      },
+      {
+        title: "Can a11ySolutions support me in my legal proceedings?",
+        description:
+          "a11ySolutions extends unparalleled customer support and technical expertise, offering strategic advice for legal accessibility concerns. Engage with our team for professional assistance tailored to your needs.",
+      },
+      {
+        title: "Which types of disabilities does Alliwidget cover?",
+        description:
+          "AlliWidget offers a comprehensive accessibility solution, encompassing a spectrum of disabilities. From color vision deficiencies to cognitive impairments, our platform ensures your website is navigable and user-friendly for all visitors.",
+      },
+    ],
+  };
   return (
     <div id="alliWidget" className="alliWidget-page-container">
       <Helmet>
@@ -193,14 +229,24 @@ function AlliWidget() {
               </CustomCard>
             ))}
           </div>
-          <Button
+          <ButtonRotatingBackgroundGradient
+            className="presentation-button"
+            ariaLabel={"Try now"}
+            size="large"
+            variant="dark"
+            role="listitem"
+            onClick={navigateToHome}
+          >
+            Try It Free
+          </ButtonRotatingBackgroundGradient>
+          {/*<Button
             size="large"
             onClick={navigateToHome}
             variant="negative"
             role="listitem"
           >
             Try It Free
-          </Button>
+            </Button>*/}
           <ImageDivider top bottom variantTopGreen />
         </div>
 
@@ -218,9 +264,8 @@ function AlliWidget() {
             {featuresList.features.map((f, index) => (
               <CustomCard
                 key={index}
-                imgSrc={f.imgSrc}
                 className={f.className}
-                imgDiv={f.imgDiv}
+                imgSrc={f.imgSrc}
                 classImgDivBrowser={f.classImgDivBrowser}
               >
                 <h3>{f.title}</h3>
@@ -228,15 +273,24 @@ function AlliWidget() {
               </CustomCard>
             ))}
           </div>
-
-          <Button
+          <ButtonRotatingBackgroundGradient
+            className="presentation-button"
+            ariaLabel={"Try now"}
+            size="large"
+            variant="dark"
+            role="listitem"
+            onClick={navigateToHome}
+          >
+            Try It Free
+          </ButtonRotatingBackgroundGradient>
+          {/*<Button
             size="large"
             onClick={navigateToHome}
             variant="dark"
             role="listitem"
           >
             Try It Free
-          </Button>
+            </Button>*/}
         </div>
 
         {/* =============== alliWidget-why-choose ===============  */}
@@ -278,7 +332,7 @@ function AlliWidget() {
               </p>
               <ul>
                 {theCompetitionList.list.map((c) => (
-                  <li role="listitem">
+                  <li>
                     <p className="competition-text-content">{c.description}</p>
                   </li>
                 ))}
@@ -294,13 +348,34 @@ function AlliWidget() {
           <ImageDivider top variantTopBlack />
         </div>
 
+        {/* =============== alliWidget-Frequently-Asked-Questions ===============  */}
+        <div key={2} className="alliWidget-why-choose" role="list">
+          <div className="home-services-bicolored-text" role="listitem">
+            <BicolorTitledText
+              color2="#fff"
+              color2Text={frequentlyQuestion.title}
+              className="home-our-services"
+            ></BicolorTitledText>
+          </div>
+          <div className="alliWidget-why-choose-content">
+            {frequentlyQuestion.chooses.map((c, index) => (
+              <CustomCard key={index} className="accessibility-item">
+                <h3>{c.title}</h3>
+                <p>{c.description}</p>
+              </CustomCard>
+            ))}
+          </div>
+
+          <ImageDivider bottom top variantBottomBlack />
+        </div>
+
         {/* =============== tryItNow ===============  */}
         <TryItNow
           handleNavigate={navigateToHome}
           text="Give it a try for free"
           buttonText="Try It Now"
         >
-          <ImageDivider top bottom />
+          <ImageDivider top bottom variantTopBlack />
         </TryItNow>
 
         {/* =============== alliWidget-review ===============  */}
