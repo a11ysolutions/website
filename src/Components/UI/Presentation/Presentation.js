@@ -1,25 +1,35 @@
-import React from 'react'
-import Button from '../Button/Button'
-import './Presentation.css'
-import { scrollToContactForm } from '../../Utils/Utils'
+import React from "react";
+//import Button from "../Button/Button";
+import ButtonRotatingBackgroundGradient from "../ButtonRotatingBackgroundGradient/ButtonRotatingBackgroundGradient";
+import "./Presentation.css";
+import { scrollToContactForm } from "../../Utils/Utils";
 
 function Presentation({ title, texts, buttonText, className, handleClick }) {
   return (
-    <div className={'presentation-main ' + className}>
+    <div className={"presentation-main " + className}>
       <h1>{title}</h1>
 
       {texts.map((text, index) => {
-        return <text key={index}>{text}</text>
+        return <text key={index}>{text}</text>;
       })}
-      <Button
+      <ButtonRotatingBackgroundGradient
+        className="presentation-button"
+        ariaLabel={"Try now"}
+        size="large"
+        variant="dark"
+        onClick={handleClick ? handleClick : scrollToContactForm}
+      >
+        {buttonText || "Get a free consultation"}
+      </ButtonRotatingBackgroundGradient>
+      {/*<Button
         size="large"
         className="presentation-button"
         onClick={handleClick ? handleClick : scrollToContactForm}
       >
-        {buttonText || 'Get a free consultation'}
-      </Button>
+        {buttonText || "Get a free consultation"}
+    </Button> */}
     </div>
-  )
+  );
 }
 
-export default Presentation
+export default Presentation;
