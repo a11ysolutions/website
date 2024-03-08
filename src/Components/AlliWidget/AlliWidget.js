@@ -209,8 +209,8 @@ function AlliWidget() {
             src="/alliwidgets.png"
           />*/}
           <VideoPresentation
-            sourceMp4="/alliWidget.mp4"
-            sourceWebm="/alliWidget.webm"
+            sourceMp4="/awidget.mp4"
+            sourceWebm="/awidget.webm"
           />
         </div>
       </div>
