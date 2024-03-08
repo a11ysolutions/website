@@ -10,6 +10,12 @@
   height: clamp(150px, 100%, 300px);
 }
 
+.alliWidget-video {
+  width: clamp(250px, 100%, 690px);
+  border-radius: 20px;
+  padding-top: 2rem;
+}
+
 /* =============== alliBot-presentation-container =============== */
 .alliWidget-page-container .home-ilustration-container>div {
   width: fit-content;
@@ -426,5 +432,10 @@
 
   .bicolor-titled-container {
     max-width: 900px !important;
+  }
+
+  .alliWidget-video {
+    transform: translateY(-3rem);
+    padding-top: 0rem;
   }
 }
