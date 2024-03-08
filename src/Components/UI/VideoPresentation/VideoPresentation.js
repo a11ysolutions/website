@@ -1,6 +1,9 @@
 import { useRef } from "react";
 const VideoPresentation = ({sourceMp4, sourceWebm}) => {
   const videoRef = useRef(null);
+  const handleCanPlay = () => {
+    videoRef.current.play();
+  };
   const handleKeyPress = (event) => {
     if (!videoRef.current) return;
 
@@ -22,11 +25,10 @@ const VideoPresentation = ({sourceMp4, sourceWebm}) => {
       className="alliWidget-video"
       ref={videoRef}
       tabIndex={0}
+      onCanPlay={handleCanPlay}
       controls
       aria-label="Nombre del video"
-      autoPlay
       muted
-      loop
     >
       <source src={sourceMp4} type="video/mp4" />
       <source src={sourceWebm} type="video/webm" />
