@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 import Presentation from "../UI/Presentation/Presentation";
 import BicolorTitledText from "../UI/BicolorTitledText/BicolorTitledText";
@@ -7,6 +7,7 @@ import TryItNow from "../UI/TryItNow/TryItNow";
 import "./AlliWidget.css";
 import { ImageDivider } from "../UI/ImageDivider/ImageDivider";
 import ButtonRotatingBackgroundGradient from "../UI/ButtonRotatingBackgroundGradient/ButtonRotatingBackgroundGradient";
+import VideoPresentation from "../UI/VideoPresentation/VideoPresentation";
 import Button from "../UI/Button/Button";
 import { navigateToHome } from "../Utils/Utils";
 
@@ -108,16 +109,16 @@ function AlliWidget() {
   };
 
   const theCompetitionList = {
-    title: "Alliwidget: Leading the Way",
+    title: "AlliWidget: Leading the Way",
     section_one: {
-      title: "Alliwidget is not just another widget, it's a game-changer.",
+      title: "AlliWidget is not just another widget, it's a game-changer.",
       description:
-        "Unlike anything you've seen before, Alliwidget includes Allibot, our AI-powered Web Accessibility Expert, setting a new standard in making the web accessible for everyone. Here's how we stand out:",
+        "Unlike anything you've seen before, AlliWidget includes Allibot, our AI-powered Web Accessibility Expert, setting a new standard in making the web accessible for everyone. Here's how we stand out:",
     },
     section_two: {
       title: "Beyond the Bot: Comprehensive Accessibility Auditing",
       description:
-        "But our commitment to your website's accessibility doesn't end with Allibot. We also provide a manual audit, identifying and suggesting solutions for up to 10 accessibility issues that overlays might miss. This dual approach ensures your website achieves the highest accessibility standards, making Alliwidget the clear choice over the competition.",
+        "But our commitment to your website's accessibility doesn't end with Allibot. We also provide a manual audit, identifying and suggesting solutions for up to 10 accessibility issues that overlays might miss. This dual approach ensures your website achieves the highest accessibility standards, making AlliWidget the clear choice over the competition.",
     },
     list: [
       {
@@ -147,7 +148,7 @@ function AlliWidget() {
     title: "Frequently Asked Questions",
     chooses: [
       {
-        title: "How do I install Alliwidget on my website?",
+        title: "How do I install AlliWidget on my website?",
         description:
           "Seamlessly integrate AlliWidget in two simple steps: begin with domain verification to secure your installation, followed by embedding a single line of code into your website's HTML. For guidance, our technical support team offers exemplary service to facilitate a smooth integration.",
       },
@@ -158,12 +159,12 @@ function AlliWidget() {
       },
       {
         title:
-          "Can Alliwidget enable users with disabilities to use my website?",
+          "Can AlliWidget enable users with disabilities to use my website?",
         description:
           "Indeed, AlliWidget is expertly crafted to significantly elevate the accessibility of your website. It empowers individuals with disabilities with the ability to navigate, understand, and interact with your digital content effortlessly.",
       },
       {
-        title: "Can Alliwidget help mitigate legal risk?",
+        title: "Can AlliWidget help mitigate legal risk?",
         description:
           "AlliWidget provides a robust compliance framework, adhering to WCAG, ADA, and Section 508 standards, thus minimizing legal exposure. Our suite of accessibility tools is meticulously tailored to maintain your website’s adherence to current legal standards.",
       },
@@ -173,7 +174,7 @@ function AlliWidget() {
           "a11ySolutions extends unparalleled customer support and technical expertise, offering strategic advice for legal accessibility concerns. Engage with our team for professional assistance tailored to your needs.",
       },
       {
-        title: "Which types of disabilities does Alliwidget cover?",
+        title: "Which types of disabilities does AlliWidget cover?",
         description:
           "AlliWidget offers a comprehensive accessibility solution, encompassing a spectrum of disabilities. From color vision deficiencies to cognitive impairments, our platform ensures your website is navigable and user-friendly for all visitors.",
       },
@@ -202,10 +203,14 @@ function AlliWidget() {
           />
         </div>
         <div className="privacy-policy-ilustration-container">
-          <img
+          {/*<img
             alt="We work passionately on functional testing, accessibility testing, and automation testing services."
             className="alliWidget-image"
             src="/alliwidgets.png"
+          />*/}
+          <VideoPresentation
+            sourceMp4="/alliWidget.mp4"
+            sourceWebm="/alliWidget.webm"
           />
         </div>
       </div>
@@ -293,7 +298,7 @@ function AlliWidget() {
             </Button>*/}
         </div>
 
-        {/* =============== alliWidget-why-choose ===============  */}
+        {/* =============== AlliWidget-why-choose ===============  */}
         <div className="alliWidget-why-choose" role="list">
           <div className="home-services-bicolored-text" role="listitem">
             <BicolorTitledText
@@ -400,7 +405,7 @@ function AlliWidget() {
               >
                 <h3>Yainery Bolanos, CEO/Co-Founder at Adaved</h3>
                 <p>
-                  We just started using alliWidget and it's already helping us a
+                  We just started using AlliWidget and it's already helping us a
                   lot. It's like having a specialist with us all the time,
                   making our work faster and better.
                 </p>
@@ -414,7 +419,7 @@ function AlliWidget() {
               >
                 <h3>Luis Terrero, CEO/Founder at PixelPerfecto</h3>
                 <p>
-                  We recently started using alliWidget and we're very happy.
+                  We recently started using AlliWidget and we're very happy.
                   Even in its MVP stage, the chatbot is like an expert on web
                   accessibility. It gives quick and useful advice.
                 </p>
@@ -428,7 +433,7 @@ function AlliWidget() {
               >
                 <h3>Dariel Vila, CEO/Co-Founder at Front10 and Woxo</h3>
                 <p>
-                  alliWidget has made a significant impact for us. It's new, but
+                  AlliWidget has made a significant impact for us. It's new, but
                   it consistently helps us with web accessibility. We're pleased
                   to have it as part of our toolkit.
                 </p>
