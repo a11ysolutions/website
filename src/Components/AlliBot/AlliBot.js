@@ -236,10 +236,10 @@ function AlliBot() {
                 icon
               >
                 <h3>Yainery Bolanos, CEO/Co-Founder at Adaved</h3>
-                <p>
+                <q>
                   We just started using AlliBot and it's already helping us a lot. It's like having a
                   specialist with us all the time, making our work faster and better.
-                </p>
+                </q>
               </CustomCard>
               <CustomCard
                 imgSrc="/luis-terrero.png"
@@ -249,10 +249,10 @@ function AlliBot() {
                 icon
               >
                 <h3>Luis Terrero, CEO/Founder at PixelPerfecto</h3>
-                <p>
+                <q>
                   We recently started using AlliBot and we're very happy. Even in its MVP stage, the chatbot
                   is like an expert on web accessibility. It gives quick and useful advice.
-                </p>
+                </q>
               </CustomCard>
               <CustomCard
                 imgSrc="/dariel-vila.png"
@@ -262,10 +262,10 @@ function AlliBot() {
                 icon
               >
                 <h3>Dariel Vila, CEO/Co-Founder at Front10 and Woxo</h3>
-                <p>
+                <q>
                   AlliBot has made a significant impact for us. It's new, but it consistently helps us with
                   web accessibility. We're pleased to have it as part of our toolkit.
-                </p>
+                </q>
               </CustomCard>
             </div>
             <ImageDivider bottom variantBottomBlack />
