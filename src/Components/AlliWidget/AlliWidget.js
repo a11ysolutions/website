@@ -305,14 +305,14 @@ function AlliWidget() {
         </div>
 
         {/* =============== Alliwidget vs. The Competition ===============  */}
-        <div className="alliWidget-competition" role="list">
+        <div className="alliWidget-competition">
           <div className="alliWidget-competition-content">
             <img
               alt="We work passionately on functional testing, accessibility testing, and automation testing services."
               className="alliWidget-competition-image"
               src="/competitors_section.png"
             />
-            <div role="listitem">
+            <div>
               <h2 className="competition-title">{theCompetitionList.title}</h2>
               <p className="competition-text-content">
                 <span className="competition-subtitle">

@@ -36,8 +36,8 @@ function AlliBot() {
       {/* =============== alliBot-content ===============  */}
       <div className="alliBot-content">
         {/* =============== alliBot-accessibility ===============  */}
-        <div className="alliBot-accessibility" role="list">
-          <div className="home-services-bicolored-text" role="listitem">
+        <div className="alliBot-accessibility">
+          <div className="home-services-bicolored-text">
             <BicolorTitledText
               color2="#fff"
               color2Text="Struggling with Web Accessibility?"
@@ -76,7 +76,7 @@ function AlliBot() {
             </CustomCard>
           </div>
 
-          <Button size="large" onClick={navigateToAlliBot} variant="negative" role="listitem">
+          <Button size="large" onClick={navigateToAlliBot} variant="negative">
             Try It Free
           </Button>
 
@@ -84,8 +84,8 @@ function AlliBot() {
         </div>
 
         {/* =============== alliBot-features ===============  */}
-        <div className="alliBot-features" role="list">
-          <div className="home-services-bicolored-text" role="listitem">
+        <div className="alliBot-features">
+          <div className="home-services-bicolored-text">
             <BicolorTitledText
               color1="#0D9E71"
               color1Text="Introducing AlliBot: The easiest way to solve your Web Accessibility Needs"
@@ -148,14 +148,14 @@ function AlliBot() {
             </CustomCard>
           </div>
 
-          <Button size="large" onClick={navigateToAlliBot} variant="dark" role="listitem">
+          <Button size="large" onClick={navigateToAlliBot} variant="dark">
             Try It Free
           </Button>
         </div>
 
         {/* =============== alliBot-why-choose ===============  */}
-        <div className="alliBot-why-choose" role="list">
-          <div className="home-services-bicolored-text" role="listitem">
+        <div className="alliBot-why-choose">
+          <div className="home-services-bicolored-text">
             <BicolorTitledText
               color2="#fff"
               color2Text="Why Choose Allibot? Unbeatable Features for Unparalleled Ease"
@@ -227,7 +227,7 @@ function AlliBot() {
               ></BicolorTitledText>
             </div>
 
-            <div className="alliBot-review-content" role="list">
+            <div className="alliBot-review-content">
               <CustomCard
                 imgSrc="/yainery-bolanos.png"
                 className="custom-horizontal-card"
