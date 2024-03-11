@@ -77,7 +77,6 @@ const PricingCard = ({
             size="large"
             onClick={onClick}
             variant="dark"
-            role="listitem"
           >
             {buttonLabel}
           </Button>
