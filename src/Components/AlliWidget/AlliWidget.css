@@ -238,6 +238,89 @@
   line-height: 1.5;
 }
 
+/* =============== alliBot-pricing =============== */
+.alliWidget-pricing {
+  position: relative;
+  width: 100vw;
+  max-width: 1568px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-right: 0rem;
+  color: black;
+}
+
+.alliWidget-pricing-container-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.pricing-text-content {
+  padding-bottom: 2rem;
+}
+
+.pricing-title {
+  font: normal normal 900 35px / 40px Archivo;
+  color: #0D9E71;
+}
+
+.pricing-subtitle {
+  font: normal normal 700 20px / 22px Archivo;
+  padding-bottom: 10px;
+}
+
+.pricing-text-content {
+  font: normal normal 500 16px / 18px Archivo;
+  color: black;
+  line-height: 1.5;
+}
+
+@media (max-width: 1000px) {
+  .alliWidget-pricing {
+    justify-content: start;
+  }
+  .alliWidget-pricing-container-card {
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .alliWidget-pricing {
+    justify-content: start;
+  }
+  .alliWidget-pricing-container-card {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .alliWidget-pricing {
+    padding-right: 5rem;
+  }
+  .alliWidget-pricing-container-card {
+    flex-direction: row;
+    justify-content: end;
+  }
+}
+
+@media (min-width: 1800px) {
+  .alliWidget-pricing-container-card {
+    flex-wrap: nowrap;
+  }
+}
+
+/* =============== End allibot-pricing ================= */
+
 /* =============== alliBot-review =============== */
 .alliWidget-review {
   width: 100%;

@@ -6,10 +6,11 @@ import CustomCard from "../UI/CustomCard/CustomCard";
 import TryItNow from "../UI/TryItNow/TryItNow";
 import "./AlliWidget.css";
 import { ImageDivider } from "../UI/ImageDivider/ImageDivider";
-import ButtonRotatingBackgroundGradient from "../UI/ButtonRotatingBackgroundGradient/ButtonRotatingBackgroundGradient";
 import VideoPresentation from "../UI/VideoPresentation/VideoPresentation";
 import Button from "../UI/Button/Button";
 import { navigateToHome } from "../Utils/Utils";
+import PricingCard from "../UI/PricingCard/PricingCard";
+import ListPricing from "../UI/ListPricing/ListPricing";
 
 function AlliWidget() {
   const servicesList = {
@@ -46,28 +47,28 @@ function AlliWidget() {
         description:
           "Our widget is a practical first step towards improving your site's accessibility, offering partial compliance and easing the transition towards full standards adherence.",
         className: "feature-card custom-sized-image image-increase-height",
-        imgSrc: "/quick _start.jpg",
+        imgSrc: "/Quick Start.svg",
       },
       {
         title: "Boost Compliance",
         description:
           "It enhances your site's compatibility with accessibility standards, reducing legal risks by addressing critical compliance areas effectively.",
         className: "shadow-none feature-card custom-sized-image",
-        imgSrc: "/boot_compliance.png",
+        imgSrc: "/Boost Compliance.svg",
       },
       {
         title: "Affordable Approach",
         description:
           "Implement key accessibility features without a hefty investment, offering a cost-efficient solution to common accessibility hurdles.",
         className: "shadow-none feature-card custom-sized-image",
-        imgSrc: "/affordable_approach.png",
+        imgSrc: "/Affordable Approach.svg",
       },
       {
         title: "Brand Integrity",
         description:
           "Improve your website's accessibility and demonstrate your commitment to inclusivity, positively impacting your brand's image.",
         className: "feature-card custom-sized-image image-increase-height",
-        imgSrc: "/brand_integrity.png",
+        imgSrc: "/Brand Integrity.svg",
       },
     ],
   };
@@ -180,6 +181,11 @@ function AlliWidget() {
       },
     ],
   };
+  const pricingPlan = {
+    title: "Pricing Plan",
+    description: "Some general description for prices",
+    description_one: "Some general description for prices",
+  };
   return (
     <div id="alliWidget" className="alliWidget-page-container">
       <Helmet>
@@ -234,24 +240,14 @@ function AlliWidget() {
               </CustomCard>
             ))}
           </div>
-          <ButtonRotatingBackgroundGradient
-            className="presentation-button"
-            ariaLabel={"Try now"}
-            size="large"
-            variant="dark"
-            role="listitem"
-            onClick={navigateToHome}
-          >
-            Try It Free
-          </ButtonRotatingBackgroundGradient>
-          {/*<Button
+          <Button
             size="large"
             onClick={navigateToHome}
             variant="negative"
             role="listitem"
           >
             Try It Free
-            </Button>*/}
+          </Button>
           <ImageDivider top bottom variantTopGreen />
         </div>
 
@@ -278,24 +274,14 @@ function AlliWidget() {
               </CustomCard>
             ))}
           </div>
-          <ButtonRotatingBackgroundGradient
-            className="presentation-button"
-            ariaLabel={"Try now"}
-            size="large"
-            variant="dark"
-            role="listitem"
-            onClick={navigateToHome}
-          >
-            Try It Free
-          </ButtonRotatingBackgroundGradient>
-          {/*<Button
+          <Button
             size="large"
             onClick={navigateToHome}
             variant="dark"
             role="listitem"
           >
             Try It Free
-            </Button>*/}
+          </Button>
         </div>
 
         {/* =============== AlliWidget-why-choose ===============  */}
@@ -374,13 +360,63 @@ function AlliWidget() {
           <ImageDivider bottom top variantBottomBlack />
         </div>
 
+        {/* =============== Alliwidget Pricing ===============  */}
+        <div className="alliWidget-pricing" role="list">
+          <div className="pricing-plan-heading" role="listitem">
+            <h2 className="pricing-title">{pricingPlan.title}</h2>
+            <p className="pricing-text-content">
+              <span className="pricing-subtitle">
+                {pricingPlan.description}
+              </span>
+              <br />
+              {pricingPlan.description_one}
+            </p>
+          </div>
+          <div className="alliWidget-pricing-container-card">
+            <PricingCard
+              title={"Standard"}
+              price={"$49"}
+              description={"For websites under 1,000 pages"}
+              buttonLabel={"Start Free Trial"}
+            />
+            <PricingCard
+              title={"Advanced"}
+              price={"$149"}
+              isPopular={true}
+              description={
+                "For websites under 10,000 pages, or for premium extra addons"
+              }
+              buttonLabel={"Start Free Trial"}
+            />
+            <PricingCard
+              title={"Advanced Plus"}
+              price={"$349"}
+              description={
+                "For websites under 100,000 pages, or for premium extra addons"
+              }
+              buttonLabel={"Start Free Trial"}
+            />
+            <PricingCard
+              title={"Enterprise"}
+              price={"Custom"}
+              description={
+                "Unlimited plan with all premium and enterprise extra addons"
+              }
+              buttonLabel={"Start Free Trial"}
+              isCustom={true}
+            />
+          </div>
+          <ListPricing />
+          <ImageDivider top variantTopBlack />
+        </div>
+
         {/* =============== tryItNow ===============  */}
         <TryItNow
           handleNavigate={navigateToHome}
           text="Give it a try for free"
           buttonText="Try It Now"
         >
-          <ImageDivider top bottom variantTopBlack />
+          <ImageDivider bottom top />
         </TryItNow>
 
         {/* =============== alliWidget-review ===============  */}
