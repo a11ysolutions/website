@@ -1,7 +1,6 @@
 import React from "react";
 import Button from "../Button/Button";
 import "./TryItNow.css";
-import ButtonRotatingBackgroundGradient from "../ButtonRotatingBackgroundGradient/ButtonRotatingBackgroundGradient";
 
 function TryItNow({ text, subText, buttonText, handleNavigate, children }) {
   return (
@@ -11,18 +10,9 @@ function TryItNow({ text, subText, buttonText, handleNavigate, children }) {
           <h2>{text}</h2>
           <p>{subText}</p>
         </div>
-        <ButtonRotatingBackgroundGradient
-          ariaLabel={"Try now"}
-          size="large"
-          variant="dark"
-          role="listitem"
-          onClick={handleNavigate}
-        >
+        <Button size="large" onClick={handleNavigate}>
           {buttonText}
-        </ButtonRotatingBackgroundGradient>
-        {/*<Button size="large" onClick={handleNavigate}>
-          {buttonText}
-  </Button>*/}
+        </Button>
       </div>
       {children}
     </div>
