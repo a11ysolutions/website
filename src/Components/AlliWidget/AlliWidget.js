@@ -224,8 +224,8 @@ function AlliWidget() {
       {/* =============== alliWidget-content ===============  */}
       <div className="alliWidget-content">
         {/* =============== alliWidget-accessibility ===============  */}
-        <div className="alliWidget-accessibility" role="list">
-          <div className="home-services-bicolored-text" role="listitem">
+        <div className="alliWidget-accessibility">
+          <div className="home-services-bicolored-text">
             <BicolorTitledText
               color2="#fff"
               color2Text={servicesList.title}
@@ -252,8 +252,8 @@ function AlliWidget() {
         </div>
 
         {/* =============== alliWidget-features ===============  */}
-        <div className="alliWidget-features" role="list">
-          <div className="home-services-bicolored-text" role="listitem">
+        <div className="alliWidget-features">
+          <div className="home-services-bicolored-text">
             <BicolorTitledText
               color1="#0D9E71"
               color1Text={featuresList.title}
@@ -285,8 +285,8 @@ function AlliWidget() {
         </div>
 
         {/* =============== AlliWidget-why-choose ===============  */}
-        <div className="alliWidget-why-choose" role="list">
-          <div className="home-services-bicolored-text" role="listitem">
+        <div className="alliWidget-why-choose">
+          <div className="home-services-bicolored-text">
             <BicolorTitledText
               color2="#fff"
               color2Text={chooseList.title}
@@ -340,8 +340,8 @@ function AlliWidget() {
         </div>
 
         {/* =============== alliWidget-Frequently-Asked-Questions ===============  */}
-        <div key={2} className="alliWidget-why-choose" role="list">
-          <div className="home-services-bicolored-text" role="listitem">
+        <div key={2} className="alliWidget-why-choose">
+          <div className="home-services-bicolored-text">
             <BicolorTitledText
               color2="#fff"
               color2Text={frequentlyQuestion.title}
@@ -361,8 +361,8 @@ function AlliWidget() {
         </div>
 
         {/* =============== Alliwidget Pricing ===============  */}
-        <div className="alliWidget-pricing" role="list">
-          <div className="pricing-plan-heading" role="listitem">
+        <div className="alliWidget-pricing">
+          <div className="pricing-plan-heading">
             <h2 className="pricing-title">{pricingPlan.title}</h2>
             <p className="pricing-text-content">
               <span className="pricing-subtitle">
