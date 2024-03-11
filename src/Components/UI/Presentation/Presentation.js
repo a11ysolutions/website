@@ -1,6 +1,5 @@
 import React from "react";
-//import Button from "../Button/Button";
-import ButtonRotatingBackgroundGradient from "../ButtonRotatingBackgroundGradient/ButtonRotatingBackgroundGradient";
+import Button from "../Button/Button";
 import "./Presentation.css";
 import { scrollToContactForm } from "../../Utils/Utils";
 
@@ -12,22 +11,13 @@ function Presentation({ title, texts, buttonText, className, handleClick }) {
       {texts.map((text, index) => {
         return <text key={index}>{text}</text>;
       })}
-      <ButtonRotatingBackgroundGradient
-        className="presentation-button"
-        ariaLabel={"Try now"}
-        size="large"
-        variant="dark"
-        onClick={handleClick ? handleClick : scrollToContactForm}
-      >
-        {buttonText || "Get a free consultation"}
-      </ButtonRotatingBackgroundGradient>
-      {/*<Button
+      <Button
         size="large"
         className="presentation-button"
         onClick={handleClick ? handleClick : scrollToContactForm}
       >
         {buttonText || "Get a free consultation"}
-    </Button> */}
+      </Button>
     </div>
   );
 }
