@@ -5,7 +5,7 @@ function FeatureCard({ children, imgSrc, imgDiv, className, classEllipseBar, cla
   const divStyle = imgDiv ? { backgroundImage: `url(${process.env.PUBLIC_URL}${imgDiv})` } : {}
 
   return (
-    <div className={`custom-card ${className}`} role="listitem">
+    <div className={`custom-card ${className}`}>
       {imgSrc && (
         <div className={`custom-card-ellipse ${classEllipseBar}`}>
           {icon && (
