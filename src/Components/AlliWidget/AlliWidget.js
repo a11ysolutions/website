@@ -533,7 +533,6 @@ function AlliWidget() {
             size="large"
             onClick={navigateToHome}
             variant="negative"
-            role="listitem"
           >
             Try It Free
           </Button>
@@ -567,7 +566,6 @@ function AlliWidget() {
             size="large"
             onClick={navigateToHome}
             variant="dark"
-            role="listitem"
           >
             Try It Free
           </Button>

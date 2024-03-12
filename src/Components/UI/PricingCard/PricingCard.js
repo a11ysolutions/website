@@ -58,7 +58,11 @@ const PricingCard = ({
             justifyContent: "center",
           }}
         >
-          <Button size="large" onClick={onClick} variant="dark">
+           <Button
+            size="large"
+            onClick={onClick}
+            variant="dark"
+          >
             {buttonLabel}
           </Button>
         </div>
