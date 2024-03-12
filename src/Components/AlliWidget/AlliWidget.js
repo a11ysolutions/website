@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import Presentation from "../UI/Presentation/Presentation";
 import BicolorTitledText from "../UI/BicolorTitledText/BicolorTitledText";
@@ -8,11 +8,13 @@ import "./AlliWidget.css";
 import { ImageDivider } from "../UI/ImageDivider/ImageDivider";
 import VideoPresentation from "../UI/VideoPresentation/VideoPresentation";
 import Button from "../UI/Button/Button";
-import { navigateToHome } from "../Utils/Utils";
+import { navigateToHome, AlliWidgetFeaturesList, compareFeatures } from "../Utils/Utils";
 import PricingCard from "../UI/PricingCard/PricingCard";
 import ListPricing from "../UI/ListPricing/ListPricing";
+import PricingToggle from "../UI/PricingToggle/PricingToggle";
 
 function AlliWidget() {
+  const [activeToogle, setActiveToogle] = useState("Monthly");
   const servicesList = {
     title:
       "Overcoming Accessibility Challenges: Is Your Website Truly Inclusive?",
@@ -181,10 +183,297 @@ function AlliWidget() {
       },
     ],
   };
+  const featuresPackages = [
+    { 
+      package: "AlliWidget Esential",
+      features: [
+        {
+          title: "Alliwidget Features",
+          features: [
+            "Compliance with ADA, AODA, EAA, WCAG, Sections 508 & more",
+            "24/7 Customer Support",
+            "Page Structure analysis",
+            "Color Blind Profile",
+            "Dyslexia Profile",
+            "Visibility Enhancements Profile",
+            "Cognitive & Learning Disabilities Profile",
+            "Seizure & Epileptic Precautions Profile",
+            "ADHD Support Profile",
+          ],
+        },
+        {
+          title: "Content Adjustments",
+          features: [
+            "Text Alignment",
+            "Letter Spacing",
+            "Word Spacing",
+            "Line Height",
+            "Readable Font options",
+            "Magnify Text",
+            "Read Mode",
+            "Reading Guide",
+            "Reading Window",
+            "Virtual Keyboard availability",
+            "Scale content",
+          ],
+        },
+        {
+          title: "Highlighting",
+          features: [
+            "Highlight Headings",
+            "Highlight Links",
+            "Highlight Hover",
+            "Highlight Focus",
+          ],
+        },
+        {
+          title: "Color Adjustments",
+          features: ["Contrast", "Saturation"],
+        },
+        {
+          title: "Sound, Images, and Animations Adjustments",
+          features: [
+            "Mute Sounds",
+            "Hide Images",
+            "Show Image Descriptions",
+            "Pause animations",
+          ],
+        },
+      ],
+    },
+    { 
+      package: "AlliBot Exclusive",
+      features: [
+        {
+          title: "Allibot AI Features",
+          features: [
+            "AI-Powered Precision",
+            "Immediate Code Solutions",
+            "Up-to-Date Expertise, keeping you ahead of compliance requirements",
+            "Enterprise-Level Reliability",
+            "Affordable Expertise",
+            "24/7 Accessibility Support",
+            "Compliance Assistance",
+            "Documentation Navigation",
+            "Expert Consultations on WAI-ARIA Best Practices",
+            "Comprehensive Accessibility Inquiries",
+            "Code Analysis and Improvement Recommendations",
+          ],
+        },
+      ],
+    },
+    { 
+      package: "All-Inclusive Pro Bundle",
+      features: [
+        {
+          title: "Alliwidget Features",
+          features: [
+            "Compliance with ADA, AODA, EAA, WCAG, Sections 508 & more",
+            "24/7 Customer Support",
+            "Page Structure analysis",
+            "Color Blind Profile",
+            "Dyslexia Profile",
+            "Visibility Enhancements Profile",
+            "Cognitive & Learning Disabilities Profile",
+            "Seizure & Epileptic Precautions Profile",
+            "ADHD Support Profile",
+          ],
+        },
+        {
+          title: "Content Adjustments",
+          features: [
+            "Text Alignment",
+            "Letter Spacing",
+            "Word Spacing",
+            "Line Height",
+            "Readable Font options",
+            "Magnify Text",
+            "Read Mode",
+            "Reading Guide",
+            "Reading Window",
+            "Virtual Keyboard availability",
+            "Scale content",
+          ],
+        },
+        {
+          title: "Highlighting",
+          features: [
+            "Highlight Headings",
+            "Highlight Links",
+            "Highlight Hover",
+            "Highlight Focus",
+          ],
+        },
+        {
+          title: "Color Adjustments",
+          features: ["Contrast", "Saturation"],
+        },
+        {
+          title: "Sound, Images, and Animations Adjustments",
+          features: [
+            "Mute Sounds",
+            "Hide Images",
+            "Show Image Descriptions",
+            "Pause animations",
+          ],
+        },
+        {
+          title: "Allibot AI Features",
+          features: [
+            "AI-Powered Precision",
+            "Immediate Code Solutions",
+            "Up-to-Date Expertise, keeping you ahead of compliance requirements",
+            "Enterprise-Level Reliability",
+            "Affordable Expertise",
+            "24/7 Accessibility Support",
+            "Compliance Assistance",
+            "Documentation Navigation",
+            "Expert Consultations on WAI-ARIA Best Practices",
+            "Comprehensive Accessibility Inquiries",
+            "Code Analysis and Improvement Recommendations",
+          ],
+        },
+      ],
+    },
+    {
+      package: "Enterprise",
+      features: [
+        {
+          title: "Premium Add-ons",
+          features: [
+            "Full Manual Audit Offered",
+            "Up to 2 Expert Hours",
+            "Website Remediation",
+          ],
+        },
+        {
+          title: "Alliwidget Features",
+          features: [
+            "Compliance with ADA, AODA, EAA, WCAG, Sections 508 & more",
+            "24/7 Customer Support",
+            "Page Structure analysis",
+            "Color Blind Profile",
+            "Dyslexia Profile",
+            "Visibility Enhancements Profile",
+            "Cognitive & Learning Disabilities Profile",
+            "Seizure & Epileptic Precautions Profile",
+            "ADHD Support Profile",
+          ],
+        },
+        {
+          title: "Content Adjustments",
+          features: [
+            "Text Alignment",
+            "Letter Spacing",
+            "Word Spacing",
+            "Line Height",
+            "Readable Font options",
+            "Magnify Text",
+            "Read Mode",
+            "Reading Guide",
+            "Reading Window",
+            "Virtual Keyboard availability",
+            "Scale content",
+          ],
+        },
+        {
+          title: "Highlighting",
+          features: [
+            "Highlight Headings",
+            "Highlight Links",
+            "Highlight Hover",
+            "Highlight Focus",
+          ],
+        },
+        {
+          title: "Color Adjustments",
+          features: ["Contrast", "Saturation"],
+        },
+        {
+          title: "Sound, Images, and Animations Adjustments",
+          features: [
+            "Mute Sounds",
+            "Hide Images",
+            "Show Image Descriptions",
+            "Pause animations",
+          ],
+        },
+        {
+          title: "Allibot AI Features",
+          features: [
+            "AI-Powered Precision",
+            "Immediate Code Solutions",
+            "Up-to-Date Expertise, keeping you ahead of compliance requirements",
+            "Enterprise-Level Reliability",
+            "Affordable Expertise",
+            "24/7 Accessibility Support",
+            "Compliance Assistance",
+            "Documentation Navigation",
+            "Expert Consultations on WAI-ARIA Best Practices",
+            "Comprehensive Accessibility Inquiries",
+            "Code Analysis and Improvement Recommendations",
+          ],
+        },
+      ],
+    }
+  ]
   const pricingPlan = {
-    title: "Pricing Plan",
-    description: "Some general description for prices",
-    description_one: "Some general description for prices",
+    title: "Affordable Solutions for Every Business",
+    packages: [
+      {
+        name: "AlliWidget Esential",
+        description:
+          "1 month Including a Limited Manual Audit (Up to 10 issues) & an Executive Summary",
+        monthPrice: "$24.99",
+        annualPrice: "$249.99",
+        stripeMonthLink: "",
+        stripeAnnualLink: "",
+        custom: false,
+        popular: false,
+        featuresActive: () => { return compareFeatures(AlliWidgetFeaturesList, featuresPackages[0]) },
+      },
+      {
+        name: "AlliBot Exclusive",
+        description:
+          "1 month Including a Limited Manual Audit (Up to 10 issues) & an Executive Summary",
+        monthPrice: "$37.99",
+        annualPrice: "$379.99",
+        stripeMonthLink: "",
+        stripeAnnualLink: "",
+        custom: false,
+        popular: false,
+        featuresActive: () => { return compareFeatures(AlliWidgetFeaturesList,  featuresPackages[1]) },
+      },
+      {
+        name: "All-Inclusive Pro Bundle",
+        description:
+          "1 month Including a Limited Manual Audit (Up to 10 issues) & an Executive Summary",
+        monthPrice: "$49.99",
+        annualPrice: "$490.99",
+        stripeMonthLink: "",
+        stripeAnnualLink: "",
+        custom: false,
+        popular: true,
+        featuresActive: () => { return compareFeatures(AlliWidgetFeaturesList, featuresPackages[2]) },
+      },
+      {
+        name: "Enterprise",
+        description: "Contact us",
+        monthPrice: "",
+        annualPrice: "",
+        stripeMonthLink: "",
+        stripeAnnualLink: "",
+        custom: true,
+        popular: false,
+        featuresActive: () => { return compareFeatures(AlliWidgetFeaturesList, featuresPackages[3]) },
+      },
+    ],
+  };
+  const handleToogle = (value) => {
+    setActiveToogle(value);
+  };
+  const handlePayment = (pack) => {
+    //TODO:
   };
   return (
     <div id="alliWidget" className="alliWidget-page-container">
@@ -364,52 +653,36 @@ function AlliWidget() {
         <div className="alliWidget-pricing">
           <div className="pricing-plan-heading">
             <h2 className="pricing-title">{pricingPlan.title}</h2>
-            <p className="pricing-text-content">
-              <span className="pricing-subtitle">
-                {pricingPlan.description}
-              </span>
-              <br />
-              {pricingPlan.description_one}
-            </p>
+          </div>
+          <div className="alliWidget-pricing-container-toogle">
+            <PricingToggle active={activeToogle} onClick={handleToogle} />
           </div>
           <div className="alliWidget-pricing-container-card">
-            <PricingCard
-              title={"Standard"}
-              price={"$49"}
-              description={"For websites under 1,000 pages"}
-              buttonLabel={"Start Free Trial"}
-            />
-            <PricingCard
-              title={"Advanced"}
-              price={"$149"}
-              isPopular={true}
-              description={
-                "For websites under 10,000 pages, or for premium extra addons"
-              }
-              buttonLabel={"Start Free Trial"}
-            />
-            <PricingCard
-              title={"Advanced Plus"}
-              price={"$349"}
-              description={
-                "For websites under 100,000 pages, or for premium extra addons"
-              }
-              buttonLabel={"Start Free Trial"}
-            />
-            <PricingCard
-              title={"Enterprise"}
-              price={"Custom"}
-              description={
-                "Unlimited plan with all premium and enterprise extra addons"
-              }
-              buttonLabel={"Start Free Trial"}
-              isCustom={true}
-            />
+            <p className="alliWidget-pricing-container-title">
+              Features/Packages
+            </p>
+            {pricingPlan.packages.map((pack, index) => (
+              <PricingCard
+                title={pack.name}
+                price={
+                  activeToogle === "Monthly"
+                    ? pack.monthPrice
+                    : pack.annualPrice
+                }
+                description={pack.description}
+                buttonLabel={"Start Free Trial"}
+                isYear={activeToogle === "Monthly" ? false : true}
+                isPopular={pack.popular}
+                isCustom={pack.custom}
+                featuresList={featuresPackages[index].features}
+                featuresActive={pack.featuresActive}
+                onClick={handlePayment(pack)}
+              />
+            ))}
           </div>
           <ListPricing />
           <ImageDivider top variantTopBlack />
-        </div>
-
+          </div>
         {/* =============== tryItNow ===============  */}
         <TryItNow
           handleNavigate={navigateToHome}

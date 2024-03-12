@@ -11,32 +11,10 @@ const PricingCard = ({
   isYear,
   isPopular,
   isCustom,
+  featuresList,
+  featuresActive,
 }) => {
   const classCard = isPopular ? "card card-popular" : "card";
-  const listFeaturesPlan = [false, true, true, false, true, true];
-  const featuresList = [
-    {
-      title: "AI-Powered screen reader & keyboard navigation",
-      features: [
-        "Compliance with ADA, AODA, EAA, WCAG & more",
-        "Accessibility statement & certification of performance",
-      ],
-    },
-    {
-      title: "Premium Addons",
-      features: [
-        "Priority Support & SLA",
-        "Monthly remediation report with full documentation",
-      ],
-    },
-  ];
-  const isCustomPlan = () => {
-    if (isCustom) {
-      return "";
-    } else {
-      return isYear ? "/year" : "/month"
-    }
-  }
   return (
     <div className="card-container">
       {isPopular && (
@@ -58,35 +36,37 @@ const PricingCard = ({
       <div className={classCard}>
         <h2 className="card-title">{title}</h2>
         <p className="card-price">
-          {price}{" "}
-          <span
-            style={{ color: "black", fontSize: "1.2rem", textAlign: "center" }}
-          >
-            {isCustomPlan}
-          </span>
+          {price}
+          {!isCustom && (
+            <span
+              style={{
+                color: "black",
+                fontSize: "1.2rem",
+                textAlign: "center",
+              }}
+            >
+              {isYear ? "/year" : "/month"}
+            </span>
+          )}
         </p>
         <p className="card-description">{description}</p>
         <div
           style={{
             maxWidth: "100%",
+            marginTop: isCustom ? "8px" : "",
             display: "flex",
             justifyContent: "center",
           }}
         >
-           <Button
-            size="large"
-            onClick={onClick}
-            variant="dark"
-            role="listitem"
-          >
+          <Button size="large" onClick={onClick} variant="dark">
             {buttonLabel}
           </Button>
         </div>
-        <div className="feature-pricing-container">
-          {listFeaturesPlan.map((el) => {
+        <ul className="feature-pricing-container">
+          {featuresActive().map((el) => {
             if (el) {
               return (
-                <div className="feature-pricing">
+                <li className="feature-pricing">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"
@@ -98,13 +78,13 @@ const PricingCard = ({
                       d="m226.83 74.83l-128 128a4 4 0 0 1-5.66 0l-56-56a4 4 0 0 1 5.66-5.66L96 194.34L221.17 69.17a4 4 0 1 1 5.66 5.66Z"
                     />
                   </svg>
-                </div>
+                </li>
               );
             } else {
-              return <div className="feature-pricing"></div>;
+              return <li className="feature-pricing"></li>;
             }
           })}
-        </div>
+        </ul>
         {featuresList.map((featList) => {
           return (
             <div className="feature-pricing-mobile">
