@@ -3,6 +3,7 @@
   width: 100%;
   position: relative;
   transition: transform 0.3s ease;
+  z-index: 50;
 }
 
 .card {
@@ -18,8 +19,8 @@
   cursor: pointer;
 }
 
-.card-container:hover {
-  transform: scale(1.05);
+.card:hover {
+  border: 2px solid #000000 !important;
 }
 
 .card-popular {
@@ -80,8 +81,23 @@
 }
 
 .feature-pricing-container {
-  padding-top: 30px;
+  padding-top: 9px;
+  list-style-type: none;
   display: none;
+  padding-inline-start: 0px !important;
+}
+
+.feature-pricing-container li {
+  border: 1px solid rgba(255, 0, 0, 0);
+}
+
+.feature-pricing {
+  height: 68px;
+  min-height: 68px;
+  max-height: 68px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .card-feature {
@@ -136,6 +152,7 @@
   .card {
     padding: 0rem !important;
   }
+
   .feature-pricing-mobile {
     display: block;
   }
@@ -162,6 +179,7 @@
   .card-container {
     width: 95%;
   }
+
   .card-description {
     min-height: 40px;
     height: 40px;

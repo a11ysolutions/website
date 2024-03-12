@@ -5,7 +5,7 @@
   text-align: start;
   list-style-type: none;
   position: absolute;
-  top: 600px;
+  top: 630px;
   left: 30px;
   right: 30px;
   display: none;
@@ -13,32 +13,37 @@
 
 .list-pricing {
   width: 100%;
+  height: 68px !important;
+  min-height: 68px !important;
+  max-height: 68px !important;
 }
 
 .list-pricing p {
-  padding: 10px;
+  padding-left: 10px;
   max-width: 250px;
   width: 250px;
   min-width: 200px;
 }
 
+.container-list-pricing li {
+  border: 1px solid rgba(255, 0, 0, 0);
+}
+
 .list-pricing-heading {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.079);
+  background-color: rgba(0, 0, 0, 0.021);
+  height: 68px !important;
+  min-height: 68px;
+  max-height: 68px;
 }
 
 .list-pricing-heading p {
-  padding: 10px;
+  padding-left: 10px;
   max-width: 250px;
   min-width: 200px;
   width: 250px;
   color: #0D9E71;
   font-weight: 600;
-}
-
-.feature-pricing {
-  min-height: 70px;
-  margin-bottom: 5px;
 }
 
 @media (min-width: 1300px) {
