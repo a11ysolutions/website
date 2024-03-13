@@ -590,6 +590,7 @@ function AlliWidget() {
                 isCustom={pack.custom}
                 featuresList={featuresPackages[index].features}
                 featuresActive={pack.featuresActive}
+                cardId={`card-${index}`}
                 onClick={() => handlePayment(pack)}
               />
             ))}
