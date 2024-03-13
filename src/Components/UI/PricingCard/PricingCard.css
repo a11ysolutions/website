@@ -3,7 +3,6 @@
   width: 100%;
   position: relative;
   transition: transform 0.3s ease;
-  z-index: 50;
 }
 
 .card {
@@ -68,6 +67,7 @@
   margin-bottom: 0.1rem;
   border-bottom: 2px solid #e2e8f0;
   line-height: 0.2 !important;
+  min-height: 15px;
 }
 
 .card-description {
@@ -76,8 +76,8 @@
   margin-bottom: 0.5rem;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.93);
-  min-height: 80px;
-  height: 80px;
+  min-height: 35px;
+  height: 35px;
 }
 
 .feature-pricing-container {
@@ -88,7 +88,7 @@
 }
 
 .feature-pricing-container li {
-  border: 1px solid rgba(255, 0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .feature-pricing {
@@ -109,7 +109,6 @@
 
 .feature-pricing-mobile {
   display: none;
-  padding-bottom: 2rem;
 }
 
 .feature-plan-mobile {
@@ -122,6 +121,8 @@
   gap: 10px;
   padding-left: 1rem;
   padding-right: 1rem;
+  max-height: 40px;
+  min-height: 35px;
 }
 
 .feature-pricing-mobile-title {
@@ -132,6 +133,7 @@
   padding-left: 1rem;
   padding-right: 1rem;
   background-color: #0000000e;
+  height: 40px;
 }
 
 .feature-pricing-mobile-description {
@@ -165,8 +167,8 @@
   }
 
   .card-description {
-    min-height: 130px;
-    height: 135px;
+    min-height: 30px;
+    height: 30px;
   }
 
   .card-title {
@@ -181,8 +183,8 @@
   }
 
   .card-description {
-    min-height: 40px;
-    height: 40px;
+    min-height: 30px;
+    height: 30px;
   }
 }
 
@@ -192,8 +194,8 @@
   }
 
   .card-description {
-    min-height: 110px;
-    height: 110px;
+    min-height: 30px;
+    height: 30px;
   }
 
   .card-title {

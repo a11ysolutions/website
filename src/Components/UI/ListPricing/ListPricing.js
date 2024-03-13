@@ -1,18 +1,24 @@
 import React from "react";
 import "./ListPricing.css";
-import { AlliWidgetFeaturesList } from '../../Utils/Utils';
+import { AlliWidgetFeaturesList } from "../../Utils/Utils";
 
 function ListPricing() {
   return (
     <ul className="container-list-pricing">
-      {AlliWidgetFeaturesList.map((f) => {
+      <li
+        style={{ backgroundColor: "transparent" }}
+        className="list-pricing-heading"
+      >
+        <p>Trial Period</p>
+      </li>
+      {AlliWidgetFeaturesList.map((f, index) => {
         return (
           <>
-            <li className="list-pricing-heading">
+            <li key={`list-${index}`} className="list-pricing-heading">
               <p>{f.title}</p>
             </li>
             {f.features.map((features) => (
-              <li className="list-pricing list-pricing">
+              <li className="list-pricing">
                 <p>{features}</p>
               </li>
             ))}
