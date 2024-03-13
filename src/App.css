@@ -7,7 +7,7 @@
   pointer-events: none;
 }
 
-.no-decorator-link{
+.no-decorator-link {
   text-decoration: none;
   color: unset;
 }
@@ -37,7 +37,15 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+:focus {
+  outline: none;
+  outline: 2px solid white;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px black;
 }
