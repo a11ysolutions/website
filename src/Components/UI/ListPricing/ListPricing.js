@@ -1,12 +1,15 @@
 import React from "react";
 import "./ListPricing.css";
-import { AlliWidgetFeaturesList } from '../../Utils/Utils';
+import { AlliWidgetFeaturesList } from "../../Utils/Utils";
 
 function ListPricing() {
   return (
     <ul className="container-list-pricing">
-      <li style={{backgroundColor: "white"}} className="list-pricing-heading">
-              <p>Trial Period</p>
+      <li
+        style={{ backgroundColor: "transparent" }}
+        className="list-pricing-heading"
+      >
+        <p>Trial Period</p>
       </li>
       {AlliWidgetFeaturesList.map((f, index) => {
         return (

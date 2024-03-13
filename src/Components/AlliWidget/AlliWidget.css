@@ -116,7 +116,6 @@
 
 .feature-card:hover {
   cursor: pointer;
-  animation: colorChange 3s infinite;
 }
 
 .feature-card {
@@ -142,23 +141,6 @@
   height: inherit !important;
   width: inherit !important;
 }
-
-
-
-@keyframes colorChange {
-  0% {
-    background-color: #f9fafa;
-  }
-
-  50% {
-    background-color: #6fffbe;
-  }
-
-  100% {
-    background-color: #f9fafa;
-  }
-}
-
 /* =============== alliBot-why-choose =============== */
 .alliWidget-why-choose {
   display: flex;
