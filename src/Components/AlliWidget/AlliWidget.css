@@ -114,10 +114,6 @@
   flex-wrap: wrap;
 }
 
-.feature-card:hover {
-  cursor: pointer;
-}
-
 .feature-card {
   padding: 1rem !important;
 }
