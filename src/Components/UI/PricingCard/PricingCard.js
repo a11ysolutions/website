@@ -13,8 +13,14 @@ const PricingCard = ({
   isCustom,
   featuresList,
   featuresActive,
+  cardId
 }) => {
   const classCard = isPopular ? "card card-popular" : "card";
+  const titleId = `${cardId}-title`;
+  const priceId = `${cardId}-price`;
+  const descriptionId = `${cardId}-description`;
+  const buttonId = `${cardId}-button`;
+  const buttonContextId = `${cardId}-button-context`
   return (
     <div className="card-container">
       {isPopular && (
@@ -34,8 +40,8 @@ const PricingCard = ({
         </div>
       )}
       <div className={classCard}>
-        <h2 className="card-title">{title}</h2>
-        <p className="card-price">
+        <h2 id={titleId} className="card-title">{title}</h2>
+        <p id={priceId} className="card-price">
           {price}
           {!isCustom && (
             <span
@@ -49,7 +55,8 @@ const PricingCard = ({
             </span>
           )}
         </p>
-        <p className="card-description">{description}</p>
+        <p id={descriptionId} className="card-description">{description}</p>
+        <span id={buttonContextId} aria-hidden="true" className="sr-only">for</span> 
         <div
           style={{
             maxWidth: "100%",
@@ -57,7 +64,7 @@ const PricingCard = ({
             justifyContent: "center",
           }}
         >
-          <Button size="large" onClick={onClick} variant="dark">
+          <Button id={buttonId} size="large" onClick={onClick} variant="dark" ariaLabelledby={`${buttonId} ${buttonContextId} ${titleId} ${priceId} ${descriptionId}`}>
             {buttonLabel}
           </Button>
         </div>
