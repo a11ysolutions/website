@@ -80,10 +80,6 @@
   }
 }
 
-.presentation-main {
-  margin: 0px !important;
-}
-
 /* The style using in content for the privacy policy  */
 [data-custom-class='body'],
 [data-custom-class='body'] * {
