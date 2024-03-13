@@ -53,20 +53,22 @@ const PricingCard = ({
         <div
           style={{
             maxWidth: "100%",
-            marginTop: isCustom ? "8px" : "",
             display: "flex",
             justifyContent: "center",
           }}
         >
-           <Button
-            size="large"
-            onClick={onClick}
-            variant="dark"
-          >
+          <Button size="large" onClick={onClick} variant="dark">
             {buttonLabel}
           </Button>
         </div>
         <ul className="feature-pricing-container">
+          <li className="feature-pricing">
+            <p>
+              {isCustom
+                ? ""
+                : "1 month Including a Limited Manual Audit (Up to 10 issues) & an Executive Summary"}
+            </p>
+          </li>
           {featuresActive().map((el) => {
             if (el) {
               return (
@@ -89,10 +91,40 @@ const PricingCard = ({
             }
           })}
         </ul>
-        {featuresList.map((featList) => {
+        {featuresList.map((featList, index) => {
           return (
             <div className="feature-pricing-mobile">
-              <p className="feature-pricing-mobile-title">{featList.title}</p>
+              {index === 0 && (
+                <>
+                  <div
+                    className="feature-pricing-mobile-title"
+                  >
+                    <p>Trial Period</p>
+                  </div>
+                  <div style={{ paddingTop: "10px" }} className="feature-plan-mobile">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="m226.83 74.83l-128 128a4 4 0 0 1-5.66 0l-56-56a4 4 0 0 1 5.66-5.66L96 194.34L221.17 69.17a4 4 0 1 1 5.66 5.66Z"
+                      />
+                    </svg>
+
+                    <p className="feature-pricing-mobile-description">
+                      {isCustom
+                        ? "Contact us"
+                        : "1 month Including a Limited Manual Audit (Up to 10 issues) & an Executive Summary"}
+                    </p>
+                  </div>
+                </>
+              )}
+              <div className="feature-pricing-mobile-title">
+                <p>{featList.title}</p>
+              </div>
               {featList.features.map((feat) => {
                 return (
                   <div className="feature-plan-mobile">

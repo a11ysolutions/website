@@ -13,7 +13,7 @@ const PricingToggle = ({ active, onClick }) => {
               : "toggle-button"
           }
         >
-          Monthly Billing
+          Monthly
         </button>
         <button
           onClick={() => onClick("Annual")}
@@ -23,7 +23,7 @@ const PricingToggle = ({ active, onClick }) => {
               : "toggle-button"
           }
         >
-          Annual Billing
+          Annual
         </button>
         <span className="badge">Save 2 months</span>
       </div>

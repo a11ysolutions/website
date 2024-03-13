@@ -268,6 +268,10 @@
   padding-top: 0rem;
 }
 
+.alliWidget-pricing-container-title p {
+  line-height: 0px !important;
+}
+
 .alliWidget-pricing-container-toogle {
   display: flex;
   flex-direction: row;
