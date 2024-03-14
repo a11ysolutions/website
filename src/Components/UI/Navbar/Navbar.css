@@ -12,8 +12,18 @@
   margin-left: 20px;
   z-index: 2;
 }
+.a11y-navbar-logo a{
+  display: block;
+  padding: 0.1rem;
+}
+
 .a11y-navbar-logo button {
   cursor: pointer;
+}
+
+.a11y-navbar-logo-img{
+  display: block;
+  
 }
 
 .a11y-navbar-toggle {
