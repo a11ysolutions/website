@@ -41,7 +41,7 @@ function ListPricing({ pricingPlan }) {
   };
   const generatePlanCells = (included, className = "") => {
     return (
-      <td className={className} tabIndex="0">
+      <td className={className}>
         {included ? (
           <svg
             aria-label="Included"
@@ -75,6 +75,7 @@ function ListPricing({ pricingPlan }) {
 
   return (
     <>
+      <PricingToggle active={activeToogle} onClick={handleToogle} />
       <div
         id={activeToogle === "Monthly" ? "panel-1" : "panel-2"}
         className="table-responsive"
@@ -85,7 +86,6 @@ function ListPricing({ pricingPlan }) {
         <span id="billingTabPanel" className="sr-only">
           Billing and Features&Packages
         </span>
-        <PricingToggle active={activeToogle} onClick={handleToogle} />
         <table className="container-table-pricing" aria-label="Pricing table">
           <thead>
             <tr style={{ height: "50px" }}>
@@ -127,8 +127,8 @@ function ListPricing({ pricingPlan }) {
             {AlliWidgetFeaturesList.map((f, i) => (
               <>
                 {i === 0 && (
-                  <tr style={{ height: "50px" }}>
-                    <td tabIndex="0">Price</td>
+                  <tr style={{ height: "50px" }} className="list-pricing">
+                    <th className="th-header">Price</th>
                     {pricingPlan.map((pack) => (
                       <td
                         className={`${
@@ -136,7 +136,6 @@ function ListPricing({ pricingPlan }) {
                             ? "columns-popular card-price"
                             : "card-price"
                         }`}
-                        tabIndex="0"
                       >
                         {activeToogle === "Monthly"
                           ? pack.monthPrice
@@ -157,20 +156,18 @@ function ListPricing({ pricingPlan }) {
                   </tr>
                 )}
                 {i === 0 && (
-                  <tr>
-                    <td tabIndex="0">Bonus</td>
-                    <td tabIndex="0">{generateTrial()}</td>
-                    <td tabIndex="0">{generateTrial()}</td>
-                    <td className="columns-popular" tabIndex="0">
-                      {generateTrial()}
-                    </td>
+                  <tr className="list-pricing">
+                    <th className="th-header">Bonus</th>
+                    <td>{generateTrial()}</td>
+                    <td>{generateTrial()}</td>
+                    <td className="columns-popular">{generateTrial()}</td>
                     <td>&nbsp;</td>
                   </tr>
                 )}
                 {i === 0 && (
                   <tr>
                     <td>&nbsp;</td>
-                    <td tabIndex="0">
+                    <td>
                       <Button
                         size="large"
                         onClick={() => handlePayment(pricingPlan[0])}
@@ -179,7 +176,7 @@ function ListPricing({ pricingPlan }) {
                         Start Free Trial
                       </Button>
                     </td>
-                    <td tabIndex="0">
+                    <td>
                       <Button
                         size="large"
                         onClick={() => handlePayment(pricingPlan[1])}
@@ -188,7 +185,7 @@ function ListPricing({ pricingPlan }) {
                         Start Free Trial
                       </Button>
                     </td>
-                    <td className="columns-popular" tabIndex="0">
+                    <td className="columns-popular">
                       <Button
                         size="large"
                         onClick={() => handlePayment(pricingPlan[2])}
@@ -197,8 +194,12 @@ function ListPricing({ pricingPlan }) {
                         Start Free Trial
                       </Button>
                     </td>
-                    <td tabIndex="0">
-                      <Button size="large" onClick={pricingPlan[3]} variant="dark">
+                    <td>
+                      <Button
+                        size="large"
+                        onClick={pricingPlan[3]}
+                        variant="dark"
+                      >
                         Contact us
                       </Button>
                     </td>
@@ -208,15 +209,14 @@ function ListPricing({ pricingPlan }) {
                   className="list-pricing-heading"
                   key={`feature-row-title-${i}`}
                 >
-                  <td tabIndex="0">{f.title}</td>
-                  <td>&nbsp;</td>
-                  <td>&nbsp;</td>
-                  <td className="columns-popular">&nbsp;</td>
-                  <td>&nbsp;</td>
+                  <th colSpan={5} scope="colgroup" className="colspan-header">
+                    {f.title}
+                    <div className="try-border-colspan"></div>
+                  </th>
                 </tr>
                 {f.features.map((features, j) => (
                   <tr className="list-pricing" key={`feature-row-${j}`}>
-                    <td tabIndex="0">{features}</td>
+                    <th>{features}</th>
                     {generatePlanCells(
                       pricingPlan[0].features.find((v) => v === features)
                     )}
