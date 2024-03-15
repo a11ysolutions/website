@@ -8,8 +8,8 @@
   font-family: Archivo;
 }
 
-.a11y-button:focus{
-outline: 5px solid yellow;  
+.a11y-button:focus {
+  /* outline: 5px solid yellow; */
 }
 
 .a11y-button-large {
@@ -36,7 +36,17 @@ outline: 5px solid yellow;
   font-weight: 550;
 }
 .a11y-button-negative:hover {
-  outline:#0D9E71 3px solid;
+  outline: #0d9e71 3px solid;
+}
+
+.button-light-background:focus {
+  outline: 3px solid #000000;
+  box-shadow: 0 0 0 2px #ffffff;
+}
+
+.button-dark-background:focus {
+  outline: 2px solid #ffffff;
+  box-shadow: 0 0 0 3px #000000;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {

@@ -10,6 +10,9 @@
 .no-decorator-link {
   text-decoration: none;
   color: unset;
+  background: #000;
+  padding: 12px 25px;
+  border-radius: 26px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -44,10 +47,10 @@
 }
 
 :focus {
-  outline: none;
-  outline: 2px solid white;
+  /* outline: none; */
+  outline: 3px solid  black;
   outline-offset: 2px;
-  box-shadow: 0 0 0 4px black;
+  box-shadow: 0 0 0 4px white;
 }
 
 .sr-only {
