@@ -209,7 +209,7 @@ function ListPricing({ pricingPlan }) {
                   className="list-pricing-heading"
                   key={`feature-row-title-${i}`}
                 >
-                  <th colSpan={5} className="colspan-header">
+                  <th colSpan={5} scope="colgroup" className="colspan-header">
                     {f.title}
                     <div className="try-border-colspan"></div>
                   </th>
