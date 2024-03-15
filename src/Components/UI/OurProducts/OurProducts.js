@@ -33,7 +33,7 @@ function OurProducts() {
               AlliBot provides immediate, expert guidance, effectively becoming your on-demand accessibility
               consultant.
             </p>
-            <Button onClick={() => (document.location.href = '/alliBot')} size="large" ariaLabel="Learn More about AlliBot: Your AI-driven expert for instant and tailored accessibility solutions">
+            <Button className='button-light-background' onClick={() => (document.location.href = '/alliBot')} size="large" ariaLabel="Learn More about AlliBot: Your AI-driven expert for instant and tailored accessibility solutions">
               Learn More
             </Button>
           </div>
@@ -56,7 +56,7 @@ function OurProducts() {
               Accessibility Widget, you're not just adding a feature to your website; you're elevating the
               entire user experience.
             </p>
-            <Button onClick={() => (document.location.href = '/alliWidget')} size="large" ariaLabel="Learn More about AlliWidget: Real-Time Solutions, Zero Delays">
+            <Button className='button-light-background' onClick={() => (document.location.href = '/alliWidget')} size="large" ariaLabel="Learn More about AlliWidget: Real-Time Solutions, Zero Delays">
               Learn More
             </Button>
           </div>

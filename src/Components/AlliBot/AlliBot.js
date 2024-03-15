@@ -162,7 +162,7 @@ function AlliBot() {
             </CustomCard>
           </div>
 
-          <Button size="large" onClick={navigateToAlliBot} variant="dark">
+          <Button size="large" onClick={navigateToAlliBot} variant="dark" className="button-light-background">
             Try It Free
           </Button>
         </div>

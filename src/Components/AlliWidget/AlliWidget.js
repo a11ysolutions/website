@@ -235,7 +235,7 @@ function AlliWidget() {
               </CustomCard>
             ))}
           </div>
-          <Button size="large" onClick={navigateToHome} variant="negative">
+          <Button className="button-dark-background" size="large" onClick={navigateToHome} variant="negative">
             Try It Free
           </Button>
           <ImageDivider top bottom variantTopGreen />
