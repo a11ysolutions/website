@@ -40,7 +40,7 @@
   justify-content: center;
   align-items: flex-start;
   margin-top: 0px;
-  z-index: 2;
+  z-index: 0;
 }
 
 .alliWidget-presentation-container .home-ilustration-container {
