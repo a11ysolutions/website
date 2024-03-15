@@ -1,8 +1,15 @@
-.social-links{
-    display:flex;
-    list-style-type: none;
-    padding-left: 0px
- }
- .social-link{
-    color:#ffffff
- }
+.social-links {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0px;
+}
+.social-link {
+  display: block;
+  color: #ffffff;
+}
+
+.social-link svg:hover {
+  outline: 2px solid #ffffff;
+  box-shadow: 0 0 0 3px #000000;
+  outline-offset: 2px;
+}

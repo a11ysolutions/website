@@ -18,7 +18,7 @@ function ServiceCard({ children, header, imgSrc, imgColor = "white", style, onCl
                     {children}
                 </div>
                 <div style={{ marginTop: "27px" }}>
-                    <Button onClick={onClickButton} ariaLabel={ariaLabel}>Learn More</Button>
+                    <Button className="button-light-backgrounsd" onClick={onClickButton} ariaLabel={ariaLabel}>Learn More</Button>
                 </div>
             </div>
         </div>
