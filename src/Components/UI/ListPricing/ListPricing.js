@@ -201,6 +201,7 @@ function ListPricing({ pricingPlan }) {
                         size="large"
                         onClick={() => handlePayment(pricingPlan[3])}
                         variant="dark"
+                        ariaLabel={"Scroll to the contact's session in the footer of the page."}
                       >
                         Contact us
                       </Button>
