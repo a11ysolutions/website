@@ -44,7 +44,8 @@ function ListPricing({ pricingPlan }) {
       <td className={className}>
         {included ? (
           <svg
-            aria-label="Included"
+            aria-labelledby="Included"
+            role="img"
             xmlns="http://www.w3.org/2000/svg"
             width="32"
             height="32"
@@ -57,7 +58,8 @@ function ListPricing({ pricingPlan }) {
           </svg>
         ) : (
           <svg
-            aria-label="Not included"
+            aria-labelledby="Not included"
+            role="img"
             xmlns="http://www.w3.org/2000/svg"
             width="32"
             height="32"
