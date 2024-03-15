@@ -75,6 +75,7 @@ function ListPricing({ pricingPlan }) {
 
   return (
     <>
+      <PricingToggle active={activeToogle} onClick={handleToogle} />
       <div
         id={activeToogle === "Monthly" ? "panel-1" : "panel-2"}
         className="table-responsive"
@@ -85,7 +86,6 @@ function ListPricing({ pricingPlan }) {
         <span id="billingTabPanel" className="sr-only">
           Billing and Features&Packages
         </span>
-        <PricingToggle active={activeToogle} onClick={handleToogle} />
         <table className="container-table-pricing" aria-label="Pricing table">
           <thead>
             <tr style={{ height: "50px" }}>
