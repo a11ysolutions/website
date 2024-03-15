@@ -137,6 +137,7 @@
   height: inherit !important;
   width: inherit !important;
 }
+
 /* =============== alliBot-why-choose =============== */
 .alliWidget-why-choose {
   display: flex;
@@ -188,6 +189,7 @@
   width: clamp(150px, 100%, 600px);
   height: clamp(150px, 100%, 800px);
   padding-top: 3rem;
+  filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
 }
 
 .alliWidget-competition-content {
@@ -220,24 +222,15 @@
 /* =============== alliBot-pricing =============== */
 .alliWidget-pricing {
   position: relative;
-  width: 100vw;
-  max-width: 1568px;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  padding-right: 0rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   color: black;
-}
-
-.alliWidget-pricing-container-card {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5rem;
 }
 
 .alliWidget-pricing-container-title {
@@ -248,13 +241,6 @@
 
 .alliWidget-pricing-container-title p {
   line-height: 0px !important;
-}
-
-.alliWidget-pricing-container-toogle {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-bottom: 1rem;
 }
 
 .pricing-text-content {
@@ -285,23 +271,11 @@
   .alliWidget-pricing-container-title {
     padding-top: 0rem;
   }
-
-  .alliWidget-pricing-container-card {
-    flex-direction: column;
-    align-items: start;
-    gap: 1rem;
-  }
 }
 
 @media (max-width: 1300px) {
   .alliWidget-pricing {
     justify-content: start;
-  }
-
-  .alliWidget-pricing-container-card {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
   }
 }
 
@@ -309,24 +283,11 @@
   .alliWidget-pricing-container-title {
     padding-top: 6rem;
   }
-
-  .alliWidget-pricing {
-    padding-right: 5rem;
-  }
-
-  .alliWidget-pricing-container-card {
-    flex-direction: row;
-    justify-content: end;
-  }
 }
 
 @media (min-width: 1800px) {
   .alliWidget-pricing-container-title {
     padding-top: 6rem;
-  }
-
-  .alliWidget-pricing-container-card {
-    flex-wrap: nowrap;
   }
 }
 
@@ -521,7 +482,7 @@
   }
 
   .alliWidget-competition-image {
-    padding-top: 10rem;
+    padding-top: 105px !important;
   }
 
   .bicolor-titled-container {
