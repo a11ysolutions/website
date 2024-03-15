@@ -127,8 +127,8 @@ function ListPricing({ pricingPlan }) {
             {AlliWidgetFeaturesList.map((f, i) => (
               <>
                 {i === 0 && (
-                  <tr style={{ height: "50px" }}>
-                    <td>Price</td>
+                  <tr style={{ height: "50px" }} className="list-pricing">
+                    <th className="th-header">Price</th>
                     {pricingPlan.map((pack) => (
                       <td
                         className={`${
@@ -156,13 +156,11 @@ function ListPricing({ pricingPlan }) {
                   </tr>
                 )}
                 {i === 0 && (
-                  <tr>
-                    <td>Bonus</td>
+                  <tr className="list-pricing">
+                    <th className="th-header">Bonus</th>
                     <td>{generateTrial()}</td>
                     <td>{generateTrial()}</td>
-                    <td className="columns-popular">
-                      {generateTrial()}
-                    </td>
+                    <td className="columns-popular">{generateTrial()}</td>
                     <td>&nbsp;</td>
                   </tr>
                 )}
@@ -197,7 +195,11 @@ function ListPricing({ pricingPlan }) {
                       </Button>
                     </td>
                     <td>
-                      <Button size="large" onClick={pricingPlan[3]} variant="dark">
+                      <Button
+                        size="large"
+                        onClick={pricingPlan[3]}
+                        variant="dark"
+                      >
                         Contact us
                       </Button>
                     </td>
@@ -207,15 +209,14 @@ function ListPricing({ pricingPlan }) {
                   className="list-pricing-heading"
                   key={`feature-row-title-${i}`}
                 >
-                  <td>{f.title}</td>
-                  <td>&nbsp;</td>
-                  <td>&nbsp;</td>
-                  <td className="columns-popular">&nbsp;</td>
-                  <td>&nbsp;</td>
+                  <th colSpan={5} className="colspan-header">
+                    {f.title}
+                    <div className="try-border-colspan"></div>
+                  </th>
                 </tr>
                 {f.features.map((features, j) => (
                   <tr className="list-pricing" key={`feature-row-${j}`}>
-                    <td>{features}</td>
+                    <th>{features}</th>
                     {generatePlanCells(
                       pricingPlan[0].features.find((v) => v === features)
                     )}

@@ -16,27 +16,29 @@
   border-collapse: collapse;
   font-size: 16px;
   text-align: center;
-  border: 1px solid #cccccc65;
-  width: auto;
+  width: 1400px !important;
+  min-width: 1400px !important;
+  max-width: 1400px !important;
 }
 
 .container-table-pricing table {
-  width: 100%;
-  min-width: 600px;
-}
-
-.columns-popular {
-  border-right: 3px solid #0d9e70de !important;
-  border-left: 3px solid #0d9e70de !important;
+  width: 1400px !important;
+  min-width: 1400px !important;
+  max-width: 1400px !important;
 }
 
 .top-border-header {
-  border-top: 3px solid #0d9e70de !important;
+  border-top: 3px solid #0d9e7000 !important;
 
 }
 
 .container-table-pricing tr:last-child td:nth-child(4) {
-  border-bottom: 3px solid #0d9e70de !important;
+  border-bottom: 3px solid #0d9e7000 !important;
+}
+
+.columns-popular {
+  border-right: 3px solid #ffffff00 !important;
+  border-left: 3px solid #ffffff00 !important;
 }
 
 .container-table-pricing th:first-child,
@@ -45,7 +47,7 @@
 }
 
 .container-table-pricing tr {
-  border: 1px solid #cccccc65;
+  border: 1px solid #cccccc00;
 }
 
 .container-table-pricing td {
@@ -59,9 +61,38 @@
 .container-table-pricing .card-price {
   font-size: 1.7rem;
   color: #0D9E71;
-  border-bottom: 2px solid #e2e8f0;
   line-height: 0.2 !important;
   min-height: 15px;
+}
+
+.container-table-pricing .colspan-header {
+  color: #0D9E71;
+  padding: 1rem;
+  min-height: 10px;
+  height: 30px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  display: relative;
+}
+
+.container-table-pricing .try-border-colspan {
+  position: absolute;
+  transform: translateY(-60px);
+  left: 0;
+  margin-left: 961.5px;
+  height: 200px;
+  width: 283px;
+  border-right: 3px solid #0d9e70de !important;
+  border-left: 3px solid #0d9e70de !important;
+  display: none;
+}
+
+.container-table-pricing .th-header {
+  color: #0D9E71;
+  padding: 1rem;
+  min-height: 10px;
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 
 
@@ -110,10 +141,22 @@
   align-items: center;
 }
 
-@media (min-width: 1480px) {
-  .table-responsive {
-    align-items: center;
-    margin-left: 5rem;
-    margin-right: 5rem;
+@media screen and (min-width: 1400px) {
+  .container-table-pricing .try-border-colspan {
+    display: block;
+  }
+
+  .columns-popular {
+    border-right: 3px solid #0d9e70de !important;
+    border-left: 3px solid #0d9e70de !important;
+  }
+  
+  .top-border-header {
+    border-top: 3px solid #0d9e70de !important;
+  
+  }
+  
+  .container-table-pricing tr:last-child td:nth-child(4) {
+    border-bottom: 3px solid #0d9e70de !important;
   }
 }
