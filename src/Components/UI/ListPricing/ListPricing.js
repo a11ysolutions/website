@@ -199,7 +199,7 @@ function ListPricing({ pricingPlan }) {
                     <td>
                       <Button
                         size="large"
-                        onClick={pricingPlan[3]}
+                        onClick={() => handlePayment(pricingPlan[3])}
                         variant="dark"
                       >
                         Contact us
