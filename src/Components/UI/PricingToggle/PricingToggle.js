@@ -31,7 +31,6 @@ const PricingToggle = ({ active, onClick }) => {
       className="pricing-toggle"
       role="tablist"
       aria-labelledby="billingCycleLabel"
-      tabIndex={0}
     >
       <div className="pricing-toggle-container">
         <span id="billingCycleLabel" className="sr-only">
