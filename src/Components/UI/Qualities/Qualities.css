@@ -12,7 +12,7 @@
 
 .a11y-qualities p {
   font: normal normal normal 16px/24px Archivo;
-  color: white;
+  color: white !important;
 }
 
 .a11y-qualities h3 {
@@ -80,7 +80,7 @@
 .qualities-experience-card {
   background-color: rgba(0, 0, 0, 0.063) !important;
 
-  color: white
+  color: white !important;
 }
 
 .qualities-experience-card {
