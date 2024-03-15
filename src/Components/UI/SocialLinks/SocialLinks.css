@@ -4,11 +4,11 @@
   padding-left: 0px;
 }
 .social-link {
-  display: block;
+  display: flex;
   color: #ffffff;
 }
 
-.social-link svg:hover {
+.social-link:hover {
   outline: 2px solid #ffffff;
   box-shadow: 0 0 0 3px #000000;
   outline-offset: 2px;
