@@ -53,9 +53,9 @@ function Services() {
                     automated tests as often as needed.
                 </p>
             </ServiceCard>
-            <div className="services-circles-section">
+            {/*<div className="services-circles-section">
                 <div className="services-circle"></div>
-            </div>
+            </div>*/}
         </div>
     )
 }

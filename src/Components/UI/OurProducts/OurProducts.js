@@ -1,7 +1,8 @@
-import React from 'react'
-import BicolorTitledText from '../BicolorTitledText/BicolorTitledText'
-import Button from '../Button/Button'
-import './OurProducts.css'
+import React from "react";
+import BicolorTitledText from "../BicolorTitledText/BicolorTitledText";
+import Button from "../Button/Button";
+import "./OurProducts.css";
+import { ImageDivider } from "../../UI/ImageDivider/ImageDivider";
 
 function OurProducts() {
   return (
@@ -16,8 +17,8 @@ function OurProducts() {
         ></BicolorTitledText>
       </div>
 
-      <div className="our-products" role='list'>
-        <div className="our-products-content"  role='listitem'>
+      <div className="our-products" role="list">
+        <div className="our-products-content" role="listitem">
           <div className="our-products-item_photo">
             <img
               src="/alliBot.svg"
@@ -27,10 +28,14 @@ function OurProducts() {
             />
           </div>
           <div className="our-products-item_text">
-            <h3>AlliBot: Your AI-driven expert for instant and tailored accessibility solutions</h3>
+            <h3>
+              AlliBot: Your AI-driven expert for instant and tailored
+              accessibility solutions
+            </h3>
             <p>
-              No more endless Googling or diving into forums for answers to your web accessibility questions.
-              AlliBot provides immediate, expert guidance, effectively becoming your on-demand accessibility
+              No more endless Googling or diving into forums for answers to your
+              web accessibility questions. AlliBot provides immediate, expert
+              guidance, effectively becoming your on-demand accessibility
               consultant.
             </p>
             <Button className='button-light-background' onClick={() => (document.location.href = '/alliBot')} size="large" ariaLabel="Learn More about AlliBot: Your AI-driven expert for instant and tailored accessibility solutions">
@@ -39,7 +44,7 @@ function OurProducts() {
           </div>
         </div>
 
-        <div className="our-products-content reverse" role='listitem'>
+        <div className="our-products-content reverse" role="listitem">
           <div className="our-products-item_photo">
             <img
               src="/alliWidget.png"
@@ -51,10 +56,11 @@ function OurProducts() {
           <div className="our-products-item_text">
             <h3>AlliWidget: Real-Time Solutions, Zero Delays</h3>
             <p>
-              Provide real-time accessibility adjustments. The AlliWidget ensures that all visitors,
-              regardless of their abilities, can interact with your site effortlessly. By integrating our
-              Accessibility Widget, you're not just adding a feature to your website; you're elevating the
-              entire user experience.
+              Provide real-time accessibility adjustments. The AlliWidget
+              ensures that all visitors, regardless of their abilities, can
+              interact with your site effortlessly. By integrating our
+              Accessibility Widget, you're not just adding a feature to your
+              website; you're elevating the entire user experience.
             </p>
             <Button className='button-light-background' onClick={() => (document.location.href = '/alliWidget')} size="large" ariaLabel="Learn More about AlliWidget: Real-Time Solutions, Zero Delays">
               Learn More
@@ -62,8 +68,9 @@ function OurProducts() {
           </div>
         </div>
       </div>
+      <ImageDivider bottom variantBottomBlack />
     </div>
-  )
+  );
 }
 
-export default OurProducts
+export default OurProducts;

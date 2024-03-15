@@ -2,7 +2,9 @@
   display: flex;
   flex-direction: column;
   font: normal normal normal 16px/24px Archivo;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
 }
 
 .our-products-content {
@@ -39,6 +41,7 @@
 
 /* =============== @media (min-width: 600px) and (max-width: 767.99px) =============== */
 @media (min-width: 600px) and (max-width: 767.99px) {
+
   .our-products-item_photo,
   .our-products-item_text {
     width: 500px;
@@ -47,6 +50,7 @@
 
 /* =============== @media (min-width: 768px) and (max-width: 1200px) =============== */
 @media (min-width: 768px) and (max-width: 1199.98px) {
+
   .our-products-item_photo,
   .our-products-item_text {
     width: 500px;
