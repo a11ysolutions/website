@@ -13,7 +13,6 @@ import AlliBot from "./Components/AlliBot/AlliBot";
 import { AlliWidget } from "./Components/AlliWidget/AlliWidget";
 import { AlliBotFeedback } from "./Components/AlliBotFeedback/AlliBotFeedback";
 
-
 function App() {
   const [currentUrl] = useState(window.location.pathname);
 

@@ -4788,6 +4788,7 @@ __metadata:
     "@testing-library/user-event": ^12.1.10
     react: ^17.0.2
     react-dom: ^17.0.2
+    react-ga4: 2.1.0
     react-helmet: ^6.1.0
     react-icons: ^4.3.1
     react-router: ^6.0.2
@@ -12443,6 +12444,13 @@ __metadata:
   version: 3.2.0
   resolution: "react-fast-compare@npm:3.2.0"
   checksum: 8ef272c825ae329f61633ce4ce7f15aa5b84e5214d88bc0823880236e03e985a13195befa2c7a4eda7db3b017dc7985729152d88445823f652403cf36c2b86aa
+  languageName: node
+  linkType: hard
+
+"react-ga4@npm:2.1.0":
+  version: 2.1.0
+  resolution: "react-ga4@npm:2.1.0"
+  checksum: f7fb41141418d4ad14756f1126a1e9958db37d4d84ae6cd798043dc03a390b6dba74d69311af0349f0b9580a43bda8930138194ccc29c4100efe446e2d6eb057
   languageName: node
   linkType: hard
 
