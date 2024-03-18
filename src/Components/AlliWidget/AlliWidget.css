@@ -176,7 +176,7 @@
 .alliWidget-competition {
   display: flex;
   flex-direction: row;
-  align-items: start;
+  align-items: flex-start;
   position: relative;
   width: 100%;
   padding: 5rem 2rem 3rem;
@@ -196,8 +196,8 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  align-items: start;
-  justify-content: start;
+  align-items: flex-start;
+  justify-content: flex-start;
   padding: 0 1rem;
 }
 
@@ -471,7 +471,7 @@
   .alliWidget-competition {
     display: flex;
     flex-direction: row;
-    align-items: start;
+    align-items: flex-start;
   }
 
   .alliWidget-competition-content {
