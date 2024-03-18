@@ -10,9 +10,36 @@ import "./AlliBot.css";
 import { ImageDivider } from "../UI/ImageDivider/ImageDivider";
 import Button from "../UI/Button/Button";
 import ListPricing from "../UI/ListPricing/ListPricing";
+import ReviewCard from "../UI/ReviewCard/ReviewCard";
 import { pricingPlanPackages } from "../Utils/Utils";
 
 function AlliBot() {
+  const reviewA11iBot = [
+    {
+      name: "Alberto Roman, CEO/Founder at Front10 and Woxo",
+      comment:
+        "A11iBot's AI sophistication has been a game-changer for web accessibility, offering real-time coding solutions that streamline our process, saving us hours of work.",
+      image: "",
+    },
+    {
+      name: "Yainery Bolanos, CEO/Co-Founder at Adaved",
+      comment:
+        "We just started using A11iBot and it's already helping us a lot. It's like having a specialist with us all the time, making our work faster and better.",
+      image: "/yainery-bolanos.png",
+    },
+    {
+      name: "Dariel Vila, CEO/Co-Founder at Front10 and Woxo",
+      comment:
+        "A11iBot has significantly impacted our work. Its expert consultations on WAI-ARIA have remarkably enhanced our efficiency, making it an essential asset for our team.",
+      image: "/dariel-vila.png",
+    },
+    {
+      name: "Luis Terrero, CEO/Founder at PixelPerfecto",
+      comment:
+        "We recently started using A11iBot and we're very happy. Even in its MVP stage, the chatbot is like an expert on web accessibility. It gives quick and useful advice.",
+      image: "/luis-terrero.png",
+    },
+  ];
   return (
     <div id="alliBot" className="alliBot-page-container">
       <Helmet>
@@ -162,7 +189,12 @@ function AlliBot() {
             </CustomCard>
           </div>
 
-          <Button size="large" onClick={navigateToAlliBot} variant="dark" className="button-light-background">
+          <Button
+            size="large"
+            onClick={navigateToAlliBot}
+            variant="dark"
+            className="button-light-background"
+          >
             Try It Free
           </Button>
         </div>
@@ -254,57 +286,22 @@ function AlliBot() {
               <BicolorTitledText
                 color1="black"
                 color2="#0D9E71"
-                color2Text="Some awesome reviews"
+                color2Text="Discover our customers opinions."
                 className="home-our-services"
               ></BicolorTitledText>
+              <p className="alliWidget-review-subtitle">
+                Listen to the Voices that Count!
+              </p>
             </div>
-
-            <div className="alliBot-review-content">
-              <CustomCard
-                imgSrc="/yainery-bolanos.png"
-                className="custom-horizontal-card"
-                classTextContainer="text-container-horizontal"
-                classEllipseBar="card-ellipse-bar"
-                icon
-              >
-                <h3>Yainery Bolanos, CEO/Co-Founder at Adaved</h3>
-                <q>
-                  We just started using A11iBot and it's already helping us a
-                  lot. It's like having a specialist with us all the time,
-                  making our work faster and better.
-                </q>
-              </CustomCard>
-              <CustomCard
-                imgSrc="/luis-terrero.png"
-                className="custom-horizontal-card shadow"
-                classTextContainer="text-container-horizontal"
-                classEllipseBar="card-ellipse-bar"
-                icon
-              >
-                <h3>Luis Terrero, CEO/Founder at PixelPerfecto</h3>
-                <q>
-                  We recently started using A11iBot and we're very happy. Even
-                  in its MVP stage, the chatbot is like an expert on web
-                  accessibility. It gives quick and useful advice.
-                </q>
-              </CustomCard>
-              <CustomCard
-                imgSrc="/dariel-vila.png"
-                className="custom-horizontal-card"
-                classTextContainer="text-container-horizontal"
-                classEllipseBar="card-ellipse-bar"
-                icon
-              >
-                <h3>Dariel Vila, CEO/Co-Founder at Front10 and Woxo</h3>
-                <q>
-                  A11iBot has made a significant impact for us. It's new, but it
-                  consistently helps us with web accessibility. We're pleased to
-                  have it as part of our toolkit.
-                </q>
-              </CustomCard>
-            </div>
-            <ImageDivider bottom variantBottomBlack />
           </div>
+          <div className="alliWidget-review-container">
+            <div className="alliWidget-review-content">
+              {reviewA11iBot.map((rev, index) => (
+                <ReviewCard key={index} review={rev} />
+              ))}
+            </div>
+          </div>
+          <ImageDivider bottom variantBottomBlack />
         </div>
       </div>
     </div>
