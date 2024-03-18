@@ -172,7 +172,7 @@ function AlliBot() {
           <div className="home-services-bicolored-text">
             <BicolorTitledText
               color2="#fff"
-              color2Text="Why Choose Allibot? Unbeatable Features for Unparalleled Ease"
+              color2Text="Why Choose A11iBot? Unbeatable Features for Unparalleled Ease"
               className="home-our-services"
             ></BicolorTitledText>
           </div>
@@ -180,7 +180,7 @@ function AlliBot() {
             <CustomCard className="why-choose-item custom-why-choose-card">
               <h3>AI-Powered Precision</h3>
               <p>
-                Leverage the power of AI for pinpoint accuracy. Allibot
+                Leverage the power of AI for pinpoint accuracy. A11iBot
                 understands your queries and provides solutions that hit the
                 mark, every time.
               </p>
@@ -188,7 +188,7 @@ function AlliBot() {
             <CustomCard className="why-choose-item custom-why-choose-card">
               <h3>Immediate Code Solutions</h3>
               <p>
-                Why wait? Allibot delivers real-time code snippets right in the
+                Why wait? A11iBot delivers real-time code snippets right in the
                 chat. Just copy, paste, and watch your accessibility issues
                 disappear.
               </p>
@@ -196,7 +196,7 @@ function AlliBot() {
             <CustomCard className="why-choose-item custom-why-choose-card">
               <h3>Up-to-Date Expertise</h3>
               <p>
-                Never worry about outdated information. Allibot is continuously
+                Never worry about outdated information. A11iBot is continuously
                 updated to reflect the latest web accessibility standards and
                 practices.
               </p>
@@ -205,7 +205,7 @@ function AlliBot() {
               <h3>Enterprise-Level Reliability</h3>
               <p>
                 Rely on the same expertise trusted by major industries, from
-                airlines to banks. Allibot brings you 5 years of proven
+                airlines to banks. A11iBot brings you 5 years of proven
                 experience in a user-friendly chat interface.
               </p>
             </CustomCard>
@@ -213,14 +213,14 @@ function AlliBot() {
               <h3>Affordable Expertise</h3>
               <p>
                 Get top-notch accessibility advice without the top-tier price
-                tag. Allibot provides expert solutions at a fraction of the cost
+                tag. A11iBot provides expert solutions at a fraction of the cost
                 of traditional consulting.
               </p>
             </CustomCard>
             <CustomCard className="why-choose-item custom-why-choose-card">
               <h3>24/7 Accessibility</h3>
               <p>
-                Questions don't keep office hours, and neither does Allibot. Get
+                Questions don't keep office hours, and neither does A11iBot. Get
                 the answers you need, any time of the day or night.
               </p>
             </CustomCard>

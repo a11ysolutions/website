@@ -4,6 +4,7 @@ import Button from "../../UI/Button/Button";
 import PricingToggle from "../../UI/PricingToggle/PricingToggle";
 import PricingCard from "../../UI/PricingCard/PricingCard";
 import { AlliWidgetFeaturesList } from "../../Utils/Utils";
+import ReactGA from "react-ga4";
 
 function ListPricing({ pricingPlan }) {
   const [activeToogle, setActiveToogle] = useState("Monthly");
@@ -21,13 +22,28 @@ function ListPricing({ pricingPlan }) {
 
   const handlePayment = (pack) => {
     if (pack.custom) {
+      ReactGA.event({
+        category: "Pricing section",
+        action: "button_contact_us",
+        label: "The contact button was clicked",
+      });
       const contactSection = document.getElementById("footer");
       return contactSection.scrollIntoView({ behavior: "smooth" });
     }
     if (activeToogle === "Monthly") {
+      ReactGA.event({
+        category: "Pricing section",
+        action: "button_start_free_trial",
+        label: `The Start Free Trial button was clicked.${pack.name}.Billing Monthly.`,
+      });
       return window.open(pack.stripeMonthLink, "_blank");
     }
     if (activeToogle === "Annual") {
+      ReactGA.event({
+        category: "Pricing section",
+        action: "button_start_free_trial",
+        label: `The Start Free Trial button was clicked.${pack.name}.Billing Annual.`,
+      });
       return window.open(pack.stripeAnnualLink, "_blank");
     }
   };
