@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import "./ListPricing.css";
 import Button from "../../UI/Button/Button";
 import PricingToggle from "../../UI/PricingToggle/PricingToggle";
-import PricingCard from "../../UI/PricingCard/PricingCard"
+import PricingCard from "../../UI/PricingCard/PricingCard";
 import { AlliWidgetFeaturesList } from "../../Utils/Utils";
 
 function ListPricing({ pricingPlan }) {
   const [activeToogle, setActiveToogle] = useState("Monthly");
   const isYear = activeToogle === "Monthly" ? false : true;
   const plans = [
-    "AlliWidget Esential",
-    "AlliBot Exclusive",
+    "A11iWidget Esential",
+    "A11iBot Exclusive",
     "All-Inclusive Pro Bundle",
     "Enterprise",
   ];
@@ -44,33 +44,37 @@ function ListPricing({ pricingPlan }) {
     return (
       <td className={className}>
         {included ? (
-          <svg
-            aria-labelledby="Included"
-            role="img"
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            viewBox="0 0 256 256"
-          >
-            <path
-              fill="currentColor"
-              d="m226.83 74.83l-128 128a4 4 0 0 1-5.66 0l-56-56a4 4 0 0 1 5.66-5.66L96 194.34L221.17 69.17a4 4 0 1 1 5.66 5.66Z"
-            />
-          </svg>
+          <>
+            <svg
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 256 256"
+            >
+              <path
+                fill="currentColor"
+                d="m226.83 74.83l-128 128a4 4 0 0 1-5.66 0l-56-56a4 4 0 0 1 5.66-5.66L96 194.34L221.17 69.17a4 4 0 1 1 5.66 5.66Z"
+              />
+            </svg>
+            <span class="sr-only">Included</span>
+          </>
         ) : (
-          <svg
-            aria-labelledby="Not included"
-            role="img"
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            viewBox="0 0 256 256"
-          >
-            <path
-              fill="currentColor"
-              d="M202.83 197.17a4 4 0 0 1-5.66 5.66L128 133.66l-69.17 69.17a4 4 0 0 1-5.66-5.66L122.34 128L53.17 58.83a4 4 0 0 1 5.66-5.66L128 122.34l69.17-69.17a4 4 0 1 1 5.66 5.66L133.66 128Z"
-            />
-          </svg>
+          <>
+            <svg
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 256 256"
+            >
+              <path
+                fill="currentColor"
+                d="M202.83 197.17a4 4 0 0 1-5.66 5.66L128 133.66l-69.17 69.17a4 4 0 0 1-5.66-5.66L122.34 128L53.17 58.83a4 4 0 0 1 5.66-5.66L128 122.34l69.17-69.17a4 4 0 1 1 5.66 5.66L133.66 128Z"
+              />
+            </svg>
+            <span class="sr-only">Not included</span>
+          </>
         )}
       </td>
     );
@@ -90,25 +94,22 @@ function ListPricing({ pricingPlan }) {
           Billing and Features&Packages
         </span>
         <div className="container-mobile-pricing">
-            {pricingPlan.map((pack, index) => (
-              <PricingCard
-                key={`pricing-card-${index}`}
-                title={pack.name}
-                price={
-                  activeToogle === "Monthly"
-                    ? pack.monthPrice
-                    : pack.annualPrice
-                }
-                description={pack.description}
-                buttonLabel={pack.custom ? "Contact us" : "Start Free Trial"}
-                isYear={activeToogle === "Monthly" ? false : true}
-                isPopular={pack.popular}
-                isCustom={pack.custom}
-                featuresList={pack.mobileFeatures}
-                onClick={() => handlePayment(pack)}
-              />
-              ))}
-              </div>
+          {pricingPlan.map((pack, index) => (
+            <PricingCard
+              key={`pricing-card-${index}`}
+              title={pack.name}
+              price={
+                activeToogle === "Monthly" ? pack.monthPrice : pack.annualPrice
+              }
+              buttonLabel={pack.custom ? "Contact us" : "Start Free Trial"}
+              isYear={activeToogle === "Monthly" ? false : true}
+              isPopular={pack.popular}
+              isCustom={pack.custom}
+              featuresList={pack.mobileFeatures}
+              onClick={() => handlePayment(pack)}
+            />
+          ))}
+        </div>
         <table className="container-table-pricing" aria-label="Pricing table">
           <thead>
             <tr style={{ height: "50px" }}>
@@ -226,7 +227,9 @@ function ListPricing({ pricingPlan }) {
                         className="table-button"
                         onClick={() => handlePayment(pricingPlan[3])}
                         variant="dark"
-                        ariaLabel={"Scroll to the contact's session in the footer of the page."}
+                        ariaLabel={
+                          "Scroll to the contact's session in the footer of the page."
+                        }
                       >
                         Contact us
                       </Button>

@@ -5,7 +5,6 @@ import "./PricingCard.css";
 const PricingCard = ({
   title,
   price,
-  description,
   onClick,
   buttonLabel,
   isYear,
@@ -14,7 +13,6 @@ const PricingCard = ({
   featuresList,
 }) => {
   const classCard = isPopular ? "card card-popular" : "card";
-  console.log("List features", featuresList)
   return (
     <div className="card-container">
       {isPopular && (
@@ -49,7 +47,6 @@ const PricingCard = ({
             </span>
           )}
         </p>
-        <p className="card-description">{description}</p>
         <div
           style={{
             maxWidth: "100%",
@@ -96,13 +93,15 @@ const PricingCard = ({
             <div className="feature-pricing-mobile">
               {index === 0 && (
                 <>
-                  <div
-                    className="feature-pricing-mobile-title"
-                  >
-                    <p>Trial Period</p>
+                  <div className="feature-pricing-mobile-title">
+                    <p>Bonus</p>
                   </div>
-                  <div style={{ paddingTop: "10px" }} className="feature-plan-mobile">
+                  <div
+                    style={{ paddingTop: "10px" }}
+                    className="feature-plan-mobile"
+                  >
                     <svg
+                      aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"
                       height="20"
@@ -129,6 +128,7 @@ const PricingCard = ({
                 return (
                   <div className="feature-plan-mobile">
                     <svg
+                      aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"
                       height="20"

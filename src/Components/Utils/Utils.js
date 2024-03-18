@@ -44,7 +44,7 @@ export const AlliWidgetFeaturesList = [
     ],
   },
   {
-    title: "Alliwidget Features",
+    title: "A11iWidget Features",
     features: [
       "Compliance with ADA, AODA, EAA, WCAG, Sections 508 & more",
       "24/7 Customer Support",
@@ -85,8 +85,8 @@ export const pricingPlanPackages = {
   title: "Affordable Solutions for Every Business",
   packages: [
     {
-      name: "AlliWidget Esential",
-      description: "AlliWidget Product",
+      name: "A11iWidget Esential",
+      description: "A11iWidget Product",
       monthPrice: "$24.99",
       annualPrice: "$249.99",
       stripeMonthLink: "https://buy.stripe.com/9AQ4iggbV5TfbXG6oo",
@@ -102,8 +102,8 @@ export const pricingPlanPackages = {
       ],
     },
     {
-      name: "AlliBot Exclusive",
-      description: "AlliBot Product",
+      name: "A11iBot Exclusive",
+      description: "A11iBot Product",
       monthPrice: "$37.99",
       annualPrice: "$379.99",
       stripeMonthLink: "https://buy.stripe.com/aEU9CA1h15Tf6Dm8wx",

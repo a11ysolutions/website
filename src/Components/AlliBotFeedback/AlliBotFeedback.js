@@ -12,7 +12,7 @@ export const AlliBotFeedback = () => {
   return (
     <div id="feedback" className="feedback-page-container">
       <Helmet>
-        <title>AlliBot Feedback - Empowering Inclusive Experiences | A11ysolutions</title>
+        <title>A11iBot Feedback - Empowering Inclusive Experiences | A11ysolutions</title>
       </Helmet>
 
       {/* =============== feedback-presentation-container =============== */}
@@ -44,7 +44,7 @@ export const AlliBotFeedback = () => {
             <div className="feedback-intro">
               <div>
                 <p>
-                  Your insights don't just help us improve AlliBot; they contribute to our broader mission of
+                  Your insights don't just help us improve A11iBot; they contribute to our broader mission of
                   making the digital world more accessible for everyone. Whether it's a suggestion, question,
                   or praise, your voice matters in shaping a more inclusive future. Please share your
                   feedback.
@@ -61,7 +61,7 @@ export const AlliBotFeedback = () => {
           <div className="feedback-privacy-statement ">
             <p>
               Privacy Statement: Your privacy is important to us. The information you provide in this feedback
-              form will be used solely for the purpose of improving AlliBot and our services. We will not
+              form will be used solely for the purpose of improving A11iBot and our services. We will not
               share, sell, or distribute your personal information to any third parties without your explicit
               consent. For more details, please read our{' '}
               <a href="/privacy-policy" className="feedback-link">
