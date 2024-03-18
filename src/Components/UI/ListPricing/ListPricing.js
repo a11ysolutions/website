@@ -44,7 +44,8 @@ function ListPricing({ pricingPlan }) {
       <td className={className}>
         {included ? (
           <svg
-            aria-label="Included"
+            aria-labelledby="Included"
+            role="img"
             xmlns="http://www.w3.org/2000/svg"
             width="32"
             height="32"
@@ -57,7 +58,8 @@ function ListPricing({ pricingPlan }) {
           </svg>
         ) : (
           <svg
-            aria-label="Not included"
+            aria-labelledby="Not included"
+            role="img"
             xmlns="http://www.w3.org/2000/svg"
             width="32"
             height="32"
@@ -197,8 +199,9 @@ function ListPricing({ pricingPlan }) {
                     <td>
                       <Button
                         size="large"
-                        onClick={pricingPlan[3]}
+                        onClick={() => handlePayment(pricingPlan[3])}
                         variant="dark"
+                        ariaLabel={"Scroll to the contact's session in the footer of the page."}
                       >
                         Contact us
                       </Button>

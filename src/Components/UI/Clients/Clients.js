@@ -2,6 +2,7 @@ import React from "react";
 import "./Clients.css";
 import BicolorTitledText from "../BicolorTitledText/BicolorTitledText";
 import { ClientsList } from "../ClientsList/ClientsList";
+import { ImageDivider } from "../../UI/ImageDivider/ImageDivider";
 function Clients() {
   const clientList = [
     {
@@ -74,6 +75,7 @@ function Clients() {
         />
       </div>
       <ClientsList clients={clientList} />
+      <ImageDivider bottom variantBottomBlack />
     </div>
   );
 }

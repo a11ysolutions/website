@@ -2,11 +2,13 @@
   text-align: left;
   padding: 20px;
 }
+
 .home-header-text-button p {
   line-height: 24px;
 }
+
 .a11y-home-presentation-container {
-  margin-top: 130px;
+  /*padding-top: 130px;*/
 }
 
 .a11y-home-why-choose-us-clients {
@@ -14,44 +16,46 @@
   justify-content: center;
 }
 
-.clients-container {
-  margin-bottom: 30px;
-}
-
 .home-our-services-section {
   display: flex;
+  position: relative;
   flex-direction: column;
-  background-color: #aaaaaa19;
-  padding: 20px;
+  background-color: black;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 6rem
 }
 
 .home-page-ilustration-container {
   align-self: center;
   margin-top: 130px;
 }
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .a11y-home-why-choose-us-clients {
     margin-top: 170px;
     display: flex;
   }
+
   .home-our-services-section {
     align-items: center;
   }
+
   .home-our-services {
     text-align: left !important;
   }
+
   .home-services-bicolored-text {
     width: 608px;
     justify-self: center;
   }
+
   .home-page-ilustration-container {
     margin-top: 30px;
   }
 }
+
 @media (min-width: 1200px) {
-  .home-qualities {
-    margin-left: 30px;
-  }
   .a11y-home-presentation-container {
     display: flex;
     justify-content: center;
@@ -59,27 +63,33 @@
     column-gap: 99px;
     margin-top: 0px;
   }
+
   .a11y-home-why-choose-us-clients {
     margin-top: 170px;
     display: flex;
   }
+
   .home-our-services-section {
     margin: auto;
-    margin-top: 60px;
     align-items: center !important;
   }
+
   .home-our-services {
     text-align: center !important;
   }
+
   .home-our-services h1 {
     margin: 0px;
   }
+
   .home-page-ilustration-container {
     margin-top: 10px;
   }
+
   .home-presentation-sign-custom-text h1 {
     text-align: left;
   }
+
   .home-services-bicolored-text h2 {
     margin: 0px;
   }
