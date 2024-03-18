@@ -17,7 +17,7 @@ function AlliBot() {
     <div id="alliBot" className="alliBot-page-container">
       <Helmet>
         <title>
-          AlliBot - Empowering Inclusive Experiences | A11ysolutions
+          A11iBot - Empowering Inclusive Experiences | A11ysolutions
         </title>
       </Helmet>
 
@@ -27,7 +27,7 @@ function AlliBot() {
           <Presentation
             title="Need Quick Solutions for Web Accessibility?"
             texts={[
-              "Unlock Instant Answers with AlliBot, Your AI-Powered Web Accessibility Expert.",
+              "Unlock Instant Answers with A11iBot, Your AI-Powered Web Accessibility Expert.",
             ]}
             handleClick={navigateToAlliBot}
             buttonText="Try It Free"
@@ -97,7 +97,7 @@ function AlliBot() {
           <div className="home-services-bicolored-text">
             <BicolorTitledText
               color1="#0D9E71"
-              color1Text="Introducing AlliBot: The easiest way to solve your Web Accessibility Needs"
+              color1Text="Introducing A11iBot: The easiest way to solve your Web Accessibility Needs"
               className="home-our-services"
             ></BicolorTitledText>
           </div>
@@ -114,7 +114,7 @@ function AlliBot() {
                 Lost in a maze of accessibility guidelines? Whether you're a
                 developer working to meet Web Content Accessibility Guidelines
                 (WCAG) or a tester looking to identify accessibility flaws,
-                AlliBot has you covered. Get immediate, accurate answers and
+                A11iBot has you covered. Get immediate, accurate answers and
                 make your web content more accessible efforlessly.
               </p>
             </CustomCard>
@@ -126,10 +126,10 @@ function AlliBot() {
             >
               <h3>Eliminate Compliance Nightmares</h3>
               <p>
-                Legal worries? Set them aside with AlliBot. Specializing in the
-                latest WCAG guidelines, AlliBot assists you in achieving
+                Legal worries? Set them aside with A11iBot. Specializing in the
+                latest WCAG guidelines, A11iBot assists you in achieving
                 compliance with laws like ADA, Section 508, and EAA, among
-                others. AlliBot provides code snippets that are compliant with
+                others. A11iBot provides code snippets that are compliant with
                 the latest standards, all backed by 5 years of enterprise-level
                 expertise.
               </p>
@@ -143,7 +143,7 @@ function AlliBot() {
               <h3>Stay Ahead of the Ever-Changing Game</h3>
               <p>
                 Adapt instantly to new Standard/Laws updates with code solutions
-                that are always up-to-date. AlliBot keeps you ahead of the
+                that are always up-to-date. A11iBot keeps you ahead of the
                 curve, so you never have to play catch-up.
               </p>
             </CustomCard>
@@ -155,7 +155,7 @@ function AlliBot() {
             >
               <h3>Break Free from the Costly Consultant Trap</h3>
               <p>
-                Forget about those expensive consultants. AlliBot offers you
+                Forget about those expensive consultants. A11iBot offers you
                 guidance and code solutions you need at a fraction of the cost,
                 directly in your chat window.
               </p>
@@ -269,7 +269,7 @@ function AlliBot() {
               >
                 <h3>Yainery Bolanos, CEO/Co-Founder at Adaved</h3>
                 <q>
-                  We just started using AlliBot and it's already helping us a
+                  We just started using A11iBot and it's already helping us a
                   lot. It's like having a specialist with us all the time,
                   making our work faster and better.
                 </q>
@@ -283,7 +283,7 @@ function AlliBot() {
               >
                 <h3>Luis Terrero, CEO/Founder at PixelPerfecto</h3>
                 <q>
-                  We recently started using AlliBot and we're very happy. Even
+                  We recently started using A11iBot and we're very happy. Even
                   in its MVP stage, the chatbot is like an expert on web
                   accessibility. It gives quick and useful advice.
                 </q>
@@ -297,7 +297,7 @@ function AlliBot() {
               >
                 <h3>Dariel Vila, CEO/Co-Founder at Front10 and Woxo</h3>
                 <q>
-                  AlliBot has made a significant impact for us. It's new, but it
+                  A11iBot has made a significant impact for us. It's new, but it
                   consistently helps us with web accessibility. We're pleased to
                   have it as part of our toolkit.
                 </q>

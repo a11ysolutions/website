@@ -73,7 +73,7 @@ function AlliWidget() {
   };
   const chooseList = {
     title:
-      "Seeking a Step Towards Enhanced Web Accessibility? Why Choose AlliWidget?",
+      "Seeking a Step Towards Enhanced Web Accessibility? Why Choose A11iWidget?",
     chooses: [
       {
         title: "Simplicity and Efficiency",
@@ -109,16 +109,16 @@ function AlliWidget() {
   };
 
   const theCompetitionList = {
-    title: "AlliWidget: Leading the Way",
+    title: "A11iWidget: Leading the Way",
     section_one: {
-      title: "AlliWidget is not just another widget, it's a game-changer.",
+      title: "A11iWidget is not just another widget, it's a game-changer.",
       description:
-        "Unlike anything you've seen before, AlliWidget includes Allibot, our AI-powered Web Accessibility Expert, setting a new standard in making the web accessible for everyone. Here's how we stand out:",
+        "Unlike anything you've seen before, A11iWidget includes A11iBot, our AI-powered Web Accessibility Expert, setting a new standard in making the web accessible for everyone. Here's how we stand out:",
     },
     section_two: {
       title: "Beyond the Bot: Comprehensive Accessibility Auditing",
       description:
-        "But our commitment to your website's accessibility doesn't end with Allibot. We also provide a manual audit, identifying and suggesting solutions for up to 10 accessibility issues that overlays might miss. This dual approach ensures your website achieves the highest accessibility standards, making AlliWidget the clear choice over the competition.",
+        "But our commitment to your website's accessibility doesn't end with Allibot. We also provide a manual audit, identifying and suggesting solutions for up to 10 accessibility issues that overlays might miss. This dual approach ensures your website achieves the highest accessibility standards, making A11iWidget the clear choice over the competition.",
     },
     list: [
       {
@@ -139,7 +139,7 @@ function AlliWidget() {
       },
       {
         description:
-          "Affordable Expertise: Why pay more for expert advice? Allibot delivers professional web accessibility consulting at a fraction of the cost, making expert knowledge accessible to all.",
+          "Affordable Expertise: Why pay more for expert advice? A11iBot delivers professional web accessibility consulting at a fraction of the cost, making expert knowledge accessible to all.",
       },
     ],
   };
@@ -148,25 +148,25 @@ function AlliWidget() {
     title: "Frequently Asked Questions",
     chooses: [
       {
-        title: "How do I install AlliWidget on my website?",
+        title: "How do I install A11iWidget on my website?",
         description:
-          "Seamlessly integrate AlliWidget in two simple steps: begin with domain verification to secure your installation, followed by embedding a single line of code into your website's HTML. For guidance, our technical support team offers exemplary service to facilitate a smooth integration.",
+          "Seamlessly integrate A11iWidget in two simple steps: begin with domain verification to secure your installation, followed by embedding a single line of code into your website's HTML. For guidance, our technical support team offers exemplary service to facilitate a smooth integration.",
       },
       {
         title: "How long does the installation process take?",
         description:
-          "The installation of AlliWidget is designed for efficiency, ensuring immediate enhancement of your site’s accessibility upon completion of two brief steps.",
+          "The installation of A11iWidget is designed for efficiency, ensuring immediate enhancement of your site’s accessibility upon completion of two brief steps.",
       },
       {
         title:
-          "Can AlliWidget enable users with disabilities to use my website?",
+          "Can A11iWidget enable users with disabilities to use my website?",
         description:
-          "Indeed, AlliWidget is expertly crafted to significantly elevate the accessibility of your website. It empowers individuals with disabilities with the ability to navigate, understand, and interact with your digital content effortlessly.",
+          "Indeed, A11iWidget is expertly crafted to significantly elevate the accessibility of your website. It empowers individuals with disabilities with the ability to navigate, understand, and interact with your digital content effortlessly.",
       },
       {
-        title: "Can AlliWidget help mitigate legal risk?",
+        title: "Can A11iWidget help mitigate legal risk?",
         description:
-          "AlliWidget provides a robust compliance framework, adhering to WCAG, ADA, and Section 508 standards, thus minimizing legal exposure. Our suite of accessibility tools is meticulously tailored to maintain your website’s adherence to current legal standards.",
+          "A11iWidget provides a robust compliance framework, adhering to WCAG, ADA, and Section 508 standards, thus minimizing legal exposure. Our suite of accessibility tools is meticulously tailored to maintain your website’s adherence to current legal standards.",
       },
       {
         title: "Can a11ySolutions support me in my legal proceedings?",
@@ -174,18 +174,18 @@ function AlliWidget() {
           "a11ySolutions extends unparalleled customer support and technical expertise, offering strategic advice for legal accessibility concerns. Engage with our team for professional assistance tailored to your needs.",
       },
       {
-        title: "Which types of disabilities does AlliWidget cover?",
+        title: "Which types of disabilities does A11iWidget cover?",
         description:
-          "AlliWidget offers a comprehensive accessibility solution, encompassing a spectrum of disabilities. From color vision deficiencies to cognitive impairments, our platform ensures your website is navigable and user-friendly for all visitors.",
+          "A11iWidget offers a comprehensive accessibility solution, encompassing a spectrum of disabilities. From color vision deficiencies to cognitive impairments, our platform ensures your website is navigable and user-friendly for all visitors.",
       },
     ],
   };
-  
+
   return (
     <div id="alliWidget" className="alliWidget-page-container">
       <Helmet>
         <title>
-          AlliWidget - Your ultimate automated Web Accessibility Solution |
+          A11iWidget - Your ultimate automated Web Accessibility Solution |
           A11ysolutions
         </title>
       </Helmet>
@@ -196,7 +196,7 @@ function AlliWidget() {
           <Presentation
             title="Need to be more inclusive and comply immediately with Web Accessibility Standards?"
             texts={[
-              "Unlock instantaneously web accessibility barriers and more with AlliWidget.",
+              "Unlock instantaneously web accessibility barriers and more with A11iWidget.",
             ]}
             handleClick={navigateToHome}
             buttonText="TRY IT NOW"
@@ -235,7 +235,12 @@ function AlliWidget() {
               </CustomCard>
             ))}
           </div>
-          <Button className="button-dark-background" size="large" onClick={navigateToHome} variant="negative">
+          <Button
+            className="button-dark-background"
+            size="large"
+            onClick={navigateToHome}
+            variant="negative"
+          >
             Try It Free
           </Button>
           <ImageDivider top bottom variantTopGreen />
@@ -350,9 +355,7 @@ function AlliWidget() {
           <div className="pricing-plan-heading">
             <h2 className="pricing-title">{pricingPlanPackages.title}</h2>
           </div>
-          <ListPricing
-            pricingPlan={pricingPlanPackages.packages}
-          />
+          <ListPricing pricingPlan={pricingPlanPackages.packages} />
           <ImageDivider top variantTopBlack />
         </div>
         {/* =============== tryItNow ===============  */}
@@ -386,7 +389,7 @@ function AlliWidget() {
               >
                 <h3>Yainery Bolanos, CEO/Co-Founder at Adaved</h3>
                 <q>
-                  We just started using AlliWidget and it's already helping us a
+                  We just started using A11iWidget and it's already helping us a
                   lot. It's like having a specialist with us all the time,
                   making our work faster and better.
                 </q>
@@ -400,7 +403,7 @@ function AlliWidget() {
               >
                 <h3>Luis Terrero, CEO/Founder at PixelPerfecto</h3>
                 <q>
-                  We recently started using AlliWidget and we're very happy.
+                  We recently started using A11iWidget and we're very happy.
                   Even in its MVP stage, the chatbot is like an expert on web
                   accessibility. It gives quick and useful advice.
                 </q>

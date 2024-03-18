@@ -8,23 +8,28 @@
   padding-top: 1rem;
   margin-left: 2rem;
   margin-right: 2rem;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
 }
 
 .container-table-pricing {
+  display: block;
   text-align: start;
   border-collapse: collapse;
   font-size: 16px;
   text-align: center;
-  width: 1400px !important;
-  min-width: 1400px !important;
+  min-width: 768px !important;
   max-width: 1400px !important;
 }
 
+.table-button {
+  width: max-content !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  max-width: 246px !important;
+  min-width: 150px !important;
+}
+
 .container-table-pricing table {
-  width: 1400px !important;
-  min-width: 1400px !important;
+  min-width: 768px !important;
   max-width: 1400px !important;
 }
 
@@ -49,6 +54,7 @@
 
 .container-table-pricing tr {
   border: 1px solid #cccccc00;
+  width: 100%;
 }
 
 .container-table-pricing td {
@@ -56,7 +62,11 @@
   text-align: center;
   padding: 0.5rem;
   height: fit-content;
-  width: fit-content;
+  width: 20%;
+}
+
+.container-table-pricing th {
+  width: 20%;
 }
 
 .container-table-pricing .card-price {
@@ -74,18 +84,6 @@
   font-weight: 600;
   font-size: 1.5rem;
   display: relative;
-}
-
-.container-table-pricing .try-border-colspan {
-  position: absolute;
-  transform: translateY(-60px);
-  left: 0;
-  margin-left: 961.5px;
-  height: 200px;
-  width: 283px;
-  border-right: 3px solid #0d9e70de !important;
-  border-left: 3px solid #0d9e70de !important;
-  display: none;
 }
 
 .container-table-pricing .th-header {
@@ -125,8 +123,8 @@
 
 .pricing-popular-container {
   position: absolute;
-  left: 80px;
-  top: -10px;
+  left: 3rem;
+  top: -15px;
   height: 18px;
   width: 100px;
   color: white;
@@ -142,22 +140,41 @@
   align-items: center;
 }
 
-@media screen and (min-width: 1400px) {
-  .container-table-pricing .try-border-colspan {
-    display: block;
+.container-mobile-pricing {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .container-table-pricing {
+    display: none;
   }
 
-  .columns-popular {
-    border-right: 3px solid #0d9e70de !important;
-    border-left: 3px solid #0d9e70de !important;
+  .table-responsive {
+    margin: inherit;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+    gap: 5px;
   }
-  
-  .top-border-header {
-    border-top: 3px solid #0d9e70de !important;
-  
+
+  .container-mobile-pricing {
+    display: block;
+    width: 100%;
   }
-  
-  .container-table-pricing tr:last-child td:nth-child(4) {
-    border-bottom: 3px solid #0d9e70de !important;
+}
+
+
+@media screen and (min-width: 1100px) {
+  .pricing-popular-container {
+    left: 5rem;
+    top: -10px;
+  }
+}
+
+
+
+@media screen and (min-width: 1400px) {
+  .table-responsive {
+    align-items: center;
   }
 }
