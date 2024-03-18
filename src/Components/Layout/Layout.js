@@ -10,7 +10,8 @@ function Layout({ children }) {
   const [showSideDrawer, setShowSideDrawer] = useState(false)
 
   const h2Ref = useRef(null)
-
+  const menuButtonRef = useRef(null);
+  
   const focusH2 = () => {
     h2Ref.current.scrollIntoView()
     h2Ref.current.focus()
@@ -33,16 +34,16 @@ function Layout({ children }) {
         </div>
 
         <Navbar
-          onClickMenu={() => {
-            setShowSideDrawer(true)
-          }}
-          onClickContactUs={() => {
-            focusH2()
-          }}
+          onClickMenu={() => { setShowSideDrawer(true)}}
+          onClickContactUs={() => { focusH2() }}
+          menuButtonRef={menuButtonRef}
         />
         <SideDrawer
           show={showSideDrawer}
-          onClose={() => setShowSideDrawer(false)}
+          onClose={() => {
+            setShowSideDrawer(false)
+            menuButtonRef.current.focus()
+          }}
           onClickContactUs={() => {
             focusH2()
             setShowSideDrawer(false)
