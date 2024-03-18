@@ -11,6 +11,7 @@
 }
 
 .container-table-pricing {
+  display: block;
   text-align: start;
   border-collapse: collapse;
   font-size: 16px;
@@ -20,11 +21,11 @@
 }
 
 .table-button {
-    width: max-content !important;
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
-    max-width: 246px !important;
-    min-width: 150px !important;
+  width: max-content !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  max-width: 246px !important;
+  min-width: 150px !important;
 }
 
 .container-table-pricing table {
@@ -139,9 +140,26 @@
   align-items: center;
 }
 
+.container-mobile-pricing {
+  display: none;
+}
+
 @media screen and (max-width: 1000px) {
-  .table-responsive {
+  .container-table-pricing {
     display: none;
+  }
+
+  .table-responsive {
+    margin: inherit;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .container-mobile-pricing {
+    display: block;
+    width: 100%;
   }
 }
 
@@ -159,17 +177,4 @@
   .table-responsive {
     align-items: center;
   }
-
-  /*.columns-popular {
-    border-right: 3px solid #0d9e70de !important;
-    border-left: 3px solid #0d9e70de !important;
-  }
-
-  .top-border-header {
-    border-top: 3px solid #0d9e70de !important;
-  }
-
-  .container-table-pricing tr:last-child td:nth-child(4) {
-    border-bottom: 3px solid #0d9e70de !important;
-  }*/
 }

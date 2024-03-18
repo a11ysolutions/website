@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./ListPricing.css";
 import Button from "../../UI/Button/Button";
 import PricingToggle from "../../UI/PricingToggle/PricingToggle";
+import PricingCard from "../../UI/PricingCard/PricingCard"
 import { AlliWidgetFeaturesList } from "../../Utils/Utils";
 
 function ListPricing({ pricingPlan }) {
@@ -88,6 +89,26 @@ function ListPricing({ pricingPlan }) {
         <span id="billingTabPanel" className="sr-only">
           Billing and Features&Packages
         </span>
+        <div className="container-mobile-pricing">
+            {pricingPlan.map((pack, index) => (
+              <PricingCard
+                key={`pricing-card-${index}`}
+                title={pack.name}
+                price={
+                  activeToogle === "Monthly"
+                    ? pack.monthPrice
+                    : pack.annualPrice
+                }
+                description={pack.description}
+                buttonLabel={pack.custom ? "Contact us" : "Start Free Trial"}
+                isYear={activeToogle === "Monthly" ? false : true}
+                isPopular={pack.popular}
+                isCustom={pack.custom}
+                featuresList={pack.mobileFeatures}
+                onClick={() => handlePayment(pack)}
+              />
+              ))}
+              </div>
         <table className="container-table-pricing" aria-label="Pricing table">
           <thead>
             <tr style={{ height: "50px" }}>

@@ -180,7 +180,7 @@ function AlliWidget() {
       },
     ],
   };
-  
+
   return (
     <div id="alliWidget" className="alliWidget-page-container">
       <Helmet>
@@ -235,7 +235,12 @@ function AlliWidget() {
               </CustomCard>
             ))}
           </div>
-          <Button className="button-dark-background" size="large" onClick={navigateToHome} variant="negative">
+          <Button
+            className="button-dark-background"
+            size="large"
+            onClick={navigateToHome}
+            variant="negative"
+          >
             Try It Free
           </Button>
           <ImageDivider top bottom variantTopGreen />
@@ -350,9 +355,7 @@ function AlliWidget() {
           <div className="pricing-plan-heading">
             <h2 className="pricing-title">{pricingPlanPackages.title}</h2>
           </div>
-          <ListPricing
-            pricingPlan={pricingPlanPackages.packages}
-          />
+          <ListPricing pricingPlan={pricingPlanPackages.packages} />
           <ImageDivider top variantTopBlack />
         </div>
         {/* =============== tryItNow ===============  */}
