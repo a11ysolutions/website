@@ -172,6 +172,7 @@ function ListPricing({ pricingPlan }) {
                     <td>
                       <Button
                         size="large"
+                        className="table-button"
                         onClick={() => handlePayment(pricingPlan[0])}
                         variant="dark"
                       >
@@ -181,6 +182,7 @@ function ListPricing({ pricingPlan }) {
                     <td>
                       <Button
                         size="large"
+                        className="table-button"
                         onClick={() => handlePayment(pricingPlan[1])}
                         variant="dark"
                       >
@@ -190,6 +192,7 @@ function ListPricing({ pricingPlan }) {
                     <td className="columns-popular">
                       <Button
                         size="large"
+                        className="table-button"
                         onClick={() => handlePayment(pricingPlan[2])}
                         variant="dark"
                       >
@@ -199,6 +202,7 @@ function ListPricing({ pricingPlan }) {
                     <td>
                       <Button
                         size="large"
+                        className="table-button"
                         onClick={() => handlePayment(pricingPlan[3])}
                         variant="dark"
                         ariaLabel={"Scroll to the contact's session in the footer of the page."}
@@ -214,7 +218,6 @@ function ListPricing({ pricingPlan }) {
                 >
                   <th colSpan={5} scope="colgroup" className="colspan-header">
                     {f.title}
-                    <div className="try-border-colspan"></div>
                   </th>
                 </tr>
                 {f.features.map((features, j) => (

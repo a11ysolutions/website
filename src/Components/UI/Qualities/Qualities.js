@@ -43,7 +43,7 @@ function Qualities({ className = "" }) {
           </AchievementCard>
           <AchievementCard
             imgSrc="/experience.png"
-            className="qualities-experience-card"
+            className="qualities-quality-card"
           >
             <h3>Experience</h3>
             <p>
@@ -56,7 +56,7 @@ function Qualities({ className = "" }) {
         </div>
       </div>
       <div className="a11y-qualities-section" role="list">
-        <AchievementCard className="qualities-experience-card" imgSrc="/growth.png">
+        <AchievementCard className="qualities-quality-card" imgSrc="/growth.png">
           <h3>Best/Fast Results</h3>
           <p>
             We will take care of your product's evolvement and accelerate
