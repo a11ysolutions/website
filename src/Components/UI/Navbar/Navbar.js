@@ -3,7 +3,7 @@ import './Navbar.css'
 import Logo from '../Logo/Logo'
 import ToggleMenu from '../ToggleMenu/ToggleMenu'
 import Button from '../Button/Button'
-import { IoMenu } from 'react-icons/io5'
+// import { IoMenu } from 'react-icons/io5'
 // import './ToggleMenu.css'
 //import { scrollToContactForm} from "../../Utils/Utils"
 

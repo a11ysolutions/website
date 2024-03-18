@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { IoMenu } from 'react-icons/io5'
 import './ToggleMenu.css'
 
