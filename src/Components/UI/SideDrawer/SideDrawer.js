@@ -7,9 +7,15 @@ import Button from '../Button/Button'
 
 function SideDrawer({ show, onClose, onClickContactUs  }) {
   const [attachedClasses, setAttachedClasses] = useState('close')
+  const [isButtonVisible, setIsButtonVisible] = useState(false);
   const sidebarRef = useRef(null)
   const firstFocusableElementRef = useRef(null) 
   const lastFocusableElementRef = useRef(null)
+
+  const updateButtonVisibility = () => {
+    const screenWidth = window.innerWidth;
+    setIsButtonVisible(screenWidth < 770);
+  };
 
   const handleTabKey = (e) => {
     if (e.key === 'Tab') {
@@ -32,26 +38,29 @@ function SideDrawer({ show, onClose, onClickContactUs  }) {
   useEffect(() => {
     if (show) {
       setAttachedClasses('open')
-    //   const closeButton = document.querySelector('.toggle-menu-btn-close')
-    //   closeButton && closeButton.focus()
+      //   const closeButton = document.querySelector('.toggle-menu-btn-close')
+      //   closeButton && closeButton.focus()
 
       const focusableElements = sidebarRef.current.querySelectorAll(
         'a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])'
-      );
+      )
 
-      firstFocusableElementRef.current = focusableElements[0];
-      lastFocusableElementRef.current = focusableElements[focusableElements.length - 1];
-    //   setTimeout(() => {
-        firstFocusableElementRef.current.focus();
-    //   }, 100);
+      firstFocusableElementRef.current = focusableElements[0]
+      lastFocusableElementRef.current = focusableElements[focusableElements.length - 1]
+      //   setTimeout(() => {
+      firstFocusableElementRef.current.focus()
+      //   }, 100);
 
       document.addEventListener('keydown', handleTabKey)
-
-      return () => {
-        document.removeEventListener('keydown', handleTabKey)
-      }
+      window.addEventListener('resize', updateButtonVisibility)
+      updateButtonVisibility()
     }
-  }, [show]) 
+
+    return () => {
+      document.removeEventListener('keydown', handleTabKey)
+      window.removeEventListener('resize', updateButtonVisibility)
+    }
+  }, [show, isButtonVisible]) 
 
 
   return (
@@ -78,12 +87,14 @@ function SideDrawer({ show, onClose, onClickContactUs  }) {
             <li><a onClick={onClose} href="/#why-choose-us">Terms and Conditions</a></li>
         </ul>
         <div className="side-drawer-button">
-          <Button            
-            //onClick={() => { window.location.href = "#contact-us"; onClose() }}
-            onClick={onClickContactUs}
-          >
-            Contact us
-          </Button>
+        { isButtonVisible &&
+            <Button            
+                //onClick={() => { window.location.href = "#contact-us"; onClose() }}
+                onClick={onClickContactUs}
+            >
+                Contact us
+            </Button>
+        }
         </div>
       </div>
     )
