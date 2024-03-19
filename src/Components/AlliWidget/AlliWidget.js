@@ -187,25 +187,25 @@ function AlliWidget() {
       name: "Alberto Roman, CEO/Founder at Front10 and Woxo",
       comment:
         "The Color Adjustment feature is a lifesaver for my color blindness. Websites are more vibrant and navigable now, it's like seeing the digital world in a whole new light.",
-      image: "",
+      image: "/alberto.jpg",
     },
     {
       name: "Yainery Bolanos, CEO/Co-Founder at Adaved",
       comment:
         "A11iWidget transformed my site overnight! It's like having a 24/7 accessibility guru who knows the A-Z of compliance. A true ally in the digital space!",
-      image: "/yainery-bolanos.png",
+      image: "/yainerys.jpg",
     },
     {
       name: "Dariel Vila, CEO/Co-Founder at Front10 and Woxo",
       comment:
         "Our website is now a beacon of inclusivity, and our users are loving the change.",
-      image: "/dariel-vila.png",
+      image: "/dariel.jpg",
     },
     {
       name: "Luis Terrero, CEO/Founder at PixelPerfecto",
       comment:
         "A11iWidget is a powerhouse! It's like flipping a switch to unlock a world where everyone can surf my site with ease. Stellar support, stunning results.",
-      image: "/luis-terrero.png",
+      image: "/luis_alberto.jpg",
     },
   ];
   return (
@@ -231,14 +231,8 @@ function AlliWidget() {
           />
         </div>
         <div className="privacy-policy-ilustration-container">
-          {/*<img
-            alt="We work passionately on functional testing, accessibility testing, and automation testing services."
-            className="alliWidget-image"
-            src="/alliwidgets.png"
-          />*/}
           <VideoPresentation
-            sourceMp4="/awidget.mp4"
-            sourceWebm="/awidget.webm"
+            source={"https://www.youtube.com/embed/c_D5ITZ-guE"}
           />
         </div>
       </div>

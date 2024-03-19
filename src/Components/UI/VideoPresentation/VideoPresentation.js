@@ -1,39 +1,15 @@
-import { useRef } from "react";
-const VideoPresentation = ({sourceMp4, sourceWebm}) => {
-  const videoRef = useRef(null);
-  const handleCanPlay = () => {
-    videoRef.current.play();
-  };
-  const handleKeyPress = (event) => {
-    if (!videoRef.current) return;
-
-    switch (event.key) {
-      case " ":
-      case "Enter":
-        if (videoRef.current.paused) {
-          videoRef.current.play();
-        } else {
-          videoRef.current.pause();
-        }
-        break;
-      default:
-        break;
-    }
-  };
+const VideoPresentation = ({ source }) => {
   return (
-    <video
+    <iframe
       className="alliWidget-video"
-      ref={videoRef}
-      tabIndex={0}
-      onCanPlay={handleCanPlay}
-      controls
-      aria-label="Nombre del video"
-      muted
-    >
-      <source src={sourceMp4} type="video/mp4" />
-      <source src={sourceWebm} type="video/webm" />
-      onKeyPress={handleKeyPress}
-    </video>
+      width="560"
+      height="400"
+      src={source}
+      title="A11iWidget - Your ultimate automated Web Accessibility Solution"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
   );
 };
 export default VideoPresentation;

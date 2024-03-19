@@ -19,25 +19,25 @@ function AlliBot() {
       name: "Alberto Roman, CEO/Founder at Front10 and Woxo",
       comment:
         "A11iBot's AI sophistication has been a game-changer for web accessibility, offering real-time coding solutions that streamline our process, saving us hours of work.",
-      image: "",
+      image: "/alberto.jpg",
     },
     {
       name: "Yainery Bolanos, CEO/Co-Founder at Adaved",
       comment:
         "We just started using A11iBot and it's already helping us a lot. It's like having a specialist with us all the time, making our work faster and better.",
-      image: "/yainery-bolanos.png",
+      image: "/yainerys.jpg",
     },
     {
       name: "Dariel Vila, CEO/Co-Founder at Front10 and Woxo",
       comment:
         "A11iBot has significantly impacted our work. Its expert consultations on WAI-ARIA have remarkably enhanced our efficiency, making it an essential asset for our team.",
-      image: "/dariel-vila.png",
+      image: "/dariel.jpg",
     },
     {
       name: "Luis Terrero, CEO/Founder at PixelPerfecto",
       comment:
         "We recently started using A11iBot and we're very happy. Even in its MVP stage, the chatbot is like an expert on web accessibility. It gives quick and useful advice.",
-      image: "/luis-terrero.png",
+      image: "/luis_alberto.jpg",
     },
   ];
   return (
