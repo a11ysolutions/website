@@ -10,6 +10,7 @@ import VideoPresentation from "../UI/VideoPresentation/VideoPresentation";
 import Button from "../UI/Button/Button";
 import { navigateToHome, pricingPlanPackages } from "../Utils/Utils";
 import ListPricing from "../UI/ListPricing/ListPricing";
+import ReviewCard from "../UI/ReviewCard/ReviewCard";
 
 function AlliWidget() {
   const servicesList = {
@@ -181,6 +182,32 @@ function AlliWidget() {
     ],
   };
 
+  const reviewA11iWidget = [
+    {
+      name: "Alberto Roman, CEO/Founder at Front10 and Woxo",
+      comment:
+        "The Color Adjustment feature is a lifesaver for my color blindness. Websites are more vibrant and navigable now, it's like seeing the digital world in a whole new light.",
+      image: "/alberto.jpg",
+    },
+    {
+      name: "Yainery Bolanos, CEO/Co-Founder at Adaved",
+      comment:
+        "A11iWidget transformed my site overnight! It's like having a 24/7 accessibility guru who knows the A-Z of compliance. A true ally in the digital space!",
+      image: "/yainerys.jpg",
+    },
+    {
+      name: "Dariel Vila, CEO/Co-Founder at Front10 and Woxo",
+      comment:
+        "Our website is now a beacon of inclusivity, and our users are loving the change.",
+      image: "/dariel.jpg",
+    },
+    {
+      name: "Luis Terrero, CEO/Founder at PixelPerfecto",
+      comment:
+        "A11iWidget is a powerhouse! It's like flipping a switch to unlock a world where everyone can surf my site with ease. Stellar support, stunning results.",
+      image: "/luis_alberto.jpg",
+    },
+  ];
   return (
     <div id="alliWidget" className="alliWidget-page-container">
       <Helmet>
@@ -204,14 +231,8 @@ function AlliWidget() {
           />
         </div>
         <div className="privacy-policy-ilustration-container">
-          {/*<img
-            alt="We work passionately on functional testing, accessibility testing, and automation testing services."
-            className="alliWidget-image"
-            src="/alliwidgets.png"
-          />*/}
           <VideoPresentation
-            sourceMp4="/awidget.mp4"
-            sourceWebm="/awidget.webm"
+            source={"https://www.youtube.com/embed/c_D5ITZ-guE"}
           />
         </div>
       </div>
@@ -372,59 +393,24 @@ function AlliWidget() {
           <div className="alliWidget-review-header">
             <div className="home-services-bicolored-text">
               <BicolorTitledText
-                color1="black"
+                color1="#0D9E71"
                 color2="#0D9E71"
-                color2Text="Some awesome reviews"
+                color2Text="Discover our customers opinions."
                 className="home-our-services"
               ></BicolorTitledText>
+              <p className="alliWidget-review-subtitle">
+                Listen to the Voices that Count!
+              </p>
             </div>
-
-            <div className="alliWidget-review-content" role="list">
-              <CustomCard
-                imgSrc="/yainery-bolanos.png"
-                className="custom-horizontal-card"
-                classTextContainer="text-container-horizontal"
-                classEllipseBar="card-ellipse-bar"
-                icon
-              >
-                <h3>Yainery Bolanos, CEO/Co-Founder at Adaved</h3>
-                <q>
-                  We just started using A11iWidget and it's already helping us a
-                  lot. It's like having a specialist with us all the time,
-                  making our work faster and better.
-                </q>
-              </CustomCard>
-              <CustomCard
-                imgSrc="/luis-terrero.png"
-                className="custom-horizontal-card shadow"
-                classTextContainer="text-container-horizontal"
-                classEllipseBar="card-ellipse-bar"
-                icon
-              >
-                <h3>Luis Terrero, CEO/Founder at PixelPerfecto</h3>
-                <q>
-                  We recently started using A11iWidget and we're very happy.
-                  Even in its MVP stage, the chatbot is like an expert on web
-                  accessibility. It gives quick and useful advice.
-                </q>
-              </CustomCard>
-              <CustomCard
-                imgSrc="/dariel-vila.png"
-                className="custom-horizontal-card"
-                classTextContainer="text-container-horizontal"
-                classEllipseBar="card-ellipse-bar"
-                icon
-              >
-                <h3>Dariel Vila, CEO/Co-Founder at Front10 and Woxo</h3>
-                <q>
-                  AlliWidget has made a significant impact for us. It's new, but
-                  it consistently helps us with web accessibility. We're pleased
-                  to have it as part of our toolkit.
-                </q>
-              </CustomCard>
-            </div>
-            <ImageDivider bottom variantBottomBlack />
           </div>
+          <div className="alliWidget-review-container">
+            <div className="alliWidget-review-content">
+              {reviewA11iWidget.map((rev, index) => (
+                <ReviewCard key={index} review={rev} />
+              ))}
+            </div>
+          </div>
+          <ImageDivider bottom variantBottomBlack />
         </div>
       </div>
     </div>
