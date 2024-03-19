@@ -395,7 +395,7 @@ function AlliWidget() {
               <BicolorTitledText
                 color1="#0D9E71"
                 color2="#0D9E71"
-                color2Text="Discover our customers opinions."
+                color2Text="Discover our customers' opinions."
                 className="home-our-services"
               ></BicolorTitledText>
               <p className="alliWidget-review-subtitle">
