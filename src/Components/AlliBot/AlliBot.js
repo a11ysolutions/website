@@ -11,7 +11,7 @@ import { ImageDivider } from "../UI/ImageDivider/ImageDivider";
 import Button from "../UI/Button/Button";
 import ListPricing from "../UI/ListPricing/ListPricing";
 import ReviewCard from "../UI/ReviewCard/ReviewCard";
-import { pricingPlanPackages } from "../Utils/Utils";
+import { pricingPlanPackages, handleScrollAndFocus } from "../Utils/Utils";
 
 function AlliBot() {
   const reviewA11iBot = [
@@ -56,7 +56,7 @@ function AlliBot() {
             texts={[
               "Unlock Instant Answers with A11iBot, Your AI-Powered Web Accessibility Expert.",
             ]}
-            handleClick={navigateToAlliBot}
+            handleClick={() => handleScrollAndFocus("#a11ybot-pricing")}
             buttonText="Try It Free"
             className="alliBot-presentation-sign"
           />
@@ -112,7 +112,7 @@ function AlliBot() {
             </CustomCard>
           </div>
 
-          <Button size="large" onClick={navigateToAlliBot} variant="negative">
+          <Button size="large" onClick={() => handleScrollAndFocus("#a11ybot-pricing")} variant="negative">
             Try It Free
           </Button>
 
@@ -191,7 +191,7 @@ function AlliBot() {
 
           <Button
             size="large"
-            onClick={navigateToAlliBot}
+            onClick={() => handleScrollAndFocus("#a11ybot-pricing")}
             variant="dark"
             className="button-light-background"
           >
@@ -262,7 +262,7 @@ function AlliBot() {
         </div>
 
         {/* =============== Alliwidget Pricing ===============  */}
-        <div className="alliWidget-pricing">
+        <div  id="a11ybot-pricing" className="alliWidget-pricing">
           <div className="pricing-plan-heading">
             <h2 className="pricing-title">{pricingPlanPackages.title}</h2>
           </div>
@@ -272,7 +272,7 @@ function AlliBot() {
 
         {/* =============== tryItNow ===============  */}
         <TryItNow
-          handleNavigate={navigateToAlliBot}
+          handleNavigate={() => handleScrollAndFocus("#a11ybot-pricing")}
           text="Give it a try for free"
           buttonText="Try It Now"
         >
@@ -286,7 +286,7 @@ function AlliBot() {
               <BicolorTitledText
                 color1="black"
                 color2="#0D9E71"
-                color2Text="Discover our customers' opinions."
+                color2Text="Discover our customers' opinions"
                 className="home-our-services"
               ></BicolorTitledText>
               <p className="alliWidget-review-subtitle">
