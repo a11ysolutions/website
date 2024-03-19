@@ -3,7 +3,7 @@ import "./ListPricing.css";
 import Button from "../../UI/Button/Button";
 import PricingToggle from "../../UI/PricingToggle/PricingToggle";
 import PricingCard from "../../UI/PricingCard/PricingCard";
-import { AlliWidgetFeaturesList } from "../../Utils/Utils";
+import { AlliWidgetFeaturesList, handleScrollAndFocus } from "../../Utils/Utils";
 import ReactGA from "react-ga4";
 
 function ListPricing({ pricingPlan }) {
@@ -27,8 +27,9 @@ function ListPricing({ pricingPlan }) {
         action: "button_contact_us",
         label: "The contact button was clicked",
       });
-      const contactSection = document.getElementById("footer");
-      return contactSection.scrollIntoView({ behavior: "smooth" });
+      // const contactSection = document.getElementById("footer");
+      // return contactSection.scrollIntoView({ behavior: "smooth" });
+      return handleScrollAndFocus('#contact-us h2')
     }
     if (activeToogle === "Monthly") {
       ReactGA.event({
@@ -243,9 +244,7 @@ function ListPricing({ pricingPlan }) {
                         className="table-button"
                         onClick={() => handlePayment(pricingPlan[3])}
                         variant="dark"
-                        ariaLabel={
-                          "Scroll to the contact's session in the footer of the page."
-                        }
+                        // ariaLabel={"Scroll to the contact's session in the footer of the page."} 
                       >
                         Contact us
                       </Button>
