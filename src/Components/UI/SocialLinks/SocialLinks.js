@@ -14,6 +14,7 @@ function SocialLinks() {
                         href="https://www.linkedin.com/company/a11ysolutions/" 
                         className="social-link"
                         target="_blank"
+                        rel="noreferrer"
                     >
                         <FaLinkedin size={35} />
                     </a>

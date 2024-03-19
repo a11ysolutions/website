@@ -1,6 +1,6 @@
-import React from 'react'
-import Button from '../Button/Button'
-import './TryItNow.css'
+import React from "react";
+import Button from "../Button/Button";
+import "./TryItNow.css";
 
 function TryItNow({ text, subText, buttonText, handleNavigate, children }) {
   return (
@@ -16,7 +16,7 @@ function TryItNow({ text, subText, buttonText, handleNavigate, children }) {
       </div>
       {children}
     </div>
-  )
+  );
 }
 
-export default TryItNow
+export default TryItNow;

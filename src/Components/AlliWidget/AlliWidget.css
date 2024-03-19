@@ -1,51 +1,25 @@
 .layout-content.layout-alliWidget {
-  padding: 0;
+  padding: 0 !important;
   background: none !important;
 }
 
-#wa11y-widget-icon {
-  z-index: 50 !important;
+/* =============== alliWidget-presentation-image =============== */
+.alliWidget-image {
+  object-fit: scale-down;
+  width: clamp(150px, 100%, 400px);
+  height: clamp(150px, 100%, 300px);
 }
 
-.alliWidget-page-container {
-  display: flex;
-  flex-direction: column;
-  font: normal normal normal 16px/24px Archivo;
+.alliWidget-video {
+  width: clamp(250px, 100%, 690px);
+  border-radius: 20px;
+  padding-top: 2rem;
 }
 
-.alliWidget-features .custom-card-ellipse img {
-  object-fit: cover;
-}
-
-.alliWidget-features .image-fit-contained img {
-  object-fit: contain;
-}
-
-/* =============== alliWidget-presentation-container =============== */
-.alliWidget-presentation-container {
-  padding: 0 16px;
-  background: #21ce99;
-}
-
-.alliWidget-presentation-container .privacy-policy-ilustration-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: 90px;
-  z-index: 2;
-}
-
-.alliWidget-presentation-container .home-ilustration-container > div {
+/* =============== alliBot-presentation-container =============== */
+.alliWidget-page-container .home-ilustration-container>div {
   width: fit-content;
   margin: 50px auto 0;
-  border: 2px solid;
-  border-radius: 0.3rem;
-}
-
-.alliWidget-presentation-container .home-ilustration-container {
-  width: 85%;
-  height: 370px;
-  margin: 0 5%;
 }
 
 .alliWidget-presentation-sign text:last-of-type {
@@ -56,6 +30,25 @@
   margin: 0 7%;
 }
 
+.alliWidget-presentation-container {
+  background: #21ce99;
+  position: relative;
+}
+
+.alliWidget-presentation-container .privacy-policy-ilustration-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 0px;
+  z-index: 0;
+}
+
+.alliWidget-presentation-container .home-ilustration-container {
+  width: 85%;
+  height: 400px;
+  margin: 0 5%;
+}
+
 .alliWidget-page-container .home-ilustration {
   width: 100%;
   height: 100%;
@@ -63,7 +56,7 @@
   display: block;
 }
 
-/* =============== alliWidget-content =============== */
+/* =============== alliBot-content =============== */
 .alliWidget-content {
   display: flex;
   flex-direction: column;
@@ -72,32 +65,301 @@
   margin: auto;
 }
 
-/* =============== alliWidget-features =============== */
+/* =============== alliBot-accessibility =============== */
+.alliWidget-accessibility {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 6rem 2rem 7rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.alliWidget-accessibility-content,
+.alliWidget-why-choose-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 2rem;
+}
+
+.accessibility-item,
+.alliWidget-accessibility-content {
+  text-align: left;
+}
+
+.accessibility-item h3,
+.alliWidget-accessibility-content h3 {
+  margin-bottom: 0.5rem;
+}
+
+.accessibility-item p,
+.alliWidget-accessibility-content p {
+  margin-top: 0;
+}
+
+/* =============== alliBot-features =============== */
 .alliWidget-features {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1020px;
+  padding-top: 2rem;
+}
+
+.alliWidget-features-content {
+  display: flex;
   flex-wrap: wrap;
+}
+
+.feature-card {
+  padding: 1rem !important;
+}
+
+.feature-card h3 {
+  margin-block-start: 0em !important;
+  margin-block-end: 0em !important;
+}
+
+.feature-card .custom-card-img {
+  height: 200px;
+  width: 350px;
+  display: block;
+  margin: auto !important;
+  padding: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+.custom-sized-image .custom-card-ellipse {
+  height: inherit !important;
+  width: inherit !important;
+}
+
+/* =============== alliBot-why-choose =============== */
+.alliWidget-why-choose {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 0rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.why-choose-item,
+.alliWidget-why-choose-content {
+  text-align: left;
+}
+
+.why-choose-item h3,
+.alliWidget-why-choose-content h3 {
+  margin-bottom: 0.5rem;
+}
+
+.why-choose-item p,
+.alliWidget-why-choose-content p {
+  margin-top: 0;
+}
+
+.custom-why-choose-button {
+  width: 280px;
+}
+
+/* =============== Alliwidget vs. The Competition =============== */
+.alliWidget-competition {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+  padding: 5rem 2rem 3rem;
+  background-color: white;
+  color: black;
+}
+
+.alliWidget-competition-image {
+  object-fit: scale-down;
+  width: clamp(150px, 100%, 600px);
+  height: clamp(150px, 100%, 800px);
+  padding-top: 3rem;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+}
+
+.alliWidget-competition-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 1rem;
+}
+
+.competition-title {
+  font: normal normal 900 35px / 40px Archivo;
+  color: #0D9E71;
+  text-align: start;
+}
+
+.competition-subtitle {
+  font: normal normal 700 20px / 22px Archivo;
+  padding-bottom: 10px;
+}
+
+.competition-text-content {
+  font: normal normal 500 16px / 18px Archivo;
+  color: black;
+  text-align: start;
+  line-height: 1.5;
+}
+
+/* =============== alliWidget-pricing =============== */
+.alliWidget-pricing {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  color: black;
+}
+
+.alliWidget-pricing-container-title {
+  color: black;
+  font-size: 2rem;
+  padding-top: 0rem;
+}
+
+.alliWidget-pricing-container-title p {
+  line-height: 0px !important;
+}
+
+.pricing-text-content {
+  padding-bottom: 2rem;
+}
+
+.pricing-title {
+  font: normal normal 900 35px / 40px Archivo;
+  color: #0D9E71;
+}
+
+.pricing-subtitle {
+  font: normal normal 700 20px / 22px Archivo;
+  padding-bottom: 10px;
+}
+
+.pricing-text-content {
+  font: normal normal 500 16px / 18px Archivo;
+  color: black;
+  line-height: 1.5;
+}
+
+@media (max-width: 1000px) {
+  .alliWidget-pricing {
+    justify-content: start;
+  }
+
+  .alliWidget-pricing-container-title {
+    padding-top: 0rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .alliWidget-pricing {
+    justify-content: start;
+  }
+}
+
+@media (min-width: 1300px) {
+  .alliWidget-pricing-container-title {
+    padding-top: 6rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  .alliWidget-pricing-container-title {
+    padding-top: 6rem;
+  }
+}
+
+/* =============== End alliWidget-pricing ================= */
+
+/* =============== alliWidget-review =============== */
+.alliWidget-review {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.alliWidget-review-subtitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.alliWidget-review-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
   max-width: 1020px;
   padding: 0 1rem;
 }
 
-.alliWidget-features > :last-child {
-  margin-bottom: 3rem;
+.alliWidget-review-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  max-width: 1600px;
 }
 
-/* =============== @media (max-width: 767.99px) =============== */
-@media (max-width: 767.99px) {
-  .alliWidget-presentation-container .presentation-main h1 {
-    width: auto;
-    max-width: 450px;
-  }
+.alliWidget-review-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+  padding-bottom: 7rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
 
-  .alliWidget-presentation-container .privacy-policy-ilustration-container {
-    margin-top: 30px;
+@media screen and (max-width: 1200px) {
+  .alliWidget-review-content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* =============== End alliWidget-review =============== */
+
+/* =============== @media (max-width: 767px) =============== */
+@media screen and (max-width: 767px) {
+
+  .alliWidget-features .bicolor-titled-container,
+  .alliWidget-accessibility .bicolor-titled-container,
+  .alliWidget-why-choose .bicolor-titled-container {
+    max-width: 500px;
+    text-align: center;
   }
 }
 
 /* =============== @media (min-width: 768px) and (max-width: 1200px) =============== */
 @media (min-width: 768px) and (max-width: 1200px) {
+  .alliWidget-presentation-container .home-ilustration-container {
+    height: 380px;
+  }
+
   .alliWidget-presentation-container .home-ilustration-container {
     width: 508px;
   }
@@ -112,42 +374,63 @@
     margin: auto;
   }
 
-  .alliWidget-content .bicolor-titled-container {
-    max-width: 70%;
+  .alliWidget-content .bicolor-titled-container,
+  .alliWidget-features .bicolor-titled-container {
+    max-width: 100%;
   }
 
   .alliWidget-content .bicolor-titled-container p {
     font: normal normal normal 24px/30px Archivo;
   }
 
-  .alliWidget-features {
-    margin-top: 2rem;
+  .alliWidget-features-content> :nth-child(odd) {
+    margin-top: 0.2rem;
   }
 
-  .alliWidget-features > :nth-child(1),
-  .alliWidget-content .home-services-bicolored-text {
-    z-index: 2;
+  .alliWidget-features-content> :nth-child(even) {
+    margin-top: 0.2rem;
   }
 
-  .alliWidget-features > :nth-child(odd) {
+  .alliWidget-features-content> :nth-child(4) {
     margin-top: 4rem;
   }
 
-  .alliWidget-features > :nth-child(even) {
-    margin-top: 6rem;
+  .alliWidget-features-content> :last-child {
+    margin-bottom: 0.2rem;
   }
 
-  .alliWidget-features > :nth-child(4) {
-    margin-top: 4rem;
+  .standalone-card {
+    margin-top: 1rem;
   }
 
-  .alliWidget-features > :last-child {
-    margin-bottom: 5rem;
+  .alliWidget-accessibility-content,
+  .alliWidget-why-choose-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .alliWidget-competition {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .alliWidget-competition-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
 
 /* =============== @media (min-width: 1200px) =============== */
 @media screen and (min-width: 1200px) {
+  .alliWidget-page-container .home-ilustration-container>div {
+    width: 263px;
+    height: 313px;
+  }
+
   .alliWidget-presentation-container {
     display: flex;
     justify-content: center;
@@ -177,35 +460,72 @@
   }
 
   .alliWidget-content {
-    margin: 5rem auto auto;
+    margin: auto;
+  }
+
+  .alliWidget-features {
+    padding-bottom: 3rem;
   }
 
   .alliWidget-content .bicolor-titled-container p {
     font: normal normal normal 24px/30px Archivo;
   }
 
-  .alliWidget-features {
-    margin-top: 2rem;
-  }
-
-  .alliWidget-features > :nth-child(1),
-  .alliWidget-content .home-services-bicolored-text {
-    z-index: 2;
-  }
-
-  .alliWidget-features > :nth-child(odd) {
+  .alliWidget-features-content> :nth-child(odd) {
     margin-top: 4rem;
   }
 
-  .alliWidget-features > :nth-child(even) {
+  .alliWidget-features-content> :nth-child(even) {
     margin-top: 6rem;
   }
 
-  .alliWidget-features > :nth-child(4) {
+  .alliWidget-features-content> :nth-child(4) {
     margin-top: 4rem;
   }
 
-  .alliWidget-features > :last-child {
+  .alliWidget-features-content> :last-child {
     margin-bottom: 5rem;
+  }
+
+  .standalone-card {
+    margin-top: 3rem;
+  }
+
+  .alliWidget-features .bicolor-titled-container {
+    max-width: 750px;
+  }
+
+  .alliWidget-accessibility-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .alliWidget-why-choose-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .alliWidget-competition {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .alliWidget-competition-content {
+    display: flex;
+    flex-direction: row;
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .alliWidget-competition-image {
+    padding-top: 105px !important;
+  }
+
+  .bicolor-titled-container {
+    max-width: 900px !important;
+  }
+
+  .alliWidget-video {
+    transform: translateY(-3rem);
+    padding-top: 0rem;
   }
 }

@@ -2,7 +2,7 @@ import React from "react"
 import AchievementCard from "../UI/AchievementCard/AchievementCard"
 import BicolorTitledText from "../UI/BicolorTitledText/BicolorTitledText"
 import Button from "../UI/Button/Button"
-import CardButton from "../UI/CardButton/CardButton"
+// import CardButton from "../UI/CardButton/CardButton"
 import CheckedItem from "../UI/CheckedItem/CheckedItem"
 import Illustration from "../UI/Illustration/Illustration"
 import Presentation from "../UI/Presentation/Presentation"
@@ -44,14 +44,14 @@ function Accessibility() {
                 pillPositionClass="pill-position"
             />
 
-            <section className="a11y-qualities">
-                <div className="a11y-why-choose-us-qualities">
+            <section className="accesibility-a11y-qualities">
+                <div className="accesibility-a11y-why-choose-us-qualities">
                     <BicolorTitledText
                         color1="black"
                         color2="#0D9E71"
                         color1Text="We offer the following"
                         color2Text="accessibility audits for you:"
-                        className="a11y-first-bicolored"
+                        className="bicolor-titled-container 11y-first-bicolored"
                     >
                         Our test automation engineers will put your testing on the automation footing
                         to find more defects in less time. We do this in order to:
@@ -104,9 +104,9 @@ function Accessibility() {
                 </BicolorTitledText>
 
                 <div className="a11y-buttons">
-                    <CardButton className="card-button" size="large" variant="negative">
-                        <a className="no-decorator-link" href="./VPAT_Template.pdf">View a Sample VPAT</a>
-                    </CardButton>
+                    <Button className="card-button" size="large">
+                        <a className="removed-decorator-link" href="./VPAT_Template.pdf">View a Sample VPAT</a>
+                    </Button>
                     <Button onClick={scrollToContactForm}
                         className="automation"
                     >Get in touch</Button>

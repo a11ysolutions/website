@@ -5,18 +5,20 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import Layout from './Components/Layout/Layout';
+import ReactGA from "react-ga4";
 
+ReactGA.initialize("G-3FPLNR6FFW");
 
 ReactDOM.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Layout>
-        <App />
-      </Layout>
-    </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+    <React.StrictMode>
+      <BrowserRouter>
+        <Layout>
+          <App />
+        </Layout>
+      </BrowserRouter>
+    </React.StrictMode>,
+    document.getElementById('root')
+  );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

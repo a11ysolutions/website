@@ -13,5 +13,8 @@
   color: #000;
 }
 .footer-link:hover {
-  outline: 5px solid yellow;
+  /* outline: 5px solid yellow; */
+  outline: 2px solid #ffffff;
+  box-shadow: 0 0 0 3px #000000;
+  outline-offset: 2px;
 }
