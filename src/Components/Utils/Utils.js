@@ -5,6 +5,28 @@ export const scrollToContactForm = () => {
   nameField.focus();
 };
 
+export const handleScrollAndFocus = (selector, options = { threshold: 1.0, rootMargin: '0px' })=> {
+  const element = document.querySelector(`${selector}`)
+
+  if (!element) {
+    console.warn(`Element not found with selector: ${selector}`);
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          element.focus()
+          observer.disconnect()
+        }
+      })
+    }, options )
+
+  element.scrollIntoView({ behavior: 'smooth' })
+  observer.observe(element)
+}
+
 export const navigateToHome = () => {
   window.location.href = "/?openWidget=true";
 };
