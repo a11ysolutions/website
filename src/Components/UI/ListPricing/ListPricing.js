@@ -27,8 +27,6 @@ function ListPricing({ pricingPlan }) {
         action: "button_contact_us",
         label: "The contact button was clicked",
       });
-      // const contactSection = document.getElementById("footer");
-      // return contactSection.scrollIntoView({ behavior: "smooth" });
       return handleScrollAndFocus('#contact-us h2')
     }
     if (activeToogle === "Monthly") {
@@ -244,7 +242,6 @@ function ListPricing({ pricingPlan }) {
                         className="table-button"
                         onClick={() => handlePayment(pricingPlan[3])}
                         variant="dark"
-                        // ariaLabel={"Scroll to the contact's session in the footer of the page."} 
                       >
                         Contact us
                       </Button>

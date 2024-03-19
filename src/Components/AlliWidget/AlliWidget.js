@@ -8,7 +8,7 @@ import "./AlliWidget.css";
 import { ImageDivider } from "../UI/ImageDivider/ImageDivider";
 import VideoPresentation from "../UI/VideoPresentation/VideoPresentation";
 import Button from "../UI/Button/Button";
-import { navigateToHome, pricingPlanPackages } from "../Utils/Utils";
+import { navigateToHome, pricingPlanPackages, handleScrollAndFocus } from "../Utils/Utils";
 import ListPricing from "../UI/ListPricing/ListPricing";
 import ReviewCard from "../UI/ReviewCard/ReviewCard";
 
@@ -225,7 +225,7 @@ function AlliWidget() {
             texts={[
               "Unlock instantaneously web accessibility barriers and more with A11iWidget.",
             ]}
-            handleClick={navigateToHome}
+            handleClick={() => handleScrollAndFocus("#a11ywidget-pricing")}
             buttonText="TRY IT NOW"
             className="alliWidget-presentation-sign"
           />
@@ -259,7 +259,7 @@ function AlliWidget() {
           <Button
             className="button-dark-background"
             size="large"
-            onClick={navigateToHome}
+            onClick={() => handleScrollAndFocus("#a11ywidget-pricing")}
             variant="negative"
           >
             Try It Free
@@ -290,7 +290,7 @@ function AlliWidget() {
               </CustomCard>
             ))}
           </div>
-          <Button size="large" onClick={navigateToHome} variant="dark">
+          <Button size="large" onClick={() => handleScrollAndFocus("#a11ywidget-pricing")} variant="dark">
             Try It Free
           </Button>
         </div>
@@ -372,7 +372,7 @@ function AlliWidget() {
         </div>
 
         {/* =============== Alliwidget Pricing ===============  */}
-        <div className="alliWidget-pricing">
+        <div id="a11ywidget-pricing" className="alliWidget-pricing">
           <div className="pricing-plan-heading">
             <h2 className="pricing-title">{pricingPlanPackages.title}</h2>
           </div>
@@ -381,7 +381,7 @@ function AlliWidget() {
         </div>
         {/* =============== tryItNow ===============  */}
         <TryItNow
-          handleNavigate={navigateToHome}
+          handleNavigate={() => handleScrollAndFocus("#a11ywidget-pricing")}
           text="Give it a try for free"
           buttonText="Try It Now"
         >
@@ -395,7 +395,7 @@ function AlliWidget() {
               <BicolorTitledText
                 color1="#0D9E71"
                 color2="#0D9E71"
-                color2Text="Discover our customers' opinions."
+                color2Text="Discover our customers' opinions"
                 className="home-our-services"
               ></BicolorTitledText>
               <p className="alliWidget-review-subtitle">
