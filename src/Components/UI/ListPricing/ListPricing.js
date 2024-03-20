@@ -105,7 +105,7 @@ function ListPricing({ pricingPlan }) {
         role="tabpanel"
         tabIndex={0}
       >
-        <span id="billingTabPanel" className="sr-only">
+        <span id="billingTabPanel" aria-hidden="true" className="sr-only">
           Billing and Features&Packages
         </span>
         <div className="container-mobile-pricing">

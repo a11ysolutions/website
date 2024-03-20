@@ -33,7 +33,7 @@ const PricingToggle = ({ active, onClick }) => {
       aria-labelledby="billingCycleLabel"
     >
       <div className="pricing-toggle-container">
-        <span id="billingCycleLabel" className="sr-only">
+        <span id="billingCycleLabel" aria-hidden="true" className="sr-only">
           Billing cycle type
         </span>
         <div
@@ -72,6 +72,7 @@ const PricingToggle = ({ active, onClick }) => {
         <div
           id="monthlyContent"
           className="sr-only"
+          aria-hidden="true"
           hidden={active !== "Monthly"}
         >
           Monthly Billing Features&Packages
@@ -79,6 +80,7 @@ const PricingToggle = ({ active, onClick }) => {
         <div
           id="annualContent"
           className="sr-only"
+          aria-hidden="true"
           hidden={active !== "Annual"}
         >
           Annual Billing Features&Packages, Save 2 months
