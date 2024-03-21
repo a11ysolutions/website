@@ -68,7 +68,7 @@ const PricingToggle = ({ active, onClick }) => {
         >
           Annual
         </div>
-        <span className="badge">Save 2 months</span>
+        <span className="badge" aria-hidden="true">Save 2 months</span>
         <div
           id="monthlyContent"
           className="sr-only"
