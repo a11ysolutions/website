@@ -81,7 +81,7 @@ ${formValues.name} from ${formValues.companyName}
             if (!firstFieldWithError) firstFieldWithError = emailRef
 
         } else if (!regex.test(values.email)) {
-            errors.email = "Please enter a valid email"
+            errors.email = "Please enter a valid email, (e.g. name@gmail.com)"
             if (!firstFieldWithError) firstFieldWithError = emailRef
         }
         if (!values.phoneNumber) {
@@ -89,7 +89,7 @@ ${formValues.name} from ${formValues.companyName}
             if (!firstFieldWithError) firstFieldWithError = phoneNumberRef
 
         } else if (!regexPhone.test(values.phoneNumber)) {
-            errors.phoneNumber = "Please enter a valid phone number"
+            errors.phoneNumber = "Please enter a valid phone number with more than 8 digits"
             if (!firstFieldWithError) firstFieldWithError = phoneNumberRef
         } else if (values.phoneNumber.length < 9) {
             errors.phoneNumber = "Please enter a phone number with more than 8 digits"
