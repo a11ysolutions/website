@@ -222,14 +222,14 @@ function Form() {
             className="footer-link button-dark-background"
             variant="light"
             style={{ marginTop: '1em', height: '3em' }}
-            ariaLabel={isSubmit ? 'hourglass loading' : 'Submit now'}
+            ariaLabel={isSubmit ? 'loading' : 'Submit now'}
           >
             {isSubmit ? (
               <Hourglass
                 visible={true}
                 height="25"
                 width="25"
-                ariaLabel="hourglass loading"
+                ariaLabel="loading"
                 colors={['#000000', '#434343']}
               />
             ) : (
