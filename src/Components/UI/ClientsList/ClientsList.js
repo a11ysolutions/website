@@ -2,7 +2,7 @@ import "./ClientsList.css";
 function ClientsList({ clients }) {
   return (
     <div className="container-clients">
-      <div class="content-grid-clients" role={"list"}>
+      <div className="content-grid-clients" role={"list"}>
         {clients.map((c, index) => {
           return (
             <div key={index} className="clients-img-card" role={"listitem"}>

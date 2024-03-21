@@ -72,7 +72,7 @@ function ListPricing({ pricingPlan }) {
                 d="m226.83 74.83l-128 128a4 4 0 0 1-5.66 0l-56-56a4 4 0 0 1 5.66-5.66L96 194.34L221.17 69.17a4 4 0 1 1 5.66 5.66Z"
               />
             </svg>
-            <span class="sr-only">Included</span>
+            <span className="sr-only">Included</span>
           </>
         ) : (
           <>
@@ -88,7 +88,7 @@ function ListPricing({ pricingPlan }) {
                 d="M202.83 197.17a4 4 0 0 1-5.66 5.66L128 133.66l-69.17 69.17a4 4 0 0 1-5.66-5.66L122.34 128L53.17 58.83a4 4 0 0 1 5.66-5.66L128 122.34l69.17-69.17a4 4 0 1 1 5.66 5.66L133.66 128Z"
               />
             </svg>
-            <span class="sr-only">Not included</span>
+            <span className="sr-only">Not included</span>
           </>
         )}
       </td>
