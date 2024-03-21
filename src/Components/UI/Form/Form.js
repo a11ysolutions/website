@@ -75,35 +75,38 @@ function Form() {
     const regexPhone =
       /^(?:(?:\(?(?:00|\+)([1-4]\d\d|[1-9]\d?)\)?)?[-. \\/]?)?((?:\(?\d{1,}\)?[-. \\/]?){0,})(?:[-. \\/]?(?:#|ext\.?|extension|x)[-. \\/]?(\d+))?$/i
 
-    if (!values.name) {
-      errors.name = 'Please enter a name'
-      if (!firstFieldWithError) firstFieldWithError = nameRef
-    }
-    if (!values.companyName) {
-      errors.companyName = 'Please enter the name of your company'
-      if (!firstFieldWithError) firstFieldWithError = companyNameRef
-    }
-    if (!values.email) {
-      errors.email = 'Please enter an email address'
-      if (!firstFieldWithError) firstFieldWithError = emailRef
-    } else if (!regex.test(values.email)) {
-      errors.email = 'Please enter a valid email'
-      if (!firstFieldWithError) firstFieldWithError = emailRef
-    }
-    if (!values.phoneNumber) {
-      errors.phoneNumber = 'Please enter your phone number'
-      if (!firstFieldWithError) firstFieldWithError = phoneNumberRef
-    } else if (!regexPhone.test(values.phoneNumber)) {
-      errors.phoneNumber = 'Please enter a valid phone number'
-      if (!firstFieldWithError) firstFieldWithError = phoneNumberRef
-    } else if (values.phoneNumber.length < 9) {
-      errors.phoneNumber = 'Please enter a phone number with more than 8 digits'
-      if (!firstFieldWithError) firstFieldWithError = phoneNumberRef
-    } else if (values.phoneNumber.length > 15) {
-      errors.phoneNumber = 'Please enter a phone number with less than 15 digits'
-      if (!firstFieldWithError) firstFieldWithError = phoneNumberRef
-    }
-    if (firstFieldWithError) firstFieldWithError.current.focus()
+        if (!values.name) {
+            errors.name = "Please enter a name"
+            if (!firstFieldWithError) firstFieldWithError = nameRef
+        }
+        if (!values.companyName) {
+            errors.companyName = "Please enter the name of your company"
+            if (!firstFieldWithError) firstFieldWithError = companyNameRef
+        }
+        if (!values.email) {
+            errors.email = "Please enter an email address"
+            if (!firstFieldWithError) firstFieldWithError = emailRef
+
+        } else if (!regex.test(values.email)) {
+            errors.email = "Please enter a valid email, (e.g. name@gmail.com)"
+            if (!firstFieldWithError) firstFieldWithError = emailRef
+        }
+        if (!values.phoneNumber) {
+            errors.phoneNumber = "Please enter your phone number"
+            if (!firstFieldWithError) firstFieldWithError = phoneNumberRef
+
+        } else if (!regexPhone.test(values.phoneNumber)) {
+            errors.phoneNumber = "Please enter a valid phone number with more than 8 digits"
+            if (!firstFieldWithError) firstFieldWithError = phoneNumberRef
+        } else if (values.phoneNumber.length < 9) {
+            errors.phoneNumber = "Please enter a phone number with more than 8 digits"
+            if (!firstFieldWithError) firstFieldWithError = phoneNumberRef
+        }
+        else if (values.phoneNumber.length > 15) {
+            errors.phoneNumber = "Please enter a phone number with less than 15 digits"
+            if (!firstFieldWithError) firstFieldWithError = phoneNumberRef
+        }
+        if (firstFieldWithError) firstFieldWithError.current.focus()
 
     return errors
   }
