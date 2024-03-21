@@ -3,7 +3,10 @@ import "./ListPricing.css";
 import Button from "../../UI/Button/Button";
 import PricingToggle from "../../UI/PricingToggle/PricingToggle";
 import PricingCard from "../../UI/PricingCard/PricingCard";
-import { AlliWidgetFeaturesList, handleScrollAndFocus } from "../../Utils/Utils";
+import {
+  AlliWidgetFeaturesList,
+  handleScrollAndFocus,
+} from "../../Utils/Utils";
 import ReactGA from "react-ga4";
 
 function ListPricing({ pricingPlan }) {
@@ -27,7 +30,7 @@ function ListPricing({ pricingPlan }) {
         action: "button_contact_us",
         label: "The contact button was clicked",
       });
-      return handleScrollAndFocus('#contact-us h2')
+      return handleScrollAndFocus("#contact-us h2");
     }
     if (activeToogle === "Monthly") {
       ReactGA.event({
@@ -106,7 +109,9 @@ function ListPricing({ pricingPlan }) {
         tabIndex={0}
       >
         <span id="billingTabPanel" aria-hidden="true" className="sr-only">
-          Billing and Features&Packages
+          {activeToogle === "Monthly"
+            ? "Monthly Billing Features&Packages"
+            : "Annual Billing Features&Packages, Save 2 months"}
         </span>
         <div className="container-mobile-pricing">
           {pricingPlan.map((pack, index) => (
