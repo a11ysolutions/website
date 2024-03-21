@@ -1,7 +1,8 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react'
+import React, { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import Button from '../Button/Button'
-import { renderButtonContent } from '../../Utils/Utils'
+import { CustomToastify } from '../../UI/Toastify/Toastify'
+import { toast } from 'react-toastify'
 import { Hourglass } from 'react-loader-spinner'
 import './Form.css'
 
@@ -11,7 +12,6 @@ function Form() {
   const [formValues, setFormValues] = useState(initialValues)
   const [formErrors, setFormErrors] = useState({})
   const [isSubmit, setIsSubmit] = useState(false)
-  // console.log('🚀  isSubmit:', isSubmit)
 
   const form = useRef(null)
   const nameRef = useRef(null)
@@ -20,9 +20,9 @@ function Form() {
   const phoneNumberRef = useRef(null)
 
   // const COMPANY_EMAIL = 'a11ycontact@a11ysolutions.com'
-  const EMAILJS_SERVICE_ID = 'service_xr0hg9j'
-  const EMAILJS_TEMPLATE_ID = 'template_as0pduq'
-  const YOUR_PUBLIC_KEY = 'oxIRyGdHE0JlRLAEo'
+  const EMAILJS_SERVICE_ID = 'service_efc8xuo'
+  const EMAILJS_TEMPLATE_ID = 'template_lhoh6yn'
+  const YOUR_PUBLIC_KEY = 'r7jD1lU2aeIUVWlue'
 
   let firstFieldWithError = null
   let attribute = { 'aria-invalid': 'true' }
@@ -46,7 +46,6 @@ function Form() {
 
     if (Object.keys(validationErrors).length === 0) {
       setIsSubmit(true)
-      // console.log('🚀  isSubmit setIsSubmit(true):', isSubmit)
       // Submit the form
       emailjs
         .sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form.current, {
@@ -54,12 +53,14 @@ function Form() {
         })
         .then(
           (response) => {
-            console.log('SUCCESS!')
+            // console.log('SUCCESS!')
             setIsSubmit(false)
+            toast.success('Submission Successful! We will be in touch soon.', { toastId: 'customId' })
           },
           (error) => {
-            console.log('FAILED...', error.text)
+            // console.log('FAILED...', error.text)
             setIsSubmit(false)
+            toast.error('Submission Failed. Please try again.', {})
           }
         )
 
@@ -234,6 +235,7 @@ function Form() {
           </Button>
         </div>
       </form>
+      <CustomToastify />
     </div>
   )
 }

@@ -2990,6 +2990,11 @@
     "strip-ansi" "^6.0.0"
     "wrap-ansi" "^7.0.0"
 
+"clsx@^1.1.1":
+  "integrity" "sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg=="
+  "resolved" "https://registry.npmjs.org/clsx/-/clsx-1.2.1.tgz"
+  "version" "1.2.1"
+
 "co@^4.6.0":
   "integrity" "sha512-QVb0dM5HvG+uaxitm8wONl7jltx8dqhfU33DcqtOZcLSVIKSDDLDi7+0LbAKiyI8hD9u42m2YxXSkMGWThaecQ=="
   "resolved" "https://registry.npmjs.org/co/-/co-4.6.0.tgz"
@@ -7455,7 +7460,7 @@
     "strip-ansi" "^6.0.1"
     "text-table" "^0.2.0"
 
-"react-dom@*", "react-dom@^16.0.0 || ^17.0.0 || ^18.0.0", "react-dom@^17.0.2", "react-dom@>= 16.8.0", "react-dom@>=16.8":
+"react-dom@*", "react-dom@^16.0.0 || ^17.0.0 || ^18.0.0", "react-dom@^17.0.2", "react-dom@>= 16.8.0", "react-dom@>=16", "react-dom@>=16.8":
   "version" "17.0.2"
   dependencies:
     "loose-envify" "^1.1.0"
@@ -7582,7 +7587,14 @@
 "react-side-effect@^2.1.0":
   "version" "2.1.2"
 
-"react@*", "react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.3.0 || ^17.0.0 || ^18.0.0", "react@^17.0.2", "react@>= 16", "react@>= 16.8.0", "react@>=16.3.0", "react@>=16.8", "react@17.0.2":
+"react-toastify@^9.1.2":
+  "integrity" "sha512-PBfzXO5jMGEtdYR5jxrORlNZZe/EuOkwvwKijMatsZZm8IZwLj01YvobeJYNjFcA6uy6CVrx2fzL9GWbhWPTDA=="
+  "resolved" "https://registry.npmjs.org/react-toastify/-/react-toastify-9.1.2.tgz"
+  "version" "9.1.2"
+  dependencies:
+    "clsx" "^1.1.1"
+
+"react@*", "react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.3.0 || ^17.0.0 || ^18.0.0", "react@^17.0.2", "react@>= 16", "react@>= 16.8.0", "react@>=16", "react@>=16.3.0", "react@>=16.8", "react@17.0.2":
   "version" "17.0.2"
   dependencies:
     "loose-envify" "^1.1.0"
