@@ -1,6 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import Button from '../Button/Button'
+import { CustomToastify } from '../../UI/Toastify/Toastify'
+import { toast } from 'react-toastify'
+import { Hourglass } from 'react-loader-spinner'
 import './Form.css'
 
 const initialValues = { name: '', companyName: '', email: '', phoneNumber: '', message: '' }
@@ -8,7 +11,7 @@ const initialValues = { name: '', companyName: '', email: '', phoneNumber: '', m
 function Form() {
   const [formValues, setFormValues] = useState(initialValues)
   const [formErrors, setFormErrors] = useState({})
-  //const [isSubmit, setIsSubmit] = useState(false)
+  const [isSubmit, setIsSubmit] = useState(false)
 
   const form = useRef(null)
   const nameRef = useRef(null)
@@ -17,11 +20,10 @@ function Form() {
   const phoneNumberRef = useRef(null)
 
   // const COMPANY_EMAIL = 'a11ycontact@a11ysolutions.com'
-  const EMAILJS_SERVICE_ID = 'service_xr0hg9j'
-  const EMAILJS_TEMPLATE_ID = 'template_as0pduq'
-  const YOUR_PUBLIC_KEY = 'oxIRyGdHE0JlRLAEo'
+  const EMAILJS_SERVICE_ID = 'service_efc8xuo'
+  const EMAILJS_TEMPLATE_ID = 'template_lhoh6yn'
+  const YOUR_PUBLIC_KEY = 'r7jD1lU2aeIUVWlue'
 
-  let isSubmit = false
   let firstFieldWithError = null
   let attribute = { 'aria-invalid': 'true' }
 
@@ -31,10 +33,11 @@ function Form() {
     setFormErrors({ ...formErrors, [id]: '' })
   }
 
-  useEffect(() => {
-    if (Object.keys(formErrors).length === 0 && isSubmit) {
-    }
-  }, [formErrors, isSubmit])
+  // useEffect(() => {
+  //   if (Object.keys(formErrors).length === 0 && isSubmit) {
+  //     console.log('🚀  isSubmit Effect:', isSubmit)
+  //   }
+  // }, [formErrors, isSubmit])
 
   const onSubmit = (event) => {
     event.preventDefault()
@@ -42,6 +45,7 @@ function Form() {
     setFormErrors(validationErrors)
 
     if (Object.keys(validationErrors).length === 0) {
+      setIsSubmit(true)
       // Submit the form
       emailjs
         .sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form.current, {
@@ -49,12 +53,14 @@ function Form() {
         })
         .then(
           (response) => {
-            console.log('SUCCESS!')
-            // console.log(response.status)
-            // console.log(response.text)
+            // console.log('SUCCESS!')
+            setIsSubmit(false)
+            toast.success('Submission Successful! We will be in touch soon.', { toastId: 'customId' })
           },
           (error) => {
-            console.log('FAILED...', error.text)
+            // console.log('FAILED...', error.text)
+            setIsSubmit(false)
+            toast.error('Submission Failed. Please try again.', {})
           }
         )
 
@@ -62,6 +68,7 @@ function Form() {
       setFormValues(initialValues)
     }
   }
+
   const validate = (values) => {
     const errors = {}
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i
@@ -215,11 +222,23 @@ function Form() {
             className="footer-link button-dark-background"
             variant="light"
             style={{ marginTop: '1em', height: '3em' }}
+            ariaLabel={isSubmit ? 'hourglass loading' : 'Submit now'}
           >
-            Submit now
+            {isSubmit ? (
+              <Hourglass
+                visible={true}
+                height="25"
+                width="25"
+                ariaLabel="hourglass loading"
+                colors={['#000000', '#434343']}
+              />
+            ) : (
+              'Submit now'
+            )}
           </Button>
         </div>
       </form>
+      <CustomToastify />
     </div>
   )
 }
