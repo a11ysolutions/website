@@ -7,14 +7,14 @@ function FeatureCard({ children, imgSrc, imgDiv, className, classEllipseBar, cla
   return (
     <div className={`custom-card ${className}`}>
       {imgSrc && (
-        <div className={`custom-card-ellipse ${classEllipseBar}`}>
+        <div className={`custom-card-ellipse ${classEllipseBar}`} aria-hidden="true">
           {icon && (
             <div className="icon-container">
-              <img src="./quotation.svg" className="custom-card-icon" alt="" />
+              <img src="./quotation.svg" className="custom-card-icon" alt="" aria-hidden="true"/>
             </div>
           )}
           {imgDiv && <div className={`${classImgDivMac} ${classImgDivBrowser}`} style={divStyle}></div>}
-          <img src={imgSrc} className={`custom-card-img ${imgDiv ? 'imgDivPosition' : ''}`} alt="" />
+          <img src={imgSrc} className={`custom-card-img ${imgDiv ? 'imgDivPosition' : ''}`} alt="" aria-hidden="true" />
         </div>
       )}
       <div className={`custom-card-text-container ${classTextContainer}`}>{children}</div>
