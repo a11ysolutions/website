@@ -1,6 +1,7 @@
 .form-group {
   margin-top: 1.5em;
 }
+
 .form-input {
   height: 2em;
   margin-top: 0.5em;
@@ -11,6 +12,7 @@
   font: inherit;
   width: 302px;
 }
+
 .form-button {
   text-align: center;
 }
@@ -21,6 +23,7 @@
     column-gap: 16px;
     width: 296px;
   }
+
   .form-button {
     text-align: left;
   }
@@ -32,6 +35,7 @@
     column-gap: 16px;
     width: 296px;
   }
+
   .form-button {
     text-align: left;
   }
@@ -39,6 +43,7 @@
   .form-group {
     margin-top: 1.5em;
   }
+
   .form-input {
     height: 2em;
     background-color: #000 !important;
@@ -46,23 +51,27 @@
     border-bottom: #5A5959 thin solid;
     color: #7c7c7c !important;
     font: inherit;
-    width: 196px;
+    width: 300px;
   }
+
   .form-group label {
     width: fit-content;
     margin-top: 3em;
     display: block;
   }
+
   .required {
-    font-weight: 300;
     font-style: italic;
   }
+
   .error-message {
     width: fit-content;
     color: #de4330;
     margin-bottom: 2em;
   }
+
   .error {
     border-bottom: #de4330 thin solid;
+    width: 300px;
   }
 }
