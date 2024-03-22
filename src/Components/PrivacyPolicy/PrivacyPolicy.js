@@ -7,6 +7,31 @@ import { PRIVACY_POLICY_CONTENT } from "./PrivacyPolicyContent";
 import { ImageDivider } from "../UI/ImageDivider/ImageDivider";
 
 function PrivacyPolicy() {
+  function getElementsBetweenTwoTexts(mainElement, initialText, endText) {
+    const allElements = Array.from(mainElement.getElementsByTagName("*"));
+    let initIndex = -1;
+    let endIndex = -1;
+    allElements.forEach((elemento, index) => {
+      if (initIndex === -1 && elemento.textContent.includes(initialText)) {
+        initIndex = index;
+      } else if (
+        initIndex !== -1 &&
+        endIndex === -1 &&
+        elemento.textContent.includes(endText)
+      ) {
+        endIndex = index;
+      }
+    });
+    if (initIndex === -1 || endIndex === -1 || initIndex >= endIndex) {
+      console.log(
+        "No se encontraron los elementos delimitadores en el orden correcto."
+      );
+      return [];
+    }
+    const elementsResult = allElements.slice(initIndex + 1, endIndex);
+
+    return elementsResult;
+  }
   function mergeTablesIntOne() {
     //Update table headers with "th"
     const tempDiv = document.createElement("div");
