@@ -8,7 +8,7 @@ import "./AlliWidget.css";
 import { ImageDivider } from "../UI/ImageDivider/ImageDivider";
 import VideoPresentation from "../UI/VideoPresentation/VideoPresentation";
 import Button from "../UI/Button/Button";
-import { navigateToHome, pricingPlanPackages, handleScrollAndFocus } from "../Utils/Utils";
+import { pricingPlanPackages, handleScrollAndFocus } from "../Utils/Utils";
 import ListPricing from "../UI/ListPricing/ListPricing";
 import ReviewCard from "../UI/ReviewCard/ReviewCard";
 
