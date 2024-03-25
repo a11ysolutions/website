@@ -107,7 +107,7 @@ function Form() {
       errors.name = 'Please enter a name'
       if (!firstFieldWithError) firstFieldWithError = nameRef
     } else if (!regexName.test(values.name)) {
-      errors.name = 'Please enter a valid name, (e.g. name)'
+      errors.name = 'Please enter a valid name containing only text'
       if (!firstFieldWithError) firstFieldWithError = nameRef
     }
     if (!values.companyName) {
@@ -118,7 +118,7 @@ function Form() {
       errors.email = 'Please enter an email address'
       if (!firstFieldWithError) firstFieldWithError = emailRef
     } else if (!regex.test(values.email)) {
-      errors.email = 'Please enter a valid email, (e.g. name@gmail.com)'
+      errors.email = 'Please enter a valid email.Example:name@domain.com'
       if (!firstFieldWithError) firstFieldWithError = emailRef
     }
     if (!values.phoneNumber) {
