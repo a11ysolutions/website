@@ -3,11 +3,9 @@ import "./ListPricing.css";
 import Button from "../../UI/Button/Button";
 import PricingToggle from "../../UI/PricingToggle/PricingToggle";
 import PricingCard from "../../UI/PricingCard/PricingCard";
-import {
-  AlliWidgetFeaturesList,
-  handleScrollAndFocus,
-} from "../../Utils/Utils";
+import { AlliWidgetFeaturesList, handleScrollAndFocus } from "../../Utils/Utils";
 import ReactGA from "react-ga4";
+import { IoOpenOutline } from "react-icons/io5";
 
 function ListPricing({ pricingPlan }) {
   const [activeToogle, setActiveToogle] = useState("Monthly");
@@ -217,8 +215,10 @@ function ListPricing({ pricingPlan }) {
                         className="table-button"
                         onClick={() => handlePayment(pricingPlan[0])}
                         variant="dark"
+                        ariaLabel="Start Free Trial (opens new window)"
                       >
                         Start Free Trial
+                        <IoOpenOutline size="20" aria-hidden="true"/>
                       </Button>
                     </td>
                     <td>
@@ -227,8 +227,10 @@ function ListPricing({ pricingPlan }) {
                         className="table-button"
                         onClick={() => handlePayment(pricingPlan[1])}
                         variant="dark"
+                        ariaLabel="Start Free Trial (opens new window)"
                       >
                         Start Free Trial
+                        <IoOpenOutline size="20" aria-hidden="true"/>
                       </Button>
                     </td>
                     <td className="columns-popular">
@@ -237,8 +239,10 @@ function ListPricing({ pricingPlan }) {
                         className="table-button"
                         onClick={() => handlePayment(pricingPlan[2])}
                         variant="dark"
+                        ariaLabel="Start Free Trial (opens new window)"
                       >
                         Start Free Trial
+                        <IoOpenOutline size="20" aria-hidden="true"/>
                       </Button>
                     </td>
                     <td>
