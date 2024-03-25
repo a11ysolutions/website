@@ -99,9 +99,15 @@ ul > li > ul > li > ul {
 ol li {
   font-family: Arial ;
 }
-h1,h2,h3,h4,h5,h6 {
+.privacy-policy h1,
+.privacy-policy h2,
+.privacy-policy h3,
+.privacy-policy h4,
+.privacy-policy h5,
+.privacy-policy h6 {
   color: black;
 }
+
 </style>
 </div>
 <div style="color: #595959;font-size: 14px;font-family: Arial;padding-top:16px;">
