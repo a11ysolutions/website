@@ -99,6 +99,9 @@ ul > li > ul > li > ul {
 ol li {
   font-family: Arial ;
 }
+h1,h2,h3,h4,h5,h6 {
+  color: black;
+}
 </style>
 </div>
 <div style="color: #595959;font-size: 14px;font-family: Arial;padding-top:16px;">
