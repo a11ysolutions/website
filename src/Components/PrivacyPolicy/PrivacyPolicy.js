@@ -7,30 +7,26 @@ import { PRIVACY_POLICY_CONTENT } from "./PrivacyPolicyContent";
 import { ImageDivider } from "../UI/ImageDivider/ImageDivider";
 
 function PrivacyPolicy() {
-  function getElementsBetweenTwoTexts(mainElement, initialText, endText) {
-    const allElements = Array.from(mainElement.getElementsByTagName("*"));
-    let initIndex = -1;
-    let endIndex = -1;
-    allElements.forEach((elemento, index) => {
-      if (initIndex === -1 && elemento.textContent.includes(initialText)) {
-        initIndex = index;
-      } else if (
-        initIndex !== -1 &&
-        endIndex === -1 &&
-        elemento.textContent.includes(endText)
-      ) {
-        endIndex = index;
-      }
+  function updateWrappedHeadings(htmlString) {
+    const rules = [
+      {
+        searchFor: /<[^>]*>PRIVACY POLICY<\/[^>]*>/g,
+        replaceWith: "<h2>PRIVACY POLICY</h2>",
+      },
+      {
+        searchFor: /<[^>]*>(SUMMARY OF KEY POINTS|TABLE OF CONTENTS)<\/[^>]*>/g,
+        replaceWith: "<h3>$1</h3>",
+      },
+      {
+        searchFor:
+          /<[^>]*>(California Residents|Colorado Residents|Connecticut Residents|Utah Residents|Virginia Residents)<\/[^>]*>/g,
+        replaceWith: "<h5>$1</h5>",
+      },
+    ];
+    rules.forEach((rule) => {
+      htmlString = htmlString.replace(rule.searchFor, rule.replaceWith);
     });
-    if (initIndex === -1 || endIndex === -1 || initIndex >= endIndex) {
-      console.log(
-        "No se encontraron los elementos delimitadores en el orden correcto."
-      );
-      return [];
-    }
-    const elementsResult = allElements.slice(initIndex + 1, endIndex);
-
-    return elementsResult;
+    return htmlString;
   }
   function mergeTablesIntOne() {
     //Update table headers with "th"
@@ -67,7 +63,20 @@ function PrivacyPolicy() {
         div.parentNode.replaceChild(p, div);
       }
     });
-    return tempDiv.innerHTML;
+    //Add Headings h4
+    const elements = tempDiv.querySelectorAll(
+      '[data-custom-class="heading_1"]'
+    );
+    elements.forEach((element) => {
+      const newH4 = document.createElement("h4");
+      newH4.innerHTML = element.innerHTML;
+      Array.from(element.attributes).forEach((attr) => {
+        newH4.setAttribute(attr.nodeName, attr.nodeValue);
+      });
+      element.parentNode.replaceChild(newH4, element);
+    });
+
+    return updateWrappedHeadings(tempDiv.innerHTML);
   }
   return (
     <div id="privacy-policy-main" className="privacy-policy-page-container">
