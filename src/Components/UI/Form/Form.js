@@ -118,7 +118,7 @@ function Form() {
       errors.email = 'Please enter an email address'
       if (!firstFieldWithError) firstFieldWithError = emailRef
     } else if (!regex.test(values.email)) {
-      errors.email = 'Please enter a valid email'
+      errors.email = 'Please enter a valid email.Example:name@domain.com'
       if (!firstFieldWithError) firstFieldWithError = emailRef
     }
     if (!values.phoneNumber) {
