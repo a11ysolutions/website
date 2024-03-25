@@ -10,7 +10,11 @@
   border-bottom: #5a5959 thin solid;
   color: #7c7c7c;
   font: inherit;
-  width: 302px;
+  width: 250px;
+}
+
+.recaptcha {
+  padding-top: inherit;
 }
 
 .form-button {
@@ -18,20 +22,23 @@
 }
 
 .error-message {
-  width: fit-content;
   color: #de4330;
   margin-bottom: 2em;
+  width: 250px;
 }
 
 .error {
   border-bottom: #de4330 thin solid;
-  width: 300px;
+  width: 250px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .form-inputs {
     display: flex;
     column-gap: 16px;
+    width: 296px;
+  }
+  .error-message, .error {
     width: 296px;
   }
 
@@ -44,6 +51,9 @@
   .form-inputs {
     display: flex;
     column-gap: 16px;
+    width: 296px;
+  }
+  .error-message, .error {
     width: 296px;
   }
 
@@ -73,5 +83,9 @@
 
   .required {
     font-style: italic;
+  }
+
+  .recaptcha {
+    padding-top: 20px;
   }
 }
