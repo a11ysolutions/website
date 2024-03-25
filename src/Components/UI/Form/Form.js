@@ -112,7 +112,7 @@ function Form() {
   const validate = (values) => {
     const errors = {};
     const regex = /^[^.\s][^.\s@]+(\.[^.\s@]+)*@[^.\s@]+\.[^.\s@]+[^.\s]$/i;
-    const regexName = /^[A-Za-z]+(\s[A-Za-z]+)*$/i;
+    const regexName = /^[A-Za-záéíóúÁÉÍÓÚñÑ]+(\s[A-Za-záéíóúÁÉÍÓÚñÑ]+)*$/i;
     const regexPhone =
       /^(?:(?:\(?(?:00|\+)([1-4]\d\d|[1-9]\d?)\)?)?[-. \\/]?)?((?:\(?\d{1,}\)?[-. \\/]?){0,})(?:[-. \\/]?(?:#|ext\.?|extension|x)[-. \\/]?(\d+))?$/i;
 
