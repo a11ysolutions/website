@@ -7,7 +7,7 @@
   margin-top: 0.5em;
   background-color: #000;
   border: none;
-  border-bottom: #5A5959 thin solid;
+  border-bottom: #5a5959 thin solid;
   color: #7c7c7c;
   font: inherit;
   width: 302px;
@@ -15,6 +15,17 @@
 
 .form-button {
   text-align: center;
+}
+
+.error-message {
+  width: fit-content;
+  color: #de4330;
+  margin-bottom: 2em;
+}
+
+.error {
+  border-bottom: #de4330 thin solid;
+  width: 300px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -48,7 +59,7 @@
     height: 2em;
     background-color: #000 !important;
     border: none;
-    border-bottom: #5A5959 thin solid;
+    border-bottom: #5a5959 thin solid;
     color: #7c7c7c !important;
     font: inherit;
     width: 300px;
@@ -62,16 +73,5 @@
 
   .required {
     font-style: italic;
-  }
-
-  .error-message {
-    width: fit-content;
-    color: #de4330;
-    margin-bottom: 2em;
-  }
-
-  .error {
-    border-bottom: #de4330 thin solid;
-    width: 300px;
   }
 }
