@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../Button/Button";
+import { IoOpenOutline } from "react-icons/io5";
 import "./PricingCard.css";
 
 const PricingCard = ({
@@ -7,6 +8,7 @@ const PricingCard = ({
   price,
   onClick,
   buttonLabel,
+  ariaLabel,
   isYear,
   isPopular,
   isCustom,
@@ -54,8 +56,9 @@ const PricingCard = ({
             justifyContent: "center",
           }}
         >
-          <Button size="large" onClick={onClick} variant="dark">
+          <Button className="table-button-mobile" size="large" onClick={onClick} variant="dark" ariaLabel={ariaLabel}>
             {buttonLabel}
+            {buttonLabel !=='Contact us' && <IoOpenOutline size="20" aria-hidden="true"/>}
           </Button>
         </div>
         <ul className="feature-pricing-container">

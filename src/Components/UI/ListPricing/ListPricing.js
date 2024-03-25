@@ -120,6 +120,7 @@ function ListPricing({ pricingPlan }) {
                 activeToogle === "Monthly" ? pack.monthPrice : pack.annualPrice
               }
               buttonLabel={pack.custom ? "Contact us" : "Start Free Trial"}
+              ariaLabel={pack.custom ? "Contact us" : "Start Free Trial (opens new window)"}
               isYear={activeToogle === "Monthly" ? false : true}
               isPopular={pack.popular}
               isCustom={pack.custom}
