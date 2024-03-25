@@ -26,6 +26,9 @@
   padding-right: 2rem !important;
   max-width: 246px !important;
   min-width: 150px !important;
+  display: flex;
+  align-items: center;
+  gap: .3rem;
 }
 
 .container-table-pricing table {
