@@ -64,7 +64,7 @@ textarea.form-fb-input {
     margin-bottom: 1rem;
   }
 
-  .error-message {
-    position: absolute;
-  }
+  /* .error-message { */
+    /* position: absolute; */
+  /* } */
 }

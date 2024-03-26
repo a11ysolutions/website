@@ -131,7 +131,7 @@ function Form() {
       errors.email = "Please enter an email address";
       if (!firstFieldWithError) firstFieldWithError = emailRef;
     } else if (!regex.test(values.email)) {
-      errors.email = "Please enter a valid email.Example:name@domain.com";
+      errors.email = "Please enter a valid email. Example: name@domain.com";
       if (!firstFieldWithError) firstFieldWithError = emailRef;
     }
     if (!values.phoneNumber) {
@@ -236,7 +236,7 @@ function Form() {
               </div>
             </div>
           </div>
-          <div>
+          <div className="form-right-section">
             <div className="form-group">
               <label htmlFor="phoneNumber" style={{ display: "block" }}>
                 Phone number<span className="required"> (required)</span>
