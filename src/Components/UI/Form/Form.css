@@ -10,7 +10,9 @@
   border-bottom: #5a5959 thin solid;
   color: #7c7c7c;
   font: inherit;
-  width: 250px;
+  /* width: 250px; */
+  width: 100%;
+  padding: 1px 0;
 }
 
 .recaptcha {
@@ -24,22 +26,25 @@
 .error-message {
   color: #de4330;
   margin-bottom: 2em;
-  width: 250px;
+  /* width: 250px; */
 }
 
 .error {
   border-bottom: #de4330 thin solid;
-  width: 250px;
+  /* width: 250px; */
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .form-inputs {
     display: flex;
-    column-gap: 16px;
-    width: 296px;
+    column-gap: 1.5rem;
+    /* width: 296px; */
   }
-  .error-message, .error {
-    width: 296px;
+  /* .error-message, .error { */
+  .form-left-section,
+  .form-right-section,
+  .recaptcha {
+    width: 303px;
   }
 
   .form-button {
@@ -50,12 +55,14 @@
 @media (min-width: 1200px) {
   .form-inputs {
     display: flex;
-    column-gap: 16px;
-    width: 296px;
+    column-gap: 1.5rem;
+    /* width: 296px; */
   }
-  .error-message, .error {
-    width: 296px;
-  }
+
+  /* .error-message, */
+  /* .error { */
+  /* width: 296px; */
+  /* } */
 
   .form-button {
     text-align: left;
@@ -72,7 +79,7 @@
     border-bottom: #5a5959 thin solid;
     color: #7c7c7c !important;
     font: inherit;
-    width: 300px;
+    /* width: 235px; */
   }
 
   .form-group label {
@@ -87,5 +94,14 @@
 
   .recaptcha {
     padding-top: 20px;
+  }
+
+  .form-left-section,
+  .form-right-section {
+    width: 250px;
+  }
+
+  .recaptcha {
+    width: 303px;
   }
 }
